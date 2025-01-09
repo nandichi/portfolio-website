@@ -5,9 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?> - Naoufal Andichi</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/22.5.0/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.2.2/i18nextHttpBackend.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-browser-languagedetector/7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-jquery/1.1.0/i18next-jquery.min.js"></script>
+    <style>
+        .hover-scale {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .goog-te-combo {
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+            background-color: white;
+            color: #374151;
+            font-size: 0.875rem;
+            cursor: pointer;
+        }
+        
+        .goog-te-banner-frame {
+            display: none !important;
+        }
+        
+        body {
+            top: 0 !important;
+        }
+        /* Language Switcher Styling */
+        .language-switcher {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .language-button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .language-button:hover {
+            background-color: #f3f4f6;
+        }
+        
+        .language-options {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            margin-top: 0.5rem;
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            display: none;
+            z-index: 50;
+        }
+        
+        .language-options.show {
+            display: block;
+        }
+        
+        .language-option {
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .language-option:hover {
+            background-color: #f3f4f6;
+        }
+        
+        .language-flag {
+            width: 1.5rem;
+            height: 1rem;
+            object-fit: cover;
+            border-radius: 2px;
+        }
+    </style>
 </head>
 <body class="bg-gray-50">
     <nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-lg z-50">
@@ -57,6 +148,31 @@
                     <a href="contact.php" class="<?php echo $currentPage === 'contact' ? 'text-blue-600' : 'text-gray-600 hover:text-gray-900'; ?>">
                         Contact
                     </a>
+                    <div class="language-switcher ml-4">
+                        <button class="language-button" onclick="toggleLanguageOptions()">
+                            <img src="images/flags/nl.svg" alt="Dutch" class="language-flag" id="selected-language-flag">
+                            <span id="selected-language">Nederlands</span>
+                            <i class="fas fa-chevron-down ml-2"></i>
+                        </button>
+                        <div class="language-options" id="language-options">
+                            <div class="language-option" onclick="changeLanguage('nl')">
+                                <img src="images/flags/nl.svg" alt="Dutch" class="language-flag">
+                                Nederlands
+                            </div>
+                            <div class="language-option" onclick="changeLanguage('en')">
+                                <img src="images/flags/gb.svg" alt="English" class="language-flag">
+                                English
+                            </div>
+                            <div class="language-option" onclick="changeLanguage('de')">
+                                <img src="images/flags/de.svg" alt="German" class="language-flag">
+                                Deutsch
+                            </div>
+                            <div class="language-option" onclick="changeLanguage('fr')">
+                                <img src="images/flags/fr.svg" alt="French" class="language-flag">
+                                Français
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="sm:hidden flex items-center">
                     <button class="mobile-menu-button p-2 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -100,7 +216,55 @@
                     Contact
                 </a>
             </div>
+            <div class="px-3 py-2" id="google_translate_element_mobile"></div>
         </div>
     </nav>
+    <script>
+        // Initialize i18next
+        i18next
+            .use(i18nextHttpBackend)
+            .use(i18nextBrowserLanguageDetector)
+            .init({
+                fallbackLng: 'nl',
+                debug: true,
+                backend: {
+                    loadPath: '/locales/{{lng}}/{{ns}}.json'
+                }
+            });
+
+        function toggleLanguageOptions() {
+            document.getElementById('language-options').classList.toggle('show');
+        }
+
+        function changeLanguage(lang) {
+            i18next.changeLanguage(lang, (err, t) => {
+                if (err) return console.log('Something went wrong loading', err);
+                updateContent();
+                updateLanguageButton(lang);
+                toggleLanguageOptions();
+            });
+        }
+
+        function updateLanguageButton(lang) {
+            const flagMap = {
+                nl: { src: 'images/flags/nl.svg', text: 'Nederlands' },
+                en: { src: 'images/flags/gb.svg', text: 'English' },
+                de: { src: 'images/flags/de.svg', text: 'Deutsch' },
+                fr: { src: 'images/flags/fr.svg', text: 'Français' }
+            };
+
+            document.getElementById('selected-language-flag').src = flagMap[lang].src;
+            document.getElementById('selected-language').textContent = flagMap[lang].text;
+        }
+
+        // Close language options when clicking outside
+        document.addEventListener('click', function(event) {
+            const switcher = document.querySelector('.language-switcher');
+            const options = document.getElementById('language-options');
+            if (!switcher.contains(event.target)) {
+                options.classList.remove('show');
+            }
+        });
+    </script>
 </body>
 </html> 

@@ -14,9 +14,11 @@ include 'includes/header.php';
 
     <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
         <div class="md:w-1/3 text-center md:text-left text-white" data-aos="fade-right">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4 leading-tight">Naoufal Andichi</h1>
-            <h2 class="text-2xl md:text-3xl mb-8 opacity-90 font-semibold">Full Stack Developer</h2>
-            <p class="text-xl mb-8 opacity-80">Welkom op mijn portfolio website</p>
+            <h1 class="text-5xl md:text-6xl font-bold mb-4">Naoufal Andichi</h1>
+            <h2 class="text-2xl md:text-3xl mb-8 opacity-90">Full Stack Developer</h2>
+            <p class="text-xl mb-8 opacity-80">
+                Hoi! Leuk dat je op mijn website kijkt
+            </p>
             <div class="flex flex-wrap gap-4 justify-center md:justify-start">
                 <a href="#about" 
                    class="bg-white text-blue-600 px-8 py-3 rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 font-medium">
@@ -53,10 +55,6 @@ include 'includes/header.php';
             <!-- Introductie Text -->
             <div class="space-y-6" data-aos="fade-right">
                 <h2 class="text-3xl font-bold text-gray-900 mb-8">Welkom op mijn Portfolio</h2>
-                <p class="text-lg text-gray-600 leading-relaxed">
-                    Als Software Development student en stagiair bij Developing B.V. combineer ik mijn passie voor technologie 
-                    met praktische ervaring. Ik focus me op het bouwen van moderne web applicaties met de nieuwste technologieën.
-                </p>
                 <p class="text-lg text-gray-600 leading-relaxed">
                     Mijn doel is om innovatieve oplossingen te creëren die niet alleen functioneel zijn, maar ook een geweldige 
                     gebruikerservaring bieden. Ik geloof sterk in continu leren en blijf mezelf ontwikkelen in nieuwe technologieën.

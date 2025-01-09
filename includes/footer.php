@@ -54,7 +54,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                                           d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
                                 </svg>
-                                Wageningen, Nederland
+                                Ede, Gelderland, Nederland
                             </div>
                         </li>
                     </ul>
@@ -69,11 +69,7 @@
     <script>
         AOS.init({
             duration: 800,
-            easing: 'ease-out-cubic',
-            once: false,
-            mirror: true,
-            offset: 50,
-            anchorPlacement: 'top-bottom'
+            once: true
         });
         
         // Mobile menu functionality
