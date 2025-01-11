@@ -14,15 +14,14 @@ include 'includes/header.php';
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
                 <!-- Frontend Skills -->
-                <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300" 
-                     data-aos="fade-right">
-                    <div class="flex items-center gap-3 mb-6">
+                <div class="bg-white p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
+                    <div class="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
                         <div class="p-2 bg-blue-100 rounded-lg">
-                            <i class="fas fa-code text-blue-600 text-xl"></i>
+                            <i class="fas fa-code text-blue-600 text-lg sm:text-xl"></i>
                         </div>
-                        <h2 class="text-2xl font-semibold">Frontend</h2>
+                        <h2 class="text-xl sm:text-2xl font-semibold">Frontend</h2>
                     </div>
                     
                     <div class="space-y-4">
@@ -176,7 +175,7 @@ include 'includes/header.php';
                         <h2 class="text-2xl font-semibold">Soft Skills</h2>
                     </div>
 
-                    <div class="grid grid-cols-2 gap-4">
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
                         <div class="p-4 bg-blue-50 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-blue-100">
                             <div class="flex items-center gap-2 mb-2">
                                 <i class="fas fa-comments text-blue-600"></i>

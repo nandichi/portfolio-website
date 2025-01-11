@@ -14,7 +14,7 @@ include 'includes/header.php';
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
                 <?php
                 $projects = [
                     [
@@ -93,12 +93,11 @@ include 'includes/header.php';
                 ];
 
                 foreach ($projects as $project): ?>
-                    <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-                         data-aos="fade-up">
+                    <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
                         
                         <!-- Project Header -->
-                        <div class="relative h-48 bg-gradient-to-br from-<?php echo $project['color']; ?>-500 
-                                    to-<?php echo $project['color']; ?>-600 p-6 overflow-hidden">
+                        <div class="relative h-36 sm:h-48 bg-gradient-to-br from-<?php echo $project['color']; ?>-500 
+                                    to-<?php echo $project['color']; ?>-600 p-4 sm:p-6 overflow-hidden">
                             <!-- Animated Background Pattern -->
                             <div class="absolute inset-0 opacity-10">
                                 <div class="absolute inset-0 transform rotate-45 scale-150">
@@ -115,9 +114,9 @@ include 'includes/header.php';
                         </div>
                         
                         <!-- Project Content -->
-                        <div class="p-6 flex flex-col h-[calc(100%-12rem)]">
+                        <div class="p-4 sm:p-6 flex flex-col h-[calc(100%-9rem)] sm:h-[calc(100%-12rem)]">
                             <div class="flex-grow">
-                                <p class="text-gray-600 mb-4"><?php echo $project['description']; ?></p>
+                                <p class="text-sm sm:text-base text-gray-600 mb-4"><?php echo $project['description']; ?></p>
                                 
                                 <!-- Technologies -->
                                 <div class="mb-6">

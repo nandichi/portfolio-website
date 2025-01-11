@@ -11,10 +11,12 @@ include 'includes/header.php';
             <div class="space-y-8" data-aos="fade-right">
                 <div class="relative">
                     <div class="w-72 h-72 mx-auto rounded-lg overflow-hidden shadow-xl">
-                        <img src="Naoufal%20Andichi.jpeg" 
-                             alt="Naoufal Andichi" 
-                             class="w-full h-full object-cover"
-                        >
+                        <div class="w-full h-full bg-gradient-to-br from-blue-600 to-blue-400 flex items-center justify-center text-white text-4xl font-bold">
+                            <div class="space-y-4 text-center">
+                                <span class="block text-6xl">NA</span>
+                                <span class="block text-lg font-normal">Software Developer</span>
+                            </div>
+                        </div>
                     </div>
                     <div class="absolute -inset-1 bg-blue-500/10 rounded-lg blur-2xl -z-10"></div>
                 </div>

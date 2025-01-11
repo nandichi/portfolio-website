@@ -4,7 +4,7 @@ $currentPage = "home";
 include 'includes/header.php';
 ?>
 
-<header class="min-h-screen bg-gradient-to-br from-blue-600 to-blue-400 flex items-center justify-center relative overflow-hidden">
+<header class="min-h-screen bg-gradient-to-br from-blue-600 to-blue-400 flex items-center justify-center relative overflow-hidden pt-16 sm:pt-0">
     <!-- Animated background shapes -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-blob"></div>
@@ -12,10 +12,10 @@ include 'includes/header.php';
         <div class="absolute bottom-1/4 left-1/3 w-80 h-80 bg-blue-400/15 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
     </div>
 
-    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-12 relative z-10">
-        <div class="md:w-1/3 text-center md:text-left text-white" data-aos="fade-right">
-            <h1 class="text-5xl md:text-6xl font-bold mb-4">Naoufal Andichi</h1>
-            <h2 class="text-2xl md:text-3xl mb-8 opacity-90">Full Stack Developer</h2>
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 sm:gap-12 relative z-10">
+        <div class="w-full md:w-1/3 text-center md:text-left text-white" data-aos="fade-right">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Naoufal Andichi</h1>
+            <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 opacity-90">Full Stack Developer</h2>
             <p class="text-xl mb-8 opacity-80">
                 Hoi! Leuk dat je op mijn website kijkt
             </p>
@@ -30,12 +30,11 @@ include 'includes/header.php';
                 </a>
             </div>
         </div>
-        <div class="md:w-1/4 relative" data-aos="fade-left" data-aos-delay="200">
-            <div class="w-72 h-72 mx-auto rounded-full overflow-hidden border-4 border-white/90 shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <img src="Naoufal%20Andichi.jpeg" 
-                     alt="Naoufal Andichi" 
-                     class="w-full h-full object-cover"
-                >
+        <div class="w-48 sm:w-64 md:w-1/4 relative" data-aos="fade-left" data-aos-delay="200">
+            <div class="w-full aspect-square rounded-full overflow-hidden border-4 border-white/90 shadow-xl transform hover:scale-105 transition-transform duration-300">
+                <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-4xl font-bold">
+                    NA
+                </div>
             </div>
             <div class="absolute -inset-4 bg-white/20 rounded-full blur-3xl -z-10"></div>
         </div>
@@ -75,7 +74,7 @@ include 'includes/header.php';
             </div>
 
             <!-- Stats Grid -->
-            <div class="grid grid-cols-2 gap-8" data-aos="fade-left">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-8" data-aos="fade-left">
                 <!-- Project Stats -->
                 <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                     <div class="flex items-center justify-between mb-4">
