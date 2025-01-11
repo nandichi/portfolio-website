@@ -5,11 +5,11 @@ include 'includes/header.php';
 ?>
 
 <div class="min-h-screen flex flex-col">
-    <div class="flex-grow pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="flex-grow pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
         <div class="max-w-7xl mx-auto">
             <div class="text-center mb-16" data-aos="fade-down">
-                <h1 class="text-4xl font-bold text-gray-900 mb-4">Mijn Projecten</h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Mijn Projecten</h1>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                     Dit zijn de projecten waar ik aan heb gewerkt tijdens mijn opleiding
                 </p>
             </div>
@@ -93,11 +93,12 @@ include 'includes/header.php';
                 ];
 
                 foreach ($projects as $project): ?>
-                    <div class="group relative bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
+                    <div class="group relative bg-white dark:bg-gray-700 rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300">
                         
                         <!-- Project Header -->
                         <div class="relative h-36 sm:h-48 bg-gradient-to-br from-<?php echo $project['color']; ?>-500 
-                                    to-<?php echo $project['color']; ?>-600 p-4 sm:p-6 overflow-hidden">
+                                    to-<?php echo $project['color']; ?>-600 dark:from-<?php echo $project['color']; ?>-600 
+                                    dark:to-<?php echo $project['color']; ?>-700 p-4 sm:p-6 overflow-hidden">
                             <!-- Animated Background Pattern -->
                             <div class="absolute inset-0 opacity-10">
                                 <div class="absolute inset-0 transform rotate-45 scale-150">
@@ -116,15 +117,15 @@ include 'includes/header.php';
                         <!-- Project Content -->
                         <div class="p-4 sm:p-6 flex flex-col h-[calc(100%-9rem)] sm:h-[calc(100%-12rem)]">
                             <div class="flex-grow">
-                                <p class="text-sm sm:text-base text-gray-600 mb-4"><?php echo $project['description']; ?></p>
+                                <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 mb-4"><?php echo $project['description']; ?></p>
                                 
                                 <!-- Technologies -->
                                 <div class="mb-6">
-                                    <h4 class="text-sm font-semibold text-gray-900 mb-3">Technologieën</h4>
+                                    <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-3">Technologieën</h4>
                                     <div class="flex flex-wrap gap-2">
                                         <?php foreach ($project['tech'] as $tech): ?>
-                                            <span class="px-3 py-1 bg-<?php echo $project['color']; ?>-100 
-                                                         text-<?php echo $project['color']; ?>-600 rounded-full text-sm">
+                                            <span class="px-3 py-1 bg-<?php echo $project['color']; ?>-100 dark:bg-<?php echo $project['color']; ?>-900/50
+                                                         text-<?php echo $project['color']; ?>-600 dark:text-<?php echo $project['color']; ?>-300 rounded-full text-sm">
                                                 <?php echo $tech; ?>
                                             </span>
                                         <?php endforeach; ?>
@@ -133,11 +134,11 @@ include 'includes/header.php';
                                 
                                 <!-- Features -->
                                 <div class="mb-6">
-                                    <h4 class="text-sm font-semibold text-gray-900 mb-3">Kenmerken</h4>
+                                    <h4 class="text-sm font-semibold text-gray-900 dark:text-white mb-3">Kenmerken</h4>
                                     <ul class="space-y-2">
                                         <?php foreach ($project['features'] as $feature): ?>
-                                            <li class="flex items-center text-gray-600">
-                                                <i class="fas fa-check text-<?php echo $project['color']; ?>-500 mr-2"></i>
+                                            <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                                <i class="fas fa-check text-<?php echo $project['color']; ?>-500 dark:text-<?php echo $project['color']; ?>-400 mr-2"></i>
                                                 <?php echo $feature; ?>
                                             </li>
                                         <?php endforeach; ?>
@@ -149,8 +150,8 @@ include 'includes/header.php';
                             <a href="https://github.com/nandichi/<?php echo $project['github']; ?>" 
                                target="_blank"
                                class="inline-flex items-center justify-center w-full px-4 py-2 bg-<?php echo $project['color']; ?>-600 
-                                      text-white rounded-lg hover:bg-<?php echo $project['color']; ?>-700 
-                                      transition-all duration-300 transform hover:-translate-y-1">
+                                      dark:bg-<?php echo $project['color']; ?>-500 text-white rounded-lg hover:bg-<?php echo $project['color']; ?>-700 
+                                      dark:hover:bg-<?php echo $project['color']; ?>-600 transition-all duration-300 transform hover:-translate-y-1">
                                 <i class="fab fa-github mr-2"></i>
                                 Bekijk Code
                             </a>
