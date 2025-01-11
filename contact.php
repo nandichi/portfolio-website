@@ -5,50 +5,50 @@ include 'includes/header.php';
 ?>
 
 <div class="min-h-screen flex flex-col">
-    <div class="flex-grow pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-white">
+    <div class="flex-grow pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
         <div class="max-w-7xl mx-auto">
             <!-- Header Section -->
             <div class="text-center mb-16" data-aos="fade-down">
-                <h1 class="text-4xl font-bold text-gray-900 mb-4">Neem Contact Op</h1>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Heb je een vraag of wil je samenwerken? Ik hoor graag van je!
+                <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Neem Contact Op</h1>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Wil je meer weten of samen iets maken? Stuur me gerust een berichtje!
                 </p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <!-- Contact Form -->
-                <div class="bg-white rounded-2xl shadow-xl p-8" data-aos="fade-right">
+                <div class="bg-white dark:bg-gray-700 rounded-2xl shadow-xl p-8" data-aos="fade-right">
                     <form id="contactForm" class="space-y-6">
                         <div class="space-y-2">
-                            <label for="name" class="block text-sm font-medium text-gray-700">Naam</label>
+                            <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Naam</label>
                             <input type="text" id="name" name="name" 
-                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                                    placeholder="Jouw naam">
                         </div>
 
                         <div class="space-y-2">
-                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
                             <input type="email" id="email" name="email" 
-                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                                    placeholder="jouw@email.nl">
                         </div>
 
                         <div class="space-y-2">
-                            <label for="subject" class="block text-sm font-medium text-gray-700">Onderwerp</label>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Onderwerp</label>
                             <input type="text" id="subject" name="subject" 
-                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+                                   class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                                    placeholder="Onderwerp van je bericht">
                         </div>
 
                         <div class="space-y-2">
-                            <label for="message" class="block text-sm font-medium text-gray-700">Bericht</label>
+                            <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Bericht</label>
                             <textarea id="message" name="message" rows="6" 
-                                      class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none"
+                                      class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors resize-none"
                                       placeholder="Schrijf je bericht hier..."></textarea>
                         </div>
 
                         <button type="submit" 
-                                class="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-3 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 transform hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                class="w-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white py-3 px-6 rounded-lg hover:from-blue-700 hover:to-blue-800 dark:hover:from-blue-600 dark:hover:to-blue-700 transform hover:-translate-y-0.5 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
                             Verstuur Bericht
                         </button>
                     </form>
@@ -57,7 +57,7 @@ include 'includes/header.php';
                 <!-- Contact Information -->
                 <div class="lg:pl-8" data-aos="fade-left">
                     <!-- Direct Contact -->
-                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-xl p-8 text-white mb-8">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 dark:from-blue-600 dark:to-blue-700 rounded-2xl shadow-xl p-8 text-white mb-8">
                         <h3 class="text-2xl font-semibold mb-6">Direct Contact</h3>
                         <div class="space-y-4">
                             <a href="mailto:naoufal.exe@gmail.com" 
@@ -94,11 +94,11 @@ include 'includes/header.php';
                     </div>
 
                     <!-- Location -->
-                    <div class="bg-white rounded-2xl shadow-xl p-8">
-                        <h3 class="text-2xl font-semibold text-gray-900 mb-6">Locatie</h3>
+                    <div class="bg-white dark:bg-gray-700 rounded-2xl shadow-xl p-8">
+                        <h3 class="text-2xl font-semibold text-gray-900 dark:text-white mb-6">Locatie</h3>
                         <div class="flex items-start space-x-3">
-                            <div class="bg-blue-100 p-3 rounded-lg">
-                                <svg class="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <div class="bg-blue-100 dark:bg-blue-900/50 p-3 rounded-lg">
+                                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                                           d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
@@ -106,8 +106,8 @@ include 'includes/header.php';
                                 </svg>
                             </div>
                             <div>
-                                <h4 class="text-lg font-medium text-gray-900">Wageningen</h4>
-                                <p class="text-gray-600 mt-1">Gelderland, Nederland</p>
+                                <h4 class="text-lg font-medium text-gray-900 dark:text-white">Wageningen</h4>
+                                <p class="text-gray-600 dark:text-gray-300 mt-1">Gelderland, Nederland</p>
                             </div>
                         </div>
                     </div>
@@ -119,17 +119,17 @@ include 'includes/header.php';
 
 <!-- Success Message Modal -->
 <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
-    <div class="bg-white rounded-lg p-8 max-w-md mx-4 transform transition-all">
+    <div class="bg-white dark:bg-gray-800 rounded-lg p-8 max-w-md mx-4 transform transition-all">
         <div class="text-center">
-            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 mb-4">
-                <svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-100 dark:bg-green-900/50 mb-4">
+                <svg class="h-6 w-6 text-green-600 dark:text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                 </svg>
             </div>
-            <h3 class="text-lg font-medium text-gray-900 mb-2">Bericht verstuurd!</h3>
-            <p class="text-gray-600 mb-6">Bedankt voor je bericht. Ik neem zo snel mogelijk contact met je op.</p>
+            <h3 class="text-lg font-medium text-gray-900 dark:text-white mb-2">Bericht verstuurd!</h3>
+            <p class="text-gray-600 dark:text-gray-300 mb-6">Bedankt voor je bericht. Ik neem zo snel mogelijk contact met je op.</p>
             <button onclick="closeModal()" 
-                    class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors">
+                    class="bg-blue-600 dark:bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-700 dark:hover:bg-blue-600 transition-colors">
                 Sluiten
             </button>
         </div>
