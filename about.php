@@ -11,7 +11,7 @@ include 'includes/header.php';
         <div class="absolute -bottom-1/2 -left-1/2 w-[1000px] h-[1000px] bg-gradient-to-tr from-green-500/10 to-yellow-500/10 rounded-full blur-3xl"></div>
     </div>
 
-    <div class="relative pt-24 pb-20 px-4 sm:px-6 lg:px-8">
+    <div class="relative pt-40 pb-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <!-- Header Sectie -->
             <div class="text-center mb-20" data-aos="fade-down">
