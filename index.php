@@ -369,18 +369,52 @@ include 'includes/header.php';
                 <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">Wat ik kan betekenen voor uw bedrijf</h3>
                 <div class="space-y-4 text-gray-600 dark:text-gray-300">
                     <p>
-                        Als jonge programmeur kijk ik met een frisse blik naar dingen en ken ik de nieuwste technieken. 
-                        Ik kan zowel voorkant (frontend) als achterkant (backend) van websites maken, waardoor ik 
-                        makkelijk kan helpen bij verschillende projecten.
+                        Als developer kan ik uw bedrijf helpen met het bouwen van websites en apps. Ik ken de nieuwste technieken 
+                        en kan deze meteen toepassen om uw online aanwezigheid te verbeteren. Door mijn opleiding en stages weet 
+                        ik precies wat er nodig is om een project tot een succes te maken.
                     </p>
                     <p>
-                        Door mijn stages bij meerdere bedrijven kan ik snel wisselen tussen projecten en verschillende 
-                        technieken. Ik weet hoe het is om in een bedrijf te werken en lever goed werk op tijd af.
+                        Ik kan zowel de voorkant (wat bezoekers zien) als de achterkant (hoe alles werkt) van websites maken. 
+                        Door mijn stage bij Developing B.V. heb ik al veel ervaring opgedaan met het maken van websites die er 
+                        niet alleen mooi uitzien, maar ook goed werken. Ik lever altijd netjes werk op tijd af.
                     </p>
                     <p>
-                        Ik zoek een baan waar ik mezelf kan verbeteren als programmeur en nieuwe dingen kan leren. 
-                        Ik wil graag meewerken aan nieuwe projecten en zo helpen om uw bedrijf succesvol te maken.
+                        Wat mij speciaal maakt is dat ik:
                     </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3 group">
+                            <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110">
+                                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <span class="text-gray-600 dark:text-gray-300">Snel nieuwe dingen leer en direct kan toepassen</span>
+                        </div>
+                        <div class="flex items-start gap-3 group">
+                            <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110">
+                                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <span class="text-gray-600 dark:text-gray-300">Websites en apps maak die er mooi uitzien en snel werken</span>
+                        </div>
+                        <div class="flex items-start gap-3 group">
+                            <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110">
+                                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                </svg>
+                            </div>
+                            <span class="text-gray-600 dark:text-gray-300">Met een frisse blik naar problemen kijk en met slimme oplossingen kom</span>
+                        </div>
+                        <div class="flex items-start gap-3 group">
+                            <div class="w-8 h-8 rounded-lg bg-blue-100 dark:bg-blue-900/50 flex items-center justify-center flex-shrink-0 transition-transform group-hover:scale-110">
+                                <svg class="w-5 h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
+                                </svg>
+                            </div>
+                            <span class="text-gray-600 dark:text-gray-300">Goed kan samenwerken en duidelijk communiceer</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

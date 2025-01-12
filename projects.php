@@ -56,7 +56,7 @@ include 'includes/header.php';
                         'name' => 'Poketrader',
                         'description' => 'Een PHP-applicatie voor het beheren en verhandelen van Pokemon kaarten.',
                         'tech' => ['PHP', 'MySQL', 'JavaScript'],
-                        'icon' => 'fa-cards',
+                        'icon' => 'fa-diamond',
                         'color' => 'red',
                         'github' => 'poketrader',
                         'features' => ['Trading System', 'Card Management', 'User Authentication']
@@ -79,7 +79,7 @@ include 'includes/header.php';
                         'name' => 'GamePC',
                         'description' => 'PHP applicatie gericht op gaming en PC configuraties.',
                         'tech' => ['PHP', 'MySQL', 'JavaScript'],
-                        'icon' => 'fa-computer',
+                        'icon' => 'fa-desktop',
                         'color' => 'purple',
                         'github' => 'gamepc',
                         'features' => ['PC Builder', 'Component Database', 'Price Comparison']
@@ -97,7 +97,7 @@ include 'includes/header.php';
                         'name' => 'Gimpies',
                         'description' => 'C# applicatie voor schoenenwinkel management.',
                         'tech' => ['C#', '.NET', 'SQL Server'],
-                        'icon' => 'fa-socks',
+                        'icon' => 'fa-shoe-prints',
                         'color' => 'indigo',
                         'github' => 'gimpies',
                         'features' => ['Inventory Management', 'Sales Tracking', 'Customer Database']
