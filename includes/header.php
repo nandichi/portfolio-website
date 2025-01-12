@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl" class="light">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,10 +14,13 @@
         tailwind.config = {
             darkMode: 'class',
             theme: {
-                extend: {
-                    // Je bestaande theme extensies hier...
-                }
+                extend: {}
             }
+        }
+
+        // Controleer dark mode voorkeur
+        if (localStorage.theme === 'dark') {
+            document.documentElement.classList.add('dark');
         }
     </script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -119,10 +122,13 @@
                         <?php endif; ?>
                     </a>
                     <a href="contact.php" 
-                        class="<?php echo $currentPage === 'contact' ? 'text-blue-600 dark:text-blue-400' : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'; ?> 
-                               px-4 py-2 rounded-lg transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400"
+                        class="<?php echo $currentPage === 'contact' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'; ?> 
+                               px-4 py-2 rounded-lg transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 relative group"
                     >
-                        Contact
+                        <span class="relative z-10">Contact</span>
+                        <?php if ($currentPage === 'contact'): ?>
+                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform scale-x-100"></div>
+                        <?php endif; ?>
                     </a>
                     <!-- Dark Mode Toggle -->
                     <button id="darkModeToggle" class="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 ml-2">

@@ -124,7 +124,7 @@ include 'includes/header.php';
                             <!-- Project Content -->
                             <div class="flex flex-col h-[calc(100%-6rem)]">
                                 <div class="flex-grow space-y-6">
-                                    <p class="text-gray-600 dark:text-gray-300 line-clamp-3"><?php echo $project['description']; ?></p>
+                                    <p class="text-gray-600 dark:text-gray-300"><?php echo $project['description']; ?></p>
 
                                     <!-- Features -->
                                     <div class="space-y-3">
