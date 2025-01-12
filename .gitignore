@@ -1,0 +1,16 @@
+# PHP gerelateerde bestanden
+process_contact.php
+vendor/
+composer.lock
+.env
+
+# IDE en systeem bestanden
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Log bestanden
+*.log
+error_log 

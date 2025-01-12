@@ -4,51 +4,65 @@ $currentPage = "home";
 include 'includes/header.php';
 ?>
 
-<header class="min-h-screen bg-gradient-to-br from-blue-600 to-blue-400 dark:from-blue-800 dark:to-blue-600 flex items-center justify-center relative overflow-hidden pt-16 sm:pt-0">
-    <!-- Animated background shapes -->
+<header class="min-h-screen bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-700 dark:from-blue-700 dark:via-blue-800 dark:to-indigo-900 flex items-center justify-center relative overflow-hidden pt-16 sm:pt-0">
+    <!-- Verbeterde animated background shapes -->
     <div class="absolute inset-0 overflow-hidden pointer-events-none">
         <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-blob"></div>
-        <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-blue-300/20 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
-        <div class="absolute bottom-1/4 left-1/3 w-80 h-80 bg-blue-400/15 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
+        <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-indigo-300/20 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-1/4 left-1/3 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
+        <!-- Extra glowing orbs -->
+        <div class="absolute top-1/2 right-1/3 w-48 h-48 bg-blue-400/30 rounded-full blur-2xl animate-pulse"></div>
+        <div class="absolute bottom-1/3 right-1/2 w-64 h-64 bg-indigo-400/20 rounded-full blur-2xl animate-pulse animation-delay-2000"></div>
     </div>
-
-    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center gap-8 sm:gap-12 relative z-10">
-        <div class="w-full md:w-1/3 text-center md:text-left text-white" data-aos="fade-right">
-            <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">Naoufal Andichi</h1>
-            <h2 class="text-xl sm:text-2xl md:text-3xl mb-6 sm:mb-8 opacity-90">Full Stack Developer</h2>
-            <p class="text-xl mb-8 opacity-80">
-                Ik ben een enthousiaste student Software Developer bij het RijnIJssel in Arnhem.
-            </p>
-            <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-                <a href="about.php" 
-                   class="bg-white text-blue-600 px-8 py-3 rounded-full hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300 font-medium">
-                    Leer mij kennen
-                </a>
-                <a href="projects.php" 
-                   class="bg-transparent text-white border-2 border-white px-8 py-3 rounded-full hover:bg-white/10 transition-all duration-300 font-medium">
-                    Bekijk Projecten
-                </a>
-            </div>
-        </div>
-        <div class="w-48 sm:w-64 md:w-1/4 relative" data-aos="fade-left" data-aos-delay="200">
-            <div class="w-full aspect-square rounded-full overflow-hidden border-4 border-white/90 shadow-xl transform hover:scale-105 transition-transform duration-300">
-                <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-4xl font-bold">
-                    NA
+    
+    <!-- Subtle grid pattern overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/5 dark:to-black/20 backdrop-blur-[1px]" 
+         style="background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+                                linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
+                background-size: 32px 32px;"></div>
+    
+    <!-- Content with improved styling -->
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div class="space-y-8">
+            <div class="flex justify-center mb-8 animate-fade-in-up">
+                <div class="w-32 h-32 sm:w-40 sm:h-40 rounded-full border-4 border-white/90 shadow-xl overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                    <div class="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-4xl font-bold">
+                        NA
+                    </div>
                 </div>
             </div>
-            <div class="absolute -inset-4 bg-white/20 rounded-full blur-3xl -z-10"></div>
+            <div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white text-shadow-lg animate-fade-in-up mb-4">
+                    Naoufal Andichi
+                </h1>
+                <p class="text-2xl sm:text-3xl text-blue-100 font-light animate-fade-in-up animation-delay-100">
+                    Full Stack Developer
+                </p>
+            </div>
+            <p class="text-xl sm:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-200">
+                Een enthousiaste student Software Developer bij het RijnIJssel in Arnhem, met passie voor moderne technologieën en innovatieve oplossingen
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 animate-fade-in-up animation-delay-400">
+                <a href="contact.php" 
+                   class="group px-8 py-3 bg-white text-blue-600 rounded-full font-semibold hover:bg-blue-50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/25 flex items-center gap-2">
+                    <span>Contact</span>
+                    <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                    </svg>
+                </a>
+                <a href="projects.php" 
+                   class="group px-8 py-3 bg-blue-700/30 text-white rounded-full font-semibold hover:bg-blue-600/40 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 backdrop-blur-sm border border-white/10 hover:border-white/25 hover:shadow-lg hover:shadow-blue-500/20 flex items-center gap-2">
+                    <svg class="w-5 h-5 transform group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                    </svg>
+                    <span>Projecten</span>
+                </a>
+            </div>
         </div>
-    </div>
-
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-        </svg>
     </div>
 </header>
 
-<section class="py-20 px-4 bg-white dark:bg-gray-800">
+<section class="py-20 px-4 bg-white dark:bg-gray-800 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gradient-to-r after:from-transparent after:via-blue-200 dark:after:via-blue-700 after:to-transparent after:animate-shimmer">
     <div class="max-w-7xl mx-auto">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <!-- Introductie Text -->
@@ -60,15 +74,18 @@ include 'includes/header.php';
                 </p>
                 <div class="flex flex-wrap gap-4 mt-8">
                     <a href="about.php" 
-                       class="inline-flex items-center px-6 py-3 bg-blue-600 text-white dark:bg-blue-500 dark:hover:bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors font-medium">
-                        Meer over mij
-                        <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                       class="group inline-flex items-center px-6 py-3 bg-blue-600 text-white dark:bg-blue-500 dark:hover:bg-blue-600 rounded-lg hover:bg-blue-700 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/25 gap-2">
+                        <span>Meer over mij</span>
+                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                         </svg>
                     </a>
                     <a href="projects.php" 
-                       class="inline-flex items-center px-6 py-3 border-2 border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-500 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors font-medium">
-                        Bekijk projecten
+                       class="group inline-flex items-center px-6 py-3 border-2 border-blue-600 dark:border-blue-500 text-blue-600 dark:text-blue-500 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/20 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/10 gap-2">
+                        <svg class="w-5 h-5 transform group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                        </svg>
+                        <span>Bekijk projecten</span>
                     </a>
                 </div>
             </div>
@@ -136,7 +153,7 @@ include 'includes/header.php';
     </div>
 </section>
 
-<section id="highlights" class="py-20 px-4 bg-white dark:bg-gray-800 relative">
+<section id="highlights" class="py-20 px-4 bg-white dark:bg-gray-800 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gradient-to-r after:from-transparent after:via-blue-200 dark:after:via-blue-700 after:to-transparent after:animate-shimmer">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white" data-aos="fade-up">Wat Ik Doe</h2>
@@ -156,24 +173,24 @@ include 'includes/header.php';
                 </div>
                 <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Frontend Development</h3>
                 <p class="text-gray-600 dark:text-gray-300">Moderne en responsieve interfaces met React en TypeScript</p>
-                <ul class="mt-4 space-y-2">
-                    <li class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <ul class="mt-4 space-y-3">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-blue-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        React.js
+                        <span class="text-gray-600 dark:text-gray-300">React.js</span>
                     </li>
-                    <li class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-blue-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        TypeScript
+                        <span class="text-gray-600 dark:text-gray-300">TypeScript</span>
                     </li>
-                    <li class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-blue-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        Tailwind CSS
+                        <span class="text-gray-600 dark:text-gray-300">Tailwind CSS</span>
                     </li>
                 </ul>
             </div>
@@ -188,24 +205,24 @@ include 'includes/header.php';
                 </div>
                 <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">Backend Development</h3>
                 <p class="text-gray-600 dark:text-gray-300">Schaalbare backend systemen met PHP en Laravel</p>
-                <ul class="mt-4 space-y-2">
-                    <li class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <ul class="mt-4 space-y-3">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-indigo-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        PHP/Laravel
+                        <span class="text-gray-600 dark:text-gray-300">PHP/Laravel</span>
                     </li>
-                    <li class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-indigo-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        MySQL
+                        <span class="text-gray-600 dark:text-gray-300">MySQL</span>
                     </li>
-                    <li class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 mr-2 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-indigo-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        API Development
+                        <span class="text-gray-600 dark:text-gray-300">API Development</span>
                     </li>
                 </ul>
             </div>
@@ -220,24 +237,24 @@ include 'includes/header.php';
                 </div>
                 <h3 class="text-xl font-bold mb-4 text-gray-900 dark:text-white">DevOps</h3>
                 <p class="text-gray-600 dark:text-gray-300">CI/CD, Docker en Cloud deployment</p>
-                <ul class="mt-4 space-y-2">
-                    <li class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <ul class="mt-4 space-y-3">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-purple-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        Git
+                        <span class="text-gray-600 dark:text-gray-300">Git</span>
                     </li>
-                    <li class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-purple-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        Docker
+                        <span class="text-gray-600 dark:text-gray-300">Docker</span>
                     </li>
-                    <li class="flex items-center text-gray-600">
-                        <svg class="w-5 h-5 mr-2 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <li class="flex items-start">
+                        <svg class="w-5 h-5 mr-2 text-purple-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        CI/CD
+                        <span class="text-gray-600 dark:text-gray-300">CI/CD</span>
                     </li>
                 </ul>
             </div>
@@ -245,7 +262,7 @@ include 'includes/header.php';
     </div>
 </section>
 
-<section class="py-20 px-4 bg-white dark:bg-gray-800">
+<section class="py-20 px-4 bg-white dark:bg-gray-800 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gradient-to-r after:from-transparent after:via-blue-200 dark:after:via-blue-700 after:to-transparent after:animate-shimmer">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white" data-aos="fade-up">Waarom Mij Kiezen?</h2>
@@ -268,19 +285,19 @@ include 'includes/header.php';
                         <svg class="w-5 h-5 mr-2 text-blue-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Focus op clean code en best practices</span>
+                        <span class="text-gray-600 dark:text-gray-300">Focus op clean code en best practices</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-5 h-5 mr-2 text-blue-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Ervaring met moderne frameworks en tools</span>
+                        <span class="text-gray-600 dark:text-gray-300">Ervaring met moderne frameworks en tools</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-5 h-5 mr-2 text-blue-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Responsive en performante applicaties</span>
+                        <span class="text-gray-600 dark:text-gray-300">Responsive en performante applicaties</span>
                     </li>
                 </ul>
             </div>
@@ -298,19 +315,19 @@ include 'includes/header.php';
                         <svg class="w-5 h-5 mr-2 text-indigo-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Sterke communicatieve vaardigheden</span>
+                        <span class="text-gray-600 dark:text-gray-300">Sterke communicatieve vaardigheden</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-5 h-5 mr-2 text-indigo-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Proactieve werkhouding</span>
+                        <span class="text-gray-600 dark:text-gray-300">Proactieve werkhouding</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-5 h-5 mr-2 text-indigo-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Teamplayer met oog voor detail</span>
+                        <span class="text-gray-600 dark:text-gray-300">Teamplayer met oog voor detail</span>
                     </li>
                 </ul>
             </div>
@@ -328,19 +345,19 @@ include 'includes/header.php';
                         <svg class="w-5 h-5 mr-2 text-purple-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Continu leren en ontwikkelen</span>
+                        <span class="text-gray-600 dark:text-gray-300">Continu leren en ontwikkelen</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-5 h-5 mr-2 text-purple-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Snel nieuwe technologieën eigen maken</span>
+                        <span class="text-gray-600 dark:text-gray-300">Snel nieuwe technologieën eigen maken</span>
                     </li>
                     <li class="flex items-start">
                         <svg class="w-5 h-5 mr-2 text-purple-500 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Ambitieus en resultaatgericht</span>
+                        <span class="text-gray-600 dark:text-gray-300">Ambitieus en resultaatgericht</span>
                     </li>
                 </ul>
             </div>
@@ -371,7 +388,7 @@ include 'includes/header.php';
 </section>
 
 <!-- Werkervaring Section -->
-<section class="py-20 px-4 bg-white dark:bg-gray-800">
+<section class="py-20 px-4 bg-white dark:bg-gray-800 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gradient-to-r after:from-transparent after:via-blue-200 dark:after:via-blue-700 after:to-transparent after:animate-shimmer">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white" data-aos="fade-up">Werkervaring & Bijbanen</h2>
@@ -408,19 +425,19 @@ include 'includes/header.php';
                                         <div>
                                             <h4 class="font-medium text-gray-900 dark:text-white mb-2">Hoofdtaken</h4>
                                             <ul class="space-y-2">
-                                                <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                                <li class="flex items-center text-gray-600 dark:text-white">
                                                     <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                                     </svg>
                                                     WordPress Development
                                                 </li>
-                                                <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                                <li class="flex items-center text-gray-600 dark:text-white">
                                                     <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                                     </svg>
                                                     PHP/Laravel Projecten
                                                 </li>
-                                                <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                                <li class="flex items-center text-gray-600 dark:text-white">
                                                     <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                                     </svg>
@@ -431,19 +448,19 @@ include 'includes/header.php';
                                         <div>
                                             <h4 class="font-medium text-gray-900 dark:text-white mb-2">Extra taken</h4>
                                             <ul class="space-y-2">
-                                                <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                                <li class="flex items-center text-gray-600 dark:text-white">
                                                     <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                                     </svg>
                                                     Stagiairs Interviewen
                                                 </li>
-                                                <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                                <li class="flex items-center text-gray-600 dark:text-white">
                                                     <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                                     </svg>
                                                     Kennisbank Opzetten
                                                 </li>
-                                                <li class="flex items-center text-gray-600 dark:text-gray-300">
+                                                <li class="flex items-center text-gray-600 dark:text-white">
                                                     <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                                                     </svg>
@@ -517,7 +534,7 @@ include 'includes/header.php';
 </section>
 
 <!-- Skills Overview Section -->
-<section class="py-20 px-4 bg-white dark:bg-gray-800">
+<section class="py-20 px-4 bg-white dark:bg-gray-800 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gradient-to-r after:from-transparent after:via-blue-200 dark:after:via-blue-700 after:to-transparent after:animate-shimmer">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white" data-aos="fade-up">Vaardigheden</h2>
@@ -667,7 +684,7 @@ include 'includes/header.php';
 </section>
 
 <!-- Timeline Section -->
-<section class="py-20 px-4 bg-white dark:bg-gray-800">
+<section class="py-20 px-4 bg-white dark:bg-gray-800 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gradient-to-r after:from-transparent after:via-blue-200 dark:after:via-blue-700 after:to-transparent after:animate-shimmer">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white" data-aos="fade-up">Mijn Reis</h2>
@@ -770,7 +787,7 @@ include 'includes/header.php';
 </section>
 
 <!-- Testimonials/Aanbevelingen Sectie -->
-<section class="py-20 px-4 bg-white dark:bg-gray-800">
+<section class="py-20 px-4 bg-white dark:bg-gray-800 relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-gradient-to-r after:from-transparent after:via-blue-200 dark:after:via-blue-700 after:to-transparent after:animate-shimmer">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white" data-aos="fade-up">Wat Anderen Zeggen</h2>
@@ -869,10 +886,10 @@ include 'includes/header.php';
             Ik sta altijd open voor nieuwe uitdagingen en samenwerkingen
         </p>
         <a href="contact.php" 
-           class="inline-flex items-center px-8 py-3 bg-white text-blue-600 rounded-full hover:bg-blue-50 transition-colors duration-300"
+           class="group inline-flex items-center px-8 py-3 bg-white text-blue-600 rounded-full hover:bg-blue-50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/25 gap-2"
            data-aos="fade-up" data-aos-delay="200">
-            Neem contact op
-            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <span>Neem contact op</span>
+            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
             </svg>
         </a>

@@ -4,356 +4,524 @@ $currentPage = "skills";
 include 'includes/header.php';
 ?>
 
-<div class="min-h-screen flex flex-col">
-    <div class="flex-grow pt-24 pb-12 px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-800">
+<div class="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <!-- Decoratieve elementen met verbeterde performance -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+        <div class="absolute -top-1/2 -right-1/2 w-[800px] h-[800px] bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-2xl transform-gpu"></div>
+        <div class="absolute -bottom-1/2 -left-1/2 w-[800px] h-[800px] bg-gradient-to-tr from-green-500/10 to-yellow-500/10 rounded-full blur-2xl transform-gpu"></div>
+    </div>
+
+    <div class="relative pt-24 pb-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-16" data-aos="fade-down">
-                <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Mijn Vaardigheden</h1>
-                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-                    Dit zijn de dingen waar ik goed in ben en wat ik allemaal heb geleerd
+            <!-- Header Sectie -->
+            <div class="text-center mb-20" data-aos="fade-down">
+                <h1 class="text-5xl font-extrabold mb-6">
+                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400">
+                        Mijn Vaardigheden
+                    </span>
+                </h1>
+                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    Een showcase van mijn technische expertise en professionele competenties
                 </p>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8">
-                <!-- Frontend Skills -->
-                <div class="bg-white dark:bg-gray-700 p-4 sm:p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow">
-                    <div class="flex items-center gap-2 sm:gap-3 mb-4 sm:mb-6">
-                        <div class="p-2 bg-blue-100 dark:bg-blue-900/50 rounded-lg">
-                            <i class="fas fa-code text-blue-600 dark:text-blue-400 text-lg sm:text-xl"></i>
-                        </div>
-                        <h2 class="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white">Frontend</h2>
-                    </div>
-                    
-                    <div class="space-y-4">
-                        <!-- HTML/CSS -->
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                                    <i class="fab fa-html5 text-orange-500 dark:text-orange-400 text-xl"></i>
-                                    HTML/CSS
-                                </span>
-                                <span class="text-blue-600 dark:text-blue-400">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                                <div class="bg-blue-600 dark:bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
 
-                        <!-- JavaScript -->
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                                    <i class="fab fa-js text-yellow-400 text-xl"></i>
-                                    JavaScript
-                                </span>
-                                <span class="text-blue-600 dark:text-blue-400">85%</span>
+            <!-- Hoofdvaardigheden Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
+                <!-- Frontend Skills Card -->
+                <div class="group relative">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-300"></div>
+                    <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-8 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-300">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/90 to-indigo-600/90 shadow-lg shadow-blue-500/20 dark:shadow-blue-800/30 transform-gpu transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                                <i class="fas fa-code text-xl text-white/90"></i>
                             </div>
-                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                                <div class="bg-blue-600 dark:bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-
-                        <!-- React -->
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                                    <i class="fab fa-react text-blue-400 text-xl"></i>
-                                    React
-                                </span>
-                                <span class="text-blue-600 dark:text-blue-400">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                                <div class="bg-blue-600 dark:bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+                            <div>
+                                <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600">Frontend Development</h2>
+                                <p class="text-gray-600 dark:text-gray-400">Moderne web interfaces</p>
                             </div>
                         </div>
-                    </div>
-                </div>
+                        
+                        <div class="space-y-6">
+                            <!-- HTML/CSS -->
+                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
+                                <div class="flex justify-between items-center mb-3">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-orange-200/30 dark:border-orange-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                            <i class="fab fa-html5 text-sm text-orange-600/90 dark:text-orange-400/90"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-gray-900 dark:text-white">HTML & CSS</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">Responsive Design</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-blue-600 dark:text-blue-400 font-bold">90%</span>
+                                </div>
+                                <div class="h-3 bg-gray-100/50 dark:bg-gray-700/50 backdrop-blur-sm rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-orange-500/90 to-red-600/90 rounded-full transition-all duration-700 ease-out transform origin-left group-hover:scale-x-105" style="width: 90%"></div>
+                                </div>
+                            </div>
 
-                <!-- Backend Skills -->
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300" 
-                     data-aos="fade-left">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="p-2 bg-green-100 dark:bg-green-900/50 rounded-lg">
-                            <i class="fas fa-database text-green-600 dark:text-green-400 text-xl"></i>
-                        </div>
-                        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Backend</h2>
-                    </div>
+                            <!-- JavaScript -->
+                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
+                                <div class="flex justify-between items-center mb-3">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                            <i class="fab fa-js text-sm text-yellow-600/90 dark:text-yellow-400/90"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-gray-900 dark:text-white">JavaScript</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">ES6+ & TypeScript</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-blue-600 dark:text-blue-400 font-bold">85%</span>
+                                </div>
+                                <div class="h-3 bg-gray-100/50 dark:bg-gray-700/50 backdrop-blur-sm rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-yellow-500/90 to-yellow-600/90 rounded-full transition-all duration-700 ease-out transform origin-left group-hover:scale-x-105" style="width: 85%"></div>
+                                </div>
+                            </div>
 
-                    <div class="space-y-4">
-                        <!-- PHP -->
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                                    <i class="fab fa-php text-purple-600 dark:text-purple-400 text-xl"></i>
-                                    PHP
-                                </span>
-                                <span class="text-blue-600 dark:text-blue-400">85%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                                <div class="bg-blue-600 dark:bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
-                            </div>
-                        </div>
-
-                        <!-- MySQL -->
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                                    <i class="fas fa-database text-blue-500 dark:text-blue-400 text-xl"></i>
-                                    MySQL
-                                </span>
-                                <span class="text-blue-600 dark:text-blue-400">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                                <div class="bg-blue-600 dark:bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
-                            </div>
-                        </div>
-
-                        <!-- Laravel -->
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                                    <i class="fab fa-laravel text-red-500 dark:text-red-400 text-xl"></i>
-                                    Laravel
-                                </span>
-                                <span class="text-blue-600 dark:text-blue-400">75%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                                <div class="bg-blue-600 dark:bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+                            <!-- React -->
+                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
+                                <div class="flex justify-between items-center mb-3">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-blue-200/30 dark:border-blue-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                            <i class="fab fa-react text-sm text-blue-600/90 dark:text-blue-400/90"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-gray-900 dark:text-white">React</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">Modern UI Development</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-blue-600 dark:text-blue-400 font-bold">80%</span>
+                                </div>
+                                <div class="h-3 bg-gray-100/50 dark:bg-gray-700/50 backdrop-blur-sm rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-blue-500/90 to-blue-600/90 rounded-full transition-all duration-700 ease-out transform origin-left group-hover:scale-x-105" style="width: 80%"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Backend Skills Card -->
+                <div class="group relative">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                    <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-8 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-green-500/20 dark:group-hover:border-green-400/20">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/90 to-emerald-600/90 shadow-lg shadow-green-500/20 dark:shadow-green-800/30 transform-gpu transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                                <i class="fas fa-server text-xl text-white/90"></i>
+                            </div>
+                            <div>
+                                <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-emerald-600">Backend Development</h2>
+                                <p class="text-gray-600 dark:text-gray-400">Server-side oplossingen</p>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <!-- PHP -->
+                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
+                                <div class="flex justify-between items-center mb-3">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-purple-200/30 dark:border-purple-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                            <i class="fab fa-php text-sm text-purple-600/90 dark:text-purple-400/90"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-gray-900 dark:text-white">PHP</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">OOP & MVC</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-green-600 dark:text-green-400 font-bold">85%</span>
+                                </div>
+                                <div class="h-3 bg-gray-100/50 dark:bg-gray-700/50 backdrop-blur-sm rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-purple-500/90 to-indigo-600/90 rounded-full transition-all duration-700 ease-out transform origin-left group-hover:scale-x-105" style="width: 85%"></div>
+                                </div>
+                            </div>
+
+                            <!-- Laravel -->
+                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
+                                <div class="flex justify-between items-center mb-3">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-red-200/30 dark:border-red-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                            <i class="fab fa-laravel text-sm text-red-600/90 dark:text-red-400/90"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-gray-900 dark:text-white">Laravel</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">Full-stack Framework</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-green-600 dark:text-green-400 font-bold">80%</span>
+                                </div>
+                                <div class="h-3 bg-gray-100/50 dark:bg-gray-700/50 backdrop-blur-sm rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-red-500/90 to-pink-600/90 rounded-full transition-all duration-700 ease-out transform origin-left group-hover:scale-x-105" style="width: 80%"></div>
+                                </div>
+                            </div>
+
+                            <!-- MySQL -->
+                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
+                                <div class="flex justify-between items-center mb-3">
+                                    <div class="flex items-center gap-3">
+                                        <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-blue-200/30 dark:border-blue-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                            <i class="fas fa-database text-sm text-blue-600/90 dark:text-blue-400/90"></i>
+                                        </div>
+                                        <div>
+                                            <h3 class="font-semibold text-gray-900 dark:text-white">MySQL</h3>
+                                            <p class="text-sm text-gray-600 dark:text-gray-400">Database Management</p>
+                                        </div>
+                                    </div>
+                                    <span class="text-green-600 dark:text-green-400 font-bold">75%</span>
+                                </div>
+                                <div class="h-3 bg-gray-100/50 dark:bg-gray-700/50 backdrop-blur-sm rounded-full overflow-hidden">
+                                    <div class="h-full bg-gradient-to-r from-blue-500/90 to-cyan-600/90 rounded-full transition-all duration-700 ease-out transform origin-left group-hover:scale-x-105" style="width: 75%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Extra Vaardigheden Sectie -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
                 <!-- Development Tools -->
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300" 
-                     data-aos="fade-right">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="p-2 bg-purple-100 dark:bg-purple-900/50 rounded-lg">
-                            <i class="fas fa-tools text-purple-600 dark:text-purple-400 text-xl"></i>
+                <div class="group relative">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                    <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-6 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-purple-500/20 dark:group-hover:border-purple-400/20">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500/90 to-pink-600/90 shadow-lg shadow-purple-500/20 dark:shadow-purple-800/30 transform-gpu transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                                <i class="fas fa-tools text-xl text-white/90"></i>
+                            </div>
+                            <h3 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
+                                Development Tools
+                            </h3>
                         </div>
-                        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Development Tools</h2>
-                    </div>
-
-                    <div class="space-y-4">
-                        <!-- Git -->
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                                    <i class="fab fa-git-alt text-orange-500 dark:text-orange-400 text-xl"></i>
-                                    Git & Version Control
-                                </span>
-                                <span class="text-blue-600 dark:text-blue-400">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                                <div class="bg-blue-600 dark:bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
-                            </div>
-                        </div>
-
-                        <!-- Docker -->
-                        <div class="mb-4">
-                            <div class="flex justify-between mb-1">
-                                <span class="text-gray-700 dark:text-gray-300 flex items-center gap-2">
-                                    <i class="fab fa-docker text-blue-500 dark:text-blue-400 text-xl"></i>
-                                    Docker
-                                </span>
-                                <span class="text-blue-600 dark:text-blue-400">75%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 dark:bg-gray-600 rounded-full h-2">
-                                <div class="bg-blue-600 dark:bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
-                            </div>
-                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-purple-200/30 dark:border-purple-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fab fa-git-alt text-sm text-purple-600/90 dark:text-purple-400/90"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Git & Professioneel Version Control</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-blue-200/30 dark:border-blue-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fab fa-docker text-sm text-blue-600/90 dark:text-blue-400/90"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Docker Containerization</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-purple-200/30 dark:border-purple-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fas fa-terminal text-sm text-purple-600/90 dark:text-purple-400/90"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Command Line Tools</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
 
                 <!-- Soft Skills -->
-                <div class="bg-white dark:bg-gray-700 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow transform hover:-translate-y-1 duration-300" 
-                     data-aos="fade-left">
-                    <div class="flex items-center gap-3 mb-6">
-                        <div class="p-2 bg-yellow-100 dark:bg-yellow-900/50 rounded-lg">
-                            <i class="fas fa-users text-yellow-600 dark:text-yellow-400 text-xl"></i>
+                <div class="group relative">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                    <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-6 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-yellow-500/20 dark:group-hover:border-yellow-400/20">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-yellow-500/90 to-orange-600/90 shadow-lg shadow-yellow-500/20 dark:shadow-yellow-800/30 transform-gpu transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                                <i class="fas fa-users text-xl text-white/90"></i>
+                            </div>
+                            <h3 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-orange-500">
+                                Soft Skills
+                            </h3>
                         </div>
-                        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white">Soft Skills</h2>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fas fa-comments text-sm text-yellow-600/90 dark:text-yellow-400/90"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Communicatie</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fas fa-lightbulb text-sm text-yellow-600/90 dark:text-yellow-400/90"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Probleemoplossend</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fas fa-users text-sm text-yellow-600/90 dark:text-yellow-400/90"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Teamwork</span>
+                            </li>
+                        </ul>
                     </div>
+                </div>
 
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                        <div class="p-4 bg-blue-50 dark:bg-blue-900/50 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-blue-100 dark:hover:bg-blue-800/50">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-comments text-blue-600 dark:text-blue-400"></i>
-                                <h3 class="font-semibold text-blue-900 dark:text-blue-100">Communicatie</h3>
+                <!-- Learning & Growth -->
+                <div class="group relative">
+                    <div class="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                    <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-6 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-emerald-500/20 dark:group-hover:border-emerald-400/20">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-emerald-500/90 to-teal-600/90 shadow-lg shadow-emerald-500/20 dark:shadow-emerald-800/30 transform-gpu transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                                <i class="fas fa-graduation-cap text-xl text-white/90"></i>
                             </div>
-                            <p class="text-sm text-blue-700 dark:text-blue-300">Helder en effectief communiceren</p>
+                            <h3 class="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-500 to-teal-500">
+                                Groei & Ontwikkeling
+                            </h3>
                         </div>
-
-                        <div class="p-4 bg-blue-50 dark:bg-blue-900/50 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-blue-100 dark:hover:bg-blue-800/50">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-lightbulb text-blue-600 dark:text-blue-400"></i>
-                                <h3 class="font-semibold text-blue-900 dark:text-blue-100">Probleemoplossend</h3>
-                            </div>
-                            <p class="text-sm text-blue-700 dark:text-blue-300">Analytisch denken</p>
-                        </div>
-
-                        <div class="p-4 bg-blue-50 dark:bg-blue-900/50 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-blue-100 dark:hover:bg-blue-800/50">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-users text-blue-600 dark:text-blue-400"></i>
-                                <h3 class="font-semibold text-blue-900 dark:text-blue-100">Teamwork</h3>
-                            </div>
-                            <p class="text-sm text-blue-700 dark:text-blue-300">Effectieve samenwerking</p>
-                        </div>
-
-                        <div class="p-4 bg-blue-50 dark:bg-blue-900/50 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-blue-100 dark:hover:bg-blue-800/50">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i class="fas fa-book text-blue-600 dark:text-blue-400"></i>
-                                <h3 class="font-semibold text-blue-900 dark:text-blue-100">Leergierig</h3>
-                            </div>
-                            <p class="text-sm text-blue-700 dark:text-blue-300">Continue ontwikkeling</p>
-                        </div>
+                        <ul class="space-y-4">
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-emerald-200/30 dark:border-emerald-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fas fa-book text-sm text-emerald-600/90 dark:text-emerald-400/90"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Actief Continu Leren</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-emerald-200/30 dark:border-emerald-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fas fa-rocket text-sm text-emerald-600/90 dark:text-emerald-400/90"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Technische Innovatie</span>
+                            </li>
+                            <li class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-emerald-200/30 dark:border-emerald-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fas fa-chart-line text-sm text-emerald-600/90 dark:text-emerald-400/90"></i>
+                                </div>
+                                <span class="text-gray-700 dark:text-gray-300">Persoonlijke Groei</span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
             <!-- Gedetailleerde Ervaringen Sectie -->
-            <div class="mt-20">
+            <div class="max-w-7xl mx-auto mt-24">
                 <div class="text-center mb-16" data-aos="fade-down">
-                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">Mijn Ervaringen</h2>
-                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    <h2 class="text-4xl font-extrabold mb-6">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400">
+                            Mijn Ervaringen
+                        </span>
+                    </h2>
+                    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
                         Een diepgaande blik op mijn projecten en de technologieën die ik heb gebruikt
                     </p>
                 </div>
-                
+
                 <div class="space-y-12">
                     <!-- PHP & Laravel Experience -->
-                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8 transform hover:shadow-xl transition-all duration-300"
-                         data-aos="fade-up">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="p-3 bg-purple-100 dark:bg-purple-900/50 rounded-xl">
-                                <i class="fab fa-php text-2xl text-purple-600 dark:text-purple-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">PHP & Laravel</h3>
-                                <p class="text-gray-600 dark:text-gray-300">Backend Development</p>
-                            </div>
-                        </div>
-                        
-                        <div class="prose max-w-none text-gray-600 dark:text-gray-300">
-                            <p class="mb-4">
-                                Voor PAS (Pakket Afhaal Service) en DIVO (online stemmen) heb ik PHP en Laravel gebruikt. Ik koos hiervoor omdat het fijn werkt en er veel handige functies in zitten die ik kon gebruiken.
-                            </p>
-                            
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
-                                <div class="bg-purple-50 dark:bg-purple-900/50 rounded-lg p-4">
-                                    <h4 class="font-semibold text-purple-900 dark:text-purple-100 mb-2">Waarom PHP & Laravel?</h4>
-                                    <ul class="space-y-2 text-purple-800 dark:text-purple-300">
-                                        <li class="flex items-center gap-2">
-                                            <i class="fas fa-check-circle text-purple-600 dark:text-purple-400"></i>
-                                            Snelle ontwikkeling met Eloquent ORM
-                                        </li>
-                                        <li class="flex items-center gap-2">
-                                            <i class="fas fa-check-circle text-purple-600 dark:text-purple-400"></i>
-                                            Uitgebreide beveiligingsfuncties
-                                        </li>
-                                        <li class="flex items-center gap-2">
-                                            <i class="fas fa-check-circle text-purple-600 dark:text-purple-400"></i>
-                                            Blade templating engine
-                                        </li>
-                                    </ul>
+                    <div class="group relative" data-aos="fade-up">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                        <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-6 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-purple-500/20 dark:group-hover:border-purple-400/20">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-500/90 to-indigo-600/90 shadow-lg shadow-purple-500/20 dark:shadow-purple-800/30 transform-gpu transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fab fa-php text-xl text-white/90"></i>
                                 </div>
-                                
-                                <div class="bg-purple-50 dark:bg-purple-900/50 rounded-lg p-4">
-                                    <h4 class="font-semibold text-purple-900 dark:text-purple-100 mb-2">Uitdagingen & Oplossingen</h4>
-                                    <ul class="space-y-2 text-purple-800 dark:text-purple-300">
-                                        <li class="flex items-center gap-2">
-                                            <i class="fas fa-lightbulb text-purple-600 dark:text-purple-400"></i>
-                                            Complex database ontwerp opgelost met migrations
-                                        </li>
-                                        <li class="flex items-center gap-2">
-                                            <i class="fas fa-lightbulb text-purple-600 dark:text-purple-400"></i>
-                                            API authenticatie met Laravel Sanctum
-                                        </li>
-                                    </ul>
+                                <div>
+                                    <h3 class="font-bold text-xl text-purple-900 dark:text-purple-100 mb-4">Waarom PHP & Laravel?</h3>
+                                    <p class="text-purple-800 dark:text-purple-200">Snelle ontwikkeling met Eloquent ORM</p>
+                                </div>
+                            </div>
+
+                            <div class="prose max-w-none text-gray-600 dark:text-gray-300">
+                                <p class="mb-8 text-lg">
+                                    Voor PAS (Pakket Afhaal Service) en DIVO (online stemmen) heb ik PHP en Laravel gebruikt. 
+                                    Ik koos hiervoor omdat het fijn werkt en er veel handige functies in zitten die ik kon gebruiken.
+                                </p>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div class="group/card relative">
+                                        <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500/50 to-indigo-500/50 rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                                        <div class="relative bg-purple-50/70 dark:bg-purple-900/10 backdrop-blur-sm rounded-lg p-6 border border-purple-200/20 dark:border-purple-700/20 transition-all duration-500 group-hover:border-purple-500/30">
+                                            <h4 class="font-bold text-xl text-purple-900 dark:text-purple-100 mb-4">Waarom PHP & Laravel?</h4>
+                                            <ul class="space-y-3">
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-purple-200/30 dark:border-purple-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-check text-sm text-purple-600/90 dark:text-purple-400/90"></i>
+                                                    </div>
+                                                    <span class="text-purple-800 dark:text-purple-200">Snelle ontwikkeling met Eloquent ORM</span>
+                                                </li>
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-purple-200/30 dark:border-purple-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-check text-sm text-purple-600/90 dark:text-purple-400/90"></i>
+                                                    </div>
+                                                    <span class="text-purple-800 dark:text-purple-200">Uitgebreide beveiligingsfuncties</span>
+                                                </li>
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-purple-200/30 dark:border-purple-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-check text-sm text-purple-600/90 dark:text-purple-400/90"></i>
+                                                    </div>
+                                                    <span class="text-purple-800 dark:text-purple-200">Blade templating engine</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="group/card relative">
+                                        <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500/50 to-indigo-500/50 rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                                        <div class="relative bg-purple-50/70 dark:bg-purple-900/10 backdrop-blur-sm rounded-lg p-6 border border-purple-200/20 dark:border-purple-700/20 transition-all duration-500 group-hover:border-purple-500/30">
+                                            <h4 class="font-bold text-xl text-purple-900 dark:text-purple-100 mb-4">Uitdagingen & Oplossingen</h4>
+                                            <ul class="space-y-3">
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-purple-200/30 dark:border-purple-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-lightbulb text-sm text-purple-600/90 dark:text-purple-400/90"></i>
+                                                    </div>
+                                                    <span class="text-purple-800 dark:text-purple-200">Complex Database Ontwerp met Migrations</span>
+                                                </li>
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-purple-200/30 dark:border-purple-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-lightbulb text-sm text-purple-600/90 dark:text-purple-400/90"></i>
+                                                    </div>
+                                                    <span class="text-purple-800 dark:text-purple-200">Geavanceerde API Authenticatie met Sanctum</span>
+                                                </li>
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-purple-200/30 dark:border-purple-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-lightbulb text-sm text-purple-600/90 dark:text-purple-400/90"></i>
+                                                    </div>
+                                                    <span class="text-purple-800 dark:text-purple-200">Performance Optimalisatie met Caching</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- JavaScript & React Experience -->
-                    <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8 transform hover:shadow-xl transition-all duration-300"
-                         data-aos="fade-up" data-aos-delay="100">
-                        <div class="flex items-center gap-4 mb-6">
-                            <div class="p-3 bg-yellow-100 dark:bg-yellow-900/50 rounded-xl">
-                                <i class="fab fa-js text-2xl text-yellow-600 dark:text-yellow-400"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">JavaScript & React</h3>
-                                <p class="text-gray-600 dark:text-gray-300">Frontend Development</p>
-                            </div>
-                        </div>
-                        
-                        <div class="prose max-w-none text-gray-600 dark:text-gray-300">
-                            <p class="mb-4">
-                                Bij DIVO heb ik React gebruikt om de website mooi en snel te maken. Hierdoor kon ik zorgen dat de stemresultaten meteen te zien waren zonder dat je de pagina hoeft te verversen.
-                            </p>
-                            
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-6">
-                                <div class="bg-yellow-50 dark:bg-yellow-900/50 rounded-lg p-4">
-                                    <h4 class="font-semibold text-yellow-900 dark:text-yellow-100 mb-2">Voordelen React</h4>
-                                    <ul class="space-y-2 text-yellow-800 dark:text-yellow-300">
-                                        <li class="flex items-center gap-2">
-                                            <i class="fas fa-check-circle text-yellow-600 dark:text-yellow-400"></i>
-                                            Component-gebaseerde architectuur
-                                        </li>
-                                        <li class="flex items-center gap-2">
-                                            <i class="fas fa-check-circle text-yellow-600 dark:text-yellow-400"></i>
-                                            Efficiënte DOM updates
-                                        </li>
-                                        <li class="flex items-center gap-2">
-                                            <i class="fas fa-check-circle text-yellow-600 dark:text-yellow-400"></i>
-                                            Grote community support
-                                        </li>
-                                    </ul>
+                    <div class="group relative" data-aos="fade-up">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                        <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-6 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-yellow-500/20 dark:group-hover:border-yellow-400/20">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-yellow-500/90 to-orange-600/90 shadow-lg shadow-yellow-500/20 dark:shadow-yellow-800/30 transform-gpu transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fab fa-react text-xl text-white/90"></i>
                                 </div>
-                                
-                                <div class="bg-yellow-50 dark:bg-yellow-900/50 rounded-lg p-4">
-                                    <h4 class="font-semibold text-yellow-900 dark:text-yellow-100 mb-2">Leermomenten</h4>
-                                    <ul class="space-y-2 text-yellow-800 dark:text-yellow-300">
-                                        <li class="flex items-center gap-2">
-                                            <i class="fas fa-lightbulb text-yellow-600 dark:text-yellow-400"></i>
-                                            State management met Redux
-                                        </li>
-                                        <li class="flex items-center gap-2">
-                                            <i class="fas fa-lightbulb text-yellow-600 dark:text-yellow-400"></i>
-                                            Real-time updates met WebSockets
-                                        </li>
-                                    </ul>
+                                <div>
+                                    <h3 class="font-bold text-xl text-yellow-900 dark:text-yellow-100 mb-4">Voordelen React</h3>
+                                    <p class="text-yellow-800 dark:text-yellow-200">Component-gebaseerde architectuur</p>
+                                </div>
+                            </div>
+
+                            <div class="prose max-w-none text-gray-600 dark:text-gray-300">
+                                <p class="mb-8 text-lg">
+                                    Bij DIVO heb ik React gebruikt om de website mooi en snel te maken. 
+                                    Hierdoor kon ik zorgen dat de stemresultaten meteen te zien waren zonder dat je de pagina hoeft te verversen.
+                                </p>
+
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <div class="group/card relative">
+                                        <div class="absolute -inset-0.5 bg-gradient-to-r from-yellow-500/50 to-orange-500/50 rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                                        <div class="relative bg-yellow-50/70 dark:bg-yellow-900/10 backdrop-blur-sm rounded-lg p-6 border border-yellow-200/20 dark:border-yellow-700/20 transition-all duration-500 group-hover:border-yellow-500/30">
+                                            <h4 class="font-bold text-xl text-yellow-900 dark:text-yellow-100 mb-4">Voordelen React</h4>
+                                            <ul class="space-y-3">
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-check text-sm text-yellow-600/90 dark:text-yellow-400/90"></i>
+                                                    </div>
+                                                    <span class="text-yellow-800 dark:text-yellow-200">Component-gebaseerde architectuur</span>
+                                                </li>
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-check text-sm text-yellow-600/90 dark:text-yellow-400/90"></i>
+                                                    </div>
+                                                    <span class="text-yellow-800 dark:text-yellow-200">Efficiënte DOM updates</span>
+                                                </li>
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-check text-sm text-yellow-600/90 dark:text-yellow-400/90"></i>
+                                                    </div>
+                                                    <span class="text-yellow-800 dark:text-yellow-200">Grote community support</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="group/card relative">
+                                        <div class="absolute -inset-0.5 bg-gradient-to-r from-yellow-500/50 to-orange-500/50 rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                                        <div class="relative bg-yellow-50/70 dark:bg-yellow-900/10 backdrop-blur-sm rounded-lg p-6 border border-yellow-200/20 dark:border-yellow-700/20 transition-all duration-500 group-hover:border-yellow-500/30">
+                                            <h4 class="font-bold text-xl text-yellow-900 dark:text-yellow-100 mb-4">Leermomenten</h4>
+                                            <ul class="space-y-3">
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-lightbulb text-sm text-yellow-600/90 dark:text-yellow-400/90"></i>
+                                                    </div>
+                                                    <span class="text-yellow-800 dark:text-yellow-200">Geavanceerde State Management met Redux</span>
+                                                </li>
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-lightbulb text-sm text-yellow-600/90 dark:text-yellow-400/90"></i>
+                                                    </div>
+                                                    <span class="text-yellow-800 dark:text-yellow-200">Dynamische Real-time Updates met WebSockets</span>
+                                                </li>
+                                                <li class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                        <i class="fas fa-lightbulb text-sm text-yellow-600/90 dark:text-yellow-400/90"></i>
+                                                    </div>
+                                                    <span class="text-yellow-800 dark:text-yellow-200">Code Optimalisatie & Best Practices</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <!-- Leerproces & Groei -->
-                    <div class="bg-gradient-to-br from-blue-600 to-blue-700 dark:from-blue-700 dark:to-blue-800 text-white rounded-xl shadow-lg p-8"
-                         data-aos="fade-up" data-aos-delay="200">
-                        <h3 class="text-2xl font-bold mb-6">Continu Leren & Ontwikkelen</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 transform hover:scale-105 transition-transform">
-                                <i class="fas fa-brain text-3xl mb-4"></i>
-                                <h4 class="text-lg font-semibold mb-2">Probleemoplossend Vermogen</h4>
-                                <p class="text-white/80">
-                                    Als ik tegen problemen aanloop, probeer ik er altijd van te leren en een goede oplossing te vinden.
-                                </p>
+
+                    <!-- Continu Leren & Ontwikkelen -->
+                    <div class="group relative" data-aos="fade-up">
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                        <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-6 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-blue-500/20 dark:group-hover:border-blue-400/20">
+                            <div class="flex items-center gap-4 mb-8">
+                                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/90 to-indigo-600/90 shadow-md shadow-blue-500/10 dark:shadow-blue-800/20 transform-gpu transition-transform duration-300 group-hover:scale-105 flex items-center justify-center">
+                                    <i class="fas fa-graduation-cap text-2xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-xl text-blue-900 dark:text-blue-100 mb-4">Probleemoplossend</h3>
+                                    <p class="text-blue-800 dark:text-blue-200">
+                                        Als ik tegen problemen aanloop, probeer ik er altijd van te leren en een goede oplossing te vinden.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 transform hover:scale-105 transition-transform">
-                                <i class="fas fa-users text-3xl mb-4"></i>
-                                <h4 class="text-lg font-semibold mb-2">Samenwerking</h4>
-                                <p class="text-white/80">
-                                    Door samen te werken leer ik van anderen en deel ik mijn eigen kennis.
-                                </p>
-                            </div>
-                            <div class="bg-white/10 backdrop-blur-lg rounded-lg p-6 transform hover:scale-105 transition-transform">
-                                <i class="fas fa-rocket text-3xl mb-4"></i>
-                                <h4 class="text-lg font-semibold mb-2">Innovatie</h4>
-                                <p class="text-white/80">
-                                    Altijd op zoek naar nieuwe technologieën en beste practices.
-                                </p>
+
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <!-- Probleemoplossend Card -->
+                                <div class="group/card relative">
+                                    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500/50 to-indigo-500/50 rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                                    <div class="relative bg-blue-50/70 dark:bg-blue-900/10 backdrop-blur-sm rounded-lg p-6 border border-blue-200/20 dark:border-blue-700/20 transition-all duration-500 group-hover:border-blue-500/30">
+                                        <div class="flex items-center gap-3 mb-4">
+                                            <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-blue-200/30 dark:border-blue-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                <i class="fas fa-brain text-sm text-blue-600/90 dark:text-blue-400/90"></i>
+                                            </div>
+                                            <h4 class="font-bold text-xl text-blue-900 dark:text-blue-100">Probleemoplossend</h4>
+                                        </div>
+                                        <p class="text-blue-800 dark:text-blue-200">
+                                            Als ik tegen problemen aanloop, probeer ik er altijd van te leren en een goede oplossing te vinden.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Samenwerking Card -->
+                                <div class="group/card relative">
+                                    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500/50 to-indigo-500/50 rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                                    <div class="relative bg-blue-50/70 dark:bg-blue-900/10 backdrop-blur-sm rounded-lg p-6 border border-blue-200/20 dark:border-blue-700/20 transition-all duration-500 group-hover:border-blue-500/30">
+                                        <div class="flex items-center gap-3 mb-4">
+                                            <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-blue-200/30 dark:border-blue-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                <i class="fas fa-users text-sm text-blue-600/90 dark:text-blue-400/90"></i>
+                                            </div>
+                                            <h4 class="font-bold text-xl text-blue-900 dark:text-blue-100">Samenwerking</h4>
+                                        </div>
+                                        <p class="text-blue-800 dark:text-blue-200">
+                                            Door samen te werken leer ik van anderen en deel ik mijn eigen kennis.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Innovatie Card -->
+                                <div class="group/card relative">
+                                    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500/50 to-indigo-500/50 rounded-xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                                    <div class="relative bg-blue-50/70 dark:bg-blue-900/10 backdrop-blur-sm rounded-lg p-6 border border-blue-200/20 dark:border-blue-700/20 transition-all duration-500 group-hover:border-blue-500/30">
+                                        <div class="flex items-center gap-3 mb-4">
+                                            <div class="w-8 h-8 rounded-lg bg-white/80 dark:bg-gray-700/80 shadow-sm border border-blue-200/30 dark:border-blue-700/30 transform-gpu transition-all duration-300 group-hover:scale-105 flex items-center justify-center">
+                                                <i class="fas fa-rocket text-sm text-blue-600/90 dark:text-blue-400/90"></i>
+                                            </div>
+                                            <h4 class="font-bold text-xl text-blue-900 dark:text-blue-100">Innovatie</h4>
+                                        </div>
+                                        <p class="text-blue-800 dark:text-blue-200">
+                                            Altijd op zoek naar nieuwe technologieën en beste practices.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -366,23 +534,56 @@ include 'includes/header.php';
 <?php include 'includes/footer.php'; ?>
 
 <script>
-    // Initialize progress bars with animation
-    document.addEventListener('DOMContentLoaded', function() {
-        const progressBars = document.querySelectorAll('.bg-blue-600');
-        progressBars.forEach(bar => {
-            const width = bar.style.width;
+document.addEventListener('DOMContentLoaded', function() {
+    // Gebruik requestAnimationFrame voor soepelere animaties
+    requestAnimationFrame(() => {
+        const progressBars = document.querySelectorAll('[class*="group/skill"] div[style*="width"]');
+        
+        // Batch DOM updates voor betere performance
+        progressBars.forEach((bar, index) => {
+            const finalWidth = bar.style.width;
             bar.style.width = '0';
+            
+            // Gebruik staggered timing voor vloeiendere animaties
             setTimeout(() => {
-                bar.style.width = width;
-            }, 300);
+                requestAnimationFrame(() => {
+                    bar.style.width = finalWidth;
+                    bar.style.transition = 'width 0.8s cubic-bezier(0.4, 0, 0.2, 1)';
+                });
+            }, index * 100);
         });
     });
 
-    // Add scroll reveal animation for skill cards
+    // Geoptimaliseerde AOS initialisatie
     AOS.init({
-        duration: 1000,
+        duration: 800,
         once: true,
         offset: 100,
-        easing: 'ease-out-cubic'
+        easing: 'ease-out-cubic',
+        disable: 'mobile', // Schakel uit op mobiel voor betere prestaties
+        throttleDelay: 99,
+        mirror: false
     });
+
+    // Voeg passive event listeners toe voor betere scroll performance
+    document.addEventListener('scroll', function() {}, { passive: true });
+    document.addEventListener('touchstart', function() {}, { passive: true });
+});
+
+// Voeg IntersectionObserver toe voor lazy loading van animaties
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.1,
+    rootMargin: '50px'
+});
+
+document.querySelectorAll('[data-aos]').forEach(element => {
+    observer.observe(element);
+});
 </script> 
