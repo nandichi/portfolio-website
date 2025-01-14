@@ -136,8 +136,8 @@ include 'includes/header.php';
                                     Mijn stagebegeleider is erg tevreden over mijn werk en zegt dat ik snel nieuwe dingen oppak.
                                 </p>
                                 <p>
-                                    In mijn vrije tijd werk ik aan eigen projecten om mezelf te blijven verbeteren. 
-                                    Ik vind het vooral leuk om oplossingen te bedenken die het leven van mensen makkelijker maken. 
+                                    In mijn vrije tijd werk ik graag aan eigen projecten om mijn vaardigheden te verbeteren.
+                                    Mijn passie ligt bij het ontwikkelen van innovatieve webapplicaties en het verkennen van nieuwe code talen.
                                     Door mijn praktijkervaring en passie voor programmeren kan ik direct waarde toevoegen aan elk development team.
                                 </p>
                             </div>
