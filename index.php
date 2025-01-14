@@ -70,7 +70,8 @@ include 'includes/header.php';
     </div>
 </header>
 
-<section class="py-20 px-4 bg-gradient-to-b from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 relative overflow-hidden">
+<!-- Waarom Mij Kiezen sectie -->
+<section class="py-20 px-4 bg-gradient-to-b from-blue-50/80 via-indigo-50/90 to-purple-50/90 dark:from-gray-800 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
     <!-- Verbeterde achtergrond effecten -->
     <div class="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-transparent dark:from-blue-900/10 dark:to-transparent"></div>
     <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
@@ -178,59 +179,127 @@ include 'includes/header.php';
             </div>
         </div>
 
-        <!-- Extra Info met verbeterde styling -->
-        <div class="mt-16 bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-gray-700/50 dark:to-gray-700/30 rounded-2xl p-8 shadow-lg transform hover:scale-[1.02] transition-all duration-300" data-aos="fade-up">
-            <div class="max-w-3xl mx-auto">
-                <h3 class="text-2xl font-bold text-gray-800 dark:text-white mb-6 text-center relative inline-block">
-                    Wat ik kan betekenen voor uw bedrijf
-                    <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-transparent"></div>
-                </h3>
-                <div class="space-y-4 text-gray-700 dark:text-gray-300">
-                    <p class="leading-relaxed">
-                        Als developer kan ik uw bedrijf helpen met het bouwen van websites en apps. Ik ken de nieuwste technieken 
-                        en kan deze meteen toepassen om uw online aanwezigheid te verbeteren. Door mijn opleiding en stages weet 
-                        ik precies wat er nodig is om een project tot een succes te maken.
+        <!-- Professionele Waardepropositie Sectie -->
+        <div class="mt-16" data-aos="fade-up">
+            <!-- Geavanceerde gradient header -->
+            <div class="relative overflow-hidden rounded-t-3xl bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 p-8">
+                <div class="absolute inset-0">
+                    <div class="absolute inset-0 bg-grid-white/[0.1] bg-[size:20px_20px]"></div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-blue-600/50"></div>
+                </div>
+                <div class="relative">
+                    <h3 class="text-3xl font-bold text-white text-center mb-4">
+                        Mijn Toegevoegde Waarde
+                    </h3>
+                    <p class="text-blue-100 text-center max-w-2xl mx-auto">
+                        Als developer breng ik een unieke combinatie van technische expertise en innovatief denken naar elk project
                     </p>
-                    <p class="leading-relaxed">
-                        Ik kan zowel de voorkant (wat bezoekers zien) als de achterkant (hoe alles werkt) van websites maken. 
-                        Door mijn stage bij Developing B.V. heb ik al veel ervaring opgedaan met het maken van websites die er 
-                        niet alleen mooi uitzien, maar ook goed werken. Ik lever altijd netjes werk op tijd af.
-                    </p>
-                    <p class="font-medium text-gray-800 dark:text-white">
-                        Wat mij speciaal maakt is dat ik:
-                    </p>
-                    <div class="space-y-4">
-                        <div class="flex items-start gap-3 group/item">
-                            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0 transform group-hover/item:scale-110 group-hover/item:rotate-3 transition-all duration-300">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                </svg>
+                </div>
+            </div>
+
+            <!-- Hoofdcontent met moderne styling -->
+            <div class="bg-white dark:bg-gray-800 rounded-b-3xl shadow-2xl transform hover:shadow-3xl transition-all duration-500">
+                <div class="p-8 lg:p-12">
+                    <!-- Expertise Grid -->
+                    <div class="grid md:grid-cols-2 gap-8 mb-12">
+                        <!-- Technische Expertise -->
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-900 dark:text-white">Technische Expertise</h4>
                             </div>
-                            <span class="text-gray-700 dark:text-gray-300 group-hover/item:text-blue-600 dark:group-hover/item:text-blue-400 transition-colors">Snel nieuwe dingen leer en direct kan toepassen</span>
+                            <div class="pl-16 space-y-3">
+                                <p class="text-gray-700 dark:text-gray-300">Specialist in moderne web development met focus op:</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                        <span>Full-stack development (PHP, JavaScript)</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                        <span>Responsive design & UX optimalisatie</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                                        <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                                        <span>Performance & security best practices</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="flex items-start gap-3 group/item">
-                            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0 transform group-hover/item:scale-110 group-hover/item:rotate-3 transition-all duration-300">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
-                                </svg>
+
+                        <!-- Innovatieve Aanpak -->
+                        <div class="space-y-6">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-indigo-500 to-indigo-700 flex items-center justify-center">
+                                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-xl font-bold text-gray-900 dark:text-white">Innovatieve Aanpak</h4>
                             </div>
-                            <span class="text-gray-700 dark:text-gray-300 group-hover/item:text-blue-600 dark:group-hover/item:text-blue-400 transition-colors">Websites en apps maak die er mooi uitzien en snel werken</span>
+                            <div class="pl-16 space-y-3">
+                                <p class="text-gray-700 dark:text-gray-300">Onderscheidend door:</p>
+                                <ul class="space-y-2">
+                                    <li class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                                        <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                                        <span>Proactief meedenken in oplossingen</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                                        <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                                        <span>Snelle adaptatie nieuwe technologieën</span>
+                                    </li>
+                                    <li class="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                                        <span class="w-2 h-2 bg-indigo-500 rounded-full"></span>
+                                        <span>Focus op schaalbaarheid & onderhoud</span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="flex items-start gap-3 group/item">
-                            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0 transform group-hover/item:scale-110 group-hover/item:rotate-3 transition-all duration-300">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                                </svg>
+                    </div>
+
+                    <!-- Unique Selling Points -->
+                    <div class="border-t border-gray-200 dark:border-gray-700 pt-8">
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            <div class="p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 rounded-xl hover:shadow-lg transition-all duration-300">
+                                <div class="text-blue-600 dark:text-blue-400 mb-4">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                    </svg>
+                                </div>
+                                <h5 class="font-bold mb-2 text-gray-900 dark:text-white">Snel & Efficiënt</h5>
+                                <p class="text-sm text-gray-700 dark:text-gray-300">Snelle implementatie van nieuwe features met oog voor kwaliteit</p>
                             </div>
-                            <span class="text-gray-700 dark:text-gray-300 group-hover/item:text-blue-600 dark:group-hover/item:text-blue-400 transition-colors">Met een frisse blik naar problemen kijk en met slimme oplossingen kom</span>
-                        </div>
-                        <div class="flex items-start gap-3 group/item">
-                            <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0 transform group-hover/item:scale-110 group-hover/item:rotate-3 transition-all duration-300">
-                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
-                                </svg>
+                            <div class="p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 rounded-xl hover:shadow-lg transition-all duration-300">
+                                <div class="text-blue-600 dark:text-blue-400 mb-4">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
+                                    </svg>
+                                </div>
+                                <h5 class="font-bold mb-2 text-gray-900 dark:text-white">Maatwerk</h5>
+                                <p class="text-sm text-gray-700 dark:text-gray-300">Oplossingen perfect afgestemd op uw specifieke behoeften</p>
                             </div>
-                            <span class="text-gray-700 dark:text-gray-300 group-hover/item:text-blue-600 dark:group-hover/item:text-blue-400 transition-colors">Goed kan samenwerken en duidelijk communiceer</span>
+                            <div class="p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 rounded-xl hover:shadow-lg transition-all duration-300">
+                                <div class="text-blue-600 dark:text-blue-400 mb-4">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
+                                    </svg>
+                                </div>
+                                <h5 class="font-bold mb-2 text-gray-900 dark:text-white">Communicatie</h5>
+                                <p class="text-sm text-gray-700 dark:text-gray-300">Heldere communicatie en regelmatige updates</p>
+                            </div>
+                            <div class="p-6 bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-700 dark:to-gray-800 rounded-xl hover:shadow-lg transition-all duration-300">
+                                <div class="text-blue-600 dark:text-blue-400 mb-4">
+                                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                    </svg>
+                                </div>
+                                <h5 class="font-bold mb-2 text-gray-900 dark:text-white">Kwaliteit</h5>
+                                <p class="text-sm text-gray-700 dark:text-gray-300">Hoogwaardige code volgens moderne standaarden</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -240,7 +309,7 @@ include 'includes/header.php';
 </section>
 
 <!-- Werkervaring Section -->
-<section class="py-20 px-4 bg-gradient-to-b from-indigo-50 to-blue-50 dark:from-gray-800 dark:to-gray-900 relative">
+<section class="py-20 px-4 bg-gradient-to-b from-purple-50/90 via-indigo-50/80 to-blue-50/80 dark:from-gray-900 dark:via-gray-800 dark:to-gray-800 relative overflow-hidden">
     <div class="max-w-7xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 relative inline-block" data-aos="fade-up">
@@ -389,188 +458,195 @@ include 'includes/header.php';
 </section>
 
 <!-- Skills Overview Section -->
-<section class="py-20 px-4 bg-gradient-to-b from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800 relative">
-    <div class="max-w-7xl mx-auto">
+<section class="py-20 px-4 bg-gradient-to-b from-blue-50/80 via-indigo-50/90 to-purple-50/90 dark:from-gray-800 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
+    <!-- Animated background patterns -->
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <div class="absolute inset-0">
+        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-indigo-500/10 animate-pulse"></div>
+        <div class="absolute top-0 left-0 w-96 h-96 bg-blue-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-indigo-500/30 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob animation-delay-2000"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 relative inline-block" data-aos="fade-up">
-                Vaardigheden
+                Technische Expertise
                 <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></div>
             </h2>
             <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                Een overzicht van mijn technische vaardigheden en expertise
+                Ontdek mijn technische vaardigheden door een interactieve visualisatie
             </p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Frontend Skills -->
-            <div class="group bg-white/50 dark:bg-gray-700/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm border border-blue-100/20 dark:border-blue-700/20 hover:scale-105 hover:border-blue-300/30 dark:hover:border-blue-500/30" data-aos="fade-up" data-aos-delay="100">
-                <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-white flex items-center gap-3">
-                    <span class="p-2 bg-blue-100 dark:bg-blue-900/50 rounded-lg">
-                        <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"/>
-                        </svg>
-                    </span>
-                    Frontend
-                </h3>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">HTML/CSS</span>
-                            <span class="text-sm font-bold text-blue-600 dark:text-blue-400">90%</span>
-                        </div>
-                        <div class="h-2 bg-blue-100 dark:bg-blue-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 90%"></div>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">JavaScript</span>
-                            <span class="text-sm font-bold text-blue-600 dark:text-blue-400">85%</span>
-                        </div>
-                        <div class="h-2 bg-blue-100 dark:bg-blue-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 85%"></div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Development Stack -->
+            <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 group" data-aos="fade-right">
+                <div class="grid grid-cols-2 gap-6">
+                    <!-- Frontend -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold text-blue-600 dark:text-blue-400">Frontend</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-blue-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">JavaScript</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-yellow-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">Tailwind CSS</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-blue-400">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">React</span>
+                            </div>
                         </div>
                     </div>
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">Tailwind CSS</span>
-                            <span class="text-sm font-bold text-blue-600 dark:text-blue-400">85%</span>
+
+                    <!-- Backend -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold text-indigo-600 dark:text-indigo-400">Backend</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-indigo-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">PHP</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-red-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">Laravel</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-blue-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">MySQL</span>
+                            </div>
                         </div>
-                        <div class="h-2 bg-blue-100 dark:bg-blue-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-blue-500 to-blue-600 dark:from-blue-400 dark:to-blue-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 85%"></div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold text-purple-600 dark:text-purple-400">Tools</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-purple-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">Git</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-blue-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">Docker</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-green-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">WordPress</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Extra Skills -->
+                    <div class="space-y-4">
+                        <h3 class="text-xl font-bold text-pink-600 dark:text-pink-400">Extra</h3>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2">
+                                <span class="text-blue-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">TypeScript</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-purple-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">C#</span>
+                            </div>
+                            <div class="flex items-center gap-2">
+                                <span class="text-indigo-500">⚡</span>
+                                <span class="text-gray-700 dark:text-gray-300">ASP.NET</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Backend Skills -->
-            <div class="group bg-white/50 dark:bg-gray-700/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm border border-blue-100/20 dark:border-blue-700/20 hover:scale-105 hover:border-blue-300/30 dark:hover:border-blue-500/30" data-aos="fade-up" data-aos-delay="200">
-                <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-white flex items-center gap-3">
-                    <span class="p-2 bg-indigo-100 dark:bg-indigo-900/50 rounded-lg">
-                        <svg class="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"/>
-                        </svg>
-                    </span>
-                    Backend
-                </h3>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">PHP</span>
-                            <span class="text-sm font-bold text-indigo-600 dark:text-indigo-400">85%</span>
-                        </div>
-                        <div class="h-2 bg-indigo-100 dark:bg-indigo-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-indigo-500 to-indigo-600 dark:from-indigo-400 dark:to-indigo-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 85%"></div>
-                        </div>
+            <!-- Interactive Code Editor Preview -->
+            <div class="bg-gray-900 rounded-2xl p-6 shadow-xl group" data-aos="fade-left">
+                <div class="flex items-center justify-between mb-4">
+                    <div class="flex items-center gap-2">
+                        <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-500"></div>
                     </div>
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">Laravel</span>
-                            <span class="text-sm font-bold text-indigo-600 dark:text-indigo-400">80%</span>
-                        </div>
-                        <div class="h-2 bg-indigo-100 dark:bg-indigo-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-indigo-500 to-indigo-600 dark:from-indigo-400 dark:to-indigo-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 80%"></div>
-                        </div>
-                    </div>
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">MySQL</span>
-                            <span class="text-sm font-bold text-indigo-600 dark:text-indigo-400">75%</span>
-                        </div>
-                        <div class="h-2 bg-indigo-100 dark:bg-indigo-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-indigo-500 to-indigo-600 dark:from-indigo-400 dark:to-indigo-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 75%"></div>
-                        </div>
-                    </div>
+                    <span class="text-gray-400 text-sm">portfolio.php</span>
                 </div>
-            </div>
-
-            <!-- CMS & Tools -->
-            <div class="group bg-white/50 dark:bg-gray-700/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm border border-blue-100/20 dark:border-blue-700/20 hover:scale-105 hover:border-blue-300/30 dark:hover:border-blue-500/30" data-aos="fade-up" data-aos-delay="300">
-                <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-white flex items-center gap-3">
-                    <span class="p-2 bg-purple-100 dark:bg-purple-900/50 rounded-lg">
-                        <svg class="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
-                        </svg>
-                    </span>
-                    CMS & Tools
-                </h3>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">WordPress</span>
-                            <span class="text-sm font-bold text-purple-600 dark:text-purple-400">90%</span>
-                        </div>
-                        <div class="h-2 bg-purple-100 dark:bg-purple-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-purple-500 to-purple-600 dark:from-purple-400 dark:to-purple-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 90%"></div>
-                        </div>
+                <div class="font-mono text-sm text-gray-300">
+                    <div class="typing-animation">
+                        <span class="text-pink-400">&lt;?php</span>
                     </div>
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">Git</span>
-                            <span class="text-sm font-bold text-purple-600 dark:text-purple-400">85%</span>
-                        </div>
-                        <div class="h-2 bg-purple-100 dark:bg-purple-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-purple-500 to-purple-600 dark:from-purple-400 dark:to-purple-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 85%"></div>
-                        </div>
+                    <div class="typing-animation" style="animation-delay: 0.5s">
+                        <span class="text-gray-400">namespace</span> 
+                        <span class="text-blue-400">App\Developer;</span>
                     </div>
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">Docker</span>
-                            <span class="text-sm font-bold text-purple-600 dark:text-purple-400">70%</span>
-                        </div>
-                        <div class="h-2 bg-purple-100 dark:bg-purple-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-purple-500 to-purple-600 dark:from-purple-400 dark:to-purple-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 70%"></div>
-                        </div>
+                    <div class="typing-animation" style="animation-delay: 1s">
+                        <span class="text-pink-400">class</span> 
+                        <span class="text-green-400">FullStackDeveloper</span> 
+                        <span class="text-gray-400">{</span>
                     </div>
-                </div>
-            </div>
-
-            <!-- Additional Skills -->
-            <div class="group bg-white/50 dark:bg-gray-700/50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 backdrop-blur-sm border border-blue-100/20 dark:border-blue-700/20 hover:scale-105 hover:border-blue-300/30 dark:hover:border-blue-500/30" data-aos="fade-up" data-aos-delay="400">
-                <h3 class="text-xl font-bold mb-6 text-gray-900 dark:text-white flex items-center gap-3">
-                    <span class="p-2 bg-pink-100 dark:bg-pink-900/50 rounded-lg">
-                        <svg class="w-6 h-6 text-pink-600 dark:text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                        </svg>
-                    </span>
-                    Extra Skills
-                </h3>
-                <div class="space-y-4">
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">TypeScript</span>
-                            <span class="text-sm font-bold text-pink-600 dark:text-pink-400">75%</span>
-                        </div>
-                        <div class="h-2 bg-pink-100 dark:bg-pink-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-pink-500 to-pink-600 dark:from-pink-400 dark:to-pink-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 75%"></div>
-                        </div>
+                    <div class="typing-animation" style="animation-delay: 1.5s">
+                        <span class="pl-4 text-blue-400">public string</span> 
+                        <span class="text-gray-400">$name =</span> 
+                        <span class="text-yellow-300">'Naoufal Andichi'</span>;
                     </div>
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">C#</span>
-                            <span class="text-sm font-bold text-pink-600 dark:text-pink-400">70%</span>
-                        </div>
-                        <div class="h-2 bg-pink-100 dark:bg-pink-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-pink-500 to-pink-600 dark:from-pink-400 dark:to-pink-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 70%"></div>
-                        </div>
+                    <div class="typing-animation" style="animation-delay: 2s">
+                        <span class="pl-4 text-blue-400">public array</span> 
+                        <span class="text-gray-400">$primarySkills =</span> 
+                        <span class="text-gray-400">[</span>
                     </div>
-                    <div class="relative">
-                        <div class="flex items-center justify-between mb-2">
-                            <span class="text-sm font-semibold text-gray-700 dark:text-gray-200">ASP.NET</span>
-                            <span class="text-sm font-bold text-pink-600 dark:text-pink-400">65%</span>
-                        </div>
-                        <div class="h-2 bg-pink-100 dark:bg-pink-900/50 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-pink-500 to-pink-600 dark:from-pink-400 dark:to-pink-500 rounded-full transition-all duration-500 group-hover:scale-x-105" style="width: 65%"></div>
-                        </div>
+                    <div class="typing-animation" style="animation-delay: 2.5s">
+                        <span class="pl-8 text-yellow-300">'PHP'</span>,
+                        <span class="text-yellow-300">'Laravel'</span>,
+                        <span class="text-yellow-300">'JavaScript'</span>
+                    </div>
+                    <div class="typing-animation" style="animation-delay: 3s">
+                        <span class="pl-4 text-gray-400">];</span>
+                    </div>
+                    <div class="typing-animation" style="animation-delay: 3.5s">
+                        <span class="pl-4 text-blue-400">public function</span> 
+                        <span class="text-yellow-400">getPassion</span>
+                        <span class="text-gray-400">(): string {</span>
+                    </div>
+                    <div class="typing-animation" style="animation-delay: 4s">
+                        <span class="pl-8 text-pink-400">return</span>
+                        <span class="text-yellow-300">'Building Amazing Web Applications'</span>;
+                    </div>
+                    <div class="typing-animation" style="animation-delay: 4.5s">
+                        <span class="pl-4 text-gray-400">}</span>
+                    </div>
+                    <div class="typing-animation" style="animation-delay: 5s">
+                        <span class="text-gray-400">}</span>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <style>
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        @keyframes typing {
+            from { opacity: 0; transform: translateY(8px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .typing-animation {
+            opacity: 0;
+            animation: typing 0.5s ease-out forwards;
+        }
+    </style>
 </section>
 
 <!-- Timeline Section -->
-<section class="py-20 px-4 bg-gradient-to-b from-indigo-50 via-indigo-50 to-blue-50 dark:from-gray-800 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
+<section class="py-20 px-4 bg-gradient-to-b from-blue-50/90 via-blue-100/50 to-indigo-100/50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-800 relative overflow-hidden">
     <!-- Verbeterde achtergrond effecten -->
     <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
 
@@ -678,99 +754,125 @@ include 'includes/header.php';
     </div>
 </section>
 
+<!-- Divider -->
+<div class="relative h-24 bg-gradient-to-b from-indigo-100/50 via-purple-50/70 to-purple-100/50 dark:from-gray-800 dark:via-gray-850 dark:to-gray-900 overflow-hidden"></div>
+
 <!-- Testimonials/Aanbevelingen Sectie -->
-<section class="py-24 px-4 bg-gradient-to-b from-blue-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-900 dark:to-gray-800 relative overflow-hidden">
+<section class="py-24 px-4 bg-gradient-to-b from-purple-100/50 via-purple-50/90 to-purple-100/50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0 opacity-30">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-400/20 rounded-full blur-3xl animate-pulse animation-delay-2000"></div>
+        <div class="absolute top-1/2 right-1/3 w-72 h-72 bg-purple-400/20 rounded-full blur-3xl animate-pulse animation-delay-4000"></div>
+    </div>
+
     <div class="max-w-7xl mx-auto relative">
         <div class="text-center mb-20">
-            <h2 class="text-4xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 relative inline-block" data-aos="fade-up">
-                Wat collega's Zeggen
-                <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></div>
+            <h2 class="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 bg-clip-text text-transparent" data-aos="fade-up">
+                Stage Ervaringen
             </h2>
-            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                Ervaringen van collega's tijdens mijn stages.
+            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+                Ontdek wat mijn stagebegeleider en collega's bij Developing B.V. te zeggen hebben over mijn werk, vaardigheden en bijdragen aan het team.
             </p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Testimonial Cards Container -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 h-full">
             <!-- Testimonial 1 -->
-            <div class="group bg-white/80 dark:bg-gray-700/80 backdrop-blur-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 relative transform hover:-translate-y-2 h-full flex flex-col justify-between" data-aos="fade-up">
-                <div class="absolute -top-4 right-8">
-                    <div class="w-14 h-14 bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl rotate-12 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center shadow-lg">
-                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
-                        </svg>
-                    </div>
-                </div>
-                <p class="text-gray-600 dark:text-gray-300 mb-8 text-lg leading-relaxed h-40">
-                    "Naoufal heeft tijdens zijn stage laten zien dat hij een gedreven developer is met een scherp oog voor detail. Hij pakt nieuwe technieken snel op en weet deze effectief toe te passen in zijn projecten."
-                </p>
-                <div class="flex items-center gap-4 mt-auto">
-                    <div class="flex-shrink-0">
-                        <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 flex items-center justify-center shadow-inner">
+            <div class="group h-full" data-aos="fade-up">
+                <div class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 relative h-full flex flex-col">
+                    <div class="absolute -top-6 left-8">
+                        <div class="w-16 h-16 rounded-2xl shadow-lg border-4 border-white dark:border-gray-700 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 flex items-center justify-center">
                             <span class="text-blue-600 dark:text-blue-400 font-bold text-lg">SB</span>
                         </div>
                     </div>
-                    <div>
-                        <p class="text-base font-semibold text-gray-900 dark:text-white">Sven van der Berg</p>
-                        <p class="text-sm text-blue-600 dark:text-blue-400">Stage Begeleider, Developing B.V.</p>
+                    <div class="pt-8 flex-1 flex flex-col">
+                        <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Sven van der Berg</h3>
+                                <p class="text-blue-600 dark:text-blue-400">Stage Begeleider, Developing B.V.</p>
+                            </div>
+                            <div class="text-blue-500">
+                                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 flex-1">
+                            "Naoufal heeft tijdens zijn stage laten zien dat hij een gedreven developer is met een scherp oog voor detail. Hij pakt nieuwe technieken snel op en weet deze effectief toe te passen in zijn projecten."
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 rounded-full text-sm">Innovatie</span>
+                            <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 rounded-full text-sm">Detail</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Testimonial 2 -->
-            <div class="group bg-white/80 dark:bg-gray-700/80 backdrop-blur-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 relative transform hover:-translate-y-2 h-full flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
-                <div class="absolute -top-4 right-8">
-                    <div class="w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-xl rotate-12 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center shadow-lg">
-                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
-                        </svg>
-                    </div>
-                </div>
-                <p class="text-gray-600 dark:text-gray-300 mb-8 text-lg leading-relaxed h-40">
-                    "Als senior developer ben ik onder de indruk van Naoufal's technische inzicht en probleemoplossend vermogen. Hij werkt zelfstandig en komt vaak met creatieve oplossingen voor complexe uitdagingen."
-                </p>
-                <div class="flex items-center gap-4 mt-auto">
-                    <div class="flex-shrink-0">
-                        <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 flex items-center justify-center shadow-inner">
+            <div class="group h-full" data-aos="fade-up" data-aos-delay="100">
+                <div class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 relative h-full flex flex-col">
+                    <div class="absolute -top-6 left-8">
+                        <div class="w-16 h-16 rounded-2xl shadow-lg border-4 border-white dark:border-gray-700 bg-gradient-to-br from-green-100 to-green-200 dark:from-green-900 dark:to-green-800 flex items-center justify-center">
                             <span class="text-green-600 dark:text-green-400 font-bold text-lg">KH</span>
                         </div>
                     </div>
-                    <div>
-                        <p class="text-base font-semibold text-gray-900 dark:text-white">Kristian Huisman</p>
-                        <p class="text-sm text-green-600 dark:text-green-400">Senior Developer, Developing B.V.</p>
+                    <div class="pt-8 flex-1 flex flex-col">
+                        <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Kristian Huisman</h3>
+                                <p class="text-green-600 dark:text-green-400">Senior Developer, Developing B.V.</p>
+                            </div>
+                            <div class="text-green-500">
+                                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 flex-1">
+                            "Als senior developer ben ik onder de indruk van Naoufal's technische inzicht en probleemoplossend vermogen. Hij werkt zelfstandig en komt vaak met creatieve oplossingen voor complexe uitdagingen."
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 rounded-full text-sm">Technisch</span>
+                            <span class="px-3 py-1 bg-green-100 dark:bg-green-900/50 text-green-600 dark:text-green-400 rounded-full text-sm">Creatief</span>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Testimonial 3 -->
-            <div class="group bg-white/80 dark:bg-gray-700/80 backdrop-blur-lg rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 p-8 relative transform hover:-translate-y-2 h-full flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
-                <div class="absolute -top-4 right-8">
-                    <div class="w-14 h-14 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl rotate-12 group-hover:rotate-0 transition-transform duration-300 flex items-center justify-center shadow-lg">
-                        <svg class="w-7 h-7 text-white" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M4.583 17.321C3.553 16.227 3 15 3 13.011c0-3.5 2.457-6.637 6.03-8.188l.893 1.378c-3.335 1.804-3.987 4.145-4.247 5.621.537-.278 1.24-.375 1.929-.311 1.804.167 3.226 1.648 3.226 3.489a3.5 3.5 0 01-3.5 3.5c-1.073 0-2.099-.49-2.748-1.179z"/>
-                        </svg>
-                    </div>
-                </div>
-                <p class="text-gray-600 dark:text-gray-300 mb-8 text-lg leading-relaxed h-40">
-                    "Als frontend specialist waardeer ik Naoufal's toewijding aan gebruiksvriendelijke interfaces. Zijn werk met moderne frontend frameworks en aandacht voor responsive design is indrukwekkend."
-                </p>
-                <div class="flex items-center gap-4 mt-auto">
-                    <div class="flex-shrink-0">
-                        <div class="h-12 w-12 rounded-xl bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800 flex items-center justify-center shadow-inner">
+            <div class="group h-full" data-aos="fade-up" data-aos-delay="200">
+                <div class="bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 relative h-full flex flex-col">
+                    <div class="absolute -top-6 left-8">
+                        <div class="w-16 h-16 rounded-2xl shadow-lg border-4 border-white dark:border-gray-700 bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800 flex items-center justify-center">
                             <span class="text-purple-600 dark:text-purple-400 font-bold text-lg">MT</span>
                         </div>
                     </div>
-                    <div>
-                        <p class="text-base font-semibold text-gray-900 dark:text-white">Mark Timmers</p>
-                        <p class="text-sm text-purple-600 dark:text-purple-400">Frontend Specialist, Developing B.V.</p>
+                    <div class="pt-8 flex-1 flex flex-col">
+                        <div class="flex justify-between items-center mb-6">
+                            <div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Mark Timmers</h3>
+                                <p class="text-purple-600 dark:text-purple-400">Frontend Specialist, Developing B.V.</p>
+                            </div>
+                            <div class="text-purple-500">
+                                <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6 flex-1">
+                            "Als frontend specialist waardeer ik Naoufal's toewijding aan gebruiksvriendelijke interfaces. Zijn werk met moderne frontend frameworks en aandacht voor responsive design is indrukwekkend."
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 rounded-full text-sm">Frontend</span>
+                            <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 rounded-full text-sm">UX/UI</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
 
 <!-- Call to Action Section -->
 <section class="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800 text-white dark:from-blue-800 dark:to-blue-600">
