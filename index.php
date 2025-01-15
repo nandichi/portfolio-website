@@ -42,7 +42,7 @@ include 'includes/header.php';
             </div>
             <div>
                 <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white text-shadow-lg animate-fade-in-up mb-4 tracking-tight">
-                    Naoufal Andichi
+                    Naoufal Andichii
                 </h1>
                 <p class="text-2xl sm:text-3xl text-blue-100 font-light animate-fade-in-up animation-delay-100 tracking-wide">
                     Full Stack Developer
