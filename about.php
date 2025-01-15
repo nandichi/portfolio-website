@@ -36,7 +36,7 @@ include 'includes/header.php';
                                 <div class="w-full h-full bg-gradient-to-br from-blue-500/90 to-indigo-600/90 backdrop-blur-sm flex items-center justify-center text-white">
                                     <div class="space-y-4 text-center">
                                         <span class="block text-6xl font-bold">NA</span>
-                                        <span class="block text-lg">Software Developer</span>
+                                        <span class="block text-lg">Software Developer.</span>
                                     </div>
                                 </div>
                             </div>
