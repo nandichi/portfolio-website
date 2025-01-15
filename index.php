@@ -2,7 +2,9 @@
 $pageTitle = "Home";
 $currentPage = "home";
 include 'includes/header.php';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 ?>
+
 
 <!-- Verbeterde header met meer dynamische animaties -->
 <header class="min-h-screen bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-700 dark:from-blue-700 dark:via-blue-800 dark:to-indigo-900 flex items-center justify-center relative overflow-hidden pt-16 sm:pt-0">
