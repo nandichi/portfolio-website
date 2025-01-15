@@ -2,7 +2,6 @@
 $pageTitle = "Home";
 $currentPage = "home";
 include 'includes/header.php';
-import { SpeedInsights } from "@vercel/speed-insights/next"
 ?>
 
 
