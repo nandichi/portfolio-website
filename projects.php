@@ -4,269 +4,303 @@ $currentPage = "projects";
 include 'includes/header.php';
 ?>
 
-<div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-purple-50/50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20">
-    <!-- Decoratieve elementen met zachtere gradients -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-        <div class="absolute -top-1/2 -right-1/2 w-[1000px] h-[1000px] bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
-        <div class="absolute -bottom-1/2 -left-1/2 w-[1000px] h-[1000px] bg-gradient-to-tr from-blue-500/10 via-indigo-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
+<div class="min-h-screen bg-[#fafafa] dark:bg-gray-900 relative overflow-hidden">
+    <!-- Dynamische achtergrond animatie -->
+    <div class="absolute inset-0 opacity-20">
+        <div class="absolute w-[500px] h-[500px] bg-gradient-to-r from-blue-500 to-purple-500 rounded-full filter blur-3xl animate-blob"></div>
+        <div class="absolute right-0 w-[500px] h-[500px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-0 left-1/2 w-[500px] h-[500px] bg-gradient-to-r from-pink-500 to-blue-500 rounded-full filter blur-3xl animate-blob animation-delay-4000"></div>
     </div>
 
-    <div class="relative pt-40 pb-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <!-- Header Sectie -->
-            <div class="text-center mb-16" data-aos="fade-down">
-                <h1 class="text-5xl font-extrabold mb-6">
-                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400">
-                        Mijn Projecten
-                    </span>
-                </h1>
-                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                    Een showcase van mijn meest recente en impactvolle projecten
-                </p>
-            </div>
+    <div class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <!-- Header Sectie -->
+        <div class="text-center mb-20" data-aos="fade-down">
+            <h1 class="text-6xl font-black mb-8">
+                <span class="block bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 dark:from-blue-400 dark:via-purple-400 dark:to-pink-400">
+                    Innovatieve Projecten
+                </span>
+            </h1>
+            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                Een collectie van mijn meest impactvolle technische creaties en innovaties
+            </p>
+        </div>
 
-            <!-- Projecten Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <?php
-                $projects = [
-                    [
-                        'name' => 'Portfolio Website',
-                        'description' => 'Een moderne, responsieve portfolio website gebouwd met PHP, Tailwind CSS en JavaScript. Features dark mode, meertalige ondersteuning en een contactformulier.',
-                        'tech' => ['PHP', 'Tailwind CSS', 'JavaScript'],
-                        'icon' => 'fa-globe',
-                        'color' => 'teal',
-                        'github' => 'portfolio-website',
-                        'features' => [
-                            'Responsive Design',
-                            'Dark Mode',
-                            'Meertalige Ondersteuning',
-                            'Contact Formulier'
-                        ]
-                    ],
-                    [
-                        'name' => 'Geregeld.online',
-                        'description' => 'Een platform voor ZZP\'ers om eenvoudig een professionele website aan te schaffen. Het platform biedt verschillende templates en opties om de website volledig aan te passen aan de wensen van de ondernemer.',
-                        'tech' => ['WordPress', 'PHP', 'JavaScript', 'SCSS'],
-                        'icon' => 'fa-briefcase',
-                        'color' => 'emerald',
-                        'github' => 'go-theme',
-                        'features' => [
-                            'Website Builder',
-                            'Custom Templates',
-                            'ZZP-er Dashboard',
-                            'Automatische Hosting'
-                        ]
-                    ],
-                    [
-                        'name' => 'PAS',
-                        'description' => 'PAS is een systeem dat ik heb gemaakt om pakketten bij te houden. Het helpt bij het opslaan van pakketten en laat zien wanneer mensen ze kunnen ophalen.',
-                        'tech' => ['PHP', 'MySQL', 'Laravel', 'Docker'],
-                        'icon' => 'fa-boxes-stacked',
-                        'color' => 'blue',
-                        'github' => 'PAS',
-                        'features' => [
-                            'Pakket Tracking Systeem',
-                            'QR-code Scanning',
-                            'Klant Notificaties',
-                            'Voorraad Management'
-                        ]
-                    ],
-                    [
-                        'name' => 'PMON',
-                        'description' => 'Een Java-gebaseerd monitoring systeem voor applicatie prestaties. Real-time monitoring en data visualisatie.',
-                        'tech' => ['Java', 'Spring Boot', 'PostgreSQL'],
-                        'icon' => 'fa-gauge-high',
-                        'color' => 'orange',
-                        'github' => 'pmon',
-                        'features' => ['Real-time Monitoring', 'Performance Analytics', 'Alert System']
-                    ],
-                    [
-                        'name' => 'Poketrader',
-                        'description' => 'Een PHP-applicatie voor het beheren en verhandelen van Pokemon kaarten.',
-                        'tech' => ['PHP', 'MySQL', 'JavaScript'],
-                        'icon' => 'fa-diamond',
-                        'color' => 'red',
-                        'github' => 'poketrader',
-                        'features' => ['Trading System', 'Card Management', 'User Authentication']
-                    ],
-                    [
-                        'name' => 'Divo',
-                        'description' => 'Een modern online stemsysteem ontwikkeld voor verkiezingen. Veilig, gebruiksvriendelijk en schaalbaar platform dat het democratische proces digitaliseert.',
-                        'tech' => ['PHP', 'MySQL', 'Laravel'],
-                        'icon' => 'fa-check-to-slot',
-                        'color' => 'green',
-                        'github' => 'divo',
-                        'features' => [
-                            'Veilige Authenticatie',
-                            'Real-time Stemresultaten',
-                            'Gebruiksvriendelijke Interface',
-                            'Audit Trail & Logging'
-                        ]
-                    ],
-                    [
-                        'name' => 'GamePC',
-                        'description' => 'PHP applicatie gericht op gaming en PC configuraties.',
-                        'tech' => ['PHP', 'MySQL', 'JavaScript'],
-                        'icon' => 'fa-desktop',
-                        'color' => 'purple',
-                        'github' => 'gamepc',
-                        'features' => ['PC Builder', 'Component Database', 'Price Comparison']
-                    ],
-                    [
-                        'name' => 'Bookonshelf',
-                        'description' => 'Een PHP-gebaseerd boekbeheersysteem.',
-                        'tech' => ['PHP', 'MySQL', 'Bootstrap'],
-                        'icon' => 'fa-book-open',
-                        'color' => 'yellow',
-                        'github' => 'bookonshelf',
-                        'features' => ['Book Management', 'User Reviews', 'Search System']
-                    ],
-                    [
-                        'name' => 'Gimpies',
-                        'description' => 'C# applicatie voor schoenenwinkel management.',
-                        'tech' => ['C#', '.NET', 'SQL Server'],
-                        'icon' => 'fa-shoe-prints',
-                        'color' => 'indigo',
-                        'github' => 'gimpies',
-                        'features' => ['Inventory Management', 'Sales Tracking', 'Customer Database']
+        <!-- Project Filter Systeem -->
+        <div class="flex flex-wrap justify-center gap-4 mb-12">
+            <button class="filter-btn active px-6 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300" data-filter="all">
+                Alle Projecten
+            </button>
+            <button class="filter-btn px-6 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300" data-filter="web">
+                Web Development
+            </button>
+            <button class="filter-btn px-6 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300" data-filter="app">
+                Applicaties
+            </button>
+            <button class="filter-btn px-6 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300" data-filter="system">
+                Systemen
+            </button>
+        </div>
+
+        <!-- Projecten Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <?php
+            $projects = [
+                [
+                    'name' => 'Portfolio Website',
+                    'description' => 'Een moderne, responsieve portfolio website gebouwd met PHP, Tailwind CSS en JavaScript. Features dark mode, meertalige ondersteuning en een contactformulier.',
+                    'tech' => ['PHP', 'Tailwind CSS', 'JavaScript'],
+                    'icon' => 'fa-globe',
+                    'category' => 'web',
+                    'color' => 'blue',
+                    'github' => 'portfolio-website',
+                    'preview_url' => '#',
+                    'stats' => [
+                        'commits' => '156',
+                        'files' => '48',
+                        'contributors' => '1'
                     ]
-                ];
+                ],
+                [
+                    'name' => 'Geregeld.online',
+                    'description' => 'Een platform voor ZZP\'ers om eenvoudig een professionele website aan te schaffen. Het platform biedt verschillende templates en opties om de website volledig aan te passen aan de wensen van de ondernemer.',
+                    'tech' => ['WordPress', 'PHP', 'JavaScript', 'SCSS'],
+                    'icon' => 'fa-briefcase',
+                    'category' => 'web',
+                    'color' => 'emerald',
+                    'github' => 'go-theme',
+                    'preview_url' => 'https://geregeld.online',
+                    'stats' => [
+                        'commits' => '234',
+                        'files' => '89',
+                        'contributors' => '2'
+                    ]
+                ],
+                [
+                    'name' => 'PAS',
+                    'description' => 'PAS is een systeem dat ik heb gemaakt om pakketten bij te houden. Het helpt bij het opslaan van pakketten en laat zien wanneer mensen ze kunnen ophalen.',
+                    'tech' => ['PHP', 'MySQL', 'Laravel', 'Docker'],
+                    'icon' => 'fa-boxes-stacked',
+                    'category' => 'system',
+                    'color' => 'blue',
+                    'github' => 'PAS',
+                    'preview_url' => '#',
+                    'stats' => [
+                        'commits' => '189',
+                        'files' => '67',
+                        'contributors' => '1'
+                    ]
+                ],
+                [
+                    'name' => 'PMON',
+                    'description' => 'Een Java-gebaseerd monitoring systeem voor applicatie prestaties. Real-time monitoring en data visualisatie.',
+                    'tech' => ['Java', 'Spring Boot', 'PostgreSQL'],
+                    'icon' => 'fa-gauge-high',
+                    'category' => 'system',
+                    'color' => 'orange',
+                    'github' => 'pmon',
+                    'preview_url' => '#',
+                    'stats' => [
+                        'commits' => '145',
+                        'files' => '52',
+                        'contributors' => '1'
+                    ]
+                ],
+                [
+                    'name' => 'Poketrader',
+                    'description' => 'Een PHP-applicatie voor het beheren en verhandelen van Pokemon kaarten.',
+                    'tech' => ['PHP', 'MySQL', 'JavaScript'],
+                    'icon' => 'fa-diamond',
+                    'category' => 'app',
+                    'color' => 'red',
+                    'github' => 'poketrader',
+                    'preview_url' => '#',
+                    'stats' => [
+                        'commits' => '167',
+                        'files' => '45',
+                        'contributors' => '1'
+                    ]
+                ],
+                [
+                    'name' => 'Divo',
+                    'description' => 'Een modern online stemsysteem ontwikkeld voor verkiezingen. Veilig, gebruiksvriendelijk en schaalbaar platform dat het democratische proces digitaliseert.',
+                    'tech' => ['PHP', 'MySQL', 'Laravel'],
+                    'icon' => 'fa-check-to-slot',
+                    'category' => 'web',
+                    'color' => 'green',
+                    'github' => 'divo',
+                    'preview_url' => '#',
+                    'stats' => [
+                        'commits' => '223',
+                        'files' => '78',
+                        'contributors' => '2'
+                    ]
+                ],
+                [
+                    'name' => 'GamePC',
+                    'description' => 'PHP applicatie gericht op gaming en PC configuraties. Gebruikers kunnen hun eigen gaming PC samenstellen en de prestaties vergelijken.',
+                    'tech' => ['PHP', 'MySQL', 'JavaScript'],
+                    'icon' => 'fa-desktop',
+                    'category' => 'app',
+                    'color' => 'purple',
+                    'github' => 'gamepc',
+                    'preview_url' => '#',
+                    'stats' => [
+                        'commits' => '178',
+                        'files' => '56',
+                        'contributors' => '1'
+                    ]
+                ],
+                [
+                    'name' => 'Bookonshelf',
+                    'description' => 'Een PHP-gebaseerd boekbeheersysteem voor het bijhouden van je persoonlijke bibliotheek, inclusief leesvoortgang en recensies.',
+                    'tech' => ['PHP', 'MySQL', 'Bootstrap'],
+                    'icon' => 'fa-book-open',
+                    'category' => 'app',
+                    'color' => 'yellow',
+                    'github' => 'bookonshelf',
+                    'preview_url' => '#',
+                    'stats' => [
+                        'commits' => '134',
+                        'files' => '42',
+                        'contributors' => '1'
+                    ]
+                ],
+                [
+                    'name' => 'Gimpies',
+                    'description' => 'C# applicatie voor schoenenwinkel management. Beheert voorraad, verkopen en klantgegevens met een gebruiksvriendelijke interface.',
+                    'tech' => ['C#', '.NET', 'SQL Server'],
+                    'icon' => 'fa-shoe-prints',
+                    'category' => 'app',
+                    'color' => 'indigo',
+                    'github' => 'gimpies',
+                    'preview_url' => '#',
+                    'stats' => [
+                        'commits' => '198',
+                        'files' => '64',
+                        'contributors' => '1'
+                    ]
+                ]
+            ];
 
-                foreach ($projects as $index => $project): ?>
-                    <div class="project-card opacity-0 group relative h-[600px]" data-index="<?php echo $index; ?>">
-                        <div class="absolute -inset-0.5 bg-gradient-to-r from-<?php echo $project['color']; ?>-500 to-<?php echo $project['color']; ?>-600 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
-                        <div class="relative h-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-6 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-<?php echo $project['color']; ?>-500/20 dark:group-hover:border-<?php echo $project['color']; ?>-400/20">
-                            <!-- Project Header -->
-                            <div class="flex items-center gap-4 mb-8">
-                                <div class="flex items-center justify-center w-16 h-16 rounded-xl bg-gradient-to-br from-<?php echo $project['color']; ?>-500/90 to-<?php echo $project['color']; ?>-600/90 backdrop-blur-sm transition-all duration-500 group-hover:scale-105">
-                                    <i class="fas <?php echo $project['icon']; ?> text-2xl text-white"></i>
-                                </div>
-                                <div>
-                                    <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-<?php echo $project['color']; ?>-500 to-<?php echo $project['color']; ?>-600"><?php echo $project['name']; ?></h2>
-                                    <p class="text-gray-600 dark:text-gray-400">
-                                        <?php echo implode(' • ', array_slice($project['tech'], 0, 3)); ?>
-                                    </p>
-                                </div>
+            foreach ($projects as $project): ?>
+                <div class="project-card" data-category="<?php echo $project['category']; ?>">
+                    <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden flex flex-col h-full">
+                        <!-- Project Header -->
+                        <div class="relative h-48 bg-gradient-to-br from-<?php echo $project['color']; ?>-500 to-<?php echo $project['color']; ?>-600 flex-shrink-0">
+                            <div class="absolute inset-0 flex items-center justify-center">
+                                <i class="fas <?php echo $project['icon']; ?> text-6xl text-white opacity-75"></i>
                             </div>
-
-                            <!-- Project Content -->
-                            <div class="flex flex-col h-[calc(100%-6rem)]">
-                                <div class="flex-grow space-y-6">
-                                    <p class="text-gray-600 dark:text-gray-300"><?php echo $project['description']; ?></p>
-
-                                    <!-- Features -->
-                                    <div class="space-y-3">
-                                        <?php 
-                                        $featureIcons = [
-                                            // PAS features
-                                            'Pakket Tracking Systeem' => 'fa-truck-fast',
-                                            'QR-code Scanning' => 'fa-qrcode',
-                                            'Klant Notificaties' => 'fa-bell',
-                                            'Voorraad Management' => 'fa-warehouse',
-                                            
-                                            // PMON features
-                                            'Real-time Monitoring' => 'fa-chart-line',
-                                            'Performance Analytics' => 'fa-chart-pie',
-                                            'Alert System' => 'fa-triangle-exclamation',
-                                            
-                                            // Poketrader features
-                                            'Trading System' => 'fa-right-left',
-                                            'Card Management' => 'fa-layer-group',
-                                            'User Authentication' => 'fa-user-shield',
-                                            
-                                            // Divo features
-                                            'Veilige Authenticatie' => 'fa-lock',
-                                            'Real-time Stemresultaten' => 'fa-chart-column',
-                                            'Gebruiksvriendelijke Interface' => 'fa-desktop',
-                                            'Audit Trail & Logging' => 'fa-clipboard-list',
-                                            
-                                            // GamePC features
-                                            'PC Builder' => 'fa-screwdriver-wrench',
-                                            'Component Database' => 'fa-microchip',
-                                            'Price Comparison' => 'fa-tags',
-                                            
-                                            // Bookonshelf features
-                                            'Book Management' => 'fa-book',
-                                            'User Reviews' => 'fa-star',
-                                            'Search System' => 'fa-magnifying-glass',
-                                            
-                                            // Gimpies features
-                                            'Inventory Management' => 'fa-boxes-stacked',
-                                            'Sales Tracking' => 'fa-chart-bar',
-                                            'Customer Database' => 'fa-users'
-                                        ];
-                                        foreach ($project['features'] as $feature): ?>
-                                            <div class="group/feature flex items-center gap-3 transform transition-all duration-300 hover:translate-x-2">
-                                                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-<?php echo $project['color']; ?>-500/90 to-<?php echo $project['color']; ?>-600/90 backdrop-blur-sm transition-all duration-500 group-hover/feature:scale-110 flex items-center justify-center">
-                                                    <i class="fas <?php echo $featureIcons[$feature] ?? 'fa-check'; ?> text-sm text-white"></i>
-                                                </div>
-                                                <span class="text-gray-700 dark:text-gray-300"><?php echo $feature; ?></span>
-                                            </div>
-                                        <?php endforeach; ?>
-                                    </div>
-                                </div>
-
-                                <!-- GitHub Button -->
-                                <div class="mt-6">
-                                    <a href="https://github.com/nandichi/<?php echo $project['github']; ?>" 
-                                       target="_blank"
-                                       class="group inline-flex items-center justify-center w-full px-4 py-3 bg-<?php echo $project['color']; ?>-50 dark:bg-<?php echo $project['color']; ?>-900/20 text-<?php echo $project['color']; ?>-600 dark:text-<?php echo $project['color']; ?>-400 rounded-xl border border-<?php echo $project['color']; ?>-200 dark:border-<?php echo $project['color']; ?>-700/50 hover:bg-<?php echo $project['color']; ?>-100 dark:hover:bg-<?php echo $project['color']; ?>-900/30 transform hover:-translate-y-0.5 transition-all duration-300 gap-2">
-                                        <i class="fab fa-github text-lg"></i>
-                                        <span class="font-medium">Bekijk Code</span>
-                                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" 
-                                             fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
-                                        </svg>
-                                    </a>
-                                </div>
+                            <!-- GitHub Link -->
+                            <div class="absolute top-4 right-4">
+                                <a href="https://github.com/nandichi/<?php echo $project['github']; ?>" class="p-2 bg-white/20 rounded-full hover:bg-white/40 transition-colors">
+                                    <i class="fab fa-github text-white"></i>
+                                </a>
                             </div>
                         </div>
+
+                        <!-- Project Content -->
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex-grow">
+                                <h3 class="text-2xl font-bold mb-2 text-<?php echo $project['color']; ?>-600 dark:text-<?php echo $project['color']; ?>-400">
+                                    <?php echo $project['name']; ?>
+                                </h3>
+                                <p class="text-gray-600 dark:text-gray-300 mb-6">
+                                    <?php echo $project['description']; ?>
+                                </p>
+
+                                <!-- Tech Stack -->
+                                <div class="flex flex-wrap gap-2 mb-6">
+                                    <?php foreach ($project['tech'] as $tech): ?>
+                                        <span class="inline-flex items-center px-3 py-1.5 text-sm font-medium bg-<?php echo $project['color']; ?>-50 text-<?php echo $project['color']; ?>-700 dark:bg-<?php echo $project['color']; ?>-900/30 dark:text-<?php echo $project['color']; ?>-300 rounded-lg border border-<?php echo $project['color']; ?>-100 dark:border-<?php echo $project['color']; ?>-800/50">
+                                            <?php echo $tech; ?>
+                                        </span>
+                                    <?php endforeach; ?>
+                                </div>
+                            </div>
+
+                            <!-- Project Stats -->
+                            <?php if (isset($project['stats'])): ?>
+                            <div class="grid grid-cols-3 gap-4 pt-4 border-t border-gray-100 dark:border-gray-700 mt-auto">
+                                <div class="text-center">
+                                    <div class="text-xl font-bold text-<?php echo $project['color']; ?>-500">
+                                        <?php echo $project['stats']['commits']; ?>
+                                    </div>
+                                    <div class="text-sm text-gray-500">Commits</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-xl font-bold text-<?php echo $project['color']; ?>-500">
+                                        <?php echo $project['stats']['files']; ?>
+                                    </div>
+                                    <div class="text-sm text-gray-500">Bestanden</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-xl font-bold text-<?php echo $project['color']; ?>-500">
+                                        <?php echo $project['stats']['contributors']; ?>
+                                    </div>
+                                    <div class="text-sm text-gray-500">Contributers</div>
+                                </div>
+                            </div>
+                            <?php endif; ?>
+                        </div>
                     </div>
-                <?php endforeach; ?>
-            </div>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </div>
 
+<style>
+@keyframes blob {
+    0% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0, 0) scale(1); }
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+
+.filter-btn.active {
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    color: white;
+}
+</style>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialiseer AOS animaties
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 50,
-        easing: 'ease-out-cubic'
-    });
-
-    // Lazy loading voor projecten
+    // Filter functionaliteit
+    const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
-    
-    const observerOptions = {
-        root: null,
-        rootMargin: '50px',
-        threshold: 0.1
-    };
 
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const card = entry.target;
-                card.classList.remove('opacity-0');
-                card.classList.add('opacity-100', 'transform', 'transition-all', 'duration-1000', 'ease-out');
-                
-                // Voeg een vertraging toe gebaseerd op de index
-                const index = parseInt(card.dataset.index);
-                card.style.transitionDelay = `${index * 100}ms`;
-                
-                // Stop met observeren nadat het element is geladen
-                observer.unobserve(card);
-            }
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // Update active button
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Filter projecten
+            const filter = btn.dataset.filter;
+            projectCards.forEach(card => {
+                if (filter === 'all' || card.dataset.category === filter) {
+                    card.style.display = 'block';
+                    card.style.opacity = '1';
+                } else {
+                    card.style.opacity = '0';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
         });
-    }, observerOptions);
-
-    // Start met observeren van alle project cards
-    projectCards.forEach(card => {
-        observer.observe(card);
     });
 });
 </script>
