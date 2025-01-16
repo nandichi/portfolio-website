@@ -28,8 +28,8 @@
                     
                     <div class="prose prose-invert">
                         <p class="text-gray-300">
-                            Gepassioneerd door het creëren van innovatieve digitale oplossingen 
-                            en het bouwen van schaalbare web-applicaties met moderne technologieën.
+                            Met een sterke focus op code kwaliteit en performance, bouw ik moderne 
+                            web-applicaties die zowel technisch als visueel indruk maken.
                         </p>
                     </div>
 

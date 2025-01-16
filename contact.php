@@ -23,7 +23,7 @@ include 'includes/header.php';
                     </span>
                 </h1>
                 <p id="typing-text" class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed opacity-0">
-                    Klaar om iets geweldigs te bouwen? Neem contact met me op!
+                    Klaar om iets geweldigs te bouwen? Neem contact met mij op!
                 </p>
             </div>
 

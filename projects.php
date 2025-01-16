@@ -26,17 +26,17 @@ include 'includes/header.php';
         </div>
 
         <!-- Project Filter Systeem -->
-        <div class="flex flex-wrap justify-center gap-4 mb-12">
-            <button class="filter-btn active px-6 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300" data-filter="all">
+        <div class="relative z-10 flex flex-wrap justify-center gap-4 mb-12 p-4 bg-white/30 dark:bg-gray-800/30 backdrop-blur-lg rounded-2xl shadow-lg">
+            <button class="filter-btn active px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 transform hover:scale-105" data-filter="all">
                 Alle Projecten
             </button>
-            <button class="filter-btn px-6 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300" data-filter="web">
+            <button class="filter-btn px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 transform hover:scale-105" data-filter="web">
                 Web Development
             </button>
-            <button class="filter-btn px-6 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300" data-filter="app">
+            <button class="filter-btn px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 transform hover:scale-105" data-filter="app">
                 Applicaties
             </button>
-            <button class="filter-btn px-6 py-2 rounded-full bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300" data-filter="system">
+            <button class="filter-btn px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 transform hover:scale-105" data-filter="system">
                 Systemen
             </button>
         </div>
@@ -269,35 +269,71 @@ include 'includes/header.php';
     animation-delay: 4s;
 }
 
+.filter-btn {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: #4B5563;
+}
+
+.dark .filter-btn {
+    background: rgba(31, 41, 55, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: #E5E7EB;
+}
+
+.filter-btn:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
 .filter-btn.active {
-    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
     color: white;
+    border: none;
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
+}
+
+.dark .filter-btn.active {
+    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.4);
 }
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Filter functionaliteit
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // Update active button
-            filterButtons.forEach(b => b.classList.remove('active'));
+            // Update active button met vloeiende overgang
+            filterButtons.forEach(b => {
+                b.classList.remove('active');
+                b.style.transform = 'scale(1)';
+            });
             btn.classList.add('active');
+            btn.style.transform = 'scale(1.05)';
 
-            // Filter projecten
+            // Filter projecten met vloeiende animatie
             const filter = btn.dataset.filter;
             projectCards.forEach(card => {
+                card.style.transition = 'all 0.5s ease-in-out';
+                
                 if (filter === 'all' || card.dataset.category === filter) {
+                    card.style.opacity = '0';
+                    card.style.transform = 'scale(0.95)';
                     card.style.display = 'block';
-                    card.style.opacity = '1';
+                    
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'scale(1)';
+                    }, 50);
                 } else {
                     card.style.opacity = '0';
+                    card.style.transform = 'scale(0.95)';
+                    
                     setTimeout(() => {
                         card.style.display = 'none';
-                    }, 300);
+                    }, 500);
                 }
             });
         });
