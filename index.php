@@ -96,7 +96,7 @@ include 'includes/header.php';
     
     <div class="max-w-7xl mx-auto relative">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 relative inline-block" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent relative inline-block tracking-tight" style="padding: 0.1em 0;" data-aos="fade-up">
                 Waarom Mij Kiezen?
                 <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></div>
             </h2>
@@ -326,91 +326,136 @@ include 'includes/header.php';
     </div>
 </section>
 
-<!-- Werkervaring Section -->
-<section class="py-20 px-4 bg-gradient-to-b from-purple-50/90 via-indigo-50/80 to-blue-50/80 dark:from-gray-900 dark:via-gray-800 dark:to-gray-800 relative overflow-hidden">
-    <div class="max-w-7xl mx-auto">
+<!-- Werkervaring & Bijbanen Section -->
+<section class="py-24 bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0">
+        <!-- Animated grid pattern -->
+        <div class="absolute inset-0 bg-[length:50px_50px] opacity-[0.07] dark:opacity-20"
+             style="background-image: 
+                linear-gradient(to right, rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+                animation: moveGrid 20s linear infinite;">
+        </div>
+        
+        <!-- Floating orbs -->
+        <div class="absolute top-1/4 -right-1/4 w-96 h-96 bg-blue-400/30 rounded-full filter blur-3xl opacity-50 animate-blob"></div>
+        <div class="absolute -bottom-1/4 -left-1/4 w-96 h-96 bg-indigo-400/30 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-4000"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+        <!-- Section Header -->
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 relative inline-block" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent relative inline-block tracking-tight" style="padding: 0.1em 0;" data-aos="fade-up">
                 Werkervaring & Bijbanen
                 <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></div>
             </h2>
-            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                Mijn professionele ervaring en werkzaamheden
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Een overzicht van mijn professionele ervaring en werkzaamheden
             </p>
         </div>
 
         <!-- Experience Cards Container -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="grid gap-8 relative">
             <!-- Current Role - Developing B.V. -->
-            <div class="col-span-1 lg:col-span-2" data-aos="fade-up">
-                <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-1">
-                    <div class="bg-white dark:bg-gray-700 rounded-xl p-6 sm:p-8 h-full hover:bg-blue-50 dark:hover:bg-blue-900/20 transition-colors duration-300">
-                        <div class="flex flex-col sm:flex-row items-start gap-6">
-                            <div class="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                </svg>
+            <div class="group" data-aos="fade-up">
+                <div class="relative">
+                    <!-- Decorative Elements -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl opacity-75 blur transition duration-500 group-hover:opacity-100"></div>
+                    
+                    <!-- Main Content -->
+                    <div class="relative bg-white dark:bg-gray-800 rounded-xl p-8 transition-all duration-500 hover:shadow-2xl">
+                        <div class="flex flex-col lg:flex-row gap-8">
+                            <!-- Company Logo/Icon -->
+                            <div class="flex-shrink-0">
+                                <div class="w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-200 dark:from-blue-900 dark:to-blue-800 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
+                                    <svg class="w-10 h-10 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
                             </div>
+
+                            <!-- Content -->
                             <div class="flex-grow">
-                                <div class="flex flex-col sm:flex-row sm:items-center justify-between mb-4">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
                                     <div>
-                                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">Software Developer</h3>
+                                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                            Software Developer
+                                        </h3>
                                         <p class="text-blue-600 dark:text-blue-400 font-medium">Developing B.V.</p>
                                     </div>
-                                    <span class="mt-2 sm:mt-0 px-4 py-1.5 bg-blue-100 text-blue-700 rounded-full text-sm font-medium">
-                                        sep. 2024 - heden
-                                    </span>
-                                </div>
-                                <div class="space-y-4">
-                                    <p class="text-gray-600 dark:text-gray-300">Stage waar ik werk aan verschillende projecten met nieuwe technieken.</p>
-                                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                        <div>
-                                            <h4 class="font-medium text-gray-900 dark:text-white mb-2">Hoofdtaken</h4>
-                                            <ul class="space-y-2">
-                                                <li class="flex items-center text-gray-600 dark:text-white">
-                                                    <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                                    </svg>
-                                                    WordPress Development
-                                                </li>
-                                                <li class="flex items-center text-gray-600 dark:text-white">
-                                                    <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                                    </svg>
-                                                    PHP/Laravel Projecten
-                                                </li>
-                                                <li class="flex items-center text-gray-600 dark:text-white">
-                                                    <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                                    </svg>
-                                                    Frontend met Tailwind CSS
-                                                </li>
-                                            </ul>
-                                        </div>
-                                        <div>
-                                            <h4 class="font-medium text-gray-900 dark:text-white mb-2">Extra taken</h4>
-                                            <ul class="space-y-2">
-                                                <li class="flex items-center text-gray-600 dark:text-white">
-                                                    <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                                    </svg>
-                                                    Stagiairs Interviewen
-                                                </li>
-                                                <li class="flex items-center text-gray-600 dark:text-white">
-                                                    <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                                    </svg>
-                                                    Kennisbank Opzetten
-                                                </li>
-                                                <li class="flex items-center text-gray-600 dark:text-white">
-                                                    <svg class="w-5 h-5 mr-2 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
-                                                    </svg>
-                                                    Klanten Ondersteunen
-                                                </li>
-                                            </ul>
-                                        </div>
+                                    <div class="mt-2 md:mt-0">
+                                        <span class="inline-flex items-center px-4 py-2 bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
+                                            sep. 2024 - heden
+                                        </span>
                                     </div>
+                                </div>
+
+                                <!-- Responsibilities Grid -->
+                                <div class="grid md:grid-cols-2 gap-6 mt-6">
+                                    <!-- Main Tasks -->
+                                    <div class="space-y-4">
+                                        <h4 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2">
+                                            <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                                            </svg>
+                                            Hoofdtaken
+                                        </h4>
+                                        <ul class="space-y-3">
+                                            <li class="flex items-center gap-3 group/item">
+                                                <span class="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover/item:scale-150 transition-transform"></span>
+                                                <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-blue-500 transition-colors">WordPress Development</span>
+                                            </li>
+                                            <li class="flex items-center gap-3 group/item">
+                                                <span class="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover/item:scale-150 transition-transform"></span>
+                                                <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-blue-500 transition-colors">PHP/Laravel Projecten</span>
+                                            </li>
+                                            <li class="flex items-center gap-3 group/item">
+                                                <span class="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover/item:scale-150 transition-transform"></span>
+                                                <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-blue-500 transition-colors">Frontend met Tailwind CSS</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <!-- Additional Tasks -->
+                                    <div class="space-y-4">
+                                        <h4 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2">
+                                            <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                            </svg>
+                                            Extra taken
+                                        </h4>
+                                        <ul class="space-y-3">
+                                            <li class="flex items-center gap-3 group/item">
+                                                <span class="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover/item:scale-150 transition-transform"></span>
+                                                <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-blue-500 transition-colors">Stagiairs Interviewen</span>
+                                            </li>
+                                            <li class="flex items-center gap-3 group/item">
+                                                <span class="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover/item:scale-150 transition-transform"></span>
+                                                <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-blue-500 transition-colors">Kennisbank Opzetten</span>
+                                            </li>
+                                            <li class="flex items-center gap-3 group/item">
+                                                <span class="w-1.5 h-1.5 rounded-full bg-blue-500 group-hover/item:scale-150 transition-transform"></span>
+                                                <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-blue-500 transition-colors">Klanten Ondersteunen</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <!-- Skills Tags -->
+                                <div class="mt-6 flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+                                        WordPress
+                                    </span>
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+                                        Laravel
+                                    </span>
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+                                        Tailwind CSS
+                                    </span>
+                                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium hover:bg-blue-200 dark:hover:bg-blue-800 transition-colors">
+                                        PHP
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -420,26 +465,79 @@ include 'includes/header.php';
 
             <!-- Pathé Role -->
             <div class="group" data-aos="fade-up" data-aos-delay="100">
-                <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-indigo-100 dark:bg-indigo-900 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1zM9 9h6v6H9V9z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Service Employee</h3>
-                            <p class="text-indigo-600 dark:text-indigo-400">Pathé</p>
-                        </div>
-                        <span class="ml-auto px-3 py-1 bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 rounded-full text-sm">
-                            mei 2023 - heden
-                        </span>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 rounded-full text-sm">Klantenservice</span>
-                            <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 rounded-full text-sm">Ticketverkoop</span>
-                            <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/50 text-indigo-700 dark:text-indigo-300 rounded-full text-sm">Evenementen</span>
+                <div class="relative">
+                    <!-- Decorative Elements -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-indigo-600 to-purple-600 rounded-2xl opacity-75 blur transition duration-500 group-hover:opacity-100"></div>
+                    
+                    <!-- Main Content -->
+                    <div class="relative bg-white dark:bg-gray-800 rounded-xl p-8 transition-all duration-500 hover:shadow-2xl">
+                        <div class="flex flex-col lg:flex-row gap-8">
+                            <!-- Company Logo/Icon -->
+                            <div class="flex-shrink-0">
+                                <div class="w-20 h-20 bg-gradient-to-br from-indigo-100 to-indigo-200 dark:from-indigo-900 dark:to-indigo-800 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
+                                    <svg class="w-10 h-10 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 4v16M17 4v16M3 8h4m10 0h4M3 12h18M3 16h4m10 0h4M4 20h16a1 1 0 001-1V5a1 1 0 00-1-1H4a1 1 0 00-1 1v14a1 1 0 001 1z"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="flex-grow">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                                            Service Employee
+                                        </h3>
+                                        <p class="text-indigo-600 dark:text-indigo-400 font-medium">Pathé</p>
+                                    </div>
+                                    <div class="mt-2 md:mt-0">
+                                        <span class="inline-flex items-center px-4 py-2 bg-indigo-100 dark:bg-indigo-900 text-indigo-700 dark:text-indigo-300 rounded-full text-sm font-medium">
+                                            mei 2023 - heden
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Responsibilities -->
+                                <div class="mt-6">
+                                    <h4 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-4">
+                                        <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                        </svg>
+                                        Verantwoordelijkheden
+                                    </h4>
+                                    <ul class="grid md:grid-cols-2 gap-3">
+                                        <li class="flex items-center gap-3 group/item">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 group-hover/item:scale-150 transition-transform"></span>
+                                            <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-indigo-500 transition-colors">Klantenservice Excellence</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 group/item">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 group-hover/item:scale-150 transition-transform"></span>
+                                            <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-indigo-500 transition-colors">Ticketverkoop & Advies</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 group/item">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 group-hover/item:scale-150 transition-transform"></span>
+                                            <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-indigo-500 transition-colors">Evenementen Coördinatie</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 group/item">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-indigo-500 group-hover/item:scale-150 transition-transform"></span>
+                                            <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-indigo-500 transition-colors">Team Samenwerking</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Skills Tags -->
+                                <div class="mt-6 flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 rounded-full text-sm font-medium hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors">
+                                        Klantenservice
+                                    </span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 rounded-full text-sm font-medium hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors">
+                                        Communicatie
+                                    </span>
+                                    <span class="px-3 py-1 bg-indigo-100 dark:bg-indigo-900/50 text-indigo-600 dark:text-indigo-400 rounded-full text-sm font-medium hover:bg-indigo-200 dark:hover:bg-indigo-800 transition-colors">
+                                        Teamwork
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -447,32 +545,107 @@ include 'includes/header.php';
 
             <!-- Action Role -->
             <div class="group" data-aos="fade-up" data-aos-delay="200">
-                <div class="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center">
-                            <svg class="w-6 h-6 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 dark:text-white">Verkoopmedewerker</h3>
-                            <p class="text-purple-600 dark:text-purple-400">Action</p>
-                        </div>
-                        <span class="ml-auto px-3 py-1 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm">
-                            2020 - 2023
-                        </span>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-purple-50 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 rounded-full text-sm">Klantenservice</span>
-                            <span class="px-3 py-1 bg-purple-50 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 rounded-full text-sm">Voorraadbeheer</span>
-                            <span class="px-3 py-1 bg-purple-50 dark:bg-purple-900/50 text-purple-700 dark:text-purple-300 rounded-full text-sm">Winkelnetheid</span>
+                <div class="relative">
+                    <!-- Decorative Elements -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl opacity-75 blur transition duration-500 group-hover:opacity-100"></div>
+                    
+                    <!-- Main Content -->
+                    <div class="relative bg-white dark:bg-gray-800 rounded-xl p-8 transition-all duration-500 hover:shadow-2xl">
+                        <div class="flex flex-col lg:flex-row gap-8">
+                            <!-- Company Logo/Icon -->
+                            <div class="flex-shrink-0">
+                                <div class="w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-200 dark:from-purple-900 dark:to-purple-800 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-500">
+                                    <svg class="w-10 h-10 text-purple-600 dark:text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <!-- Content -->
+                            <div class="flex-grow">
+                                <div class="flex flex-col md:flex-row md:items-center justify-between mb-4">
+                                    <div>
+                                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                                            Verkoopmedewerker
+                                        </h3>
+                                        <p class="text-purple-600 dark:text-purple-400 font-medium">Action</p>
+                                    </div>
+                                    <div class="mt-2 md:mt-0">
+                                        <span class="inline-flex items-center px-4 py-2 bg-purple-100 dark:bg-purple-900 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">
+                                            2020 - 2023
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <!-- Responsibilities -->
+                                <div class="mt-6">
+                                    <h4 class="font-semibold text-gray-900 dark:text-white flex items-center gap-2 mb-4">
+                                        <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
+                                        </svg>
+                                        Kernactiviteiten
+                                    </h4>
+                                    <ul class="grid md:grid-cols-2 gap-3">
+                                        <li class="flex items-center gap-3 group/item">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 group-hover/item:scale-150 transition-transform"></span>
+                                            <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-purple-500 transition-colors">Klantenservice & Advies</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 group/item">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 group-hover/item:scale-150 transition-transform"></span>
+                                            <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-purple-500 transition-colors">Voorraadbeheer</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 group/item">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 group-hover/item:scale-150 transition-transform"></span>
+                                            <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-purple-500 transition-colors">Winkelnetheid</span>
+                                        </li>
+                                        <li class="flex items-center gap-3 group/item">
+                                            <span class="w-1.5 h-1.5 rounded-full bg-purple-500 group-hover/item:scale-150 transition-transform"></span>
+                                            <span class="text-gray-600 dark:text-gray-300 group-hover/item:text-purple-500 transition-colors">Kassawerkzaamheden</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Skills Tags -->
+                                <div class="mt-6 flex flex-wrap gap-2">
+                                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 rounded-full text-sm font-medium hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors">
+                                        Klantenservice
+                                    </span>
+                                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 rounded-full text-sm font-medium hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors">
+                                        Voorraadbeheer
+                                    </span>
+                                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/50 text-purple-600 dark:text-purple-400 rounded-full text-sm font-medium hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors">
+                                        Teamwork
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <style>
+        @keyframes moveGrid {
+            0% { background-position: 0 0; }
+            100% { background-position: 50px 50px; }
+        }
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+            animation-delay: 4s;
+        }
+    </style>
 </section>
 
 <!-- Skills Overview Section -->
@@ -487,7 +660,7 @@ include 'includes/header.php';
 
     <div class="max-w-7xl mx-auto relative">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 relative inline-block" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent relative inline-block tracking-tight" style="padding: 0.1em 0;" data-aos="fade-up">
                 Technische Expertise
                 <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></div>
             </h2>
@@ -693,7 +866,7 @@ include 'includes/header.php';
 
     <div class="max-w-7xl mx-auto relative">
         <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400 relative inline-block" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent relative inline-block tracking-tight" style="padding: 0.1em 0;" data-aos="fade-up">
                 Mijn Reis
                 <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></div>
             </h2>
@@ -795,8 +968,19 @@ include 'includes/header.php';
     </div>
 </section>
 
-<!-- Divider -->
-<div class="relative h-24 bg-gradient-to-b from-indigo-100/50 via-purple-50/70 to-purple-100/50 dark:from-gray-800 dark:via-gray-850 dark:to-gray-900 overflow-hidden"></div>
+<!-- Minimalistische overgang -->
+<div class="relative">
+    <!-- Golvend effect -->
+    <div class="absolute inset-x-0 -top-16 h-32 bg-gradient-to-b from-transparent to-purple-100/50 dark:to-gray-900"></div>
+    <div class="absolute inset-x-0 -top-16 h-32">
+        <svg class="w-full h-full" viewBox="0 0 1440 100" fill="none" preserveAspectRatio="none">
+            <path d="M0,50 C320,80 420,20 640,50 C860,80 960,20 1280,50 L1440,50 L1440,100 L0,100 Z" 
+                  class="fill-purple-100/30 dark:fill-gray-800/30 transform translate-y-1"></path>
+            <path d="M0,50 C320,80 420,20 640,50 C860,80 960,20 1280,50 L1440,50 L1440,100 L0,100 Z" 
+                  class="fill-purple-100/20 dark:fill-gray-800/20"></path>
+        </svg>
+    </div>
+</div>
 
 <!-- Testimonials/Aanbevelingen Sectie -->
 <section class="py-24 px-4 bg-gradient-to-b from-purple-100/50 via-purple-50/90 to-purple-100/50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
@@ -809,8 +993,9 @@ include 'includes/header.php';
 
     <div class="max-w-7xl mx-auto relative">
         <div class="text-center mb-20">
-            <h2 class="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400 bg-clip-text text-transparent" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent relative inline-block tracking-tight" style="padding: 0.1em 0;" data-aos="fade-up">
                 Stage Ervaringen
+                <div class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-transparent rounded-full"></div>
             </h2>
             <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-delay="100">
                 Ontdek wat mijn stagebegeleider en collega's bij Developing B.V. te zeggen hebben over mijn werk, vaardigheden en bijdragen aan het team.
@@ -918,7 +1103,9 @@ include 'includes/header.php';
 <!-- Call to Action Section -->
 <section class="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800 text-white dark:from-blue-800 dark:to-blue-600">
     <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6" data-aos="fade-up">Klaar om samen te werken?</h2>
+        <h2 class="text-3xl font-bold mb-6 text-white" data-aos="fade-up">
+            Klaar om samen te werken?
+        </h2>
         <p class="text-lg opacity-90 mb-8" data-aos="fade-up" data-aos-delay="100">
             Ik sta altijd open voor nieuwe uitdagingen en samenwerkingen
         </p>

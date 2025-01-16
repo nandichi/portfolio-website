@@ -285,7 +285,7 @@ include 'includes/header.php';
 
                 <!-- Rechter kolom met uitgebreide informatie -->
                 <div class="space-y-6" data-aos="fade-left">
-                    <!-- Contact Info -->
+                    <!-- Doelen & Ambities -->
                     <div class="group relative h-full">
                         <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
                         <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-8 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-purple-500/20 dark:group-hover:border-purple-400/20">
@@ -295,7 +295,7 @@ include 'includes/header.php';
                                     <span class="relative inline-block">
                                         <span class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 blur-lg opacity-30"></span>
                                         <span class="relative bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-indigo-600">
-                                            Contact Informatie
+                                            Mijn Doelen & Ambities
                                         </span>
                                     </span>
                                 </h2>
@@ -303,87 +303,108 @@ include 'includes/header.php';
                                 <div class="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 group-hover:w-48 transition-all duration-700"></div>
                             </div>
 
-                            <!-- Contact Cards Grid -->
+                            <!-- Doelen Grid -->
                             <div class="grid gap-6">
-                                <!-- Email Card -->
-                                <div class="group/contact relative overflow-hidden">
-                                    <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover/contact:opacity-100 transition-all duration-300"></div>
-                                    <a href="mailto:naoufal.exe@gmail.com" class="relative block p-4 rounded-xl border border-gray-200/20 dark:border-gray-700/20 transition-all duration-300 group-hover/contact:border-purple-500/30">
-                                        <div class="flex items-center gap-6">
+                                <!-- Korte Termijn -->
+                                <div class="group/goal relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover/goal:opacity-100 transition-all duration-300"></div>
+                                    <div class="relative p-6 rounded-xl border border-gray-200/20 dark:border-gray-700/20 transition-all duration-300 group-hover/goal:border-purple-500/30">
+                                        <div class="flex items-start gap-6">
                                             <!-- Icon met animatie -->
                                             <div class="relative">
-                                                <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur opacity-20 group-hover/contact:opacity-40 transition-all duration-300"></div>
-                                                <div class="relative w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center transform transition-all duration-500 group-hover/contact:scale-110 group-hover/contact:rotate-6">
-                                                    <i class="fas fa-envelope text-2xl text-white"></i>
+                                                <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur opacity-20 group-hover/goal:opacity-40 transition-all duration-300"></div>
+                                                <div class="relative w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center transform transition-all duration-500 group-hover/goal:scale-110 group-hover/goal:rotate-6">
+                                                    <i class="fas fa-rocket text-2xl text-white"></i>
                                                 </div>
                                             </div>
-                                            <!-- Content met hover effecten -->
+                                            <!-- Content -->
                                             <div class="flex-grow">
-                                                <h3 class="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-1 transform transition-all duration-300 group-hover/contact:translate-x-2">Email</h3>
-                                                <p class="text-gray-600 dark:text-gray-300 transform transition-all duration-300 delay-75 group-hover/contact:translate-x-2">naoufal.exe@gmail.com</p>
-                                            </div>
-                                            <!-- Animated Arrow -->
-                                            <div class="w-8 h-8 flex items-center justify-center transform transition-all duration-300 group-hover/contact:translate-x-2">
-                                                <i class="fas fa-arrow-right text-purple-500 opacity-0 group-hover/contact:opacity-100"></i>
+                                                <h3 class="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-2">Korte Termijn</h3>
+                                                <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                                                    <li class="flex items-center gap-2">
+                                                        <i class="fas fa-check text-green-500"></i>
+                                                        Afstuderen als Software Developer
+                                                    </li>
+                                                    <li class="flex items-center gap-2">
+                                                        <i class="fas fa-check text-green-500"></i>
+                                                        Portfolio uitbreiden met innovatieve projecten
+                                                    </li>
+                                                    <li class="flex items-center gap-2">
+                                                        <i class="fas fa-check text-green-500"></i>
+                                                        Expertise in moderne frameworks verdiepen
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <!-- Animated Border Bottom -->
-                                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 group-hover/contact:w-full transition-all duration-500"></div>
-                                    </a>
+                                    </div>
                                 </div>
 
-                                <!-- GitHub Card -->
-                                <div class="group/contact relative overflow-hidden">
-                                    <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover/contact:opacity-100 transition-all duration-300"></div>
-                                    <a href="https://github.com/nandichi" target="_blank" class="relative block p-4 rounded-xl border border-gray-200/20 dark:border-gray-700/20 transition-all duration-300 group-hover/contact:border-purple-500/30">
-                                        <div class="flex items-center gap-6">
+                                <!-- Tech Stack Verbreding -->
+                                <div class="group/goal relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover/goal:opacity-100 transition-all duration-300"></div>
+                                    <div class="relative p-6 rounded-xl border border-gray-200/20 dark:border-gray-700/20 transition-all duration-300 group-hover/goal:border-purple-500/30">
+                                        <div class="flex items-start gap-6">
                                             <!-- Icon met animatie -->
                                             <div class="relative">
-                                                <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur opacity-20 group-hover/contact:opacity-40 transition-all duration-300"></div>
-                                                <div class="relative w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center transform transition-all duration-500 group-hover/contact:scale-110 group-hover/contact:rotate-6">
-                                                    <i class="fab fa-github text-2xl text-white"></i>
+                                                <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur opacity-20 group-hover/goal:opacity-40 transition-all duration-300"></div>
+                                                <div class="relative w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center transform transition-all duration-500 group-hover/goal:scale-110 group-hover/goal:rotate-6">
+                                                    <i class="fas fa-code text-2xl text-white"></i>
                                                 </div>
                                             </div>
-                                            <!-- Content met hover effecten -->
+                                            <!-- Content -->
                                             <div class="flex-grow">
-                                                <h3 class="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-1 transform transition-all duration-300 group-hover/contact:translate-x-2">GitHub</h3>
-                                                <p class="text-gray-600 dark:text-gray-300 transform transition-all duration-300 delay-75 group-hover/contact:translate-x-2">Bekijk mijn projecten</p>
-                                            </div>
-                                            <!-- Animated Arrow -->
-                                            <div class="w-8 h-8 flex items-center justify-center transform transition-all duration-300 group-hover/contact:translate-x-2">
-                                                <i class="fas fa-arrow-right text-purple-500 opacity-0 group-hover/contact:opacity-100"></i>
+                                                <h3 class="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-2">Tech Stack Verbreding</h3>
+                                                <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                                                    <li class="flex items-center gap-2">
+                                                        <i class="fab fa-react text-blue-500"></i>
+                                                        React & Next.js beheersen
+                                                    </li>
+                                                    <li class="flex items-center gap-2">
+                                                        <i class="fab fa-vuejs text-green-500"></i>
+                                                        Vue.js specialist worden
+                                                    </li>
+                                                    <li class="flex items-center gap-2">
+                                                        <i class="fab fa-node-js text-yellow-500"></i>
+                                                        Node.js backend masteren
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <!-- Animated Border Bottom -->
-                                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 group-hover/contact:w-full transition-all duration-500"></div>
-                                    </a>
+                                    </div>
                                 </div>
 
-                                <!-- LinkedIn Card -->
-                                <div class="group/contact relative overflow-hidden">
-                                    <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover/contact:opacity-100 transition-all duration-300"></div>
-                                    <a href="https://www.linkedin.com/in/naoufalandichi/" target="_blank" class="relative block p-4 rounded-xl border border-gray-200/20 dark:border-gray-700/20 transition-all duration-300 group-hover/contact:border-purple-500/30">
-                                        <div class="flex items-center gap-6">
+                                <!-- Persoonlijke Ontwikkeling -->
+                                <div class="group/goal relative overflow-hidden">
+                                    <div class="absolute inset-0 bg-gradient-to-r from-purple-500/5 to-indigo-500/5 rounded-xl opacity-0 group-hover/goal:opacity-100 transition-all duration-300"></div>
+                                    <div class="relative p-6 rounded-xl border border-gray-200/20 dark:border-gray-700/20 transition-all duration-300 group-hover/goal:border-purple-500/30">
+                                        <div class="flex items-start gap-6">
                                             <!-- Icon met animatie -->
                                             <div class="relative">
-                                                <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur opacity-20 group-hover/contact:opacity-40 transition-all duration-300"></div>
-                                                <div class="relative w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center transform transition-all duration-500 group-hover/contact:scale-110 group-hover/contact:rotate-6">
-                                                    <i class="fab fa-linkedin text-2xl text-white"></i>
+                                                <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-500 rounded-xl blur opacity-20 group-hover/goal:opacity-40 transition-all duration-300"></div>
+                                                <div class="relative w-16 h-16 rounded-xl bg-gradient-to-br from-purple-500 to-indigo-600 flex items-center justify-center transform transition-all duration-500 group-hover/goal:scale-110 group-hover/goal:rotate-6">
+                                                    <i class="fas fa-brain text-2xl text-white"></i>
                                                 </div>
                                             </div>
-                                            <!-- Content met hover effecten -->
+                                            <!-- Content -->
                                             <div class="flex-grow">
-                                                <h3 class="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-1 transform transition-all duration-300 group-hover/contact:translate-x-2">LinkedIn</h3>
-                                                <p class="text-gray-600 dark:text-gray-300 transform transition-all duration-300 delay-75 group-hover/contact:translate-x-2">Laten we connecten</p>
-                                            </div>
-                                            <!-- Animated Arrow -->
-                                            <div class="w-8 h-8 flex items-center justify-center transform transition-all duration-300 group-hover/contact:translate-x-2">
-                                                <i class="fas fa-arrow-right text-purple-500 opacity-0 group-hover/contact:opacity-100"></i>
+                                                <h3 class="text-lg font-semibold text-purple-600 dark:text-purple-400 mb-2">Persoonlijke Ontwikkeling</h3>
+                                                <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+                                                    <li class="flex items-center gap-2">
+                                                        <i class="fas fa-lightbulb text-amber-500"></i>
+                                                        Blijven leren en groeien
+                                                    </li>
+                                                    <li class="flex items-center gap-2">
+                                                        <i class="fas fa-lightbulb text-amber-500"></i>
+                                                        Netwerk uitbreiden in tech community
+                                                    </li>
+                                                    <li class="flex items-center gap-2">
+                                                        <i class="fas fa-lightbulb text-amber-500"></i>
+                                                        Bijdragen aan open source projecten
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <!-- Animated Border Bottom -->
-                                        <div class="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-purple-500 to-indigo-500 group-hover/contact:w-full transition-all duration-500"></div>
-                                    </a>
+                                    </div>
                                 </div>
                             </div>
 
