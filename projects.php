@@ -30,6 +30,34 @@ include 'includes/header.php';
                 <?php
                 $projects = [
                     [
+                        'name' => 'Portfolio Website',
+                        'description' => 'Een moderne, responsieve portfolio website gebouwd met PHP, Tailwind CSS en JavaScript. Features dark mode, meertalige ondersteuning en een contactformulier.',
+                        'tech' => ['PHP', 'Tailwind CSS', 'JavaScript'],
+                        'icon' => 'fa-globe',
+                        'color' => 'teal',
+                        'github' => 'portfolio-website',
+                        'features' => [
+                            'Responsive Design',
+                            'Dark Mode',
+                            'Meertalige Ondersteuning',
+                            'Contact Formulier'
+                        ]
+                    ],
+                    [
+                        'name' => 'Geregeld.online',
+                        'description' => 'Een platform voor ZZP\'ers om eenvoudig een professionele website aan te schaffen. Het platform biedt verschillende templates en opties om de website volledig aan te passen aan de wensen van de ondernemer.',
+                        'tech' => ['WordPress', 'PHP', 'JavaScript', 'SCSS'],
+                        'icon' => 'fa-briefcase',
+                        'color' => 'emerald',
+                        'github' => 'go-theme',
+                        'features' => [
+                            'Website Builder',
+                            'Custom Templates',
+                            'ZZP-er Dashboard',
+                            'Automatische Hosting'
+                        ]
+                    ],
+                    [
                         'name' => 'PAS',
                         'description' => 'PAS is een systeem dat ik heb gemaakt om pakketten bij te houden. Het helpt bij het opslaan van pakketten en laat zien wanneer mensen ze kunnen ophalen.',
                         'tech' => ['PHP', 'MySQL', 'Laravel', 'Docker'],
