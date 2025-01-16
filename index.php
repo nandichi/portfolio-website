@@ -5,31 +5,48 @@ include 'includes/header.php';
 ?>
 
 
-<!-- Verbeterde header met meer dynamische animaties -->
-<header class="min-h-screen bg-gradient-to-br from-blue-500 via-blue-600 to-indigo-700 dark:from-blue-700 dark:via-blue-800 dark:to-indigo-900 flex items-center justify-center relative overflow-hidden pt-16 sm:pt-0">
-    <!-- Verbeterde animated background shapes met meer dynamiek -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute top-1/4 left-1/4 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-blob"></div>
-        <div class="absolute top-1/3 right-1/4 w-96 h-96 bg-indigo-300/20 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
-        <div class="absolute bottom-1/4 left-1/3 w-80 h-80 bg-blue-300/20 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
-        <!-- Extra glowing orbs met verbeterde animaties -->
-        <div class="absolute top-1/2 right-1/3 w-48 h-48 bg-blue-400/30 rounded-full blur-2xl animate-pulse"></div>
-        <div class="absolute bottom-1/3 right-1/2 w-64 h-64 bg-indigo-400/20 rounded-full blur-2xl animate-pulse animation-delay-2000"></div>
-        <!-- Nieuwe particle effecten -->
-        <div class="absolute inset-0 mix-blend-overlay opacity-30">
-            <div class="absolute w-2 h-2 bg-white rounded-full animate-float" style="top: 10%; left: 20%;"></div>
-            <div class="absolute w-2 h-2 bg-white rounded-full animate-float animation-delay-1000" style="top: 30%; right: 20%;"></div>
-            <div class="absolute w-2 h-2 bg-white rounded-full animate-float animation-delay-2000" style="bottom: 20%; left: 40%;"></div>
-        </div>
+<!-- Professionele header met geavanceerde visuele effecten -->
+<header class="min-h-screen relative flex items-center justify-center overflow-hidden pt-16 sm:pt-0">
+    <!-- Basis gradient achtergrond -->
+    <div class="absolute inset-0 bg-gradient-to-br from-blue-200 via-indigo-200 to-purple-200 dark:from-gray-900 dark:via-blue-950 dark:to-indigo-950"></div>
+    
+    <!-- Subtiele textuur overlay -->
+    <div class="absolute inset-0 opacity-[0.03] dark:opacity-10"
+         style="background-image: url('data:image/svg+xml,%3Csvg width=\'20\' height=\'20\' viewBox=\'0 0 20 20\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'%234A5568\' fill-opacity=\'0.2\' fill-rule=\'evenodd\'%3E%3Ccircle cx=\'3\' cy=\'3\' r=\'3\'/%3E%3Ccircle cx=\'13\' cy=\'13\' r=\'3\'/%3E%3C/g%3E%3C/svg%3E');"></div>
+
+    <!-- Animated gradient orbs -->
+    <div class="absolute inset-0 overflow-hidden">
+        <!-- Top-right orb -->
+        <div class="absolute -top-1/4 -right-1/4 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-blue-300/60 via-indigo-300/40 to-purple-300/50 dark:from-blue-400/10 dark:via-indigo-500/10 dark:to-purple-600/10 blur-3xl animate-pulse"></div>
+        
+        <!-- Bottom-left orb -->
+        <div class="absolute -bottom-1/4 -left-1/4 w-[800px] h-[800px] rounded-full bg-gradient-to-tr from-blue-300/60 via-indigo-300/40 to-purple-300/50 dark:from-blue-400/10 dark:via-indigo-500/10 dark:to-purple-600/10 blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
+        
+        <!-- Center subtle glow -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-gradient-to-r from-blue-300/40 via-transparent to-purple-300/40 dark:from-blue-500/10 dark:via-transparent dark:to-purple-500/10 blur-3xl"></div>
     </div>
-    
-    <!-- Verbeterd grid pattern overlay met subtiele animatie -->
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/5 dark:to-black/20 backdrop-blur-[1px] animate-grid" 
-         style="background-image: linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-                                linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px);
-                background-size: 32px 32px;"></div>
-    
-    <!-- Verbeterde content styling -->
+
+    <!-- Animated grid pattern -->
+    <div class="absolute inset-0 bg-[length:50px_50px] pointer-events-none opacity-[0.07] dark:opacity-20"
+         style="background-image: 
+            linear-gradient(to right, rgba(51, 65, 85, 0.1) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(51, 65, 85, 0.1) 1px, transparent 1px);
+            animation: moveGrid 20s linear infinite;">
+    </div>
+
+    <!-- Floating particles effect -->
+    <div class="absolute inset-0">
+        <div class="absolute w-2 h-2 bg-blue-400/50 dark:bg-blue-400/40 rounded-full blur-sm" style="top: 20%; left: 30%; animation: float 8s infinite;"></div>
+        <div class="absolute w-3 h-3 bg-indigo-400/50 dark:bg-purple-400/40 rounded-full blur-sm" style="top: 60%; left: 70%; animation: float 12s infinite;"></div>
+        <div class="absolute w-2 h-2 bg-purple-400/50 dark:bg-indigo-400/40 rounded-full blur-sm" style="top: 40%; left: 50%; animation: float 10s infinite;"></div>
+        <div class="absolute w-2 h-2 bg-blue-400/50 dark:bg-blue-400/40 rounded-full blur-sm" style="top: 70%; left: 20%; animation: float 9s infinite;"></div>
+        <div class="absolute w-3 h-3 bg-indigo-400/50 dark:bg-purple-400/40 rounded-full blur-sm" style="top: 30%; left: 80%; animation: float 11s infinite;"></div>
+    </div>
+
+    <!-- Subtle radial gradient overlay -->
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-blue-200/30 dark:to-black/20"></div>
+
+    <!-- Content container -->
     <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div class="space-y-8">
             <div class="flex justify-center mb-8 animate-fade-in-up">
@@ -41,14 +58,14 @@ include 'includes/header.php';
                 </div>
             </div>
             <div>
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white text-shadow-lg animate-fade-in-up mb-4 tracking-tight">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white text-shadow-lg animate-fade-in-up mb-4 tracking-tight">
                     Naoufal Andichi
                 </h1>
-                <p class="text-2xl sm:text-3xl text-blue-100 font-light animate-fade-in-up animation-delay-100 tracking-wide">
+                <p class="text-2xl sm:text-3xl text-gray-700 dark:text-blue-100 font-light animate-fade-in-up animation-delay-100 tracking-wide">
                     Full Stack Developer
                 </p>
             </div>
-            <p class="text-xl sm:text-2xl text-blue-100 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-200">
+            <p class="text-xl sm:text-2xl text-gray-600 dark:text-blue-100 max-w-3xl mx-auto leading-relaxed animate-fade-in-up animation-delay-200">
                 Een enthousiaste student Software Developer bij het RijnIJssel in Arnhem, met passie voor moderne technologieën en innovatieve oplossingen
             </p>
             <div class="flex flex-wrap justify-center gap-4 animate-fade-in-up animation-delay-400">
@@ -643,6 +660,29 @@ include 'includes/header.php';
             opacity: 0;
             animation: typing 0.5s ease-out forwards;
         }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0) translateX(0);
+            }
+            25% {
+                transform: translateY(-10px) translateX(5px);
+            }
+            50% {
+                transform: translateY(0) translateX(10px);
+            }
+            75% {
+                transform: translateY(10px) translateX(5px);
+            }
+        }
+
+        @keyframes moveGrid {
+            0% {
+                background-position: 0 0;
+            }
+            100% {
+                background-position: 50px 50px;
+            }
+        }
     </style>
 </section>
 
@@ -894,3 +934,37 @@ include 'includes/header.php';
 </section>
 
 <?php include 'includes/footer.php'; ?> 
+
+<!-- Voeg lazy loading script toe aan het einde van de body -->
+<script>
+// Intersection Observer voor lazy loading van secties
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section');
+    
+    const sectionObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('section-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    sections.forEach(section => {
+        section.classList.add('opacity-0', 'transform', 'translate-y-10', 'transition-all', 'duration-700');
+        sectionObserver.observe(section);
+    });
+});
+
+// CSS voor fade-in animatie
+const style = document.createElement('style');
+style.textContent = `
+    .section-visible {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+    }
+`;
+document.head.appendChild(style);
+</script>

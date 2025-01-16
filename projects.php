@@ -4,11 +4,11 @@ $currentPage = "projects";
 include 'includes/header.php';
 ?>
 
-<div class="min-h-screen bg-gradient-to-br from-gray-50 via-gray-100 to-gray-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+<div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-purple-50/50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20">
     <!-- Decoratieve elementen met zachtere gradients -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-40">
-        <div class="absolute -top-1/2 -right-1/2 w-[1000px] h-[1000px] bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
-        <div class="absolute -bottom-1/2 -left-1/2 w-[1000px] h-[1000px] bg-gradient-to-tr from-green-500/10 to-yellow-500/10 rounded-full blur-3xl"></div>
+    <div class="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
+        <div class="absolute -top-1/2 -right-1/2 w-[1000px] h-[1000px] bg-gradient-to-br from-blue-500/10 via-indigo-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-1/2 -left-1/2 w-[1000px] h-[1000px] bg-gradient-to-tr from-blue-500/10 via-indigo-500/10 to-purple-500/10 rounded-full blur-3xl"></div>
     </div>
 
     <div class="relative pt-40 pb-20 px-4 sm:px-6 lg:px-8">
@@ -132,8 +132,8 @@ include 'includes/header.php';
                     ]
                 ];
 
-                foreach ($projects as $project): ?>
-                    <div class="group relative h-[600px]" data-aos="fade-up">
+                foreach ($projects as $index => $project): ?>
+                    <div class="project-card opacity-0 group relative h-[600px]" data-index="<?php echo $index; ?>">
                         <div class="absolute -inset-0.5 bg-gradient-to-r from-<?php echo $project['color']; ?>-500 to-<?php echo $project['color']; ?>-600 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
                         <div class="relative h-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-6 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-<?php echo $project['color']; ?>-500/20 dark:group-hover:border-<?php echo $project['color']; ?>-400/20">
                             <!-- Project Header -->
@@ -236,6 +236,37 @@ document.addEventListener('DOMContentLoaded', function() {
         once: true,
         offset: 50,
         easing: 'ease-out-cubic'
+    });
+
+    // Lazy loading voor projecten
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    const observerOptions = {
+        root: null,
+        rootMargin: '50px',
+        threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const card = entry.target;
+                card.classList.remove('opacity-0');
+                card.classList.add('opacity-100', 'transform', 'transition-all', 'duration-1000', 'ease-out');
+                
+                // Voeg een vertraging toe gebaseerd op de index
+                const index = parseInt(card.dataset.index);
+                card.style.transitionDelay = `${index * 100}ms`;
+                
+                // Stop met observeren nadat het element is geladen
+                observer.unobserve(card);
+            }
+        });
+    }, observerOptions);
+
+    // Start met observeren van alle project cards
+    projectCards.forEach(card => {
+        observer.observe(card);
     });
 });
 </script>
