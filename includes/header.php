@@ -41,17 +41,37 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        .hover-scale {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .nav-item {
+            position: relative;
+            transition: all 0.3s ease;
         }
-        .hover-scale:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        
+        .nav-item::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: currentColor;
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
         }
-        body {
-            top: 0 !important;
-            overflow-x: hidden;
+        
+        .nav-item:hover::after,
+        .nav-item.active::after {
             width: 100%;
+        }
+        
+        .header-shadow {
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+        }
+        
+        .logo-text {
+            background: linear-gradient(135deg, #2563EB, #1E40AF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
         }
         
         @media (max-width: 640px) {
@@ -59,12 +79,10 @@
                 font-size: 0.875rem;
                 line-height: 1.25rem;
             }
-            
             .container {
                 padding-left: 1rem;
                 padding-right: 1rem;
             }
-            
             button, 
             [role="button"],
             a {
@@ -83,119 +101,102 @@
         }
     </style>
 </head>
-<body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
-    <nav class="fixed w-full bg-white/90 dark:bg-gray-800/90 backdrop-blur-md shadow-lg z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16 sm:h-20">
-                <div class="flex-shrink-0 flex items-center">
-                    <a href="index.php" class="group flex items-center space-x-2">
-                        <div class="w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-br from-blue-600 to-blue-400 rounded-lg flex items-center justify-center">
-                            <span class="text-lg sm:text-xl font-bold text-white">NA</span>
+<body class="bg-white dark:bg-gray-900 transition-colors duration-200">
+    <header class="fixed w-full z-50 bg-white/95 dark:bg-gray-900/95 header-shadow backdrop-blur-sm">
+        <div class="max-w-7xl mx-auto">
+            <nav class="flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+                <div class="flex items-center space-x-8">
+                    <a href="index.php" class="flex items-center space-x-3">
+                        <div class="bg-blue-700 dark:bg-blue-600 w-10 h-10 rounded flex items-center justify-center shadow-lg">
+                            <span class="text-lg font-bold text-white">NA</span>
                         </div>
-                        <span class="text-base sm:text-xl font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                            Naoufal Andichi
-                        </span>
+                        <div>
+                            <h1 class="text-xl font-bold logo-text dark:text-white">Naoufal Andichi</h1>
+                            <p class="text-sm text-gray-600 dark:text-gray-400 hidden sm:block">Full Stack Developer</p>
+                        </div>
                     </a>
                 </div>
-                <div class="hidden sm:flex sm:space-x-1 items-center">
+
+                <div class="hidden md:flex items-center space-x-8">
                     <a href="index.php" 
-                        class="<?php echo $currentPage === 'home' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'; ?> 
-                               px-4 py-2 rounded-lg transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 relative group"
-                    >
-                        <span class="relative z-10">Home</span>
-                        <?php if ($currentPage === 'home'): ?>
-                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform scale-x-100"></div>
-                        <?php endif; ?>
+                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
+                              <?php echo $currentPage === 'home' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
+                        Home
                     </a>
                     <a href="projects.php" 
-                        class="<?php echo $currentPage === 'projects' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'; ?> 
-                               px-4 py-2 rounded-lg transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 relative group"
-                    >
-                        <span class="relative z-10">Projecten</span>
-                        <?php if ($currentPage === 'projects'): ?>
-                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform scale-x-100"></div>
-                        <?php endif; ?>
+                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
+                              <?php echo $currentPage === 'projects' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
+                        Projecten
                     </a>
                     <a href="skills.php" 
-                        class="<?php echo $currentPage === 'skills' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'; ?> 
-                               px-4 py-2 rounded-lg transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 relative group"
-                    >
-                        <span class="relative z-10">Vaardigheden</span>
-                        <?php if ($currentPage === 'skills'): ?>
-                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform scale-x-100"></div>
-                        <?php endif; ?>
+                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
+                              <?php echo $currentPage === 'skills' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
+                        Vaardigheden
                     </a>
                     <a href="about.php" 
-                        class="<?php echo $currentPage === 'about' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'; ?> 
-                               px-4 py-2 rounded-lg transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 relative group"
-                    >
-                        <span class="relative z-10">Over Mij</span>
-                        <?php if ($currentPage === 'about'): ?>
-                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform scale-x-100"></div>
-                        <?php endif; ?>
+                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
+                              <?php echo $currentPage === 'about' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
+                        Over Mij
                     </a>
                     <a href="contact.php" 
-                        class="<?php echo $currentPage === 'contact' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'; ?> 
-                               px-4 py-2 rounded-lg transition-all duration-300 hover:text-blue-600 dark:hover:text-blue-400 relative group"
-                    >
-                        <span class="relative z-10">Contact</span>
-                        <?php if ($currentPage === 'contact'): ?>
-                        <div class="absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 dark:bg-blue-400 transform scale-x-100"></div>
-                        <?php endif; ?>
+                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
+                              <?php echo $currentPage === 'contact' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
+                        Contact
                     </a>
-                    <!-- Dark Mode Toggle -->
-                    <button id="darkModeToggle" class="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-700 ml-2">
-                        <svg class="w-5 h-5 dark:hidden" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </div>
+
+                <div class="flex items-center space-x-4">
+                    <button id="darkModeToggle" 
+                            class="p-2 text-gray-500 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400 transition-colors">
+                        <svg class="w-6 h-6 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
                         </svg>
-                        <svg class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
-                            <path d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"></path>
+                        <svg class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
                         </svg>
                     </button>
-                </div>
-                <div class="sm:hidden flex items-center">
-                    <button class="mobile-menu-button p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                        <svg class="h-6 w-6 text-gray-700 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+
+                    <button class="md:hidden p-2 text-gray-500 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400 transition-colors mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
                     </button>
                 </div>
-            </div>
+            </nav>
         </div>
-        <div class="sm:hidden hidden mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 bg-white/95 dark:bg-gray-800/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700">
+
+        <!-- Mobiel menu -->
+        <div class="md:hidden hidden mobile-menu border-t border-gray-100 dark:border-gray-800">
+            <div class="px-4 py-2 space-y-1">
                 <a href="index.php" 
-                    class="<?php echo $currentPage === 'home' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300'; ?> 
-                           block px-3 py-2 rounded-lg text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
-                >
+                   class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
+                          <?php echo $currentPage === 'home' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Home
                 </a>
                 <a href="projects.php" 
-                    class="<?php echo $currentPage === 'projects' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300'; ?> 
-                           block px-3 py-2 rounded-lg text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
-                >
+                   class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
+                          <?php echo $currentPage === 'projects' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Projecten
                 </a>
                 <a href="skills.php" 
-                    class="<?php echo $currentPage === 'skills' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300'; ?> 
-                           block px-3 py-2 rounded-lg text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
-                >
+                   class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
+                          <?php echo $currentPage === 'skills' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Vaardigheden
                 </a>
                 <a href="about.php" 
-                    class="<?php echo $currentPage === 'about' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300'; ?> 
-                           block px-3 py-2 rounded-lg text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
-                >
+                   class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
+                          <?php echo $currentPage === 'about' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Over Mij
                 </a>
                 <a href="contact.php" 
-                    class="<?php echo $currentPage === 'contact' ? 'text-blue-600 bg-blue-50 dark:bg-blue-900/50' : 'text-gray-700 dark:text-gray-300'; ?> 
-                           block px-3 py-2 rounded-lg text-base font-medium hover:bg-gray-50 dark:hover:bg-gray-700 hover:text-blue-600 dark:hover:text-blue-400 transition-all"
-                >
+                   class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
+                          <?php echo $currentPage === 'contact' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Contact
                 </a>
             </div>
         </div>
-    </nav>
+    </header>
 </body>
 </html> 
