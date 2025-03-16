@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /about
+Allow: /skills
+Allow: /projects
+Allow: /contact
+Allow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /sitemap.xml
+
+Disallow: /process_contact.php
+Disallow: /includes/
+Disallow: /vendor/
+
+Sitemap: https://www.naoufalandichi.nl/sitemap.xml 

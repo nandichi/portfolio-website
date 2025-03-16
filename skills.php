@@ -1,6 +1,8 @@
 <?php
 $pageTitle = "Vaardigheden";
 $currentPage = "skills";
+$pageDescription = "Ontdek de technische vaardigheden en expertise van Naoufal Andichi op het gebied van webontwikkeling en programmeren.";
+$pageKeywords = "Naoufal Andichi, vaardigheden, programmeren, webontwikkeling, technische expertise, frontend, backend, frameworks";
 include 'includes/header.php';
 ?>
 

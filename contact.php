@@ -1,6 +1,8 @@
 <?php
-$pageTitle = "Laten We Praten";
+$pageTitle = "Contact";
 $currentPage = "contact";
+$pageDescription = "Neem contact op met Naoufal Andichi voor samenwerkingen, projecten of vragen over mijn diensten als ontwikkelaar.";
+$pageKeywords = "Naoufal Andichi, contact, samenwerking, projectaanvraag, ontwikkelaar inhuren, e-mail, contactformulier";
 include 'includes/header.php';
 ?>
 

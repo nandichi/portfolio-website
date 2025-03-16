@@ -1,6 +1,8 @@
 <?php
 $pageTitle = "Over Mij";
 $currentPage = "about";
+$pageDescription = "Leer meer over Naoufal Andichi, mijn achtergrond, ervaring en passie voor ontwikkeling.";
+$pageKeywords = "Naoufal Andichi, over mij, biografie, ervaring, achtergrond, ontwikkelaar, carrière";
 include 'includes/header.php';
 ?>
 
@@ -104,8 +106,8 @@ include 'includes/header.php';
                                         
                                         <!-- Centrale Content -->
                                         <div class="relative z-10 w-full h-full flex flex-col items-center justify-center text-white space-y-4">
-                                            <div class="w-24 h-24 rounded-full border-4 border-white/30 flex items-center justify-center bg-gradient-to-br from-blue-600 to-indigo-700 float-animation">
-                                                <span class="text-4xl font-bold">NA</span>
+                                            <div class="w-24 h-24 rounded-full border-4 border-white/30 overflow-hidden">
+                                                <img src="assets/images/profile.jpg" alt="Naoufal Andichi" class="w-full h-full object-cover">
                                             </div>
                                             <div class="text-center">
                                                 <h3 class="text-2xl font-bold mb-2">Naoufal Andichi</h3>
@@ -211,10 +213,10 @@ include 'includes/header.php';
                                         <!-- Content -->
                                         <div class="flex-grow">
                                             <h3 class="text-xl font-semibold text-indigo-600 dark:text-indigo-400 mb-3 group-hover/card:translate-x-2 transition-all duration-500">
-                                                Stage bij Developing B.V.
+                                                Werkzaam bij Developing B.V.
                                             </h3>
                                             <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-4 group-hover/card:translate-x-2 transition-all duration-500 delay-100">
-                                                Momenteel loop ik stage bij Developing B.V., waar ik al verschillende gave projecten heb gemaakt. 
+                                                Momenteel werk ik bij Developing B.V., waar ik al verschillende gave projecten heb gemaakt. 
                                                 Ik werk hier met moderne tools zoals WordPress, PHP/Laravel en Tailwind CSS.
                                             </p>
                                             <!-- Tech Stack -->

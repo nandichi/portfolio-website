@@ -1,6 +1,8 @@
 <?php
 $pageTitle = "Projecten";
 $currentPage = "projects";
+$pageDescription = "Bekijk de portfolio van projecten ontwikkeld door Naoufal Andichi, inclusief webapplicaties, websites en andere ontwikkelingsprojecten.";
+$pageKeywords = "Naoufal Andichi, projecten, portfolio, webapplicaties, websites, ontwikkelingsprojecten, casestudies";
 include 'includes/header.php';
 ?>
 
@@ -41,38 +43,181 @@ include 'includes/header.php';
             </button>
         </div>
 
+        <!-- Uitgelicht Project: PolitiekPraat -->
+        <div class="relative z-10 mb-16 overflow-hidden" data-aos="fade-up">
+            <div class="bg-gradient-to-br from-rose-500 to-purple-600 rounded-3xl shadow-2xl overflow-hidden">
+                <div class="relative p-8 md:p-12">
+                    <!-- Decoratieve elementen -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
+                    <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
+                    
+                    <div class="relative z-10 flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                        <!-- Project Info -->
+                        <div class="flex-1">
+                            <div class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6">
+                                <span class="mr-2">⭐</span> Uitgelicht Project
+                            </div>
+                            
+                            <h2 class="text-4xl md:text-5xl font-black text-white mb-4">PolitiekPraat</h2>
+                            <p class="text-xl text-white/80 mb-4 font-medium">Samen bouwen aan democratie</p>
+                            
+                            <p class="text-white/90 mb-8 text-lg leading-relaxed">
+                                PolitiekPraat is een belangrijk platform waar mensen open en respectvol praten over politiek in Nederland. We moedigen gesprekken aan waarin iedereen zijn mening kan geven en kritisch leert denken over actuele onderwerpen. Op ons platform vind je blogs, nieuwsberichten, een stemwijzer, live peilingen en een actief forum waar je zelf mee kunt discussiëren.
+                            </p>
+                            <!-- Tech Stack -->
+                            <div class="flex flex-wrap gap-3 mb-8">
+                                <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-lg border border-white/20">
+                                    <i class="fab fa-php mr-2"></i> PHP
+                                </span>
+                                <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-lg border border-white/20">
+                                    <i class="fab fa-laravel mr-2"></i> Laravel
+                                </span>
+                                <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-lg border border-white/20">
+                                    <i class="fas fa-database mr-2"></i> MySQL
+                                </span>
+                                <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white rounded-lg border border-white/20">
+                                    <i class="fab fa-js mr-2"></i> JavaScript
+                                </span>
+                            </div>
+                            
+                            <!-- Project Stats -->
+                            <div class="grid grid-cols-3 gap-6 mb-8">
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-white">
+                                        345+
+                                    </div>
+                                    <div class="text-sm text-white/70">Commits</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-white">
+                                        128+
+                                    </div>
+                                    <div class="text-sm text-white/70">Bestanden</div>
+                                </div>
+                                <div class="text-center">
+                                    <div class="text-3xl font-bold text-white">
+                                        15K+
+                                    </div>
+                                    <div class="text-sm text-white/70">Gebruikers</div>
+                                </div>
+                            </div>
+                            
+                            <!-- CTA Buttons -->
+                            <div class="flex flex-wrap gap-4">
+                                <a href="https://politiekpraat.nl" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-white text-rose-600 hover:bg-opacity-90 rounded-xl transition-all duration-300 font-medium">
+                                    <i class="fas fa-external-link-alt mr-2"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Project Features -->
+                        <div class="flex-1 bg-white/10 backdrop-blur-md rounded-2xl p-6 border border-white/20">
+                            <h3 class="text-xl font-bold text-white mb-4">Belangrijkste Functies</h3>
+                            
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-white/20 rounded-lg mr-3 mt-0.5">
+                                        <i class="fas fa-newspaper text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-white">Nieuws & Blogs</h4>
+                                        <p class="text-white/80">Actuele politieke artikelen en diepgaande analyses</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-white/20 rounded-lg mr-3 mt-0.5">
+                                        <i class="fas fa-chart-line text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-white">Live Peilingen</h4>
+                                        <p class="text-white/80">Real-time politieke peilingen en trendanalyses</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-white/20 rounded-lg mr-3 mt-0.5">
+                                        <i class="fas fa-vote-yea text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-white">Stemwijzer</h4>
+                                        <p class="text-white/80">Interactieve tool om jouw politieke voorkeuren te ontdekken</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-white/20 rounded-lg mr-3 mt-0.5">
+                                        <i class="fas fa-comments text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-white">Forum</h4>
+                                        <p class="text-white/80">Levendige discussies over actuele politieke thema's</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-white/20 rounded-lg mr-3 mt-0.5">
+                                        <i class="fas fa-user-shield text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium text-white">Gebruikersbeheer</h4>
+                                        <p class="text-white/80">Geavanceerd profiel- en rechtensysteem</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <!-- Interactieve Demo -->
+                            <div class="mt-8 pt-6 border-t border-white/20">
+                                <h3 class="text-xl font-bold text-white mb-4">Actuele Thema's</h3>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-white/10 rounded-xl p-4 hover:bg-white/15 transition-colors">
+                                        <div class="flex items-center">
+                                            <span class="text-2xl mr-2">🌍</span>
+                                            <h4 class="font-medium text-white">Klimaatbeleid</h4>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white/10 rounded-xl p-4 hover:bg-white/15 transition-colors">
+                                        <div class="flex items-center">
+                                            <span class="text-2xl mr-2">🏠</span>
+                                            <h4 class="font-medium text-white">Woningmarkt</h4>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white/10 rounded-xl p-4 hover:bg-white/15 transition-colors">
+                                        <div class="flex items-center">
+                                            <span class="text-2xl mr-2">💶</span>
+                                            <h4 class="font-medium text-white">Economie</h4>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white/10 rounded-xl p-4 hover:bg-white/15 transition-colors">
+                                        <div class="flex items-center">
+                                            <span class="text-2xl mr-2">🏥</span>
+                                            <h4 class="font-medium text-white">Zorg</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-4">
+                                    <span class="text-white/70 text-sm">Ontdek meer dan 30+ politieke thema's</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Projecten Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <?php
             $projects = [
                 [
-                    'name' => 'Portfolio Website',
-                    'description' => 'Een moderne, responsieve portfolio website gebouwd met PHP, Tailwind CSS en JavaScript. Features dark mode, meertalige ondersteuning en een contactformulier.',
-                    'tech' => ['PHP', 'Tailwind CSS', 'JavaScript'],
-                    'icon' => 'fa-globe',
+                    'name' => 'Elyse Iedema',
+                    'description' => 'Elyse Iedema is een fotografie bedrijf dat ik heb gemaakt met PHP, MySQL, JavaScript en Bootstrap.',
+                    'tech' => ['PHP', 'MySQL', 'JavaScript', 'Bootstrap'],
+                    'icon' => 'fa-camera',
                     'category' => 'web',
-                    'color' => 'blue',
-                    'github' => 'portfolio-website',
-                    'preview_url' => '#',
+                    'color' => 'cyan',
+                    'github' => 'elyseiedema',
+                    'preview_url' => 'https://elyseiedema.nl',
                     'stats' => [
-                        'commits' => '156',
-                        'files' => '48',
+                        'commits' => '167',
+                        'files' => '62',
                         'contributors' => '1'
-                    ]
-                ],
-                [
-                    'name' => 'Geregeld.online',
-                    'description' => 'Een platform voor ZZP\'ers om eenvoudig een professionele website aan te schaffen. Het platform biedt verschillende templates en opties om de website volledig aan te passen aan de wensen van de ondernemer.',
-                    'tech' => ['WordPress', 'PHP', 'JavaScript', 'SCSS'],
-                    'icon' => 'fa-briefcase',
-                    'category' => 'web',
-                    'color' => 'emerald',
-                    'github' => 'go-theme',
-                    'preview_url' => 'https://geregeld.online',
-                    'stats' => [
-                        'commits' => '234',
-                        'files' => '89',
-                        'contributors' => '2'
                     ]
                 ],
                 [
@@ -80,7 +225,7 @@ include 'includes/header.php';
                     'description' => 'PAS is een systeem dat ik heb gemaakt om pakketten bij te houden. Het helpt bij het opslaan van pakketten en laat zien wanneer mensen ze kunnen ophalen.',
                     'tech' => ['PHP', 'MySQL', 'Laravel', 'Docker'],
                     'icon' => 'fa-boxes-stacked',
-                    'category' => 'system',
+                    'category' => 'web',
                     'color' => 'blue',
                     'github' => 'PAS',
                     'preview_url' => '#',
@@ -110,7 +255,7 @@ include 'includes/header.php';
                     'description' => 'Een PHP-applicatie voor het beheren en verhandelen van Pokemon kaarten.',
                     'tech' => ['PHP', 'MySQL', 'JavaScript'],
                     'icon' => 'fa-diamond',
-                    'category' => 'app',
+                    'category' => 'web',
                     'color' => 'red',
                     'github' => 'poketrader',
                     'preview_url' => '#',
@@ -140,7 +285,7 @@ include 'includes/header.php';
                     'description' => 'PHP applicatie gericht op gaming en PC configuraties. Gebruikers kunnen hun eigen gaming PC samenstellen en de prestaties vergelijken.',
                     'tech' => ['PHP', 'MySQL', 'JavaScript'],
                     'icon' => 'fa-desktop',
-                    'category' => 'app',
+                    'category' => 'web',
                     'color' => 'purple',
                     'github' => 'gamepc',
                     'preview_url' => '#',
@@ -155,7 +300,7 @@ include 'includes/header.php';
                     'description' => 'Een PHP-gebaseerd boekbeheersysteem voor het bijhouden van je persoonlijke bibliotheek, inclusief leesvoortgang en recensies.',
                     'tech' => ['PHP', 'MySQL', 'Bootstrap'],
                     'icon' => 'fa-book-open',
-                    'category' => 'app',
+                    'category' => 'web',
                     'color' => 'yellow',
                     'github' => 'bookonshelf',
                     'preview_url' => '#',
@@ -179,7 +324,52 @@ include 'includes/header.php';
                         'files' => '64',
                         'contributors' => '1'
                     ]
-                ]
+                ],
+                [
+                    'name' => 'Geregeld.online',
+                    'description' => 'Een platform voor ZZP\'ers om eenvoudig een professionele website aan te schaffen. Het platform biedt verschillende templates en opties om de website volledig aan te passen aan de wensen van de ondernemer.',
+                    'tech' => ['WordPress', 'PHP', 'JavaScript', 'SCSS'],
+                    'icon' => 'fa-briefcase',
+                    'category' => 'web',
+                    'color' => 'emerald',
+                    'github' => 'go-theme',
+                    'preview_url' => 'https://geregeld.online',
+                    'stats' => [
+                        'commits' => '234',
+                        'files' => '89',
+                        'contributors' => '2'
+                    ]
+                ],
+                [
+                    'name' => 'VoetbalVisie',
+                    'description' => 'Een platform voor voetbalanalyses en statistieken. Biedt real-time wedstrijdanalyses, spelersstatistieken en tactische inzichten voor voetbalfans.',
+                    'tech' => ['PHP', 'Laravel', 'React', 'MySQL'],
+                    'icon' => 'fa-futbol',
+                    'category' => 'web',
+                    'color' => 'cyan',
+                    'github' => 'VoetbalVisie',
+                    'preview_url' => '#',
+                    'stats' => [
+                        'commits' => '167',
+                        'files' => '62',
+                        'contributors' => '1'
+                    ]
+                ],
+                [
+                    'name' => 'Portfolio Website',
+                    'description' => 'Een moderne, responsieve portfolio website gebouwd met PHP, Tailwind CSS en JavaScript. Features dark mode, meertalige ondersteuning en een contactformulier.',
+                    'tech' => ['PHP', 'Tailwind CSS', 'JavaScript'],
+                    'icon' => 'fa-globe',
+                    'category' => 'web',
+                    'color' => 'blue',
+                    'github' => 'portfolio-website',
+                    'preview_url' => '#',
+                    'stats' => [
+                        'commits' => '156',
+                        'files' => '48',
+                        'contributors' => '1'
+                    ]
+                ],
             ];
 
             foreach ($projects as $project): ?>
@@ -296,10 +486,85 @@ include 'includes/header.php';
 .dark .filter-btn.active {
     box-shadow: 0 8px 16px rgba(59, 130, 246, 0.4);
 }
+
+/* Uitgelicht Project Stijlen */
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(244, 63, 94, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0); }
+}
+
+.bg-gradient-to-br.from-rose-500.to-purple-600 {
+    position: relative;
+    animation: pulse-glow 3s infinite;
+}
+
+.bg-gradient-to-br.from-rose-500.to-purple-600::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(244, 63, 94, 0.8) 0%, rgba(168, 85, 247, 0.8) 100%);
+    mask-image: radial-gradient(circle at center, transparent 0%, black 100%);
+    z-index: -1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .bg-gradient-to-br.from-rose-500.to-purple-600 {
+        animation: none;
+    }
+}
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    // Uitgelicht project animatie
+    const featuredProject = document.querySelector('.bg-gradient-to-br.from-rose-500.to-purple-600');
+    if (featuredProject) {
+        // Verwijder de hover zoom-in effect
+        // featuredProject.addEventListener('mouseenter', function() {
+        //     this.style.transform = 'scale(1.02)';
+        //     this.style.transition = 'transform 0.3s ease-in-out';
+        // });
+        
+        // featuredProject.addEventListener('mouseleave', function() {
+        //     this.style.transform = 'scale(1)';
+        //     this.style.transition = 'transform 0.3s ease-in-out';
+        // });
+        
+        // Voeg een subtiele beweging toe aan de decoratieve elementen
+        const decorElements = featuredProject.querySelectorAll('.absolute.bg-white.opacity-10.rounded-full');
+        decorElements.forEach(elem => {
+            let startPos = { x: 0, y: 0 };
+            
+            document.addEventListener('mousemove', function(e) {
+                const mouseX = e.clientX / window.innerWidth;
+                const mouseY = e.clientY / window.innerHeight;
+                
+                const moveX = (mouseX - 0.5) * 20;
+                const moveY = (mouseY - 0.5) * 20;
+                
+                elem.style.transform = `translate(${startPos.x + moveX}px, ${startPos.y + moveY}px)`;
+                elem.style.transition = 'transform 0.3s ease-out';
+            });
+        });
+        
+        // Animeer de thema kaarten
+        const themeCards = featuredProject.querySelectorAll('.bg-white\\/10.rounded-xl');
+        themeCards.forEach((card, index) => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+                card.style.transition = 'all 0.5s ease-out';
+            }, 100 * (index + 1));
+        });
+    }
+
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
 

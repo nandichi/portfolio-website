@@ -71,7 +71,7 @@
                             </h3>
                             <div class="space-y-4">
                                 <div class="flex flex-col">
-                                    <span class="text-blue-400 font-semibold text-lg">Software Developer Stage</span>
+                                    <span class="text-blue-400 font-semibold text-lg">Software Developer</span>
                                     <span class="text-gray-300">Developing B.V.</span>
                                     <span class="text-sm text-gray-400 mt-1">sep. 2024 - heden</span>
                                 </div>

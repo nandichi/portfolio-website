@@ -4,10 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $pageTitle; ?> - Naoufal Andichi</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="<?php echo isset($pageDescription) ? $pageDescription : 'Portfolio van Naoufal Andichi - Ontdek mijn projecten, vaardigheden en ervaring als ontwikkelaar.'; ?>">
+    <meta name="keywords" content="<?php echo isset($pageKeywords) ? $pageKeywords : 'Naoufal Andichi, portfolio, ontwikkelaar, webdevelopment, programmeren'; ?>">
+    <meta name="author" content="Naoufal Andichi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
+    
+    <!-- Open Graph / Social Media Meta Tags -->
+    <meta property="og:title" content="<?php echo $pageTitle; ?> - Naoufal Andichi">
+    <meta property="og:description" content="<?php echo isset($pageDescription) ? $pageDescription : 'Portfolio van Naoufal Andichi - Ontdek mijn projecten, vaardigheden en ervaring als ontwikkelaar.'; ?>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>">
+    <meta property="og:image" content="<?php echo 'https://' . $_SERVER['HTTP_HOST']; ?>/images/og-image.jpg">
+    <meta property="og:site_name" content="Naoufal Andichi Portfolio">
+    
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?php echo $pageTitle; ?> - Naoufal Andichi">
+    <meta name="twitter:description" content="<?php echo isset($pageDescription) ? $pageDescription : 'Portfolio van Naoufal Andichi - Ontdek mijn projecten, vaardigheden en ervaring als ontwikkelaar.'; ?>">
+    <meta name="twitter:image" content="<?php echo 'https://' . $_SERVER['HTTP_HOST']; ?>/images/og-image.jpg">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "<?php echo ($currentPage === 'home') ? 'Person' : 'WebPage'; ?>",
+        <?php if ($currentPage === 'home'): ?>
+        "name": "Naoufal Andichi",
+        "url": "<?php echo 'https://' . $_SERVER['HTTP_HOST']; ?>",
+        "image": "<?php echo 'https://' . $_SERVER['HTTP_HOST']; ?>/images/og-image.jpg",
+        "jobTitle": "Developer",
+        "sameAs": [
+            "https://www.linkedin.com/in/naoufal-andichi/",
+            "https://github.com/naoufal-andichi"
+        ],
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "<?php echo 'https://' . $_SERVER['HTTP_HOST']; ?>"
+        }
+        <?php else: ?>
+        "name": "<?php echo $pageTitle; ?> - Naoufal Andichi",
+        "description": "<?php echo isset($pageDescription) ? $pageDescription : 'Portfolio van Naoufal Andichi - Ontdek mijn projecten, vaardigheden en ervaring als ontwikkelaar.'; ?>",
+        "url": "<?php echo 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; ?>"
+        <?php endif; ?>
+    }
+    </script>
+    
+    <!-- Uitgebreide Favicon Ondersteuning -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3b82f6">
+    <meta name="msapplication-TileColor" content="#3b82f6">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#3b82f6">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         // Tailwind configuratie voor dark mode
@@ -106,7 +161,7 @@
         <div class="max-w-7xl mx-auto">
             <nav class="flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
                 <div class="flex items-center space-x-8">
-                    <a href="index.php" class="flex items-center space-x-3">
+                    <a href="index" class="flex items-center space-x-3">
                         <div class="bg-blue-700 dark:bg-blue-600 w-10 h-10 rounded flex items-center justify-center shadow-lg">
                             <span class="text-lg font-bold text-white">NA</span>
                         </div>
@@ -118,27 +173,27 @@
                 </div>
 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.php" 
+                    <a href="index" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'home' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Home
                     </a>
-                    <a href="projects.php" 
+                    <a href="projects" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'projects' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Projecten
                     </a>
-                    <a href="skills.php" 
+                    <a href="skills" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'skills' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Vaardigheden
                     </a>
-                    <a href="about.php" 
+                    <a href="about" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'about' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Over Mij
                     </a>
-                    <a href="contact.php" 
+                    <a href="contact" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'contact' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Contact
@@ -170,27 +225,27 @@
         <!-- Mobiel menu -->
         <div class="md:hidden hidden mobile-menu border-t border-gray-100 dark:border-gray-800">
             <div class="px-4 py-2 space-y-1">
-                <a href="index.php" 
+                <a href="index" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'home' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Home
                 </a>
-                <a href="projects.php" 
+                <a href="projects" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'projects' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Projecten
                 </a>
-                <a href="skills.php" 
+                <a href="skills" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'skills' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Vaardigheden
                 </a>
-                <a href="about.php" 
+                <a href="about" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'about' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Over Mij
                 </a>
-                <a href="contact.php" 
+                <a href="contact" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'contact' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Contact
