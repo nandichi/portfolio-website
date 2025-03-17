@@ -173,27 +173,27 @@
                 </div>
 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index" 
+                    <a href="index.php" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'home' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Home
                     </a>
-                    <a href="projects" 
+                    <a href="projects.php" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'projects' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Projecten
                     </a>
-                    <a href="skills" 
+                    <a href="skills.php" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'skills' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Vaardigheden
                     </a>
-                    <a href="about" 
+                    <a href="about.php" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'about' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Over Mij
                     </a>
-                    <a href="contact" 
+                    <a href="contact.php" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'contact' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Contact
@@ -225,27 +225,27 @@
         <!-- Mobiel menu -->
         <div class="md:hidden hidden mobile-menu border-t border-gray-100 dark:border-gray-800">
             <div class="px-4 py-2 space-y-1">
-                <a href="index" 
+                <a href="index.php" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'home' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Home
                 </a>
-                <a href="projects" 
+                <a href="projects.php" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'projects' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Projecten
                 </a>
-                <a href="skills" 
+                <a href="skills.php" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'skills' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Vaardigheden
                 </a>
-                <a href="about" 
+                <a href="about.php" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'about' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Over Mij
                 </a>
-                <a href="contact" 
+                <a href="contact.php" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'contact' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Contact

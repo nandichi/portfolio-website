@@ -106,7 +106,7 @@ include 'includes/header.php';
             </div>
             
             <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed animate-[fadeInUp_0.8s_ease-out_0.4s]">
-                Een enthousiaste student Software Developer bij het RijnIJssel in Arnhem, met passie voor moderne technologieën en innovatieve oplossingen
+                Een gedreven code-expert die complexe problemen omzet in werkende oplossingen. Met een scherp oog voor detail en passie voor innovatie bouw ik digitale ervaringen die impact maken
             </p>
             
             <!-- Call-to-action knoppen met geavanceerde hover effecten -->
@@ -749,7 +749,7 @@ include 'includes/header.php';
                                             <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                                             </svg>
-                                            mei 2023 - heden
+                                            mei 2023 - nov 2024
                                         </span>
                                     </div>
                                 </div>
@@ -1040,211 +1040,252 @@ include 'includes/header.php';
     </style>
 </section>
 
-<!-- Timeline Section -->
-<section class="py-24 px-4 bg-gradient-to-b from-white via-blue-50/30 to-white dark:from-gray-900 dark:via-gray-800/50 dark:to-gray-900 relative overflow-hidden">
-    <!-- Subtiele geometrische patronen -->
+<!-- Reis Section -->
+<section class="py-20 px-4 bg-gradient-to-br from-white via-blue-50/30 to-purple-50/30 dark:from-gray-900 dark:via-gray-800/50 dark:to-gray-900 relative overflow-hidden">
+    <!-- Animated background patterns -->
     <div class="absolute inset-0">
-        <div class="absolute top-0 left-0 w-full h-full opacity-10 dark:opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%234F46E5\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(79,70,229,0.1),transparent_50%)] dark:bg-[radial-gradient(circle_at_50%_50%,rgba(79,70,229,0.05),transparent_50%)]"></div>
+        <div class="absolute inset-0 opacity-10 dark:opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%234F46E5\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
     </div>
 
     <div class="max-w-7xl mx-auto relative">
-        <!-- Header sectie met moderne typografie -->
-        <div class="text-center mb-20">
-            <div class="inline-flex items-center justify-center mb-4" data-aos="fade-down">
-                <span class="h-px w-8 bg-blue-500 mr-3"></span>
-                <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wider uppercase text-sm">Tijdlijn</span>
-                <span class="h-px w-8 bg-blue-500 ml-3"></span>
+        <!-- Header sectie -->
+        <div class="text-center mb-16 md:mb-24">
+            <div class="inline-flex items-center justify-center mb-6" data-aos="fade-down">
+                <span class="h-px w-12 bg-gradient-to-r from-blue-500 to-indigo-500 mr-4"></span>
+                <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wider uppercase text-sm">Mijn Reis</span>
+                <span class="h-px w-12 bg-gradient-to-l from-blue-500 to-indigo-500 ml-4"></span>
             </div>
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white" data-aos="fade-up">
-                Mijn <span class="text-blue-600 dark:text-blue-400">Reis</span>
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white" data-aos="fade-up">
+                Mijn <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">Professionele Ontwikkeling</span>
             </h2>
-            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                Een tijdlijn van mijn professionele ontwikkeling
+            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto px-4" data-aos="fade-up" data-aos-delay="100">
+                Van student tot software developer
             </p>
         </div>
 
+        <!-- Reis Container -->
         <div class="relative">
-            <!-- Verbeterde verticale lijn -->
-            <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-blue-300 via-blue-500 to-blue-300 dark:from-blue-700 dark:via-blue-500 dark:to-blue-700 rounded-full opacity-50"></div>
+            <!-- Verbindingslijnen -->
+            <div class="absolute inset-0 hidden md:block">
+                <svg class="w-full h-full" viewBox="0 0 100 100" preserveAspectRatio="none">
+                    <path d="M20,20 L80,20 L80,80 L20,80 Z" 
+                          class="fill-none stroke-blue-200 dark:stroke-blue-900/30" 
+                          stroke-width="2" 
+                          stroke-dasharray="4 4"/>
+                </svg>
+            </div>
 
-            <!-- Timeline Items -->
-            <div class="space-y-16">
+            <!-- Reis Items -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
                 <!-- Developing B.V. -->
-                <div class="relative group" data-aos="fade-right">
-                    <div class="flex items-center">
-                        <div class="flex-1 text-right pr-8">
-                            <div class="bg-white dark:bg-gray-800/80 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden group-hover:-translate-y-1">
-                                <!-- Decorative accent -->
-                                <div class="absolute top-0 right-0 h-2 w-full bg-gradient-to-l from-blue-500 to-indigo-600"></div>
-                                
-                                <div class="pt-3">
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                                        Werkzaam bij Developing B.V.
-                                    </h3>
-                                    <p class="text-blue-600 dark:text-blue-400 font-medium flex items-center justify-end gap-2 mt-1">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                        </svg>
-                                        sep. 2024 - heden
-                                    </p>
-                                    <p class="text-gray-600 dark:text-gray-300 mt-3">
-                                        Stage waar ik werk aan verschillende projecten met nieuwe technieken.
-                                    </p>
-                                </div>
+                <div class="group" data-aos="fade-up">
+                    <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden h-full group-hover:-translate-y-2">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-indigo-500/5 dark:from-blue-400/5 dark:to-indigo-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-0 right-0 h-1 w-full bg-gradient-to-l from-blue-500 to-indigo-600"></div>
+                        
+                        <div class="relative">
+                            <div class="flex items-center justify-start gap-2 mb-4">
+                                <span class="px-3 py-1 text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 rounded-full">
+                                    Heden
+                                </span>
                             </div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                    Developing B.V.
+                                </h3>
+                            </div>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                sep. 2024 - heden
+                            </p>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Baan waar ik werk aan verschillende projecten met nieuwe technieken.
+                            </p>
                         </div>
-                        <div class="w-6 h-6 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full border-4 border-white dark:border-gray-800 shadow-lg shadow-blue-500/50 group-hover:scale-125 transition-transform z-10"></div>
-                        <div class="flex-1"></div>
                     </div>
                 </div>
 
                 <!-- Pathé -->
-                <div class="relative group" data-aos="fade-left">
-                    <div class="flex items-center">
-                        <div class="flex-1"></div>
-                        <div class="w-6 h-6 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-full border-4 border-white dark:border-gray-800 shadow-lg shadow-indigo-500/50 group-hover:scale-125 transition-transform z-10"></div>
-                        <div class="flex-1 pl-8">
-                            <div class="bg-white dark:bg-gray-800/80 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden group-hover:-translate-y-1">
-                                <!-- Decorative accent -->
-                                <div class="absolute top-0 left-0 h-2 w-full bg-gradient-to-r from-indigo-500 to-purple-600"></div>
-                                
-                                <div class="pt-3">
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                                        Service Employee bij Pathé
-                                    </h3>
-                                    <p class="text-indigo-600 dark:text-indigo-400 font-medium flex items-center gap-2 mt-1">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                        </svg>
-                                        mei 2023 - heden
-                                    </p>
-                                    <p class="text-gray-600 dark:text-gray-300 mt-3">
-                                        Klantenservice, ticketverkoop en evenementen assistentie
-                                    </p>
-                                </div>
+                <div class="group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden h-full group-hover:-translate-y-2">
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 dark:from-indigo-400/5 dark:to-purple-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-0 right-0 h-1 w-full bg-gradient-to-l from-indigo-500 to-purple-600"></div>
+                        
+                        <div class="relative">
+                            <div class="flex items-center justify-start gap-2 mb-4">
+                                <span class="px-3 py-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-900/30 rounded-full">
+                                    Heden
+                                </span>
                             </div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-purple-600 rounded-xl flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                                    Pathé
+                                </h3>
+                            </div>
+                            <p class="text-indigo-600 dark:text-indigo-400 font-medium flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                mei 2023 - heden
+                            </p>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Klantenservice, ticketverkoop en evenementen assistentie
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- I@control -->
-                <div class="relative group" data-aos="fade-right">
-                    <div class="flex items-center">
-                        <div class="flex-1 text-right pr-8">
-                            <div class="bg-white dark:bg-gray-800/80 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden group-hover:-translate-y-1">
-                                <!-- Decorative accent -->
-                                <div class="absolute top-0 right-0 h-2 w-full bg-gradient-to-l from-blue-500 to-indigo-600"></div>
-                                
-                                <div class="pt-3">
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-                                        Stage bij I@control
-                                    </h3>
-                                    <p class="text-blue-600 dark:text-blue-400 font-medium flex items-center justify-end gap-2 mt-1">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                        </svg>
-                                        feb. 2023 - apr. 2023
-                                    </p>
-                                    <p class="text-gray-600 dark:text-gray-300 mt-3">
-                                        Ontwikkeling met TypeScript, C#, ASP.NET en AngularJS
-                                    </p>
-                                </div>
+                <div class="group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden h-full group-hover:-translate-y-2">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 to-indigo-500/5 dark:from-blue-400/5 dark:to-indigo-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-0 right-0 h-1 w-full bg-gradient-to-l from-blue-500 to-indigo-600"></div>
+                        
+                        <div class="relative">
+                            <div class="flex items-center justify-start gap-2 mb-4">
+                                <span class="px-3 py-1 text-xs font-semibold text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-900/30 rounded-full">
+                                    Stage
+                                </span>
                             </div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                    I@control
+                                </h3>
+                            </div>
+                            <p class="text-blue-600 dark:text-blue-400 font-medium flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                feb. 2023 - apr. 2023
+                            </p>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Ontwikkeling met TypeScript, C#, ASP.NET en AngularJS
+                            </p>
                         </div>
-                        <div class="w-6 h-6 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full border-4 border-white dark:border-gray-800 shadow-lg shadow-blue-500/50 group-hover:scale-125 transition-transform z-10"></div>
-                        <div class="flex-1"></div>
                     </div>
                 </div>
 
                 <!-- Action -->
-                <div class="relative group" data-aos="fade-left">
-                    <div class="flex items-center">
-                        <div class="flex-1"></div>
-                        <div class="w-6 h-6 bg-gradient-to-br from-purple-500 to-pink-600 rounded-full border-4 border-white dark:border-gray-800 shadow-lg shadow-purple-500/50 group-hover:scale-125 transition-transform z-10"></div>
-                        <div class="flex-1 pl-8">
-                            <div class="bg-white dark:bg-gray-800/80 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden group-hover:-translate-y-1">
-                                <!-- Decorative accent -->
-                                <div class="absolute top-0 left-0 h-2 w-full bg-gradient-to-r from-purple-500 to-pink-600"></div>
-                                
-                                <div class="pt-3">
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
-                                        Verkoopmedewerker bij Action
-                                    </h3>
-                                    <p class="text-purple-600 dark:text-purple-400 font-medium flex items-center gap-2 mt-1">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                        </svg>
-                                        okt. 2020 - mei 2023
-                                    </p>
-                                    <p class="text-gray-600 dark:text-gray-300 mt-3">
-                                        Klantenservice, voorraadbeheer en winkelnetheid
-                                    </p>
-                                </div>
+                <div class="group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden h-full group-hover:-translate-y-2">
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/5 to-pink-500/5 dark:from-purple-400/5 dark:to-pink-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-0 right-0 h-1 w-full bg-gradient-to-l from-purple-500 to-pink-600"></div>
+                        
+                        <div class="relative">
+                            <div class="flex items-center justify-start gap-2 mb-4">
+                                <span class="px-3 py-1 text-xs font-semibold text-purple-600 dark:text-purple-400 bg-purple-100 dark:bg-purple-900/30 rounded-full">
+                                    Verleden
+                                </span>
                             </div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                                    Action
+                                </h3>
+                            </div>
+                            <p class="text-purple-600 dark:text-purple-400 font-medium flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                okt. 2020 - mei 2023
+                            </p>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                Klantenservice, voorraadbeheer en winkelnetheid
+                            </p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Opleiding -->
-                <div class="relative group" data-aos="fade-right">
-                    <div class="flex items-center">
-                        <div class="flex-1 text-right pr-8">
-                            <div class="bg-white dark:bg-gray-800/80 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden group-hover:-translate-y-1">
-                                <!-- Decorative accent -->
-                                <div class="absolute top-0 right-0 h-2 w-full bg-gradient-to-l from-indigo-500 to-blue-600"></div>
-                                
-                                <div class="pt-3">
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                                        Software Development Opleiding
-                                    </h3>
-                                    <p class="text-indigo-600 dark:text-indigo-400 font-medium flex items-center justify-end gap-2 mt-1">
-                                        Rijn IJssel
-                                    </p>
-                                    <p class="text-indigo-600 dark:text-indigo-400 font-medium flex items-center justify-end gap-2">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                        </svg>
-                                        2021 - 2024
-                                    </p>
-                                    <p class="text-gray-600 dark:text-gray-300 mt-3">
-                                        MBO 4 - Software Developer
-                                    </p>
-                                </div>
+                <div class="group" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden h-full group-hover:-translate-y-2">
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-blue-500/5 dark:from-indigo-400/5 dark:to-blue-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-0 right-0 h-1 w-full bg-gradient-to-l from-indigo-500 to-blue-600"></div>
+                        
+                        <div class="relative">
+                            <div class="flex items-center justify-start gap-2 mb-4">
+                                <span class="px-3 py-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-900/30 rounded-full">
+                                    Opleiding
+                                </span>
                             </div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                                    Rijn IJssel
+                                </h3>
+                            </div>
+                            <p class="text-indigo-600 dark:text-indigo-400 font-medium flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                2021 - 2024
+                            </p>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                MBO 4 - Software Developer
+                            </p>
                         </div>
-                        <div class="w-6 h-6 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-full border-4 border-white dark:border-gray-800 shadow-lg shadow-indigo-500/50 group-hover:scale-125 transition-transform z-10"></div>
-                        <div class="flex-1"></div>
                     </div>
                 </div>
 
                 <!-- MAVO -->
-                <div class="relative group" data-aos="fade-left">
-                    <div class="flex items-center">
-                        <div class="flex-1"></div>
-                        <div class="w-6 h-6 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-full border-4 border-white dark:border-gray-800 shadow-lg shadow-indigo-500/50 group-hover:scale-125 transition-transform z-10"></div>
-                        <div class="flex-1 pl-8">
-                            <div class="bg-white dark:bg-gray-800/80 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden group-hover:-translate-y-1">
-                                <!-- Decorative accent -->
-                                <div class="absolute top-0 left-0 h-2 w-full bg-gradient-to-r from-indigo-500 to-blue-600"></div>
-                                
-                                <div class="pt-3">
-                                    <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
-                                        MAVO
-                                    </h3>
-                                    <p class="text-indigo-600 dark:text-indigo-400 font-medium flex items-center gap-2 mt-1">
-                                        Pallas Athene College
-                                    </p>
-                                    <p class="text-indigo-600 dark:text-indigo-400 font-medium flex items-center gap-2">
-                                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                        </svg>
-                                        2017 - 2021
-                                    </p>
-                                    <p class="text-gray-600 dark:text-gray-300 mt-3">
-                                        Theoretische leerweg
-                                    </p>
-                                </div>
+                <div class="group" data-aos="fade-up" data-aos-delay="500">
+                    <div class="bg-white/80 dark:bg-gray-800/80 p-6 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/50 backdrop-blur-sm relative overflow-hidden h-full group-hover:-translate-y-2">
+                        <div class="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-blue-500/5 dark:from-indigo-400/5 dark:to-blue-400/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <div class="absolute top-0 right-0 h-1 w-full bg-gradient-to-l from-indigo-500 to-blue-600"></div>
+                        
+                        <div class="relative">
+                            <div class="flex items-center justify-start gap-2 mb-4">
+                                <span class="px-3 py-1 text-xs font-semibold text-indigo-600 dark:text-indigo-400 bg-indigo-100 dark:bg-indigo-900/30 rounded-full">
+                                    Verleden
+                                </span>
                             </div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="w-12 h-12 bg-gradient-to-br from-indigo-500 to-blue-600 rounded-xl flex items-center justify-center text-white transform group-hover:rotate-12 transition-transform duration-500">
+                                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                                    </svg>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                                    Pallas Athene College
+                                </h3>
+                            </div>
+                            <p class="text-indigo-600 dark:text-indigo-400 font-medium flex items-center gap-2 mb-4">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                                </svg>
+                                2017 - 2021
+                            </p>
+                            <p class="text-gray-600 dark:text-gray-300">
+                                MAVO - Theoretische leerweg
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1268,22 +1309,28 @@ include 'includes/header.php';
 </div>
 
 <!-- Testimonials/Aanbevelingen Sectie -->
-<section class="py-24 px-4 bg-gradient-to-b from-white via-blue-50/30 to-white dark:from-gray-900 dark:via-gray-800/50 dark:to-gray-900 relative overflow-hidden">
-    <!-- Subtiele geometrische patronen -->
-    <div class="absolute inset-0">
-        <div class="absolute top-0 left-0 w-full h-full opacity-10 dark:opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%234F46E5\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+<section class="py-24 px-4 relative overflow-hidden">
+    <!-- Moderne achtergrond met animatie -->
+    <div class="absolute inset-0 bg-gradient-to-br from-white via-indigo-50/30 to-white dark:from-gray-900 dark:via-gray-800/20 dark:to-gray-900">
+        <!-- Animated gradient orbs -->
+        <div class="absolute top-0 left-0 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-blob"></div>
+        <div class="absolute top-0 right-0 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-blob animation-delay-2000"></div>
+        <div class="absolute bottom-0 left-1/2 w-96 h-96 bg-pink-500/10 rounded-full blur-3xl animate-blob animation-delay-4000"></div>
+        
+        <!-- Subtiel patroon overlay -->
+        <div class="absolute inset-0 opacity-10 dark:opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%234F46E5\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
     </div>
 
     <div class="max-w-7xl mx-auto relative">
         <!-- Header sectie met moderne typografie -->
         <div class="text-center mb-20">
-            <div class="inline-flex items-center justify-center mb-4" data-aos="fade-down">
-                <span class="h-px w-8 bg-blue-500 mr-3"></span>
-                <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wider uppercase text-sm">Aanbevelingen</span>
-                <span class="h-px w-8 bg-blue-500 ml-3"></span>
+            <div class="inline-flex items-center justify-center mb-8" data-aos="fade-down">
+                <div class="h-[2px] w-16 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500"></div>
+                <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wider uppercase text-sm mx-6">Aanbevelingen</span>
+                <div class="h-[2px] w-16 bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500"></div>
             </div>
             <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white" data-aos="fade-up">
-                Stage <span class="text-blue-600 dark:text-blue-400">Ervaringen</span>
+                Stage <span class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Ervaringen</span>
             </h2>
             <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
                 Ontdek wat mijn stagebegeleider en collega's bij Developing B.V. te zeggen hebben over mijn werk, vaardigheden en bijdragen aan het team.
@@ -1294,28 +1341,35 @@ include 'includes/header.php';
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 h-full">
             <!-- Testimonial 1 -->
             <div class="group h-full" data-aos="fade-up">
-                <div class="bg-white dark:bg-gray-800/80 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm h-full flex flex-col group-hover:-translate-y-2 overflow-hidden">
+                <div class="bg-white/90 dark:bg-gray-800/90 rounded-[2rem] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/30 backdrop-blur-sm h-full flex flex-col group-hover:-translate-y-2 overflow-hidden relative">
+                    <!-- Decoratieve achtergrond met animatie -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-purple-500/5 to-pink-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
                     <!-- Header met avatar en naam -->
-                    <div class="bg-gradient-to-r from-blue-500 to-blue-600 p-6 flex items-center gap-4">
-                        <div class="w-14 h-14 rounded-full bg-white dark:bg-gray-800 flex items-center justify-center shadow-lg border-2 border-white">
+                    <div class="bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 p-6 flex items-center gap-4 relative overflow-hidden">
+                        <!-- Decoratieve cirkels -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                        <div class="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full translate-y-16 -translate-x-16"></div>
+                        
+                        <div class="w-14 h-14 rounded-xl bg-white/90 dark:bg-gray-800/90 flex items-center justify-center shadow-lg border border-white/20 transform group-hover:rotate-6 transition-transform duration-500 relative z-10">
                             <span class="text-blue-600 dark:text-blue-400 font-bold text-lg">SB</span>
                         </div>
-                        <div>
+                        <div class="relative z-10">
                             <h3 class="text-xl font-bold text-white">Sven van der Berg</h3>
-                            <p class="text-blue-100 font-medium text-sm flex items-center gap-1">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <p class="text-blue-100 font-medium text-sm flex items-center gap-2">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                                 </svg>
-                                Stage Begeleider, Developing B.V.
+                                Werk Begeleider, Developing B.V.
                             </p>
                         </div>
                     </div>
                     
                     <!-- Content -->
-                    <div class="p-6 flex-1 flex flex-col">
+                    <div class="p-6 flex-1 flex flex-col relative">
                         <div class="mb-6 flex-1">
-                            <div class="text-blue-500 mb-4">
-                                <svg class="w-8 h-8 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                            <div class="text-blue-500 mb-4 transform group-hover:scale-110 transition-transform duration-500">
+                                <svg class="w-6 h-6 opacity-20" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                                 </svg>
                             </div>
@@ -1325,12 +1379,12 @@ include 'includes/header.php';
                         </div>
                         
                         <!-- Skills Tags -->
-                        <div class="mt-auto pt-5 border-t border-gray-100 dark:border-gray-700/50">
+                        <div class="mt-auto pt-5 border-t border-gray-100/50 dark:border-gray-700/30">
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium border border-blue-100 dark:border-blue-800/50 shadow-sm">
+                                <span class="px-3 py-1.5 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 text-blue-600 dark:text-blue-400 rounded-lg text-sm font-medium border border-blue-100/50 dark:border-blue-800/30 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
                                     Innovatie
                                 </span>
-                                <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium border border-blue-100 dark:border-blue-800/50 shadow-sm">
+                                <span class="px-3 py-1.5 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 text-blue-600 dark:text-blue-400 rounded-lg text-sm font-medium border border-blue-100/50 dark:border-blue-800/30 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
                                     Detail
                                 </span>
                             </div>
@@ -1341,16 +1395,23 @@ include 'includes/header.php';
 
             <!-- Testimonial 2 -->
             <div class="group h-full" data-aos="fade-up" data-aos-delay="100">
-                <div class="bg-white dark:bg-gray-800/80 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm h-full flex flex-col group-hover:-translate-y-2 overflow-hidden">
+                <div class="bg-white/90 dark:bg-gray-800/90 rounded-[2rem] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/30 backdrop-blur-sm h-full flex flex-col group-hover:-translate-y-2 overflow-hidden relative">
+                    <!-- Decoratieve achtergrond met animatie -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-500/5 via-emerald-500/5 to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
                     <!-- Header met avatar en naam -->
-                    <div class="bg-gradient-to-r from-green-500 to-green-600 p-6 flex items-center gap-4">
-                        <div class="w-14 h-14 rounded-full bg-white dark:bg-gray-800 flex items-center justify-center shadow-lg border-2 border-white">
+                    <div class="bg-gradient-to-br from-green-500 via-green-600 to-green-700 p-6 flex items-center gap-4 relative overflow-hidden">
+                        <!-- Decoratieve cirkels -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                        <div class="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full translate-y-16 -translate-x-16"></div>
+                        
+                        <div class="w-14 h-14 rounded-xl bg-white/90 dark:bg-gray-800/90 flex items-center justify-center shadow-lg border border-white/20 transform group-hover:rotate-6 transition-transform duration-500 relative z-10">
                             <span class="text-green-600 dark:text-green-400 font-bold text-lg">KH</span>
                         </div>
-                        <div>
+                        <div class="relative z-10">
                             <h3 class="text-xl font-bold text-white">Kristian Huisman</h3>
-                            <p class="text-green-100 font-medium text-sm flex items-center gap-1">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <p class="text-green-100 font-medium text-sm flex items-center gap-2">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
                                 </svg>
                                 Senior Developer, Developing B.V.
@@ -1359,10 +1420,10 @@ include 'includes/header.php';
                     </div>
                     
                     <!-- Content -->
-                    <div class="p-6 flex-1 flex flex-col">
+                    <div class="p-6 flex-1 flex flex-col relative">
                         <div class="mb-6 flex-1">
-                            <div class="text-green-500 mb-4">
-                                <svg class="w-8 h-8 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                            <div class="text-green-500 mb-4 transform group-hover:scale-110 transition-transform duration-500">
+                                <svg class="w-6 h-6 opacity-20" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                                 </svg>
                             </div>
@@ -1372,12 +1433,12 @@ include 'includes/header.php';
                         </div>
                         
                         <!-- Skills Tags -->
-                        <div class="mt-auto pt-5 border-t border-gray-100 dark:border-gray-700/50">
+                        <div class="mt-auto pt-5 border-t border-gray-100/50 dark:border-gray-700/30">
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-sm font-medium border border-green-100 dark:border-green-800/50 shadow-sm">
+                                <span class="px-3 py-1.5 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 text-green-600 dark:text-green-400 rounded-lg text-sm font-medium border border-green-100/50 dark:border-green-800/30 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
                                     Technisch
                                 </span>
-                                <span class="px-3 py-1 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full text-sm font-medium border border-green-100 dark:border-green-800/50 shadow-sm">
+                                <span class="px-3 py-1.5 bg-gradient-to-r from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 text-green-600 dark:text-green-400 rounded-lg text-sm font-medium border border-green-100/50 dark:border-green-800/30 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
                                     Creatief
                                 </span>
                             </div>
@@ -1388,16 +1449,23 @@ include 'includes/header.php';
 
             <!-- Testimonial 3 -->
             <div class="group h-full" data-aos="fade-up" data-aos-delay="200">
-                <div class="bg-white dark:bg-gray-800/80 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm h-full flex flex-col group-hover:-translate-y-2 overflow-hidden">
+                <div class="bg-white/90 dark:bg-gray-800/90 rounded-[2rem] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/30 backdrop-blur-sm h-full flex flex-col group-hover:-translate-y-2 overflow-hidden relative">
+                    <!-- Decoratieve achtergrond met animatie -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-pink-500/5 to-rose-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
                     <!-- Header met avatar en naam -->
-                    <div class="bg-gradient-to-r from-purple-500 to-purple-600 p-6 flex items-center gap-4">
-                        <div class="w-14 h-14 rounded-full bg-white dark:bg-gray-800 flex items-center justify-center shadow-lg border-2 border-white">
+                    <div class="bg-gradient-to-br from-purple-500 via-purple-600 to-purple-700 p-6 flex items-center gap-4 relative overflow-hidden">
+                        <!-- Decoratieve cirkels -->
+                        <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                        <div class="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full translate-y-16 -translate-x-16"></div>
+                        
+                        <div class="w-14 h-14 rounded-xl bg-white/90 dark:bg-gray-800/90 flex items-center justify-center shadow-lg border border-white/20 transform group-hover:rotate-6 transition-transform duration-500 relative z-10">
                             <span class="text-purple-600 dark:text-purple-400 font-bold text-lg">MT</span>
                         </div>
-                        <div>
+                        <div class="relative z-10">
                             <h3 class="text-xl font-bold text-white">Mark Timmers</h3>
-                            <p class="text-purple-100 font-medium text-sm flex items-center gap-1">
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <p class="text-purple-100 font-medium text-sm flex items-center gap-2">
+                                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z"/>
                                 </svg>
                                 Frontend Specialist, Developing B.V.
@@ -1406,10 +1474,10 @@ include 'includes/header.php';
                     </div>
                     
                     <!-- Content -->
-                    <div class="p-6 flex-1 flex flex-col">
+                    <div class="p-6 flex-1 flex flex-col relative">
                         <div class="mb-6 flex-1">
-                            <div class="text-purple-500 mb-4">
-                                <svg class="w-8 h-8 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                            <div class="text-purple-500 mb-4 transform group-hover:scale-110 transition-transform duration-500">
+                                <svg class="w-6 h-6 opacity-20" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
                                 </svg>
                             </div>
@@ -1419,12 +1487,12 @@ include 'includes/header.php';
                         </div>
                         
                         <!-- Skills Tags -->
-                        <div class="mt-auto pt-5 border-t border-gray-100 dark:border-gray-700/50">
+                        <div class="mt-auto pt-5 border-t border-gray-100/50 dark:border-gray-700/30">
                             <div class="flex flex-wrap gap-2">
-                                <span class="px-3 py-1 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full text-sm font-medium border border-purple-100 dark:border-purple-800/50 shadow-sm">
+                                <span class="px-3 py-1.5 bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 text-purple-600 dark:text-purple-400 rounded-lg text-sm font-medium border border-purple-100/50 dark:border-purple-800/30 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
                                     Frontend
                                 </span>
-                                <span class="px-3 py-1 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-full text-sm font-medium border border-purple-100 dark:border-purple-800/50 shadow-sm">
+                                <span class="px-3 py-1.5 bg-gradient-to-r from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 text-purple-600 dark:text-purple-400 rounded-lg text-sm font-medium border border-purple-100/50 dark:border-purple-800/30 shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-0.5">
                                     UX Design
                                 </span>
                             </div>
@@ -1435,6 +1503,35 @@ include 'includes/header.php';
         </div>
     </div>
 </section>
+
+<style>
+@keyframes blob {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+        transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+        transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+}
+
+.animate-blob {
+    animation: blob 7s infinite;
+}
+
+.animation-delay-2000 {
+    animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+    animation-delay: 4s;
+}
+</style>
 
 <!-- Call to Action Section -->
 <section class="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800 text-white dark:from-blue-800 dark:to-blue-600">
