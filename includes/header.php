@@ -63,21 +63,60 @@
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="theme-color" content="#3b82f6">
     
+    <!-- Dark mode initialisatie -->
+    <script>
+        // Controleer dark mode voorkeur en pas toe
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         // Tailwind configuratie voor dark mode
         tailwind.config = {
             darkMode: 'class',
             theme: {
-                extend: {}
+                extend: {
+                    colors: {
+                        accent: {
+                            50: '#eef7ff',
+                            100: '#d9edff',
+                            200: '#bce0ff',
+                            300: '#8acbff',
+                            400: '#54abff',
+                            500: '#3b88ff',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                            950: '#172554',
+                        }
+                    },
+                    animation: {
+                        'gradient-x': 'gradient-x 8s ease infinite',
+                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        'gradient-x': {
+                            '0%, 100%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'left center'
+                            },
+                            '50%': {
+                                'background-size': '200% 200%',
+                                'background-position': 'right center'
+                            }
+                        }
+                    },
+                    boxShadow: {
+                        'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
+                        'inner-soft': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.05)'
+                    }
+                }
             }
-        }
-
-        // Controleer dark mode voorkeur
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
         }
 
         // Luister naar systeemvoorkeur veranderingen
@@ -96,21 +135,27 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', system-ui, sans-serif;
+        }
+        
         .nav-item {
             position: relative;
-            transition: all 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
         }
         
         .nav-item::after {
             content: '';
             position: absolute;
-            bottom: -2px;
-            left: 50%;
+            bottom: -4px;
+            left: 0;
             width: 0;
             height: 2px;
-            background: currentColor;
-            transition: all 0.3s ease;
-            transform: translateX(-50%);
+            background: linear-gradient(135deg, #3b88ff, #1e40af);
+            transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            border-radius: 2px;
         }
         
         .nav-item:hover::after,
@@ -118,32 +163,101 @@
             width: 100%;
         }
         
+        .dark .nav-item::after {
+            background: linear-gradient(135deg, #54abff, #3b88ff);
+        }
+        
         .header-shadow {
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+        }
+        
+        .dark .header-shadow {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .logo-container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .logo-bg {
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            transition: all 0.5s ease;
+        }
+        
+        .logo-bg:hover {
+            transform: rotate(5deg) scale(1.05);
+            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
+        }
+        
+        .dark .logo-bg:hover {
+            box-shadow: 0 5px 15px rgba(59, 136, 255, 0.4);
         }
         
         .logo-text {
-            background: linear-gradient(135deg, #2563EB, #1E40AF);
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+            background-size: 200% auto;
             -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient-x 8s ease infinite;
         }
         
-        @media (max-width: 640px) {
-            .text-sm {
-                font-size: 0.875rem;
-                line-height: 1.25rem;
-            }
-            .container {
-                padding-left: 1rem;
-                padding-right: 1rem;
-            }
-            button, 
-            [role="button"],
-            a {
-                min-height: 44px;
-                min-width: 44px;
-            }
+        .dark .logo-text {
+            background: linear-gradient(135deg, #54abff, #3b88ff);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .mobile-menu {
+            transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            max-height: 0;
+            overflow: hidden;
+        }
+        
+        .mobile-menu.open {
+            max-height: 300px;
+        }
+        
+        .mobile-nav-item {
+            transform: translateY(-10px);
+            opacity: 0;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-delay: calc(var(--item-index) * 0.05s);
+        }
+        
+        .mobile-menu.open .mobile-nav-item {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+        .dark-mode-toggle {
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+            z-index: 1;
+            cursor: pointer;
+        }
+        
+        .dark-mode-toggle::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(59, 136, 255, 0.1);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+            transition: width 0.4s ease, height 0.4s ease;
+        }
+        
+        .dark-mode-toggle:hover::before {
+            width: 200%;
+            height: 200%;
         }
         
         @media (prefers-reduced-motion: reduce) {
@@ -154,55 +268,71 @@
                 scroll-behavior: auto !important;
             }
         }
+        
+        /* Toegankelijkheid verbeteringen */
+        @media (max-width: 640px) {
+            button, 
+            [role="button"],
+            a {
+                min-height: 44px;
+                min-width: 44px;
+                display: flex;
+                align-items: center;
+            }
+        }
     </style>
 </head>
-<body class="bg-white dark:bg-gray-900 transition-colors duration-200">
-    <header class="fixed w-full z-50 bg-white/95 dark:bg-gray-900/95 header-shadow backdrop-blur-sm">
+<body class="bg-white dark:bg-gray-900 transition-colors duration-300">
+    <header class="fixed w-full z-50 bg-white/95 dark:bg-gray-900/95 header-shadow backdrop-blur-sm transition-all duration-300 border-b border-gray-100/80 dark:border-gray-800/80">
         <div class="max-w-7xl mx-auto">
-            <nav class="flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-                <div class="flex items-center space-x-8">
-                    <a href="/" class="flex items-center space-x-3">
-                        <div class="bg-blue-700 dark:bg-blue-600 w-10 h-10 rounded flex items-center justify-center shadow-lg">
-                            <span class="text-lg font-bold text-white">NA</span>
+            <nav class="flex items-center justify-between px-4 py-4 sm:px-6 lg:px-8" x-data="{ mobileMenuOpen: false }">
+                <div class="flex items-center space-x-4">
+                    <a href="/" class="group flex items-center space-x-3">
+                        <div class="logo-container">
+                            <div class="logo-bg w-12 h-12 rounded-lg flex items-center justify-center shadow-lg transition-all duration-300 group-hover:rounded-xl">
+                                <span class="text-xl font-bold text-white tracking-tight">NA</span>
+                            </div>
                         </div>
                         <div>
-                            <h1 class="text-xl font-bold logo-text dark:text-white">Naoufal Andichi</h1>
-                            <p class="text-sm text-gray-600 dark:text-gray-400 hidden sm:block">Full Stack Developer</p>
+                            <h1 class="text-xl font-bold logo-text dark:text-white transition-all duration-300">Naoufal Andichi</h1>
+                            <p class="text-sm text-gray-500 dark:text-gray-400 opacity-90 transition-all duration-300 hidden sm:block">Full Stack Developer</p>
                         </div>
                     </a>
                 </div>
 
-                <div class="hidden md:flex items-center space-x-8">
+                <div class="hidden md:flex items-center space-x-1 lg:space-x-2">
                     <a href="/" 
-                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
-                              <?php echo $currentPage === 'home' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
+                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent-700 dark:hover:text-accent-400 font-medium transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50
+                              <?php echo $currentPage === 'home' ? 'text-accent-700 dark:text-accent-400 active' : ''; ?>">
                         Home
                     </a>
                     <a href="/projects" 
-                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
-                              <?php echo $currentPage === 'projects' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
+                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent-700 dark:hover:text-accent-400 font-medium transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50
+                              <?php echo $currentPage === 'projects' ? 'text-accent-700 dark:text-accent-400 active' : ''; ?>">
                         Projecten
                     </a>
                     <a href="/skills" 
-                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
-                              <?php echo $currentPage === 'skills' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
+                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent-700 dark:hover:text-accent-400 font-medium transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50
+                              <?php echo $currentPage === 'skills' ? 'text-accent-700 dark:text-accent-400 active' : ''; ?>">
                         Vaardigheden
                     </a>
                     <a href="/about" 
-                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
-                              <?php echo $currentPage === 'about' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
+                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent-700 dark:hover:text-accent-400 font-medium transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50
+                              <?php echo $currentPage === 'about' ? 'text-accent-700 dark:text-accent-400 active' : ''; ?>">
                         Over Mij
                     </a>
                     <a href="/contact" 
-                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
-                              <?php echo $currentPage === 'contact' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
+                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent-700 dark:hover:text-accent-400 font-medium transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50
+                              <?php echo $currentPage === 'contact' ? 'text-accent-700 dark:text-accent-400 active' : ''; ?>">
                         Contact
                     </a>
                 </div>
 
-                <div class="flex items-center space-x-4">
-                    <button id="darkModeToggle" 
-                            class="p-2 text-gray-500 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400 transition-colors">
+                <div class="flex items-center space-x-1 lg:space-x-3">
+                    <button 
+                        aria-label="Schakel tussen licht en donker thema"
+                        class="dark-mode-toggle p-2 text-gray-500 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors duration-300 rounded-full"
+                        onclick="document.documentElement.classList.toggle('dark'); localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';">
                         <svg class="w-6 h-6 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
                                   d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
@@ -213,45 +343,83 @@
                         </svg>
                     </button>
 
-                    <button class="md:hidden p-2 text-gray-500 dark:text-gray-400 hover:text-blue-700 dark:hover:text-blue-400 transition-colors mobile-menu-button">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <button 
+                        aria-label="Open menu" 
+                        aria-expanded="false"
+                        x-on:click="mobileMenuOpen = !mobileMenuOpen" 
+                        x-bind:aria-expanded="mobileMenuOpen.toString()"
+                        class="md:hidden p-2 text-gray-500 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 focus:outline-none focus:ring-2 focus:ring-accent-500/30 dark:focus:ring-accent-400/30">
+                        <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                        <svg x-show="mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display: none;">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                         </svg>
                     </button>
                 </div>
             </nav>
         </div>
 
-        <!-- Mobiel menu -->
-        <div class="md:hidden hidden mobile-menu border-t border-gray-100 dark:border-gray-800">
-            <div class="px-4 py-2 space-y-1">
+        <!-- Mobiel menu met AlpineJS -->
+        <div 
+            x-data="{ open: false }" 
+            x-show="open"
+            x-bind:class="{'open': open}"
+            x-on:mobileMenuOpen.window="open = $event.detail"
+            x-transition:enter="transition ease-out duration-200"
+            x-transition:enter-start="opacity-0 -translate-y-2"
+            x-transition:enter-end="opacity-100 translate-y-0"
+            x-transition:leave="transition ease-in duration-150"
+            x-transition:leave-start="opacity-100 translate-y-0"
+            x-transition:leave-end="opacity-0 -translate-y-2"
+            class="md:hidden mobile-menu border-t border-gray-100 dark:border-gray-800/80 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-sm"
+            style="display: none;">
+            <div class="px-4 py-2 space-y-2">
                 <a href="/" 
-                   class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
-                          <?php echo $currentPage === 'home' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
+                   style="--item-index: 0"
+                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300
+                          <?php echo $currentPage === 'home' ? 'text-accent-700 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-900/20' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-accent-700 dark:hover:text-accent-400'; ?>">
                     Home
                 </a>
                 <a href="/projects" 
-                   class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
-                          <?php echo $currentPage === 'projects' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
+                   style="--item-index: 1"
+                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300
+                          <?php echo $currentPage === 'projects' ? 'text-accent-700 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-900/20' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-accent-700 dark:hover:text-accent-400'; ?>">
                     Projecten
                 </a>
                 <a href="/skills" 
-                   class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
-                          <?php echo $currentPage === 'skills' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
+                   style="--item-index: 2"
+                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300
+                          <?php echo $currentPage === 'skills' ? 'text-accent-700 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-900/20' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-accent-700 dark:hover:text-accent-400'; ?>">
                     Vaardigheden
                 </a>
                 <a href="/about" 
-                   class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
-                          <?php echo $currentPage === 'about' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
+                   style="--item-index: 3"
+                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300
+                          <?php echo $currentPage === 'about' ? 'text-accent-700 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-900/20' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-accent-700 dark:hover:text-accent-400'; ?>">
                     Over Mij
                 </a>
                 <a href="/contact" 
-                   class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
-                          <?php echo $currentPage === 'contact' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
+                   style="--item-index: 4"
+                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300
+                          <?php echo $currentPage === 'contact' ? 'text-accent-700 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-900/20' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-accent-700 dark:hover:text-accent-400'; ?>">
                     Contact
                 </a>
             </div>
         </div>
     </header>
+
+    <script>
+        // Alpine.js setup voor mobiel menu
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuToggle = document.querySelector('[x-on\\:click="mobileMenuOpen = !mobileMenuOpen"]');
+            if (mobileMenuToggle) {
+                mobileMenuToggle.addEventListener('click', function() {
+                    const isOpen = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
+                    window.dispatchEvent(new CustomEvent('mobileMenuOpen', { detail: !isOpen }));
+                });
+            }
+        });
+    </script>
 </body>
 </html> 
