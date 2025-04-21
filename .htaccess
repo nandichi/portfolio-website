@@ -1,13 +1,37 @@
 # Inschakelen van URL herschrijven
 RewriteEngine On
 
-# Herschrijf URL's zonder .php extensie
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.php -f
-RewriteRule ^(.*)$ $1.php [L]
+# Basis instellen voor je project - BELANGRIJK VOOR LOKALE ONTWIKKELING
+RewriteBase /
 
-# Redirect van HTTP naar HTTPS
+# Standaard index bestand instellen
+DirectoryIndex index.php
+
+# Regel 1: Verwijder trailing slash voor niet-mappen
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]
+
+# Regel 2: Hoofdpagina afhandelen
+RewriteRule ^$ pages/home.php [L]
+
+# Regel 3: Herschrijf nette paden (zoals /projects) naar /pages/projects.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)$ pages/$1.php [L]
+
+# Regel 4: Blokkeer directe toegang tot .php bestanden
+RewriteCond %{THE_REQUEST} \s/+pages/(.+?)\.php[\s?] [NC]
+RewriteRule ^pages/(.+?)\.php$ /$1 [R=301,L]
+
+# Regel 5: Bescherm tegen directe toegang tot de pages/ map
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/pages/ [NC]
+RewriteRule ^pages/ - [F,L]
+
+# Redirect van HTTP naar HTTPS (uitschakelen in lokale ontwikkelomgeving)
 RewriteCond %{HTTPS} off
+# Gebruik onderstaande regel alleen in productie, niet lokaal
+RewriteCond %{HTTP_HOST} !localhost [NC]
+RewriteCond %{HTTP_HOST} !127\.0\.0\.1 [NC]
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirect van www naar non-www

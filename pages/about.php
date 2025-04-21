@@ -3,7 +3,14 @@ $pageTitle = "Over Mij";
 $currentPage = "about";
 $pageDescription = "Leer meer over Naoufal Andichi, mijn achtergrond, ervaring en passie voor ontwikkeling.";
 $pageKeywords = "Naoufal Andichi, over mij, biografie, ervaring, achtergrond, ontwikkelaar, carrière";
-include 'includes/header.php';
+
+// Bepaal de correcte pad voor includes gebaseerd op uitvoeringscontext
+$includesPath = file_exists('includes/header.php') ? 'includes/header.php' : '../includes/header.php';
+
+// Bepaal ook het correcte pad voor assets
+$assetsPath = file_exists('assets/images/profile.jpg') ? 'assets' : '../assets';
+
+include $includesPath;
 ?>
 
 <style>
@@ -116,7 +123,7 @@ include 'includes/header.php';
                                         <!-- Centrale Content -->
                                         <div class="relative z-10 w-full h-full flex flex-col items-center justify-center text-white space-y-4">
                                             <div class="w-24 h-24 rounded-full border-4 border-white/30 overflow-hidden">
-                                                <img src="assets/images/profile.jpg" alt="Naoufal Andichi" class="w-full h-full object-cover">
+                                                <img src="<?php echo $assetsPath; ?>/images/profile.jpg" alt="Naoufal Andichi" class="w-full h-full object-cover">
                                             </div>
                                             <div class="text-center">
                                                 <h3 class="text-2xl font-bold mb-2">Naoufal Andichi</h3>
@@ -634,4 +641,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<?php include 'includes/footer.php'; ?> 
+<?php 
+// Bepaal de correcte pad voor includes gebaseerd op uitvoeringscontext
+$includesFooterPath = file_exists('includes/footer.php') ? 'includes/footer.php' : '../includes/footer.php';
+include $includesFooterPath; 
+?> 

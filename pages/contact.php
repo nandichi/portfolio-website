@@ -1,9 +1,12 @@
 <?php
 $pageTitle = "Contact";
 $currentPage = "contact";
-$pageDescription = "Neem contact op met Naoufal Andichi voor samenwerkingen, projecten of vragen over mijn diensten als ontwikkelaar.";
-$pageKeywords = "Naoufal Andichi, contact, samenwerking, projectaanvraag, ontwikkelaar inhuren, e-mail, contactformulier";
-include 'includes/header.php';
+$pageDescription = "Neem contact op met Naoufal Andichi voor vragen over samenwerking, projecten of andere informatie.";
+$pageKeywords = "Naoufal Andichi, contact, e-mail, bericht, samenwerking, vragen";
+
+// Bepaal de correcte pad voor includes gebaseerd op uitvoeringscontext
+$includesPath = file_exists('includes/header.php') ? 'includes/header.php' : '../includes/header.php';
+include $includesPath;
 ?>
 
 <div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-purple-50/50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20 relative overflow-hidden">
@@ -467,4 +470,8 @@ function closeModal() {
 }
 </script>
 
-<?php include 'includes/footer.php'; ?> 
+<?php 
+// Bepaal de correcte pad voor includes gebaseerd op uitvoeringscontext
+$includesFooterPath = file_exists('includes/footer.php') ? 'includes/footer.php' : '../includes/footer.php';
+include $includesFooterPath; 
+?> 

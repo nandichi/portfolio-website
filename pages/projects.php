@@ -1,9 +1,12 @@
 <?php
 $pageTitle = "Projecten";
 $currentPage = "projects";
-$pageDescription = "Bekijk de portfolio van projecten ontwikkeld door Naoufal Andichi, inclusief webapplicaties, websites en andere ontwikkelingsprojecten.";
-$pageKeywords = "Naoufal Andichi, projecten, portfolio, webapplicaties, websites, ontwikkelingsprojecten, casestudies";
-include 'includes/header.php';
+$pageDescription = "Bekijk de projecten waar Naoufal Andichi aan heeft gewerkt. Een portfolio van websites, applicaties en andere ontwikkelingsprojecten.";
+$pageKeywords = "Naoufal Andichi, projecten, portfolio, development, webapplicaties, websites, coding";
+
+// Bepaal de correcte pad voor includes gebaseerd op uitvoeringscontext
+$includesPath = file_exists('includes/header.php') ? 'includes/header.php' : '../includes/header.php';
+include $includesPath;
 ?>
 
 <div class="min-h-screen bg-[#fafafa] dark:bg-gray-900 relative overflow-hidden">
@@ -726,4 +729,8 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 </script>
 
-<?php include 'includes/footer.php'; ?> 
+<?php 
+// Bepaal de correcte pad voor includes gebaseerd op uitvoeringscontext
+$includesFooterPath = file_exists('includes/footer.php') ? 'includes/footer.php' : '../includes/footer.php';
+include $includesFooterPath; 
+?> 

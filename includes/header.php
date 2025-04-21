@@ -161,7 +161,7 @@
         <div class="max-w-7xl mx-auto">
             <nav class="flex items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
                 <div class="flex items-center space-x-8">
-                    <a href="index" class="flex items-center space-x-3">
+                    <a href="/" class="flex items-center space-x-3">
                         <div class="bg-blue-700 dark:bg-blue-600 w-10 h-10 rounded flex items-center justify-center shadow-lg">
                             <span class="text-lg font-bold text-white">NA</span>
                         </div>
@@ -173,27 +173,27 @@
                 </div>
 
                 <div class="hidden md:flex items-center space-x-8">
-                    <a href="index.php" 
+                    <a href="/" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'home' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Home
                     </a>
-                    <a href="projects.php" 
+                    <a href="/projects" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'projects' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Projecten
                     </a>
-                    <a href="skills.php" 
+                    <a href="/skills" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'skills' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Vaardigheden
                     </a>
-                    <a href="about.php" 
+                    <a href="/about" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'about' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Over Mij
                     </a>
-                    <a href="contact.php" 
+                    <a href="/contact" 
                        class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 font-medium transition-colors
                               <?php echo $currentPage === 'contact' ? 'text-blue-700 dark:text-blue-400 active' : ''; ?>">
                         Contact
@@ -225,27 +225,27 @@
         <!-- Mobiel menu -->
         <div class="md:hidden hidden mobile-menu border-t border-gray-100 dark:border-gray-800">
             <div class="px-4 py-2 space-y-1">
-                <a href="index.php" 
+                <a href="/" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'home' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Home
                 </a>
-                <a href="projects.php" 
+                <a href="/projects" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'projects' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Projecten
                 </a>
-                <a href="skills.php" 
+                <a href="/skills" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'skills' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Vaardigheden
                 </a>
-                <a href="about.php" 
+                <a href="/about" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'about' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Over Mij
                 </a>
-                <a href="contact.php" 
+                <a href="/contact" 
                    class="block px-3 py-2 rounded-lg text-base font-medium transition-colors
                           <?php echo $currentPage === 'contact' ? 'text-blue-700 dark:text-blue-400 bg-blue-50 dark:bg-blue-900/20' : 'text-gray-700 dark:text-gray-300'; ?>">
                     Contact

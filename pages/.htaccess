@@ -1,0 +1,12 @@
+# Toegang tot de pages directory blokkeren
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteRule ^(.*)$ / [F,L]
+</IfModule>
+
+# Verbied alle toegang
+<IfModule !mod_rewrite.c>
+    Order deny,allow
+    Deny from all
+</IfModule> 

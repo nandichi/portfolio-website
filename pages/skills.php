@@ -1,9 +1,12 @@
 <?php
 $pageTitle = "Vaardigheden";
 $currentPage = "skills";
-$pageDescription = "Ontdek de technische vaardigheden en expertise van Naoufal Andichi op het gebied van webontwikkeling en programmeren.";
-$pageKeywords = "Naoufal Andichi, vaardigheden, programmeren, webontwikkeling, technische expertise, frontend, backend, frameworks";
-include 'includes/header.php';
+$pageDescription = "Ontdek de technische vaardigheden en competenties van Naoufal Andichi op het gebied van webontwikkeling en programmeren.";
+$pageKeywords = "Naoufal Andichi, vaardigheden, competenties, programmeren, webontwikkeling, technologieën, frameworks";
+
+// Bepaal de correcte pad voor includes gebaseerd op uitvoeringscontext
+$includesPath = file_exists('includes/header.php') ? 'includes/header.php' : '../includes/header.php';
+include $includesPath;
 ?>
 
 <div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-purple-50/50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20">
@@ -583,7 +586,11 @@ include 'includes/header.php';
     </div>
 </div>
 
-<?php include 'includes/footer.php'; ?>
+<?php 
+// Bepaal de correcte pad voor includes gebaseerd op uitvoeringscontext
+$includesFooterPath = file_exists('includes/footer.php') ? 'includes/footer.php' : '../includes/footer.php';
+include $includesFooterPath; 
+?>
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
