@@ -1,12 +1,12 @@
-# Toegang tot de pages directory blokkeren
+# Voorkom directory listing maar sta bestanden toe
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteBase /
-    RewriteRule ^(.*)$ / [F,L]
+    # Alleen directory listing blokkeren
+    Options -Indexes
 </IfModule>
 
-# Verbied alle toegang
-<IfModule !mod_rewrite.c>
-    Order deny,allow
-    Deny from all
+# Betere beveiliging met content-type header
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
 </IfModule> 

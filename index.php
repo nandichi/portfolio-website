@@ -14,10 +14,26 @@ if (!empty($base_path) && strpos($request_uri, $base_path) === 0) {
 // Normaliseer de URI
 $request_uri = trim($request_uri, '/');
 
+// Debug informatie als er problemen zijn - verwijder in productie
+if (isset($_GET['debug'])) {
+    echo "<pre>";
+    echo "Request URI: " . htmlspecialchars($request_uri) . "\n";
+    echo "Base Path: " . htmlspecialchars($base_path) . "\n";
+    echo "Script Name: " . htmlspecialchars($_SERVER['SCRIPT_NAME']) . "\n";
+    echo "Document Root: " . htmlspecialchars($_SERVER['DOCUMENT_ROOT']) . "\n";
+    echo "</pre>";
+    exit;
+}
+
 // Bepaal welke pagina geladen moet worden
 if (empty($request_uri)) {
     // Homepagina
-    include 'pages/home.php';
+    if (file_exists('pages/home.php')) {
+        include 'pages/home.php';
+    } else {
+        echo "<h1>Welkom op mijn portfolio</h1>";
+        echo "<p>De homepagina is momenteel niet beschikbaar.</p>";
+    }
 } else {
     // Map de URI naar het juiste bestand
     $page_file = 'pages/' . $request_uri . '.php';

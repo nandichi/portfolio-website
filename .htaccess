@@ -23,16 +23,12 @@ RewriteRule ^([^/]+)$ pages/$1.php [L]
 RewriteCond %{THE_REQUEST} \s/+pages/(.+?)\.php[\s?] [NC]
 RewriteRule ^pages/(.+?)\.php$ /$1 [R=301,L]
 
-# Regel 5: Bescherm tegen directe toegang tot de pages/ map
-RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s/pages/ [NC]
-RewriteRule ^pages/ - [F,L]
-
 # Redirect van HTTP naar HTTPS (uitschakelen in lokale ontwikkelomgeving)
-RewriteCond %{HTTPS} off
+# RewriteCond %{HTTPS} off
 # Gebruik onderstaande regel alleen in productie, niet lokaal
-RewriteCond %{HTTP_HOST} !localhost [NC]
-RewriteCond %{HTTP_HOST} !127\.0\.0\.1 [NC]
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# RewriteCond %{HTTP_HOST} !localhost [NC]
+# RewriteCond %{HTTP_HOST} !127\.0\.0\.1 [NC]
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirect van www naar non-www
 RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
