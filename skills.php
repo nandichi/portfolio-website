@@ -16,110 +16,104 @@ include 'includes/header.php';
 
     <div class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
-            <!-- Verbeterde Header Sectie -->
-            <div class="text-center mb-20 relative" data-aos="fade-down">
-                <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
-                    <div class="w-64 h-64 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-3xl"></div>
+            <!-- Header sectie met moderne typografie -->
+            <div class="text-center mb-20">
+                <div class="inline-flex items-center justify-center mb-4" data-aos="fade-down">
+                    <span class="h-px w-8 bg-blue-500 mr-3"></span>
+                    <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wider uppercase text-sm">Expertise & Vaardigheden</span>
+                    <span class="h-px w-8 bg-blue-500 ml-3"></span>
                 </div>
-                <h1 class="text-6xl font-extrabold mb-6 relative">
-                    <span class="inline-block transform hover:scale-105 transition-transform duration-300">
-                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400">
-                            Mijn Vaardigheden
-                        </span>
-                    </span>
-                </h1>
-                <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed relative">
-                    <span class="inline-block transform hover:translate-y-[-2px] transition-transform duration-300">
-                        Een showcase van mijn technische expertise en professionele competenties, 
-                        <br class="hidden md:block" />
-                        opgebouwd door jarenlange ervaring en continue ontwikkeling.
-                    </span>
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white" data-aos="fade-up">
+                    Mijn <span class="text-blue-600 dark:text-blue-400">Vaardigheden</span>
+                </h2>
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                    Een showcase van mijn technische expertise en professionele competenties, opgebouwd door jarenlange ervaring en continue ontwikkeling.
                 </p>
-                
-                <!-- Toegevoegde interactieve scroll indicator -->
-                <div class="absolute bottom-[-60px] left-1/2 transform -translate-x-1/2">
-                    <div class="animate-bounce">
-                        <svg class="w-6 h-6 text-gray-400 dark:text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-                        </svg>
-                    </div>
-                </div>
             </div>
 
-            <!-- Verbeterde Hoofdvaardigheden Grid -->
+            <!-- Hoofdvaardigheden Grid -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-20">
                 <!-- Frontend Skills Card -->
-                <div class="group relative transform hover:scale-[1.02] transition-all duration-300" data-aos="fade-right">
-                    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl opacity-5 group-hover:opacity-30 transition-all duration-500 group-hover:blur-md"></div>
-                    <div class="relative bg-white/80 dark:bg-gray-800/90 backdrop-blur-xl rounded-xl p-8 border border-gray-100/20 dark:border-gray-700/20 shadow-lg shadow-blue-500/5 dark:shadow-blue-500/10 transition-all duration-300">
-                        <div class="flex items-center gap-4 mb-8">
-                            <div class="relative group-hover:animate-spin-slow">
-                                <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 blur-md opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
-                                <div class="relative w-12 h-12 rounded-xl bg-gradient-to-br from-blue-500/90 to-indigo-600/90 shadow-lg shadow-blue-500/20 dark:shadow-blue-800/30 flex items-center justify-center">
-                                    <i class="fas fa-code text-xl text-white/90"></i>
-                                </div>
+                <div class="group h-full" data-aos="fade-right">
+                    <div class="bg-white/90 dark:bg-gray-800/90 rounded-[2rem] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/30 backdrop-blur-sm h-full flex flex-col group-hover:-translate-y-2 overflow-hidden relative">
+                        <!-- Decoratieve achtergrond met animatie -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <!-- Header met icoon en titel -->
+                        <div class="bg-gradient-to-br from-blue-500 via-blue-600 to-blue-700 p-6 flex items-center gap-4 relative overflow-hidden">
+                            <!-- Decoratieve cirkels -->
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                            <div class="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full translate-y-16 -translate-x-16"></div>
+                            
+                            <div class="w-14 h-14 rounded-xl bg-white/90 dark:bg-gray-800/90 flex items-center justify-center shadow-lg border border-white/20 transform group-hover:rotate-6 transition-transform duration-500 relative z-10">
+                                <i class="fas fa-code text-xl text-blue-600 dark:text-blue-400"></i>
                             </div>
-                            <div>
-                                <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-indigo-600 group-hover:from-indigo-500 group-hover:to-blue-600 transition-all duration-300">Frontend Development</h2>
-                                <p class="text-gray-600 dark:text-gray-400">Moderne web interfaces</p>
+                            <div class="relative z-10">
+                                <h3 class="text-xl font-bold text-white">Frontend Development</h3>
+                                <p class="text-blue-100 font-medium text-sm">Moderne web interfaces</p>
                             </div>
                         </div>
                         
-                        <div class="space-y-6">
-                            <!-- JavaScript -->
-                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
-                                <div class="flex justify-between items-center mb-3">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-yellow-500/20 to-amber-500/20 dark:from-yellow-500/10 dark:to-amber-500/10 shadow-sm border border-yellow-200/30 dark:border-yellow-700/30 transform-gpu transition-all duration-300 group-hover/skill:scale-110 group-hover/skill:rotate-3 flex items-center justify-center">
-                                            <i class="fab fa-js text-sm text-yellow-600/90 dark:text-yellow-400/90 group-hover/skill:animate-bounce"></i>
+                        <!-- Content -->
+                        <div class="p-6 flex-1 flex flex-col relative">
+                            <div class="space-y-8 mb-6 flex-1">
+                                <!-- JavaScript -->
+                                <div class="group/skill transform hover:scale-[1.02] transition-all duration-300">
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <div class="w-12 h-12 rounded-xl bg-yellow-100 dark:bg-yellow-900/30 flex items-center justify-center shadow-md border border-yellow-200 dark:border-yellow-700/30 group-hover/skill:rotate-6 transition-transform duration-300">
+                                            <i class="fab fa-js text-xl text-yellow-600 dark:text-yellow-400"></i>
                                         </div>
-                                        <div>
-                                            <h3 class="font-semibold text-gray-900 dark:text-white group-hover/skill:text-yellow-500 transition-colors duration-300">JavaScript</h3>
-                                            <p class="text-sm text-gray-600 dark:text-gray-400">ES6+ & TypeScript</p>
+                                        <div class="flex-1">
+                                            <div class="flex justify-between items-center">
+                                                <h3 class="font-semibold text-gray-900 dark:text-white text-lg">JavaScript</h3>
+                                                <span class="px-3 py-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-300 rounded-full text-sm font-medium">Expert</span>
+                                            </div>
+                                            <div class="flex flex-wrap gap-2 mt-2">
+                                                <span class="px-2 py-1 bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-300 rounded-lg text-xs">ES6+</span>
+                                                <span class="px-2 py-1 bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-300 rounded-lg text-xs">TypeScript</span>
+                                                <span class="px-2 py-1 bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-300 rounded-lg text-xs">React</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="text-blue-600 dark:text-blue-400 font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300">95%</span>
                                 </div>
-                                <div class="h-3 bg-gradient-to-r from-gray-100/50 to-gray-200/50 dark:from-gray-700/50 dark:to-gray-800/50 backdrop-blur-sm rounded-full overflow-hidden shadow-inner">
-                                    <div class="h-full bg-gradient-to-r from-yellow-500/90 to-amber-600/90 rounded-full transition-all duration-700 ease-out transform origin-left w-[95%] hover:w-[97%]"></div>
-                                </div>
-                            </div>
 
-                            <!-- Tailwind CSS -->
-                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
-                                <div class="flex justify-between items-center mb-3">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-cyan-500/20 to-blue-500/20 dark:from-cyan-500/10 dark:to-blue-500/10 shadow-sm border border-cyan-200/30 dark:border-cyan-700/30 transform-gpu transition-all duration-300 group-hover/skill:scale-110 group-hover/skill:rotate-3 flex items-center justify-center">
-                                            <i class="fab fa-css3 text-sm text-cyan-600/90 dark:text-cyan-400/90 group-hover/skill:animate-bounce"></i>
+                                <!-- Tailwind CSS -->
+                                <div class="group/skill transform hover:scale-[1.02] transition-all duration-300">
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <div class="w-12 h-12 rounded-xl bg-cyan-100 dark:bg-cyan-900/30 flex items-center justify-center shadow-md border border-cyan-200 dark:border-cyan-700/30 group-hover/skill:rotate-6 transition-transform duration-300">
+                                            <i class="fab fa-css3 text-xl text-cyan-600 dark:text-cyan-400"></i>
                                         </div>
-                                        <div>
-                                            <h3 class="font-semibold text-gray-900 dark:text-white group-hover/skill:text-cyan-500 transition-colors duration-300">Tailwind CSS</h3>
-                                            <p class="text-sm text-gray-600 dark:text-gray-400">Modern Utility-First CSS</p>
+                                        <div class="flex-1">
+                                            <div class="flex justify-between items-center">
+                                                <h3 class="font-semibold text-gray-900 dark:text-white text-lg">Tailwind CSS</h3>
+                                                <span class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-sm font-medium">Gevorderd</span>
+                                            </div>
+                                            <div class="flex flex-wrap gap-2 mt-2">
+                                                <span class="px-2 py-1 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-700 dark:text-cyan-300 rounded-lg text-xs">Responsive Design</span>
+                                                <span class="px-2 py-1 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-700 dark:text-cyan-300 rounded-lg text-xs">Custom Components</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="text-blue-600 dark:text-blue-400 font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300">90%</span>
                                 </div>
-                                <div class="h-3 bg-gradient-to-r from-gray-100/50 to-gray-200/50 dark:from-gray-700/50 dark:to-gray-800/50 backdrop-blur-sm rounded-full overflow-hidden shadow-inner">
-                                    <div class="h-full bg-gradient-to-r from-cyan-500/90 to-blue-600/90 rounded-full transition-all duration-700 ease-out transform origin-left w-[90%] hover:w-[92%]"></div>
-                                </div>
-                            </div>
 
-                            <!-- React -->
-                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
-                                <div class="flex justify-between items-center mb-3">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500/20 to-cyan-500/20 dark:from-blue-500/10 dark:to-cyan-500/10 shadow-sm border border-blue-200/30 dark:border-blue-700/30 transform-gpu transition-all duration-300 group-hover/skill:scale-110 group-hover/skill:rotate-3 flex items-center justify-center">
-                                            <i class="fab fa-react text-sm text-blue-600/90 dark:text-blue-400/90 group-hover/skill:animate-spin-slow"></i>
+                                <!-- React -->
+                                <div class="group/skill transform hover:scale-[1.02] transition-all duration-300">
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center shadow-md border border-blue-200 dark:border-blue-700/30 group-hover/skill:rotate-6 transition-transform duration-300">
+                                            <i class="fab fa-react text-xl text-blue-600 dark:text-blue-400"></i>
                                         </div>
-                                        <div>
-                                            <h3 class="font-semibold text-gray-900 dark:text-white group-hover/skill:text-blue-500 transition-colors duration-300">React</h3>
-                                            <p class="text-sm text-gray-600 dark:text-gray-400">Modern UI Development</p>
+                                        <div class="flex-1">
+                                            <div class="flex justify-between items-center">
+                                                <h3 class="font-semibold text-gray-900 dark:text-white text-lg">React</h3>
+                                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Gevorderd</span>
+                                            </div>
+                                            <div class="flex flex-wrap gap-2 mt-2">
+                                                <span class="px-2 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-lg text-xs">Hooks</span>
+                                                <span class="px-2 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-lg text-xs">Context</span>
+                                                <span class="px-2 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-lg text-xs">Redux</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="text-blue-600 dark:text-blue-400 font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300">80%</span>
-                                </div>
-                                <div class="h-3 bg-gradient-to-r from-gray-100/50 to-gray-200/50 dark:from-gray-700/50 dark:to-gray-800/50 backdrop-blur-sm rounded-full overflow-hidden shadow-inner">
-                                    <div class="h-full bg-gradient-to-r from-blue-500/90 to-cyan-600/90 rounded-full transition-all duration-700 ease-out transform origin-left w-[80%] hover:w-[82%]"></div>
                                 </div>
                             </div>
                         </div>
@@ -127,77 +121,87 @@ include 'includes/header.php';
                 </div>
 
                 <!-- Backend Skills Card -->
-                <div class="group relative transform hover:scale-[1.02] transition-all duration-300" data-aos="fade-left">
-                    <div class="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl opacity-5 group-hover:opacity-30 transition-all duration-500 group-hover:blur-md"></div>
-                    <div class="relative bg-white/80 dark:bg-gray-800/90 backdrop-blur-xl rounded-xl p-8 border border-gray-100/20 dark:border-gray-700/20 shadow-lg shadow-green-500/5 dark:shadow-green-500/10 transition-all duration-300">
-                        <div class="flex items-center gap-4 mb-8">
-                            <div class="relative group-hover:animate-spin-slow">
-                                <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-green-500 to-emerald-500 blur-md opacity-20 group-hover:opacity-40 transition-opacity duration-300"></div>
-                                <div class="relative w-12 h-12 rounded-xl bg-gradient-to-br from-green-500/90 to-emerald-600/90 shadow-lg shadow-green-500/20 dark:shadow-green-800/30 flex items-center justify-center">
-                                    <i class="fas fa-server text-xl text-white/90"></i>
-                                </div>
+                <div class="group h-full" data-aos="fade-left">
+                    <div class="bg-white/90 dark:bg-gray-800/90 rounded-[2rem] shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100/50 dark:border-gray-700/30 backdrop-blur-sm h-full flex flex-col group-hover:-translate-y-2 overflow-hidden relative">
+                        <!-- Decoratieve achtergrond met animatie -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-500/5 via-emerald-500/5 to-teal-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <!-- Header met icoon en titel -->
+                        <div class="bg-gradient-to-br from-green-500 via-green-600 to-green-700 p-6 flex items-center gap-4 relative overflow-hidden">
+                            <!-- Decoratieve cirkels -->
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
+                            <div class="absolute bottom-0 left-0 w-32 h-32 bg-white/10 rounded-full translate-y-16 -translate-x-16"></div>
+                            
+                            <div class="w-14 h-14 rounded-xl bg-white/90 dark:bg-gray-800/90 flex items-center justify-center shadow-lg border border-white/20 transform group-hover:rotate-6 transition-transform duration-500 relative z-10">
+                                <i class="fas fa-server text-xl text-green-600 dark:text-green-400"></i>
                             </div>
-                            <div>
-                                <h2 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-emerald-600 group-hover:from-emerald-500 group-hover:to-green-600 transition-all duration-300">Backend Development</h2>
-                                <p class="text-gray-600 dark:text-gray-400">Server-side oplossingen</p>
+                            <div class="relative z-10">
+                                <h3 class="text-xl font-bold text-white">Backend Development</h3>
+                                <p class="text-green-100 font-medium text-sm">Server-side oplossingen</p>
                             </div>
                         </div>
                         
-                        <div class="space-y-6">
-                            <!-- PHP -->
-                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
-                                <div class="flex justify-between items-center mb-3">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-purple-500/20 to-indigo-500/20 dark:from-purple-500/10 dark:to-indigo-500/10 shadow-sm border border-purple-200/30 dark:border-purple-700/30 transform-gpu transition-all duration-300 group-hover/skill:scale-110 group-hover/skill:rotate-3 flex items-center justify-center">
-                                            <i class="fab fa-php text-sm text-purple-600/90 dark:text-purple-400/90 group-hover/skill:animate-bounce"></i>
+                        <!-- Content -->
+                        <div class="p-6 flex-1 flex flex-col relative">
+                            <div class="space-y-8 mb-6 flex-1">
+                                <!-- PHP -->
+                                <div class="group/skill transform hover:scale-[1.02] transition-all duration-300">
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <div class="w-12 h-12 rounded-xl bg-purple-100 dark:bg-purple-900/30 flex items-center justify-center shadow-md border border-purple-200 dark:border-purple-700/30 group-hover/skill:rotate-6 transition-transform duration-300">
+                                            <i class="fab fa-php text-xl text-purple-600 dark:text-purple-400"></i>
                                         </div>
-                                        <div>
-                                            <h3 class="font-semibold text-gray-900 dark:text-white group-hover/skill:text-purple-500 transition-colors duration-300">PHP</h3>
-                                            <p class="text-sm text-gray-600 dark:text-gray-400">OOP & MVC</p>
+                                        <div class="flex-1">
+                                            <div class="flex justify-between items-center">
+                                                <h3 class="font-semibold text-gray-900 dark:text-white text-lg">PHP</h3>
+                                                <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-sm font-medium">Gevorderd</span>
+                                            </div>
+                                            <div class="flex flex-wrap gap-2 mt-2">
+                                                <span class="px-2 py-1 bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-lg text-xs">OOP</span>
+                                                <span class="px-2 py-1 bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-lg text-xs">MVC</span>
+                                                <span class="px-2 py-1 bg-purple-50 dark:bg-purple-900/20 text-purple-700 dark:text-purple-300 rounded-lg text-xs">API</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="text-green-600 dark:text-green-400 font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300">85%</span>
                                 </div>
-                                <div class="h-3 bg-gradient-to-r from-gray-100/50 to-gray-200/50 dark:from-gray-700/50 dark:to-gray-800/50 backdrop-blur-sm rounded-full overflow-hidden shadow-inner">
-                                    <div class="h-full bg-gradient-to-r from-purple-500/90 to-indigo-600/90 rounded-full transition-all duration-700 ease-out transform origin-left w-[85%] hover:w-[87%]"></div>
-                                </div>
-                            </div>
 
-                            <!-- Laravel -->
-                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
-                                <div class="flex justify-between items-center mb-3">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-red-500/20 to-pink-500/20 dark:from-red-500/10 dark:to-pink-500/10 shadow-sm border border-red-200/30 dark:border-red-700/30 transform-gpu transition-all duration-300 group-hover/skill:scale-110 group-hover/skill:rotate-3 flex items-center justify-center">
-                                            <i class="fab fa-laravel text-sm text-red-600/90 dark:text-red-400/90 group-hover/skill:animate-bounce"></i>
+                                <!-- Laravel -->
+                                <div class="group/skill transform hover:scale-[1.02] transition-all duration-300">
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <div class="w-12 h-12 rounded-xl bg-red-100 dark:bg-red-900/30 flex items-center justify-center shadow-md border border-red-200 dark:border-red-700/30 group-hover/skill:rotate-6 transition-transform duration-300">
+                                            <i class="fab fa-laravel text-xl text-red-600 dark:text-red-400"></i>
                                         </div>
-                                        <div>
-                                            <h3 class="font-semibold text-gray-900 dark:text-white group-hover/skill:text-red-500 transition-colors duration-300">Laravel</h3>
-                                            <p class="text-sm text-gray-600 dark:text-gray-400">Full-stack Framework</p>
+                                        <div class="flex-1">
+                                            <div class="flex justify-between items-center">
+                                                <h3 class="font-semibold text-gray-900 dark:text-white text-lg">Laravel</h3>
+                                                <span class="px-3 py-1 bg-red-100 dark:bg-red-900/30 text-red-700 dark:text-red-300 rounded-full text-sm font-medium">Gevorderd</span>
+                                            </div>
+                                            <div class="flex flex-wrap gap-2 mt-2">
+                                                <span class="px-2 py-1 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 rounded-lg text-xs">Eloquent</span>
+                                                <span class="px-2 py-1 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 rounded-lg text-xs">Blade</span>
+                                                <span class="px-2 py-1 bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-300 rounded-lg text-xs">Auth</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="text-green-600 dark:text-green-400 font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300">80%</span>
                                 </div>
-                                <div class="h-3 bg-gradient-to-r from-gray-100/50 to-gray-200/50 dark:from-gray-700/50 dark:to-gray-800/50 backdrop-blur-sm rounded-full overflow-hidden shadow-inner">
-                                    <div class="h-full bg-gradient-to-r from-red-500/90 to-pink-600/90 rounded-full transition-all duration-700 ease-out transform origin-left w-[80%] hover:w-[82%]"></div>
-                                </div>
-                            </div>
 
-                            <!-- MySQL -->
-                            <div class="group/skill transform transition-all duration-300 hover:translate-x-2">
-                                <div class="flex justify-between items-center mb-3">
-                                    <div class="flex items-center gap-3">
-                                        <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500/20 to-cyan-500/20 dark:from-blue-500/10 dark:to-cyan-500/10 shadow-sm border border-blue-200/30 dark:border-blue-700/30 transform-gpu transition-all duration-300 group-hover/skill:scale-110 group-hover/skill:rotate-3 flex items-center justify-center">
-                                            <i class="fas fa-database text-sm text-blue-600/90 dark:text-blue-400/90 group-hover/skill:animate-pulse"></i>
+                                <!-- MySQL -->
+                                <div class="group/skill transform hover:scale-[1.02] transition-all duration-300">
+                                    <div class="flex items-center gap-4 mb-4">
+                                        <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center shadow-md border border-blue-200 dark:border-blue-700/30 group-hover/skill:rotate-6 transition-transform duration-300">
+                                            <i class="fas fa-database text-xl text-blue-600 dark:text-blue-400"></i>
                                         </div>
-                                        <div>
-                                            <h3 class="font-semibold text-gray-900 dark:text-white group-hover/skill:text-blue-500 transition-colors duration-300">MySQL</h3>
-                                            <p class="text-sm text-gray-600 dark:text-gray-400">Database Management</p>
+                                        <div class="flex-1">
+                                            <div class="flex justify-between items-center">
+                                                <h3 class="font-semibold text-gray-900 dark:text-white text-lg">MySQL</h3>
+                                                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">Gevorderd</span>
+                                            </div>
+                                            <div class="flex flex-wrap gap-2 mt-2">
+                                                <span class="px-2 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-lg text-xs">Queries</span>
+                                                <span class="px-2 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-lg text-xs">Optimization</span>
+                                                <span class="px-2 py-1 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-lg text-xs">Indexing</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <span class="text-green-600 dark:text-green-400 font-bold opacity-0 group-hover/skill:opacity-100 transition-opacity duration-300">75%</span>
-                                </div>
-                                <div class="h-3 bg-gradient-to-r from-gray-100/50 to-gray-200/50 dark:from-gray-700/50 dark:to-gray-800/50 backdrop-blur-sm rounded-full overflow-hidden shadow-inner">
-                                    <div class="h-full bg-gradient-to-r from-blue-500/90 to-cyan-600/90 rounded-full transition-all duration-700 ease-out transform origin-left w-[75%] hover:w-[77%]"></div>
                                 </div>
                             </div>
                         </div>
@@ -324,21 +328,17 @@ include 'includes/header.php';
 
             <!-- Verbeterde Gedetailleerde Ervaringen Sectie -->
             <div class="max-w-7xl mx-auto mt-24">
-                <div class="text-center mb-16 relative" data-aos="fade-down">
-                    <div class="absolute inset-0 flex items-center justify-center opacity-10 pointer-events-none">
-                        <div class="w-64 h-64 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full blur-3xl"></div>
+                <div class="text-center mb-16">
+                    <div class="inline-flex items-center justify-center mb-4" data-aos="fade-down">
+                        <span class="h-px w-8 bg-blue-500 mr-3"></span>
+                        <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wider uppercase text-sm">Professionele Ervaring</span>
+                        <span class="h-px w-8 bg-blue-500 ml-3"></span>
                     </div>
-                    <h2 class="text-4xl font-extrabold mb-6 relative">
-                        <span class="inline-block transform hover:scale-105 transition-transform duration-300">
-                            <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400">
-                                Mijn Ervaringen
-                            </span>
-                        </span>
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white" data-aos="fade-up">
+                        Mijn <span class="text-blue-600 dark:text-blue-400">Ervaringen</span>
                     </h2>
-                    <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed relative">
-                        <span class="inline-block transform hover:translate-y-[-2px] transition-transform duration-300">
-                            Een diepgaande blik op mijn projecten en de technologieën die ik heb gebruikt
-                        </span>
+                    <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                        Een diepgaande blik op mijn projecten en de technologieën die ik heb gebruikt
                     </p>
                 </div>
 

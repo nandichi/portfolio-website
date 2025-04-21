@@ -55,6 +55,15 @@ include 'includes/header.php';
 .animate-pulse {
     animation: pulse-custom 3s infinite;
 }
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
 </style>
 
 <div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-purple-50/50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20">
@@ -420,137 +429,190 @@ include 'includes/header.php';
                         </div>
                     </div>
 
-                    <!-- Professionele Focus -->
-                    <div class="group relative">
-                        <div class="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-emerald-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
-                        <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-8 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-green-500/20 dark:group-hover:border-green-400/20">
-                            <!-- Header met 3D effect -->
-                            <div class="relative mb-10">
-                                <h2 class="text-3xl font-bold">
-                                    <span class="relative inline-block">
-                                        <span class="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 blur-lg opacity-30"></span>
-                                        <span class="relative bg-clip-text text-transparent bg-gradient-to-r from-green-500 to-emerald-600">
-                                            Professionele Focus
-                                        </span>
+                    <!-- Professionele Focus - Nieuw Ontwerp -->
+                    <div class="group relative overflow-hidden">
+                        <!-- Achtergrond effecten -->
+                        <div class="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
+                        
+                        <!-- Hoofdcontainer -->
+                        <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-8 border border-gray-100/10 dark:border-gray-700/10 transition-all duration-500 group-hover:border-cyan-500/20 dark:group-hover:border-cyan-400/20">
+                            
+                            <!-- Header met 3D glasmorphism effect -->
+                            <div class="relative mb-12 overflow-hidden">
+                                <div class="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-blue-600/20 rounded-full blur-2xl transform -rotate-6 scale-110 opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
+                                <h2 class="text-4xl font-bold relative">
+                                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 via-blue-500 to-indigo-600 dark:from-cyan-400 dark:via-blue-400 dark:to-indigo-500">
+                                        Professionele Focus
                                     </span>
                                 </h2>
-                                <!-- Animated underline -->
-                                <div class="absolute -bottom-2 left-0 w-0 h-0.5 bg-gradient-to-r from-green-500 to-emerald-500 group-hover:w-48 transition-all duration-700"></div>
+                                <p class="mt-3 text-gray-600 dark:text-gray-300 max-w-xl">
+                                    Mijn technische expertise en professionele vaardigheden, gekwalificeerd van beginner tot expert
+                                </p>
+                                <div class="absolute bottom-0 left-0 w-24 h-1 bg-gradient-to-r from-cyan-500 to-blue-600 transform -skew-x-12 group-hover:w-48 transition-all duration-700"></div>
                             </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <!-- Expertise Gebieden -->
-                                <div class="space-y-6">
-                                    <div class="relative">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-                                            <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center transform transition-all duration-500 group-hover:rotate-12">
-                                                <i class="fas fa-code text-white text-sm"></i>
-                                            </span>
-                                            Expertise Gebieden
-                                        </h3>
-
-                                        <!-- Expertise List -->
-                                        <div class="space-y-4">
-                                            <?php
-                                            $expertises = [
-                                                ['name' => 'WordPress', 'level' => 90, 'icon' => 'fab fa-wordpress'],
-                                                ['name' => 'PHP/Laravel', 'level' => 85, 'icon' => 'fab fa-php'],
-                                                ['name' => 'Tailwind CSS', 'level' => 95, 'icon' => 'fab fa-css3'],
-                                                ['name' => 'TypeScript', 'level' => 80, 'icon' => 'fab fa-js'],
-                                                ['name' => 'C#', 'level' => 75, 'icon' => 'fas fa-code'],
-                                                ['name' => 'ASP.NET', 'level' => 70, 'icon' => 'fas fa-window-restore'],
-                                                ['name' => 'AngularJS', 'level' => 85, 'icon' => 'fab fa-angular']
-                                            ];
-                                            foreach ($expertises as $expertise): ?>
-                                                <div class="group/expertise relative">
-                                                    <div class="relative p-4 rounded-xl border border-gray-200/20 dark:border-gray-700/20 transition-all duration-300 hover:border-green-500/30 hover:shadow-lg hover:shadow-green-500/10">
-                                                        <div class="flex items-center gap-4">
-                                                            <!-- Icon Container -->
-                                                            <div class="relative">
-                                                                <div class="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-lg blur opacity-20 group-hover/expertise:opacity-40 transition-all duration-300"></div>
-                                                                <div class="relative w-12 h-12 rounded-lg bg-gradient-to-br from-green-500/10 to-emerald-600/10 flex items-center justify-center transform transition-all duration-500 group-hover/expertise:scale-110">
-                                                                    <i class="<?php echo $expertise['icon']; ?> text-xl text-green-500"></i>
-                                                                </div>
-                                                            </div>
-                                                            
-                                                            <!-- Content -->
-                                                            <div class="flex-grow">
-                                                                <div class="flex items-center justify-between mb-2">
-                                                                    <h4 class="font-semibold text-gray-900 dark:text-white group-hover/expertise:text-green-500 transition-all duration-300">
-                                                                        <?php echo $expertise['name']; ?>
-                                                                    </h4>
-                                                                    <span class="text-sm font-medium text-green-500">
-                                                                        <?php echo $expertise['level']; ?>%
-                                                                    </span>
-                                                                </div>
-                                                                <!-- Progress Bar -->
-                                                                <div class="h-1.5 w-full bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                                                                    <div class="h-full bg-gradient-to-r from-green-500 to-emerald-500 rounded-full transform origin-left transition-all duration-500 group-hover/expertise:scale-x-105"
-                                                                         style="width: <?php echo $expertise['level']; ?>%">
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <?php endforeach; ?>
+                            
+                            <!-- 3D Draaiende Technologie Kubus -->
+                            <div class="mb-12 relative perspective-1000" style="height: 300px;">
+                                <!-- Glasmorphism container -->
+                                <div class="absolute inset-0 rounded-xl bg-gradient-to-r from-cyan-500/5 to-blue-600/5 border border-white/10 dark:border-gray-700/10 backdrop-filter backdrop-blur-sm overflow-hidden">
+                                    <!-- Animerende technologie woorden op verschillende posities -->
+                                    <?php 
+                                    $techWords = [
+                                        ['text' => 'JavaScript', 'top' => 15, 'left' => 20, 'size' => 24, 'rotate' => -5, 'color' => 'from-yellow-400 to-yellow-600'],
+                                        ['text' => 'PHP', 'top' => 30, 'left' => 75, 'size' => 28, 'rotate' => 5, 'color' => 'from-indigo-500 to-purple-500'],
+                                        ['text' => 'Laravel', 'top' => 65, 'left' => 30, 'size' => 22, 'rotate' => 3, 'color' => 'from-red-500 to-pink-600'],
+                                        ['text' => 'CSS', 'top' => 20, 'left' => 50, 'size' => 20, 'rotate' => -2, 'color' => 'from-blue-400 to-blue-600'],
+                                        ['text' => 'React', 'top' => 45, 'left' => 15, 'size' => 26, 'rotate' => 2, 'color' => 'from-cyan-400 to-blue-500'],
+                                        ['text' => 'Node.js', 'top' => 70, 'left' => 65, 'size' => 24, 'rotate' => -4, 'color' => 'from-green-500 to-emerald-600'],
+                                        ['text' => 'TailwindCSS', 'top' => 50, 'left' => 55, 'size' => 23, 'rotate' => 3, 'color' => 'from-cyan-500 to-blue-500'],
+                                        ['text' => 'Vue.js', 'top' => 25, 'left' => 85, 'size' => 22, 'rotate' => -3, 'color' => 'from-green-500 to-emerald-600'],
+                                        ['text' => 'TypeScript', 'top' => 80, 'left' => 40, 'size' => 22, 'rotate' => 4, 'color' => 'from-blue-600 to-indigo-700'],
+                                        ['text' => 'MySQL', 'top' => 40, 'left' => 80, 'size' => 22, 'rotate' => -1, 'color' => 'from-orange-500 to-amber-600'],
+                                        ['text' => 'Git', 'top' => 10, 'left' => 40, 'size' => 24, 'rotate' => 3, 'color' => 'from-orange-600 to-red-600'],
+                                        ['text' => 'HTML', 'top' => 85, 'left' => 10, 'size' => 24, 'rotate' => -2, 'color' => 'from-orange-500 to-red-500'],
+                                    ];
+                                    
+                                    foreach ($techWords as $tech): 
+                                    ?>
+                                    <div class="absolute float-animation" 
+                                         style="top: <?= $tech['top'] ?>%; left: <?= $tech['left'] ?>%; animation-delay: <?= rand(0, 1000) / 1000 ?>s; animation-duration: <?= rand(3000, 5000) / 1000 ?>s;">
+                                        <div class="<?= 'text-' . $tech['size'] ?> font-bold bg-clip-text text-transparent bg-gradient-to-r <?= $tech['color'] ?> transform rotate-<?= $tech['rotate'] ?> hover:scale-125 transition-all duration-300 cursor-pointer">
+                                            <?= $tech['text'] ?>
                                         </div>
                                     </div>
-                                </div>
-
-                                <!-- Interesses met Moderne Cards -->
-                                <div class="space-y-6">
-                                    <div class="relative">
-                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-6 flex items-center gap-3">
-                                            <span class="w-8 h-8 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center transform transition-all duration-500 group-hover:rotate-12">
-                                                <i class="fas fa-star text-white text-sm"></i>
-                                            </span>
-                                            Interesses
-                                        </h3>
-                                        <div class="space-y-4">
-                                            <?php
-                                            $interests = [
-                                                ['name' => 'Front-end Development', 'icon' => 'fas fa-laptop-code'],
-                                                ['name' => 'Back-end Development', 'icon' => 'fas fa-server'],
-                                                ['name' => 'Web Development', 'icon' => 'fas fa-globe'],
-                                                ['name' => 'Software Architecture', 'icon' => 'fas fa-layer-group']
-                                            ];
-                                            foreach ($interests as $interest): ?>
-                                                <div class="group/interest relative overflow-hidden">
-                                                    <div class="absolute inset-0 bg-gradient-to-r from-green-500/20 to-emerald-500/20 rounded-xl opacity-0 group-hover/interest:opacity-100 transition-all duration-300"></div>
-                                                    <div class="relative p-4 rounded-xl border border-gray-200/20 dark:border-gray-700/20 transition-all duration-300 group-hover/interest:border-green-500/30">
-                                                        <div class="flex items-center justify-between">
-                                                            <div class="flex items-center gap-3">
-                                                                <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center transform transition-all duration-500 group-hover/interest:scale-110 group-hover/interest:rotate-6">
-                                                                    <i class="<?php echo $interest['icon']; ?> text-white"></i>
-                                                                </div>
-                                                                <span class="text-gray-700 dark:text-gray-300 font-medium"><?php echo $interest['name']; ?></span>
-                                                            </div>
-                                                            <!-- Animated Arrow -->
-                                                            <div class="w-6 h-6 flex items-center justify-center transform transition-all duration-300 group-hover/interest:translate-x-1">
-                                                                <i class="fas fa-arrow-right text-green-500"></i>
-                                                            </div>
-                                                        </div>
-                                                        <!-- Hidden content that appears on hover -->
-                                                        <div class="mt-3 pl-13 overflow-hidden transition-all duration-300 max-h-0 group-hover/interest:max-h-20">
-                                                            <p class="text-sm text-gray-600 dark:text-gray-400">
-                                                                Gepassioneerd over <?php echo strtolower($interest['name']); ?> en constant op zoek naar nieuwe uitdagingen en technologieën.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            <?php endforeach; ?>
+                                    <?php endforeach; ?>
+                                    
+                                    <!-- Centrale Draaiende 3D Kubus -->
+                                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" 
+                                         style="transform-style: preserve-3d; animation: spin 15s infinite linear;">
+                                        <?php 
+                                        $cubeIcons = [
+                                            ['icon' => 'fab fa-php', 'color' => 'bg-gradient-to-r from-indigo-500 to-purple-600', 'transform' => 'translateZ(50px)'],
+                                            ['icon' => 'fab fa-js', 'color' => 'bg-gradient-to-r from-yellow-400 to-yellow-600', 'transform' => 'rotateY(90deg) translateZ(50px)'],
+                                            ['icon' => 'fab fa-html5', 'color' => 'bg-gradient-to-r from-red-500 to-orange-600', 'transform' => 'rotateY(180deg) translateZ(50px)'],
+                                            ['icon' => 'fab fa-css3-alt', 'color' => 'bg-gradient-to-r from-blue-500 to-blue-600', 'transform' => 'rotateY(270deg) translateZ(50px)'],
+                                            ['icon' => 'fab fa-react', 'color' => 'bg-gradient-to-r from-cyan-400 to-blue-500', 'transform' => 'rotateX(90deg) translateZ(50px)'],
+                                            ['icon' => 'fab fa-node-js', 'color' => 'bg-gradient-to-r from-green-500 to-emerald-600', 'transform' => 'rotateX(270deg) translateZ(50px)'],
+                                        ];
+                                        
+                                        foreach ($cubeIcons as $face): 
+                                        ?>
+                                        <div class="absolute w-24 h-24 <?= $face['color'] ?> rounded-xl flex items-center justify-center transform transition-all duration-500"
+                                             style="transform: <?= $face['transform'] ?>; box-shadow: 0 0 20px rgba(0,0,0,0.2);">
+                                            <i class="<?= $face['icon'] ?> text-4xl text-white animate-pulse"></i>
                                         </div>
+                                        <?php endforeach; ?>
                                     </div>
                                 </div>
                             </div>
-
+                            
+                            <!-- Vaardigheden Visualisatie -->
+                            <div class="mb-16">
+                                <h3 class="text-2xl font-semibold mb-8 text-gray-800 dark:text-white flex items-center gap-3">
+                                    <span class="w-10 h-10 rounded-lg bg-gradient-to-br from-cyan-500 to-blue-600 flex items-center justify-center">
+                                        <i class="fas fa-chart-bar text-white"></i>
+                                    </span>
+                                    Vaardigheidsmatrix
+                                </h3>
+                                
+                                <!-- Interactieve Skill Bars -->
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                    <!-- Links: Front-end Skills -->
+                                    <div class="space-y-6">
+                                        <h4 class="text-lg font-medium text-gray-700 dark:text-gray-300 mb-4">Front-end Ontwikkeling</h4>
+                                        <?php 
+                                        $frontendSkills = [
+                                            ['name' => 'HTML/CSS', 'level' => 95, 'icon' => 'fab fa-html5', 'color' => 'from-red-500 to-orange-600'],
+                                            ['name' => 'JavaScript', 'level' => 90, 'icon' => 'fab fa-js', 'color' => 'from-yellow-400 to-yellow-600'],
+                                            ['name' => 'React', 'level' => 80, 'icon' => 'fab fa-react', 'color' => 'from-cyan-400 to-blue-500'],
+                                            ['name' => 'TailwindCSS', 'level' => 95, 'icon' => 'fab fa-css3-alt', 'color' => 'from-cyan-500 to-blue-500'],
+                                            ['name' => 'Vue.js', 'level' => 75, 'icon' => 'fab fa-vuejs', 'color' => 'from-green-500 to-emerald-600'],
+                                        ];
+                                        
+                                        foreach ($frontendSkills as $skill): 
+                                        ?>
+                                        <div class="group/skill relative mb-6">
+                                            <div class="flex justify-between items-center mb-2">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br <?= $skill['color'] ?> flex items-center justify-center transform transition-all duration-500 group-hover/skill:scale-110 group-hover/skill:rotate-6">
+                                                        <i class="<?= $skill['icon'] ?> text-white"></i>
+                                                    </div>
+                                                    <h5 class="font-medium text-gray-700 dark:text-gray-300"><?= $skill['name'] ?></h5>
+                                                </div>
+                                                <span class="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r <?= $skill['color'] ?>"><?= $skill['level'] ?>%</span>
+                                            </div>
+                                            
+                                            <!-- Progress Bar Container -->
+                                            <div class="w-full h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden relative">
+                                                <!-- Glass effect container -->
+                                                <div class="absolute inset-0 rounded-full overflow-hidden backdrop-blur-sm">
+                                                    <!-- White light effect -->
+                                                    <div class="absolute top-0 left-0 w-full h-1/2 bg-white/20"></div>
+                                                </div>
+                                                
+                                                <!-- Progress Bar -->
+                                                <div class="h-full rounded-full bg-gradient-to-r <?= $skill['color'] ?> transform origin-left scale-x-0 group-hover/skill:scale-x-100 transition-transform duration-1000 ease-out" 
+                                                     style="transform: scaleX(<?= $skill['level'] / 100 ?>);">
+                                                    <!-- Animated Pulse Effect -->
+                                                    <div class="absolute top-0 right-0 w-4 h-full bg-white opacity-70 blur-sm animate-pulse"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                    
+                                    <!-- Rechts: Back-end Skills -->
+                                    <div class="space-y-6">
+                                        <h4 class="text-lg font-medium text-gray-700 dark:text-gray-300 mb-4">Back-end Ontwikkeling</h4>
+                                        <?php 
+                                        $backendSkills = [
+                                            ['name' => 'PHP', 'level' => 95, 'icon' => 'fab fa-php', 'color' => 'from-indigo-500 to-purple-600'],
+                                            ['name' => 'Laravel', 'level' => 90, 'icon' => 'fab fa-laravel', 'color' => 'from-red-500 to-pink-600'],
+                                            ['name' => 'Node.js', 'level' => 75, 'icon' => 'fab fa-node-js', 'color' => 'from-green-500 to-emerald-600'],
+                                            ['name' => 'MySQL', 'level' => 85, 'icon' => 'fas fa-database', 'color' => 'from-orange-500 to-amber-600'],
+                                            ['name' => 'REST API', 'level' => 80, 'icon' => 'fas fa-exchange-alt', 'color' => 'from-blue-500 to-indigo-600'],
+                                        ];
+                                        
+                                        foreach ($backendSkills as $skill): 
+                                        ?>
+                                        <div class="group/skill relative mb-6">
+                                            <div class="flex justify-between items-center mb-2">
+                                                <div class="flex items-center gap-3">
+                                                    <div class="w-8 h-8 rounded-lg bg-gradient-to-br <?= $skill['color'] ?> flex items-center justify-center transform transition-all duration-500 group-hover/skill:scale-110 group-hover/skill:rotate-6">
+                                                        <i class="<?= $skill['icon'] ?> text-white"></i>
+                                                    </div>
+                                                    <h5 class="font-medium text-gray-700 dark:text-gray-300"><?= $skill['name'] ?></h5>
+                                                </div>
+                                                <span class="text-sm font-semibold bg-clip-text text-transparent bg-gradient-to-r <?= $skill['color'] ?>"><?= $skill['level'] ?>%</span>
+                                            </div>
+                                            
+                                            <!-- Progress Bar Container -->
+                                            <div class="w-full h-3 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden relative">
+                                                <!-- Glass effect container -->
+                                                <div class="absolute inset-0 rounded-full overflow-hidden backdrop-blur-sm">
+                                                    <!-- White light effect -->
+                                                    <div class="absolute top-0 left-0 w-full h-1/2 bg-white/20"></div>
+                                                </div>
+                                                
+                                                <!-- Progress Bar -->
+                                                <div class="h-full rounded-full bg-gradient-to-r <?= $skill['color'] ?> transform origin-left scale-x-0 group-hover/skill:scale-x-100 transition-transform duration-1000 ease-out" 
+                                                     style="transform: scaleX(<?= $skill['level'] / 100 ?>);">
+                                                    <!-- Animated Pulse Effect -->
+                                                    <div class="absolute top-0 right-0 w-4 h-full bg-white opacity-70 blur-sm animate-pulse"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <?php endforeach; ?>
+                                    </div>
+                                </div>
+                            </div>
+                            
                             <!-- Decoratieve elementen -->
                             <div class="absolute top-0 right-0 w-32 h-32 opacity-10">
-                                <div class="absolute right-0 top-0 w-full h-full bg-gradient-to-bl from-green-500 to-transparent transform -rotate-45"></div>
+                                <div class="absolute right-0 top-0 w-full h-full bg-gradient-to-bl from-cyan-500 to-transparent transform -rotate-45"></div>
                             </div>
                             <div class="absolute bottom-0 left-0 w-32 h-32 opacity-10">
-                                <div class="absolute left-0 bottom-0 w-full h-full bg-gradient-to-tr from-emerald-500 to-transparent transform -rotate-45"></div>
+                                <div class="absolute left-0 bottom-0 w-full h-full bg-gradient-to-tr from-blue-500 to-transparent transform -rotate-45"></div>
                             </div>
                         </div>
                     </div>

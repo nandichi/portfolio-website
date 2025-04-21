@@ -106,8 +106,7 @@ include 'includes/header.php';
             </div>
             
             <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed animate-[fadeInUp_0.8s_ease-out_0.4s]">
-                Een gedreven code-expert die complexe problemen omzet in werkende oplossingen. Met een scherp oog voor detail en passie voor innovatie bouw ik digitale ervaringen die impact maken
-            </p>
+            Een enthousiaste softwareontwikkelaar die complexe problemen oplost met slimme en werkende oplossingen. Met oog voor detail en een passie voor innovatie creëer ik digitale toepassingen die echt verschil maken.            </p>
             
             <!-- Call-to-action knoppen met geavanceerde hover effecten -->
             <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2 animate-[fadeInUp_0.8s_ease-out_0.6s]">
@@ -380,195 +379,217 @@ include 'includes/header.php';
                 </div>
             </div>
         </div>
+</section>
 
-        <!-- Professionele Waardepropositie Sectie -->
-        <div class="mt-16" data-aos="fade-up">
-            <!-- Moderne header met 3D effect -->
-            <div class="relative overflow-hidden rounded-t-[2.5rem] bg-[conic-gradient(at_top_right,_var(--tw-gradient-stops))] from-blue-700 via-blue-800 to-gray-900 p-10">
-                <div class="absolute inset-0">
-                    <!-- Animated mesh pattern -->
-                    <div class="absolute inset-0" style="background-image: radial-gradient(rgba(255,255,255,0.1) 1px, transparent 1px); background-size: 20px 20px; animation: float 15s ease-in-out infinite;"></div>
-                    <!-- Glowing orbs -->
-                    <div class="absolute top-0 left-1/4 w-64 h-64 bg-blue-400/20 rounded-full filter blur-3xl mix-blend-overlay"></div>
-                    <div class="absolute bottom-0 right-1/4 w-64 h-64 bg-indigo-400/20 rounded-full filter blur-3xl mix-blend-overlay"></div>
-                </div>
-                <div class="relative">
-                    <h3 class="text-4xl font-black text-white text-center mb-6 [text-shadow:_2px_2px_10px_rgb(0_0_0_/_20%)]">
-                        Mijn Toegevoegde Waarde
-                    </h3>
-                    <p class="text-blue-50 text-center max-w-2xl mx-auto text-lg leading-relaxed">
-                        Als developer combineer ik technische excellentie met innovatief denkvermogen om uitzonderlijke digitale oplossingen te creëren
-                    </p>
-                </div>
-            </div>
+<!-- LinkedIn Integratie Sectie -->
+<section class="py-24 px-4 bg-gradient-to-br from-white via-blue-50/50 to-white dark:from-gray-900 dark:via-blue-950/30 dark:to-gray-900 relative overflow-hidden">
+    <!-- LinkedIn-geïnspireerde achtergrondpatronen -->
+    <div class="absolute inset-0">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10 dark:opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'100\' height=\'100\' viewBox=\'0 0 100 100\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z\' fill=\'%230077B5\' fill-opacity=\'0.25\' fill-rule=\'evenodd\'/%3E%3C/svg%3E');"></div>
+    </div>
 
-            <!-- Hoofdcontent met glassmorphism effect -->
-            <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-b-[2.5rem] shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] transition-all duration-500 hover:shadow-[0_30px_60px_rgba(8,_112,_184,_0.4)]">
-                <div class="p-10 lg:p-14">
-                    <!-- Expertise Grid met verbeterde layout -->
-                    <div class="grid md:grid-cols-2 gap-10 mb-14">
-                        <!-- Technische Expertise -->
-                        <div class="group" data-aos="fade-up">
-                            <div class="relative overflow-hidden bg-white dark:bg-gray-800/80 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm">
-                                <!-- Decorative accent -->
-                                <div class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-blue-500 to-blue-700"></div>
-                                
-                                <!-- Main Content -->
-                                <div class="p-8 pl-12">
-                                    <div class="flex items-center gap-5 mb-6">
-                                        <div class="flex-shrink-0">
-                                            <div class="w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-500 border border-blue-100/50 dark:border-blue-700/30">
-                                                <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <h4 class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">Technische Expertise</h4>
-                                    </div>
-                                    <div class="space-y-5">
-                                        <p class="text-gray-700 dark:text-gray-300 font-medium">Onderscheidend door:</p>
-                                        <ul class="space-y-4">
-                                            <li class="flex items-start gap-3 text-gray-700 dark:text-gray-300">
-                                                <div class="mt-1.5 flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                                                    <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                                </div>
-                                                <span>Modern Development Stack</span>
-                                            </li>
-                                            <li class="flex items-start gap-3 text-gray-700 dark:text-gray-300">
-                                                <div class="mt-1.5 flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                                                    <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                                </div>
-                                                <span>Clean Code Practices</span>
-                                            </li>
-                                            <li class="flex items-start gap-3 text-gray-700 dark:text-gray-300">
-                                                <div class="mt-1.5 flex-shrink-0 w-5 h-5 rounded-full bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center">
-                                                    <div class="w-2 h-2 rounded-full bg-blue-500"></div>
-                                                </div>
-                                                <span>Performance Optimalisatie</span>
-                                            </li>
-                                        </ul>
-                                        
-                                        <!-- Skills Tags -->
-                                        <div class="mt-6 pt-5 border-t border-gray-100 dark:border-gray-700/50">
-                                            <div class="flex flex-wrap gap-2">
-                                                <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium border border-blue-100 dark:border-blue-700/50 shadow-sm">
-                                                    Modern
-                                                </span>
-                                                <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium border border-blue-100 dark:border-blue-700/50 shadow-sm">
-                                                    Clean Code
-                                                </span>
-                                                <span class="px-3 py-1 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-full text-sm font-medium border border-blue-100 dark:border-blue-700/50 shadow-sm">
-                                                    Performance
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Innovatieve Aanpak -->
-                        <div class="group" data-aos="fade-up" data-aos-delay="100">
-                            <div class="relative overflow-hidden bg-white dark:bg-gray-800/80 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm">
-                                <!-- Decorative accent -->
-                                <div class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-indigo-500 to-indigo-700"></div>
-                                
-                                <!-- Main Content -->
-                                <div class="p-8 pl-12">
-                                    <div class="flex items-center gap-5 mb-6">
-                                        <div class="flex-shrink-0">
-                                            <div class="w-16 h-16 bg-gradient-to-br from-indigo-50 to-indigo-100 dark:from-indigo-900/30 dark:to-indigo-800/30 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-500 border border-indigo-100/50 dark:border-indigo-700/30">
-                                                <svg class="w-8 h-8 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                                                </svg>
-                                            </div>
-                                        </div>
-                                        <h4 class="text-2xl font-bold text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">Innovatieve Aanpak</h4>
-                                    </div>
-                                    <div class="space-y-5">
-                                        <p class="text-gray-700 dark:text-gray-300 font-medium">Onderscheidend door:</p>
-                                        <ul class="space-y-4">
-                                            <li class="flex items-start gap-3 text-gray-700 dark:text-gray-300">
-                                                <div class="mt-1.5 flex-shrink-0 w-5 h-5 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center">
-                                                    <div class="w-2 h-2 rounded-full bg-indigo-500"></div>
-                                                </div>
-                                                <span>Proactief meedenken in oplossingen</span>
-                                            </li>
-                                            <li class="flex items-start gap-3 text-gray-700 dark:text-gray-300">
-                                                <div class="mt-1.5 flex-shrink-0 w-5 h-5 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center">
-                                                    <div class="w-2 h-2 rounded-full bg-indigo-500"></div>
-                                                </div>
-                                                <span>Snelle adaptatie nieuwe technologieën</span>
-                                            </li>
-                                            <li class="flex items-start gap-3 text-gray-700 dark:text-gray-300">
-                                                <div class="mt-1.5 flex-shrink-0 w-5 h-5 rounded-full bg-indigo-100 dark:bg-indigo-900/30 flex items-center justify-center">
-                                                    <div class="w-2 h-2 rounded-full bg-indigo-500"></div>
-                                                </div>
-                                                <span>Focus op schaalbaarheid & onderhoud</span>
-                                            </li>
-                                        </ul>
-                                        
-                                        <!-- Skills Tags -->
-                                        <div class="mt-6 pt-5 border-t border-gray-100 dark:border-gray-700/50">
-                                            <div class="flex flex-wrap gap-2">
-                                                <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-full text-sm font-medium border border-indigo-100 dark:border-indigo-700/50 shadow-sm">
-                                                    Probleemoplossend
-                                                </span>
-                                                <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-full text-sm font-medium border border-indigo-100 dark:border-indigo-700/50 shadow-sm">
-                                                    Innovatief
-                                                </span>
-                                                <span class="px-3 py-1 bg-indigo-50 dark:bg-indigo-900/30 text-indigo-600 dark:text-indigo-400 rounded-full text-sm font-medium border border-indigo-100 dark:border-indigo-700/50 shadow-sm">
-                                                    Toekomstgericht
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <div class="max-w-7xl mx-auto relative">
+        <!-- LinkedIn-geïnspireerde header -->
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center justify-center mb-4" data-aos="fade-down">
+                <div class="flex items-center px-4 py-1.5 bg-blue-100 dark:bg-blue-900/50 rounded-full">
+                    <svg class="w-5 h-5 text-[#0077B5] dark:text-[#0a85c7] mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    <span class="text-[#0077B5] dark:text-[#0a85c7] font-semibold tracking-wider uppercase text-sm">LinkedIn Activiteit</span>
                     </div>
+                </div>
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white" data-aos="fade-up">
+                Mijn <span class="text-[#0077B5] dark:text-[#0a85c7]">Professionele</span> Netwerk
+            </h2>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                Blijf op de hoogte van mijn laatste activiteiten op LinkedIn
+            </p>
+        </div>
 
-                    <!-- Unique Selling Points met moderne kaarten -->
-                    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="group bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                            <div class="text-blue-600 dark:text-blue-400 mb-4 transform group-hover:scale-110 transition-transform">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                                </svg>
+        <!-- LinkedIn Posts Container met verbeterde styling -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 relative">
+            <!-- Post 1 -->
+            <div class="group" data-aos="fade-up">
+                <div class="h-full bg-white dark:bg-gray-800/80 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-200 dark:border-gray-700/50 backdrop-blur-sm overflow-hidden group-hover:translate-y-[-5px] relative">
+                    <!-- LinkedIn-stijl header accent -->
+                    <div class="h-2 bg-[#0077B5] w-full absolute top-0 left-0"></div>
+                    <div class="p-6 pt-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-[#E6F7FF] dark:bg-[#0077B5]/20 rounded-full flex items-center justify-center mr-3 border-2 border-[#0077B5] dark:border-[#0a85c7]">
+                                    <svg class="w-6 h-6 text-[#0077B5] dark:text-[#0a85c7]" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-900 dark:text-white">Naoufal Andichi</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Software Developer • 2 weken geleden</p>
                             </div>
-                            <h5 class="font-bold mb-2 text-gray-900 dark:text-white">Snel & Efficiënt</h5>
-                            <p class="text-sm text-gray-700 dark:text-gray-300">Snelle implementatie met behoud van kwaliteit</p>
                         </div>
-                        <div class="group bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                            <div class="text-blue-600 dark:text-blue-400 mb-4 transform group-hover:scale-110 transition-transform">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
-                                </svg>
-                            </div>
-                            <h5 class="font-bold mb-2 text-gray-900 dark:text-white">Maatwerk</h5>
-                            <p class="text-sm text-gray-700 dark:text-gray-300">Oplossingen op maat voor uw behoeften</p>
-                        </div>
-                        <div class="group bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                            <div class="text-blue-600 dark:text-blue-400 mb-4 transform group-hover:scale-110 transition-transform">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"/>
-                                </svg>
-                            </div>
-                            <h5 class="font-bold mb-2 text-gray-900 dark:text-white">Communicatie</h5>
-                            <p class="text-sm text-gray-700 dark:text-gray-300">Heldere en proactieve communicatie</p>
-                        </div>
-                        <div class="group bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-700 dark:to-gray-600 p-6 rounded-2xl hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-                            <div class="text-blue-600 dark:text-blue-400 mb-4 transform group-hover:scale-110 transition-transform">
-                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
-                                </svg>
-                            </div>
-                            <h5 class="font-bold mb-2 text-gray-900 dark:text-white">Kwaliteit</h5>
-                            <p class="text-sm text-gray-700 dark:text-gray-300">Code volgens moderne standaarden</p>
+
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-[#0077B5] dark:group-hover:text-[#0a85c7] transition-colors line-clamp-2">
+                            🚀 Nieuwe Stemwijzer gelanceerd op PolitiekPraat!
+                        </h3>
+                        
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                            Politiek toegankelijk maken met slimme technologie – dat was mijn doel als software developer. Het resultaat? Een moderne, snelle en transparante stemwijzer die niet alleen laat zien welke partij bij je past, maar ook waarom.
+                        </p>
+                        
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                            🔍 Wat maakt deze stemwijzer anders?
+                        </p>
+                        
+                        <div class="flex justify-between items-center mt-6 pt-4 border-t border-gray-100 dark:border-gray-700/30">
+                            <div class="flex space-x-3">
+                                <span class="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                                    <svg class="w-4 h-4 mr-1 text-[#0077B5] dark:text-[#0a85c7]" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                            </svg>
+                                            42
+                                        </span>
+                                <span class="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                                    <svg class="w-4 h-4 mr-1 text-[#0077B5] dark:text-[#0a85c7]" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/>
+                                            </svg>
+                                            12
+                                        </span>
+                                    </div>
+                            
+                            <a href="https://www.linkedin.com/posts/naoufalandichi_politiekplatform-politiek-voor-iedereen-activity-7299106011196411904-3q9t?utm_source=share&utm_medium=member_desktop&rcm=ACoAADugN0IBSlrEfqwmiuI8q8mCluqNgb16Wa0" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-[#0077B5] dark:text-[#0a85c7] font-medium hover:text-[#00669e] dark:hover:text-[#0091d8] transition-colors">
+                                        <span>Bekijk post</span>
+                                <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </a>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Post 2 -->
+            <div class="group" data-aos="fade-up" data-aos-delay="100">
+                <div class="h-full bg-white dark:bg-gray-800/80 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-200 dark:border-gray-700/50 backdrop-blur-sm overflow-hidden group-hover:translate-y-[-5px] relative">
+                    <!-- LinkedIn-stijl header accent -->
+                    <div class="h-2 bg-[#0077B5] w-full absolute top-0 left-0"></div>
+                    <div class="p-6 pt-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-[#E6F7FF] dark:bg-[#0077B5]/20 rounded-full flex items-center justify-center mr-3 border-2 border-[#0077B5] dark:border-[#0a85c7]">
+                                    <svg class="w-6 h-6 text-[#0077B5] dark:text-[#0a85c7]" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-900 dark:text-white">Naoufal Andichi</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Software Developer • 1 maand geleden</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-[#0077B5] dark:group-hover:text-[#0a85c7] transition-colors line-clamp-2">
+                            Hoi allemaal! 👋
+                        </h3>
+                        
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                            Met trots deel ik mijn nieuwste project: PolitiekPraat! Een website die ik in mijn vrije tijd heb ontwikkeld omdat ik politiek toegankelijker wil maken voor iedereen.
+                        </p>
+                        
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                            ❓ Waarom PolitiekPraat?
+                            Ik merkte dat veel mensen politiek best ingewikkeld vinden. Ook zag ik dat mensen met verschillende meningen vaak langs elkaar heen praten.
+                        </p>
+                        
+                        <div class="flex justify-between items-center mt-6 pt-4 border-t border-gray-100 dark:border-gray-700/30">
+                            <div class="flex space-x-3">
+                                <span class="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                                    <svg class="w-4 h-4 mr-1 text-[#0077B5] dark:text-[#0a85c7]" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                            </svg>
+                                            78
+                                        </span>
+                                <span class="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                                    <svg class="w-4 h-4 mr-1 text-[#0077B5] dark:text-[#0a85c7]" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/>
+                                            </svg>
+                                            24
+                                        </span>
+                                    </div>
+                            
+                            <a href="https://www.linkedin.com/posts/naoufalandichi_politiekpraat-activity-7289537641782407168-SlG2?utm_source=share&utm_medium=member_desktop&rcm=ACoAADugN0IBSlrEfqwmiuI8q8mCluqNgb16Wa0" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-[#0077B5] dark:text-[#0a85c7] font-medium hover:text-[#00669e] dark:hover:text-[#0091d8] transition-colors">
+                                        <span>Bekijk post</span>
+                                <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Post 3 -->
+            <div class="group" data-aos="fade-up" data-aos-delay="200">
+                <div class="h-full bg-white dark:bg-gray-800/80 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-200 dark:border-gray-700/50 backdrop-blur-sm overflow-hidden group-hover:translate-y-[-5px] relative">
+                    <!-- LinkedIn-stijl header accent -->
+                    <div class="h-2 bg-[#0077B5] w-full absolute top-0 left-0"></div>
+                    <div class="p-6 pt-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-[#E6F7FF] dark:bg-[#0077B5]/20 rounded-full flex items-center justify-center mr-3 border-2 border-[#0077B5] dark:border-[#0a85c7]">
+                                    <svg class="w-6 h-6 text-[#0077B5] dark:text-[#0a85c7]" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                                    </svg>
+                                </div>
+                            <div>
+                                <p class="text-sm font-medium text-gray-900 dark:text-white">Naoufal Andichi</p>
+                                <p class="text-xs text-gray-500 dark:text-gray-400">Software Developer • 2 maanden geleden</p>
+                            </div>
+                        </div>
+
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-[#0077B5] dark:group-hover:text-[#0a85c7] transition-colors line-clamp-2">
+                            🚀 Trots om mijn nieuwe portfolio website te delen!
+                        </h3>
+                        
+                        <p class="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                            Als student Software Developer bij het RijnIJssel heb ik een moderne, volledig responsive portfolio website ontwikkeld die mijn technische vaardigheden en expertise showcased. Gebouwd met PHP en Tailwind CSS, met ondersteuning voor dark/light mode en focus op performance en gebruiksvriendelijkheid.
+                        </p>
+                        
+                        <div class="flex justify-between items-center mt-6 pt-4 border-t border-gray-100 dark:border-gray-700/30">
+                            <div class="flex space-x-3">
+                                <span class="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                                    <svg class="w-4 h-4 mr-1 text-[#0077B5] dark:text-[#0a85c7]" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                                            </svg>
+                                            56
+                                        </span>
+                                <span class="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                                    <svg class="w-4 h-4 mr-1 text-[#0077B5] dark:text-[#0a85c7]" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/>
+                                            </svg>
+                                            18
+                                        </span>
+                                    </div>
+                            
+                            <a href="https://www.linkedin.com/posts/naoufalandichi_home-naoufal-andichi-activity-7285188980046770176-HMK_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADugN0IBSlrEfqwmiuI8q8mCluqNgb16Wa0" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-[#0077B5] dark:text-[#0a85c7] font-medium hover:text-[#00669e] dark:hover:text-[#0091d8] transition-colors">
+                                        <span>Bekijk post</span>
+                                <svg class="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                                        </svg>
+                                    </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LinkedIn Profiel Link met verbeterde styling -->
+        <div class="text-center mt-14" data-aos="fade-up">
+            <a href="https://www.linkedin.com/in/naoufalandichi/" target="_blank" rel="noopener noreferrer" 
+               class="group inline-flex items-center px-8 py-3.5 bg-[#0077B5] text-white rounded-lg hover:bg-[#00669e] transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-[#0077B5]/25 gap-3 font-medium">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                <span>Verbind met mij op LinkedIn</span>
+                    <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                    </svg>
+            </a>
         </div>
     </div>
 </section>
