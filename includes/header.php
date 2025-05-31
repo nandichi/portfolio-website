@@ -52,54 +52,127 @@
     }
     </script>
     
-    <!-- Uitgebreide Favicon Ondersteuning -->
+    <!-- Premium Favicon Setup -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#3b82f6">
-    <meta name="msapplication-TileColor" content="#3b82f6">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#6366f1">
+    <meta name="msapplication-TileColor" content="#6366f1">
     <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-    <meta name="theme-color" content="#3b82f6">
+    <meta name="theme-color" content="#6366f1">
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     
     <!-- Dark mode initialisatie -->
     <script>
-        // Controleer dark mode voorkeur en pas toe
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
-        }
+        // Geavanceerde dark mode ondersteuning
+        (function() {
+            const theme = localStorage.getItem('theme');
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            
+            if (theme === 'dark' || (!theme && prefersDark)) {
+                document.documentElement.classList.add('dark');
+                document.documentElement.style.colorScheme = 'dark';
+            } else {
+                document.documentElement.classList.remove('dark');
+                document.documentElement.style.colorScheme = 'light';
+            }
+        })();
     </script>
     
+    <!-- Tailwind CSS met uitgebreide configuratie -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        // Tailwind configuratie voor dark mode
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                        'mono': ['JetBrains Mono', 'Monaco', 'Cascadia Code', 'Segoe UI Mono', 'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono', 'Courier New', 'monospace'],
+                    },
                     colors: {
+                        primary: {
+                            50: '#f0f9ff',
+                            100: '#e0f2fe',
+                            200: '#bae6fd',
+                            300: '#7dd3fc',
+                            400: '#38bdf8',
+                            500: '#0ea5e9',
+                            600: '#0284c7',
+                            700: '#0369a1',
+                            800: '#075985',
+                            900: '#0c4a6e',
+                            950: '#082f49',
+                        },
                         accent: {
-                            50: '#eef7ff',
-                            100: '#d9edff',
-                            200: '#bce0ff',
-                            300: '#8acbff',
-                            400: '#54abff',
-                            500: '#3b88ff',
-                            600: '#2563eb',
-                            700: '#1d4ed8',
-                            800: '#1e40af',
-                            900: '#1e3a8a',
-                            950: '#172554',
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            200: '#c7d2fe',
+                            300: '#a5b4fc',
+                            400: '#818cf8',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                            950: '#1e1b4b',
+                        },
+                        neutral: {
+                            50: '#fafafa',
+                            100: '#f5f5f5',
+                            150: '#f0f0f0',
+                            200: '#e5e5e5',
+                            300: '#d4d4d4',
+                            400: '#a3a3a3',
+                            500: '#737373',
+                            600: '#525252',
+                            700: '#404040',
+                            750: '#363636',
+                            800: '#262626',
+                            850: '#1f1f1f',
+                            900: '#171717',
+                            950: '#0a0a0a',
                         }
                     },
                     animation: {
-                        'gradient-x': 'gradient-x 8s ease infinite',
-                        'pulse-slow': 'pulse 6s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-down': 'slideDown 0.4s ease-out',
+                        'slide-up': 'slideUp 0.4s ease-out',
+                        'scale-in': 'scaleIn 0.3s ease-out',
+                        'bounce-gentle': 'bounceGentle 1s ease-in-out',
+                        'gradient-x': 'gradient-x 3s ease infinite',
+                        'shimmer': 'shimmer 2s linear infinite',
+                        'glow': 'glow 2s ease-in-out infinite alternate',
+                        'float': 'float 3s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                     },
                     keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        },
+                        slideDown: {
+                            '0%': { transform: 'translateY(-100%)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(100%)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        },
+                        scaleIn: {
+                            '0%': { transform: 'scale(0.9)', opacity: '0' },
+                            '100%': { transform: 'scale(1)', opacity: '1' }
+                        },
+                        bounceGentle: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-5px)' }
+                        },
                         'gradient-x': {
                             '0%, 100%': {
                                 'background-size': '200% 200%',
@@ -109,159 +182,250 @@
                                 'background-size': '200% 200%',
                                 'background-position': 'right center'
                             }
+                        },
+                        shimmer: {
+                            '0%': { transform: 'translateX(-100%)' },
+                            '100%': { transform: 'translateX(100%)' }
+                        },
+                        glow: {
+                            '0%': { boxShadow: '0 0 5px rgba(99, 102, 241, 0.5)' },
+                            '100%': { boxShadow: '0 0 20px rgba(99, 102, 241, 0.8)' }
+                        },
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-10px)' }
                         }
                     },
                     boxShadow: {
-                        'soft': '0 2px 15px -3px rgba(0, 0, 0, 0.07), 0 10px 20px -2px rgba(0, 0, 0, 0.04)',
-                        'inner-soft': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.05)'
+                        'elegant': '0 4px 20px -4px rgba(0, 0, 0, 0.08), 0 8px 16px -8px rgba(0, 0, 0, 0.12)',
+                        'elegant-lg': '0 8px 30px -6px rgba(0, 0, 0, 0.12), 0 20px 25px -10px rgba(0, 0, 0, 0.15)',
+                        'inner-elegant': 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.03)',
+                        'glow-primary': '0 0 20px rgba(99, 102, 241, 0.3)',
+                        'glow-accent': '0 0 20px rgba(6, 182, 212, 0.3)',
+                    },
+                    backdropBlur: {
+                        'xs': '2px',
+                    },
+                    spacing: {
+                        '18': '4.5rem',
+                        '88': '22rem',
+                        '100': '25rem',
+                        '112': '28rem',
+                        '128': '32rem',
                     }
                 }
             }
         }
 
-        // Luister naar systeemvoorkeur veranderingen
+        // Systeemvoorkeur listener
         window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
-            if (!('theme' in localStorage)) {
+            if (!localStorage.getItem('theme')) {
                 if (e.matches) {
                     document.documentElement.classList.add('dark');
+                    document.documentElement.style.colorScheme = 'dark';
                 } else {
                     document.documentElement.classList.remove('dark');
+                    document.documentElement.style.colorScheme = 'light';
                 }
             }
         });
     </script>
+    
+    <!-- Alpine.js voor interactiviteit -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    <!-- AOS (Animate On Scroll) -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Font Awesome Pro -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- Premium Custom Styles -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
+        /* Globale body styling */
         body {
-            font-family: 'Poppins', system-ui, sans-serif;
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
         
-        .nav-item {
-            position: relative;
-            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+        /* Premium Header Styling */
+        .header-glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.18);
         }
         
-        .nav-item::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(135deg, #3b88ff, #1e40af);
-            transition: width 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-            border-radius: 2px;
+        .dark .header-glass {
+            background: rgba(15, 23, 42, 0.85);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
         }
         
-        .nav-item:hover::after,
-        .nav-item.active::after {
-            width: 100%;
-        }
-        
-        .dark .nav-item::after {
-            background: linear-gradient(135deg, #54abff, #3b88ff);
-        }
-        
-        .header-shadow {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
-        }
-        
-        .dark .header-shadow {
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-        }
-        
+        /* Premium Logo Styling */
         .logo-container {
             position: relative;
-            z-index: 1;
-        }
-        
-        .logo-bg {
-            background: linear-gradient(135deg, #2563eb, #1e40af);
-            transition: all 0.5s ease;
-        }
-        
-        .logo-bg:hover {
-            transform: rotate(5deg) scale(1.05);
-            box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4);
-        }
-        
-        .dark .logo-bg:hover {
-            box-shadow: 0 5px 15px rgba(59, 136, 255, 0.4);
-        }
-        
-        .logo-text {
-            background: linear-gradient(135deg, #2563eb, #1e40af);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-            animation: gradient-x 8s ease infinite;
-        }
-        
-        .dark .logo-text {
-            background: linear-gradient(135deg, #54abff, #3b88ff);
-            background-size: 200% auto;
-            -webkit-background-clip: text;
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .mobile-menu {
-            transition: max-height 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
-            max-height: 0;
             overflow: hidden;
         }
         
-        .mobile-menu.open {
-            max-height: 300px;
+        .logo-background {
+            background: linear-gradient(135deg, #6366f1 0%, #4f46e5 50%, #4338ca 100%);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
         }
         
-        .mobile-nav-item {
-            transform: translateY(-10px);
+        .logo-background::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transform: rotate(45deg);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
             opacity: 0;
-            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-            transition-delay: calc(var(--item-index) * 0.05s);
         }
         
-        .mobile-menu.open .mobile-nav-item {
-            transform: translateY(0);
+        .logo-background:hover::before {
+            animation: shimmer 1.5s ease-in-out;
             opacity: 1;
         }
         
-        .dark-mode-toggle {
-            position: relative;
-            overflow: hidden;
-            border-radius: 50%;
-            z-index: 1;
-            cursor: pointer;
+        .logo-background:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 20px 40px -12px rgba(99, 102, 241, 0.4);
         }
         
-        .dark-mode-toggle::before {
+        .dark .logo-background:hover {
+            box-shadow: 0 20px 40px -12px rgba(139, 92, 246, 0.4);
+        }
+        
+        /* Premium Navigation Styling */
+        .nav-link {
+            position: relative;
+            font-weight: 500;
+            letter-spacing: -0.025em;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .nav-link::after {
             content: '';
             position: absolute;
-            top: 50%;
+            bottom: -6px;
             left: 50%;
             width: 0;
-            height: 0;
-            background: rgba(59, 136, 255, 0.1);
-            border-radius: 50%;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-            transition: width 0.4s ease, height 0.4s ease;
+            height: 2px;
+            background: linear-gradient(135deg, #6366f1, #4f46e5);
+            border-radius: 2px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateX(-50%);
         }
         
-        .dark-mode-toggle:hover::before {
-            width: 200%;
-            height: 200%;
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
         }
         
+        .nav-link:hover {
+            color: #6366f1;
+            transform: translateY(-1px);
+        }
+        
+        .dark .nav-link:hover {
+            color: #a5b4fc;
+        }
+        
+        .dark .nav-link::after {
+            background: linear-gradient(135deg, #a5b4fc, #818cf8);
+        }
+        
+        /* Premium Button Styling */
+        .theme-toggle {
+            position: relative;
+            padding: 0.75rem;
+            border-radius: 0.75rem;
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+        }
+        
+        .theme-toggle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .theme-toggle:hover::before {
+            opacity: 1;
+        }
+        
+        .theme-toggle:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px -8px rgba(99, 102, 241, 0.3);
+        }
+        
+        .dark .theme-toggle {
+            background: rgba(15, 23, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .dark .theme-toggle:hover {
+            box-shadow: 0 8px 25px -8px rgba(139, 92, 246, 0.3);
+        }
+        
+        /* Mobile Menu Styling */
+        .mobile-menu {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .dark .mobile-menu {
+            background: rgba(15, 23, 42, 0.95);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        
+        .mobile-nav-item {
+            font-weight: 500;
+            letter-spacing: -0.025em;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .mobile-nav-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.1), transparent);
+            transition: left 0.5s ease;
+        }
+        
+        .mobile-nav-item:hover::before {
+            left: 100%;
+        }
+        
+        /* Accessibility Improvements */
         @media (prefers-reduced-motion: reduce) {
-            * {
+            *,
+            *::before,
+            *::after {
                 animation-duration: 0.01ms !important;
                 animation-iteration-count: 1 !important;
                 transition-duration: 0.01ms !important;
@@ -269,156 +433,265 @@
             }
         }
         
-        /* Toegankelijkheid verbeteringen */
-        @media (max-width: 640px) {
-            button, 
+        /* Focus Styles voor toegankelijkheid */
+        .focus-ring:focus {
+            outline: 2px solid #6366f1;
+            outline-offset: 2px;
+        }
+        
+        .dark .focus-ring:focus {
+            outline-color: #a5b4fc;
+        }
+        
+        /* Touch Target Optimization */
+        @media (max-width: 768px) {
+            button,
             [role="button"],
             a {
                 min-height: 44px;
                 min-width: 44px;
                 display: flex;
                 align-items: center;
+                justify-content: center;
+            }
+        }
+        
+        /* Premium Scroll Behavior */
+        @media (prefers-reduced-motion: no-preference) {
+            html {
+                scroll-behavior: smooth;
             }
         }
     </style>
 </head>
-<body class="bg-white dark:bg-gray-900 transition-colors duration-300">
-    <header class="fixed w-full z-50 bg-white/95 dark:bg-gray-900/95 header-shadow backdrop-blur-sm transition-all duration-300 border-b border-gray-100/80 dark:border-gray-800/80">
+
+<body class="bg-white dark:bg-neutral-900 text-neutral-900 dark:text-neutral-100 transition-colors duration-300">
+    <!-- Premium Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 header-glass border-b border-neutral-200/20 dark:border-neutral-800/20" 
+            x-data="{ 
+                mobileMenuOpen: false,
+                scrolled: false 
+            }"
+            x-init="
+                window.addEventListener('scroll', () => {
+                    scrolled = window.scrollY > 20
+                })
+            "
+            :class="{ 'shadow-elegant': scrolled }">
+        
         <div class="max-w-7xl mx-auto">
-            <nav class="flex items-center justify-between px-4 py-4 sm:px-6 lg:px-8" x-data="{ mobileMenuOpen: false }">
+            <nav class="flex items-center justify-between px-6 py-4 lg:px-8">
+                
+                <!-- Premium Logo Section -->
                 <div class="flex items-center space-x-4">
-                    <a href="/" class="group flex items-center space-x-3">
+                    <a href="/" class="group flex items-center space-x-4 focus-ring rounded-xl" aria-label="Ga naar homepage">
                         <div class="logo-container">
-                            <div class="logo-bg w-12 h-12 rounded-lg flex items-center justify-center shadow-lg transition-all duration-300 group-hover:rounded-xl">
-                                <span class="text-xl font-bold text-white tracking-tight">NA</span>
+                            <div class="logo-background w-14 h-14 rounded-xl flex items-center justify-center shadow-elegant">
+                                <span class="text-xl font-bold text-white tracking-tight select-none">NA</span>
                             </div>
                         </div>
-                        <div>
-                            <h1 class="text-xl font-bold logo-text dark:text-white transition-all duration-300">Naoufal Andichi</h1>
-                            <p class="text-sm text-gray-500 dark:text-gray-400 opacity-90 transition-all duration-300 hidden sm:block">Full Stack Developer</p>
+                        <div class="hidden sm:block">
+                            <h1 class="text-xl font-bold bg-gradient-to-r from-neutral-900 via-neutral-700 to-neutral-900 dark:from-neutral-100 dark:via-neutral-300 dark:to-neutral-100 bg-clip-text text-transparent">
+                                Naoufal Andichi
+                            </h1>
+                            <p class="text-sm text-neutral-600 dark:text-neutral-400 font-medium tracking-wide">
+                                Full Stack Developer
+                            </p>
                         </div>
                     </a>
                 </div>
 
-                <div class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                <!-- Premium Desktop Navigation -->
+                <nav class="hidden lg:flex items-center space-x-1" role="navigation" aria-label="Hoofdnavigatie">
                     <a href="/" 
-                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent-700 dark:hover:text-accent-400 font-medium transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50
-                              <?php echo $currentPage === 'home' ? 'text-accent-700 dark:text-accent-400 active' : ''; ?>">
+                       class="nav-link px-4 py-2.5 text-neutral-700 dark:text-neutral-300 hover:text-accent-600 dark:hover:text-accent-400 rounded-lg transition-all duration-300 focus-ring
+                              <?php echo $currentPage === 'home' ? 'active text-accent-600 dark:text-accent-400' : ''; ?>"
+                       aria-current="<?php echo $currentPage === 'home' ? 'page' : 'false'; ?>">
                         Home
                     </a>
                     <a href="/projects" 
-                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent-700 dark:hover:text-accent-400 font-medium transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50
-                              <?php echo $currentPage === 'projects' ? 'text-accent-700 dark:text-accent-400 active' : ''; ?>">
+                       class="nav-link px-4 py-2.5 text-neutral-700 dark:text-neutral-300 hover:text-accent-600 dark:hover:text-accent-400 rounded-lg transition-all duration-300 focus-ring
+                              <?php echo $currentPage === 'projects' ? 'active text-accent-600 dark:text-accent-400' : ''; ?>"
+                       aria-current="<?php echo $currentPage === 'projects' ? 'page' : 'false'; ?>">
                         Projecten
                     </a>
                     <a href="/skills" 
-                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent-700 dark:hover:text-accent-400 font-medium transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50
-                              <?php echo $currentPage === 'skills' ? 'text-accent-700 dark:text-accent-400 active' : ''; ?>">
+                       class="nav-link px-4 py-2.5 text-neutral-700 dark:text-neutral-300 hover:text-accent-600 dark:hover:text-accent-400 rounded-lg transition-all duration-300 focus-ring
+                              <?php echo $currentPage === 'skills' ? 'active text-accent-600 dark:text-accent-400' : ''; ?>"
+                       aria-current="<?php echo $currentPage === 'skills' ? 'page' : 'false'; ?>">
                         Vaardigheden
                     </a>
                     <a href="/about" 
-                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent-700 dark:hover:text-accent-400 font-medium transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50
-                              <?php echo $currentPage === 'about' ? 'text-accent-700 dark:text-accent-400 active' : ''; ?>">
+                       class="nav-link px-4 py-2.5 text-neutral-700 dark:text-neutral-300 hover:text-accent-600 dark:hover:text-accent-400 rounded-lg transition-all duration-300 focus-ring
+                              <?php echo $currentPage === 'about' ? 'active text-accent-600 dark:text-accent-400' : ''; ?>"
+                       aria-current="<?php echo $currentPage === 'about' ? 'page' : 'false'; ?>">
                         Over Mij
                     </a>
                     <a href="/contact" 
-                       class="nav-item px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-accent-700 dark:hover:text-accent-400 font-medium transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50
-                              <?php echo $currentPage === 'contact' ? 'text-accent-700 dark:text-accent-400 active' : ''; ?>">
+                       class="nav-link px-4 py-2.5 text-neutral-700 dark:text-neutral-300 hover:text-accent-600 dark:hover:text-accent-400 rounded-lg transition-all duration-300 focus-ring
+                              <?php echo $currentPage === 'contact' ? 'active text-accent-600 dark:text-accent-400' : ''; ?>"
+                       aria-current="<?php echo $currentPage === 'contact' ? 'page' : 'false'; ?>">
                         Contact
                     </a>
-                </div>
+                </nav>
 
-                <div class="flex items-center space-x-1 lg:space-x-3">
+                <!-- Premium Controls Section -->
+                <div class="flex items-center space-x-3">
+                    
+                    <!-- Premium Theme Toggle -->
                     <button 
+                        class="theme-toggle focus-ring"
                         aria-label="Schakel tussen licht en donker thema"
-                        class="dark-mode-toggle p-2 text-gray-500 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors duration-300 rounded-full"
-                        onclick="document.documentElement.classList.toggle('dark'); localStorage.theme = document.documentElement.classList.contains('dark') ? 'dark' : 'light';">
-                        <svg class="w-6 h-6 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                        x-data="{ 
+                            isDark: document.documentElement.classList.contains('dark'),
+                            toggle() {
+                                this.isDark = !this.isDark;
+                                if (this.isDark) {
+                                    document.documentElement.classList.add('dark');
+                                    document.documentElement.style.colorScheme = 'dark';
+                                    localStorage.setItem('theme', 'dark');
+                                } else {
+                                    document.documentElement.classList.remove('dark');
+                                    document.documentElement.style.colorScheme = 'light';
+                                    localStorage.setItem('theme', 'light');
+                                }
+                            }
+                        }"
+                        @click="toggle()"
+                        :aria-pressed="isDark.toString()">
+                        
+                        <!-- Light Mode Icon -->
+                        <svg x-show="!isDark" 
+                             class="w-5 h-5 text-neutral-600 dark:text-neutral-400 transition-colors duration-300" 
+                             fill="none" 
+                             stroke="currentColor" 
+                             viewBox="0 0 24 24">
+                            <path stroke-linecap="round" 
+                                  stroke-linejoin="round" 
+                                  stroke-width="2" 
                                   d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
                         </svg>
-                        <svg class="w-6 h-6 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
-                                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707"/>
+                        
+                        <!-- Dark Mode Icon -->
+                        <svg x-show="isDark" 
+                             class="w-5 h-5 text-neutral-600 dark:text-neutral-400 transition-colors duration-300" 
+                             fill="none" 
+                             stroke="currentColor" 
+                             viewBox="0 0 24 24" 
+                             style="display: none;">
+                            <path stroke-linecap="round" 
+                                  stroke-linejoin="round" 
+                                  stroke-width="2" 
+                                  d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M12 7a5 5 0 100 10 5 5 0 000-10z"/>
                         </svg>
                     </button>
 
+                    <!-- Premium Mobile Menu Toggle -->
                     <button 
-                        aria-label="Open menu" 
-                        aria-expanded="false"
-                        x-on:click="mobileMenuOpen = !mobileMenuOpen" 
-                        x-bind:aria-expanded="mobileMenuOpen.toString()"
-                        class="md:hidden p-2 text-gray-500 dark:text-gray-400 hover:text-accent-600 dark:hover:text-accent-400 transition-colors rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800/50 focus:outline-none focus:ring-2 focus:ring-accent-500/30 dark:focus:ring-accent-400/30">
-                        <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        class="lg:hidden theme-toggle focus-ring"
+                        aria-label="Open mobiel menu" 
+                        :aria-expanded="mobileMenuOpen.toString()"
+                        @click="mobileMenuOpen = !mobileMenuOpen">
+                        
+                        <!-- Hamburger Icon -->
+                        <svg x-show="!mobileMenuOpen" 
+                             class="w-6 h-6 text-neutral-600 dark:text-neutral-400 transition-all duration-300" 
+                             fill="none" 
+                             stroke="currentColor" 
+                             viewBox="0 0 24 24">
+                            <path stroke-linecap="round" 
+                                  stroke-linejoin="round" 
+                                  stroke-width="2" 
+                                  d="M4 6h16M4 12h16M4 18h16"/>
                         </svg>
-                        <svg x-show="mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="display: none;">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        
+                        <!-- Close Icon -->
+                        <svg x-show="mobileMenuOpen" 
+                             class="w-6 h-6 text-neutral-600 dark:text-neutral-400 transition-all duration-300" 
+                             fill="none" 
+                             stroke="currentColor" 
+                             viewBox="0 0 24 24" 
+                             style="display: none;">
+                            <path stroke-linecap="round" 
+                                  stroke-linejoin="round" 
+                                  stroke-width="2" 
+                                  d="M6 18L18 6M6 6l12 12"/>
                         </svg>
                     </button>
                 </div>
             </nav>
         </div>
 
-        <!-- Mobiel menu met AlpineJS -->
-        <div 
-            x-data="{ open: false }" 
-            x-show="open"
-            x-bind:class="{'open': open}"
-            x-on:mobileMenuOpen.window="open = $event.detail"
-            x-transition:enter="transition ease-out duration-200"
-            x-transition:enter-start="opacity-0 -translate-y-2"
-            x-transition:enter-end="opacity-100 translate-y-0"
-            x-transition:leave="transition ease-in duration-150"
-            x-transition:leave-start="opacity-100 translate-y-0"
-            x-transition:leave-end="opacity-0 -translate-y-2"
-            class="md:hidden mobile-menu border-t border-gray-100 dark:border-gray-800/80 bg-white/95 dark:bg-gray-900/95 backdrop-blur-sm shadow-sm"
-            style="display: none;">
-            <div class="px-4 py-2 space-y-2">
+        <!-- Premium Mobile Menu -->
+        <div x-show="mobileMenuOpen"
+             x-transition:enter="transition ease-out duration-200"
+             x-transition:enter-start="opacity-0 -translate-y-4"
+             x-transition:enter-end="opacity-100 translate-y-0"
+             x-transition:leave="transition ease-in duration-150"
+             x-transition:leave-start="opacity-100 translate-y-0"
+             x-transition:leave-end="opacity-0 -translate-y-4"
+             class="lg:hidden mobile-menu border-t border-neutral-200/20 dark:border-neutral-800/20"
+             style="display: none;"
+             @click.away="mobileMenuOpen = false">
+            
+            <nav class="px-6 py-6 space-y-2" role="navigation" aria-label="Mobiele navigatie">
                 <a href="/" 
-                   style="--item-index: 0"
-                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300
-                          <?php echo $currentPage === 'home' ? 'text-accent-700 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-900/20' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-accent-700 dark:hover:text-accent-400'; ?>">
+                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 focus-ring
+                          <?php echo $currentPage === 'home' ? 'text-accent-600 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-950/30' : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/50 hover:text-accent-600 dark:hover:text-accent-400'; ?>"
+                   aria-current="<?php echo $currentPage === 'home' ? 'page' : 'false'; ?>"
+                   @click="mobileMenuOpen = false">
+                    <i class="fas fa-home w-5 text-center mr-3"></i>
                     Home
                 </a>
                 <a href="/projects" 
-                   style="--item-index: 1"
-                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300
-                          <?php echo $currentPage === 'projects' ? 'text-accent-700 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-900/20' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-accent-700 dark:hover:text-accent-400'; ?>">
+                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 focus-ring
+                          <?php echo $currentPage === 'projects' ? 'text-accent-600 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-950/30' : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/50 hover:text-accent-600 dark:hover:text-accent-400'; ?>"
+                   aria-current="<?php echo $currentPage === 'projects' ? 'page' : 'false'; ?>"
+                   @click="mobileMenuOpen = false">
+                    <i class="fas fa-laptop-code w-5 text-center mr-3"></i>
                     Projecten
                 </a>
                 <a href="/skills" 
-                   style="--item-index: 2"
-                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300
-                          <?php echo $currentPage === 'skills' ? 'text-accent-700 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-900/20' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-accent-700 dark:hover:text-accent-400'; ?>">
+                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 focus-ring
+                          <?php echo $currentPage === 'skills' ? 'text-accent-600 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-950/30' : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/50 hover:text-accent-600 dark:hover:text-accent-400'; ?>"
+                   aria-current="<?php echo $currentPage === 'skills' ? 'page' : 'false'; ?>"
+                   @click="mobileMenuOpen = false">
+                    <i class="fas fa-tools w-5 text-center mr-3"></i>
                     Vaardigheden
                 </a>
                 <a href="/about" 
-                   style="--item-index: 3"
-                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300
-                          <?php echo $currentPage === 'about' ? 'text-accent-700 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-900/20' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-accent-700 dark:hover:text-accent-400'; ?>">
+                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 focus-ring
+                          <?php echo $currentPage === 'about' ? 'text-accent-600 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-950/30' : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/50 hover:text-accent-600 dark:hover:text-accent-400'; ?>"
+                   aria-current="<?php echo $currentPage === 'about' ? 'page' : 'false'; ?>"
+                   @click="mobileMenuOpen = false">
+                    <i class="fas fa-user w-5 text-center mr-3"></i>
                     Over Mij
                 </a>
                 <a href="/contact" 
-                   style="--item-index: 4"
-                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300
-                          <?php echo $currentPage === 'contact' ? 'text-accent-700 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-900/20' : 'text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-800/50 hover:text-accent-700 dark:hover:text-accent-400'; ?>">
+                   class="mobile-nav-item block px-4 py-3 rounded-xl text-base font-medium transition-all duration-300 focus-ring
+                          <?php echo $currentPage === 'contact' ? 'text-accent-600 dark:text-accent-400 bg-accent-50/50 dark:bg-accent-950/30' : 'text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100/80 dark:hover:bg-neutral-800/50 hover:text-accent-600 dark:hover:text-accent-400'; ?>"
+                   aria-current="<?php echo $currentPage === 'contact' ? 'page' : 'false'; ?>"
+                   @click="mobileMenuOpen = false">
+                    <i class="fas fa-envelope w-5 text-center mr-3"></i>
                     Contact
                 </a>
-            </div>
+            </nav>
         </div>
     </header>
 
+    <!-- Body padding voor fixed header -->
+    <div class="pt-20"></div>
+
+    <!-- AOS Initialisatie -->
     <script>
-        // Alpine.js setup voor mobiel menu
         document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuToggle = document.querySelector('[x-on\\:click="mobileMenuOpen = !mobileMenuOpen"]');
-            if (mobileMenuToggle) {
-                mobileMenuToggle.addEventListener('click', function() {
-                    const isOpen = mobileMenuToggle.getAttribute('aria-expanded') === 'true';
-                    window.dispatchEvent(new CustomEvent('mobileMenuOpen', { detail: !isOpen }));
-                });
-            }
+            AOS.init({
+                duration: 800,
+                easing: 'ease-out-cubic',
+                once: true,
+                offset: 50,
+                delay: 100,
+            });
         });
     </script>
 </body>
