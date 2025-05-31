@@ -13,175 +13,229 @@ $assetsPath = file_exists('assets/images/profile.jpg') ? 'assets' : '../assets';
 include $includesPath;
 ?>
 
-<!-- Moderne en unieke hero-sectie met 3D-elementen en dynamische effecten -->
-<header class="min-h-screen relative flex items-center justify-center overflow-hidden pt-16 sm:pt-0">
-    <!-- Basis achtergrond met moderne gradient -->
-    <div class="absolute inset-0 bg-gradient-to-br from-indigo-100 via-blue-50 to-purple-100 dark:from-gray-900 dark:via-indigo-950 dark:to-blue-900"></div>
+<!-- Stap 1: Basis Hero Structuur met Moderne Layout -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-16 lg:pt-0">
+    <!-- Stap 2: Geavanceerde Achtergrond Lagen -->
+    <!-- Primaire gradient achtergrond -->
+    <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50/80 to-indigo-50 dark:from-gray-950 dark:via-blue-950/50 dark:to-indigo-950"></div>
     
-    <!-- Geometrische patronen voor diepte en textuur -->
-    <div class="absolute inset-0 opacity-[0.05] dark:opacity-10"
-         style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zm20.97 0l9.315 9.314-1.414 1.414L34.828 0h2.83zM22.344 0L13.03 9.314l1.414 1.414L25.172 0h-2.83zM32 0l12.142 12.142-1.414 1.414L30 .828 17.272 13.556l-1.414-1.414L28 0h4zM.284 0l28 28-1.414 1.414L0 2.544v2.83L25.456 30l-1.414 1.414-28-28L0 0h.284zM0 5.373l25.456 25.455-1.414 1.415L0 8.2v2.83l21.627 21.628-1.414 1.414L0 13.657v2.828l17.8 17.8-1.414 1.414L0 19.1v2.83l14.142 14.14-1.414 1.415L0 24.544v2.83l10.314 10.313-1.414 1.414L0 30v2.828l6.485 6.485-1.414 1.415L0 35.373v2.83l2.657 2.656-1.414 1.415L0 40.717v2.83l-1.415-1.415L0 40.717v-2.83l-1.415-1.414L0 35.373v-2.83l-1.414-1.414L0 30v-2.83l-1.414-1.413L0 24.544v-2.83l-1.414-1.414L0 19.1v-2.83l-1.414-1.413L0 13.658v-2.83L-1.413 9.415 0 8.2V5.374l-1.413-1.415L0 2.544V0h2.827L0 5.373z\' fill=\'%234A5568\' fill-opacity=\'0.4\' fill-rule=\'evenodd\'/%3E%3C/svg%3E');">
+    <!-- Stap 3: Subtiele Geometrische Patronen -->
+    <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05]">
+        <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, rgb(59 130 246 / 0.3) 1px, transparent 0); background-size: 50px 50px;"></div>
     </div>
-
-    <!-- Dynamische 3D-lagen met diepte-effect -->
+    
+    <!-- Stap 4: Bewegende Gradient Orbs voor Diepte -->
     <div class="absolute inset-0 overflow-hidden">
-        <!-- Bovenste laag met subtiele beweging -->
-        <div class="absolute -top-1/3 right-0 w-[900px] h-[900px] rounded-full bg-gradient-to-br from-blue-400/20 via-indigo-400/10 to-purple-400/20 dark:from-blue-500/10 dark:via-indigo-600/5 dark:to-purple-500/10 blur-3xl animate-[float_15s_ease-in-out_infinite]"></div>
+        <!-- Primaire orb -->
+        <div class="absolute -top-1/4 -right-1/4 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 dark:from-blue-500/10 dark:to-indigo-600/10 rounded-full blur-3xl animate-pulse"></div>
         
-        <!-- Onderste laag met tegengestelde beweging -->
-        <div class="absolute -bottom-1/3 -left-1/4 w-[900px] h-[900px] rounded-full bg-gradient-to-tr from-indigo-400/20 via-blue-400/10 to-purple-400/20 dark:from-indigo-500/10 dark:via-blue-600/5 dark:to-purple-500/10 blur-3xl animate-[float_20s_ease-in-out_infinite_reverse]"></div>
+        <!-- Secundaire orb -->
+        <div class="absolute -bottom-1/4 -left-1/4 w-96 h-96 bg-gradient-to-tr from-indigo-400/20 to-purple-500/20 dark:from-indigo-500/10 dark:to-purple-600/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
         
-        <!-- Centrale focus-punt met subtiele pulsatie -->
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] rounded-full bg-gradient-to-r from-blue-400/10 via-transparent to-purple-400/10 dark:from-blue-500/5 dark:via-transparent dark:to-purple-500/5 blur-3xl animate-[pulse_8s_ease-in-out_infinite]"></div>
+        <!-- Tertiaire orb voor balans -->
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-blue-300/15 to-indigo-400/15 dark:from-blue-600/8 dark:to-indigo-700/8 rounded-full blur-2xl animate-pulse" style="animation-delay: 4s;"></div>
     </div>
 
-    <!-- Interactief raster met perspectief -->
-    <div class="absolute inset-0 bg-[length:60px_60px] pointer-events-none opacity-[0.04] dark:opacity-10"
-         style="background-image: 
-            linear-gradient(to right, rgba(79, 70, 229, 0.2) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(79, 70, 229, 0.2) 1px, transparent 1px);
-            transform: perspective(1000px) rotateX(5deg);
-            transform-origin: center center;
-            animation: perspectiveShift 20s ease-in-out infinite alternate;">
-    </div>
+    <!-- Stap 5: Professionele Content Container -->
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-8 sm:py-12 lg:py-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
+            
+            <!-- Stap 6: Linker Kolom - Professionele Tekstinhoud -->
+            <div class="order-2 lg:order-1 text-center lg:text-left space-y-6 sm:space-y-8">
 
-    <!-- Zwevende elementen met verschillende dieptes -->
-    <div class="absolute inset-0 pointer-events-none">
-        <!-- Voorgrond elementen -->
-        <div class="absolute w-2 h-2 bg-blue-500/60 dark:bg-blue-400/40 rounded-full blur-[2px]" style="top: 25%; left: 15%; animation: float3D 12s ease-in-out infinite; transform-style: preserve-3d;"></div>
-        <div class="absolute w-3 h-3 bg-indigo-500/60 dark:bg-indigo-400/40 rounded-full blur-[2px]" style="top: 65%; left: 80%; animation: float3D 15s ease-in-out infinite 2s; transform-style: preserve-3d;"></div>
-        <div class="absolute w-4 h-4 bg-purple-500/60 dark:bg-purple-400/40 rounded-full blur-[2px]" style="top: 45%; left: 75%; animation: float3D 18s ease-in-out infinite 1s; transform-style: preserve-3d;"></div>
-        
-        <!-- Middengrond elementen -->
-        <div class="absolute w-2 h-2 bg-blue-400/40 dark:bg-blue-500/30 rounded-full blur-[3px]" style="top: 70%; left: 25%; animation: float3D 14s ease-in-out infinite 3s; transform-style: preserve-3d;"></div>
-        <div class="absolute w-3 h-3 bg-indigo-400/40 dark:bg-indigo-500/30 rounded-full blur-[3px]" style="top: 30%; left: 60%; animation: float3D 16s ease-in-out infinite 2.5s; transform-style: preserve-3d;"></div>
-        
-        <!-- Achtergrond elementen -->
-        <div class="absolute w-2 h-2 bg-blue-300/30 dark:bg-blue-600/20 rounded-full blur-[4px]" style="top: 40%; left: 30%; animation: float3D 20s ease-in-out infinite 1.5s; transform-style: preserve-3d;"></div>
-        <div class="absolute w-4 h-4 bg-indigo-300/30 dark:bg-indigo-600/20 rounded-full blur-[4px]" style="top: 60%; left: 10%; animation: float3D 22s ease-in-out infinite 3.5s; transform-style: preserve-3d;"></div>
-        <div class="absolute w-3 h-3 bg-purple-300/30 dark:bg-purple-600/20 rounded-full blur-[4px]" style="top: 20%; left: 85%; animation: float3D 19s ease-in-out infinite 4s; transform-style: preserve-3d;"></div>
-    </div>
-
-    <!-- Subtiele lichteffecten -->
-    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/20 dark:to-black/20 pointer-events-none"></div>
-
-    <!-- Content container met glasmorfisme effect -->
-    <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-12">
-        <!-- Linker kolom met profiel foto -->
-        <div class="w-full md:w-2/5 flex justify-center md:justify-end animate-[fadeInLeft_1s_ease-out]">
-            <div class="relative group">
-                <!-- Foto container met geavanceerde effecten -->
-                <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-full overflow-hidden border-4 border-white/90 dark:border-gray-800/90 shadow-2xl transition-all duration-500 group-hover:scale-[1.03] group-hover:shadow-indigo-500/30 dark:group-hover:shadow-indigo-400/20">
-                    <!-- Subtiele gloed achter de foto -->
-                    <div class="absolute -inset-1 bg-gradient-to-br from-blue-400 to-purple-500 dark:from-blue-600 dark:to-purple-700 opacity-70 dark:opacity-50 blur-xl rounded-full group-hover:opacity-80 transition-opacity duration-500"></div>
+                <!-- Hoofdtitel met moderne typografie -->
+                <div class="space-y-3 sm:space-y-4" data-aos="fade-up" data-aos-delay="100">
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight">
+                        <span class="block text-gray-900 dark:text-white">
+                            Hallo, ik ben
+                        </span>
+                        <span class="block mt-1 sm:mt-2">
+                            <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+                                Naoufal Andichi
+                            </span>
+                        </span>
+                    </h1>
                     
-                    <!-- Foto met overlay effect -->
-                    <div class="relative w-full h-full rounded-full overflow-hidden">
-                        <img src="<?php echo $assetsPath; ?>/images/profile.jpg" alt="Naoufal Andichi" class="w-full h-full object-cover">
-                        
-                        <!-- Subtiele overlay met kleureffect -->
-                        <div class="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 dark:from-blue-500/20 dark:to-purple-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        
-                        <!-- Interactieve rand met animatie -->
-                        <div class="absolute -inset-1 border-4 border-white/0 dark:border-gray-800/0 rounded-full group-hover:border-white/20 dark:group-hover:border-gray-800/20 transition-all duration-500"></div>
+                    <!-- Professionele subtitle -->
+                    <div class="relative">
+                        <h2 class="text-lg sm:text-xl md:text-2xl lg:text-3xl text-gray-600 dark:text-gray-300 font-light leading-relaxed">
+                            <span class="relative">
+                                Full Stack Developer
+                                <svg class="absolute -bottom-1 sm:-bottom-2 left-0 w-full h-0.5 sm:h-1 text-blue-500/30" viewBox="0 0 100 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 2C25 0.5 75 0.5 100 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                        </h2>
                     </div>
                 </div>
-                
-                <!-- Decoratieve elementen rond de foto -->
-                <div class="absolute -top-4 -right-4 w-12 h-12 rounded-full bg-gradient-to-br from-blue-400 to-indigo-500 dark:from-blue-500 dark:to-indigo-600 opacity-80 blur-md animate-[float_6s_ease-in-out_infinite]"></div>
-                <div class="absolute -bottom-4 -left-4 w-10 h-10 rounded-full bg-gradient-to-tr from-indigo-400 to-purple-500 dark:from-indigo-500 dark:to-purple-600 opacity-80 blur-md animate-[float_8s_ease-in-out_infinite_1s]"></div>
-            </div>
-        </div>
-        
-        <!-- Rechter kolom met tekst content -->
-        <div class="w-full md:w-3/5 text-center md:text-left space-y-6">
-            <div class="space-y-2">
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white tracking-tight animate-[fadeInUp_0.8s_ease-out]">
-                    <span class="inline-block">Naoufal</span>
-                    <span class="inline-block ml-2 sm:ml-3 relative">
-                        Andichi
-                        <span class="absolute -bottom-2 left-0 w-full h-1 bg-gradient-to-r from-blue-500 to-purple-500 dark:from-blue-400 dark:to-purple-400 rounded-full transform origin-left animate-[scaleX_1.5s_ease-out]"></span>
-                    </span>
-                </h1>
-                
-                <p class="text-2xl sm:text-3xl text-indigo-700 dark:text-indigo-300 font-light animate-[fadeInUp_0.8s_ease-out_0.2s] tracking-wide">
-                    <span class="relative inline-block">
-                        Full Stack Developer
-                        <span class="absolute -bottom-1 left-0 w-full h-0.5 bg-indigo-300 dark:bg-indigo-700 rounded-full transform origin-left animate-[scaleX_1.5s_ease-out_0.4s]"></span>
-                    </span>
-                </p>
-            </div>
-            
-            <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl leading-relaxed animate-[fadeInUp_0.8s_ease-out_0.4s]">
-            Als gedreven softwareontwikkelaar los ik complexe problemen op met slimme en effectieve oplossingen. Met oog voor detail en een passie voor innovatie creëer ik digitale toepassingen die echt impact maken.
-        </p>
-            <!-- Call-to-action knoppen met geavanceerde hover effecten -->
-            <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2 animate-[fadeInUp_0.8s_ease-out_0.6s]">
-                <a href="<?php echo $assetsPath === 'assets' ? 'contact' : 'contact'; ?>" 
-                   class="group relative px-8 py-3 bg-gradient-to-br from-blue-500 to-indigo-600 dark:from-blue-600 dark:to-indigo-700 text-white rounded-full font-medium overflow-hidden shadow-lg hover:shadow-indigo-500/30 dark:hover:shadow-indigo-500/20 transition-all duration-300">
-                    <!-- Achtergrond animatie -->
-                    <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+
+                <!-- Elegante beschrijving -->
+                <div class="max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
+                        Ik bouw digitale oplossingen die bedrijven vooruithelpen.
+                        <span class="font-medium text-gray-700 dark:text-gray-200">
+                            Met drie jaar ervaring en oog voor gebruikservaring
+                        </span>
+                        creëer ik webapplicaties die presteren in techniek, verrassen in ontwerp en impact maken in de praktijk.
+                    </p>
+                </div>
+
+                <!-- Professionele statistieken -->
+                <div class="grid grid-cols-3 gap-4 sm:gap-6 max-w-sm sm:max-w-lg mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center lg:text-left">
+                        <div class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400">3+</div>
+                        <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium">Jaar Ervaring</div>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <div class="text-xl sm:text-2xl md:text-3xl font-bold text-indigo-600 dark:text-indigo-400">15+</div>
+                        <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium">Projecten</div>
+                    </div>
+                    <div class="text-center lg:text-left">
+                        <div class="text-xl sm:text-2xl md:text-3xl font-bold text-purple-600 dark:text-purple-400">100%</div>
+                        <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium">Passie</div>
+                    </div>
+                </div>
+
+                <!-- Premium Call-to-Action Knoppen -->
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="400">
+                    <!-- Primaire CTA -->
+                    <a href="<?php echo $assetsPath === 'assets' ? 'contact' : 'contact'; ?>" 
+                       class="group relative inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                        <span class="relative z-10 flex items-center gap-2 sm:gap-3">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/>
+                            </svg>
+                            <span class="text-sm sm:text-base">Laten we praten</span>
+                            <svg class="w-3 h-3 sm:w-4 sm:h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                            </svg>
+                        </span>
+                    </a>
                     
-                    <!-- Tekst en icoon -->
-                    <span class="relative flex items-center justify-center gap-2">
-                        <span>Contact</span>
-                        <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                        </svg>
-                    </span>
-                </a>
-                
-                <a href="<?php echo $assetsPath === 'assets' ? 'projects' : 'projects'; ?>" 
-                   class="group relative px-8 py-3 bg-white/10 dark:bg-white/5 backdrop-blur-sm text-gray-800 dark:text-white rounded-full font-medium border border-indigo-100 dark:border-indigo-900/30 overflow-hidden shadow-md hover:shadow-indigo-500/20 dark:hover:shadow-indigo-500/10 transition-all duration-300">
-                    <!-- Achtergrond animatie -->
-                    <span class="absolute inset-0 w-full h-full bg-white/80 dark:bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
+                    <!-- Secundaire CTA -->
+                    <a href="<?php echo $assetsPath === 'assets' ? 'projects' : 'projects'; ?>" 
+                       class="group relative inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm text-gray-700 dark:text-gray-200 font-semibold rounded-xl border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-white dark:hover:bg-gray-800">
+                        <span class="flex items-center gap-2 sm:gap-3">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
+                            </svg>
+                            <span class="text-sm sm:text-base">Bekijk Portfolio</span>
+                        </span>
+                    </a>
+                </div>
+
+                <!-- Social Links met elegante styling -->
+                <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="500">
+                    <span class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium">Volg mij op:</span>
+                    <div class="flex items-center gap-3 sm:gap-4">
+                        <a href="https://www.linkedin.com/in/naoufalandichi/" target="_blank" rel="noopener noreferrer" 
+                           class="group p-2.5 sm:p-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-blue-50 dark:hover:bg-blue-900/20">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/nandichi" target="_blank" rel="noopener noreferrer" 
+                           class="group p-2.5 sm:p-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-xl border border-gray-200/50 dark:border-gray-700/50 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 hover:bg-gray-50 dark:hover:bg-gray-700/50">
+                            <svg class="w-4 h-4 sm:w-5 sm:h-5 text-gray-700 dark:text-gray-300" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stap 7: Rechter Kolom - Elegante Profiel Sectie -->
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end mb-6 lg:mb-0" data-aos="fade-left" data-aos-delay="200">
+                <div class="relative group">
+                    <!-- Decoratieve achtergrond ringen -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 dark:from-blue-500/10 dark:to-indigo-600/10 rounded-full blur-3xl transform group-hover:scale-110 transition-transform duration-700"></div>
                     
-                    <!-- Tekst en icoon -->
-                    <span class="relative flex items-center justify-center gap-2">
-                        <svg class="w-5 h-5 text-indigo-600 dark:text-indigo-400 transform group-hover:rotate-12 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/>
-                        </svg>
-                        <span class="text-gray-800 dark:text-gray-100">Projecten</span>
-                    </span>
-                </a>
+                    <!-- Profiel foto container -->
+                    <div class="relative w-64 h-64 sm:w-72 sm:h-72 lg:w-80 lg:h-80 xl:w-96 xl:h-96">
+                        <!-- Outer decorative ring -->
+                        <div class="absolute inset-0 rounded-full bg-gradient-to-br from-blue-500 via-indigo-500 to-purple-500 p-1 shadow-2xl group-hover:shadow-blue-500/25 transition-all duration-300">
+                            <!-- Inner ring -->
+                            <div class="absolute inset-1 rounded-full bg-gradient-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 p-2 sm:p-3">
+                                <!-- Image container -->
+                                <div class="relative w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800">
+                                    <img src="<?php echo $assetsPath; ?>/images/profile.jpg" 
+                                         alt="Naoufal Andichi - Full Stack Developer" 
+                                         class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700">
+                                    
+                                    <!-- Subtle overlay -->
+                                    <div class="absolute inset-0 bg-gradient-to-t from-blue-600/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Floating elements -->
+                        <div class="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 w-6 h-6 sm:w-8 sm:h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full shadow-lg animate-bounce" style="animation-delay: 0s;"></div>
+                        <div class="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 w-4 h-4 sm:w-6 sm:h-6 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full shadow-lg animate-bounce" style="animation-delay: 1s;"></div>
+                        <div class="absolute top-6 sm:top-8 -left-4 sm:-left-8 w-3 h-3 sm:w-4 sm:h-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full shadow-lg animate-bounce" style="animation-delay: 2s;"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</header>
+</section>
 
-<!-- Animatie keyframes voor de 3D-effecten -->
+<!-- Stap 9: Aangepaste CSS voor Geavanceerde Animaties -->
 <style>
-    @keyframes float {
-        0%, 100% { transform: translateY(0); }
-        50% { transform: translateY(-20px); }
+/* Aangepaste keyframe animaties */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
     }
-    
-    @keyframes float3D {
-        0%, 100% { transform: translate3d(0, 0, 0); }
-        25% { transform: translate3d(10px, -15px, 5px); }
-        50% { transform: translate3d(0, -25px, 10px); }
-        75% { transform: translate3d(-10px, -15px, 5px); }
+    50% {
+        transform: translateY(-20px);
     }
-    
-    @keyframes perspectiveShift {
-        0%, 100% { transform: perspective(1000px) rotateX(5deg); }
-        50% { transform: perspective(1000px) rotateX(10deg); }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
     }
-    
-    @keyframes fadeInLeft {
-        from { opacity: 0; transform: translateX(-30px); }
-        to { opacity: 1; transform: translateX(0); }
+    50% {
+        box-shadow: 0 0 40px rgba(59, 130, 246, 0.2);
     }
-    
-    @keyframes fadeInUp {
-        from { opacity: 0; transform: translateY(30px); }
-        to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradient-shift {
+    0%, 100% {
+        background-position: 0% 50%;
     }
-    
-    @keyframes scaleX {
-        from { transform: scaleX(0); }
-        to { transform: scaleX(1); }
+    50% {
+        background-position: 100% 50%;
     }
+}
+
+/* Hover effecten voor interactieve elementen */
+.group:hover .animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Responsieve aanpassingen */
+@media (max-width: 640px) {
+    .text-4xl {
+        font-size: 2.5rem;
+    }
+    .text-5xl {
+        font-size: 3rem;
+    }
+}
+
+/* Performance optimalisaties */
+.backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* Dark mode verbeteringen */
+@media (prefers-color-scheme: dark) {
+    .bg-gradient-to-br {
+        background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+    }
+}
 </style>
 
 <!-- Expertise & Vaardigheden sectie -->
@@ -710,7 +764,7 @@ include $includesPath;
                             <div class="flex-shrink-0">
                                 <div class="w-20 h-20 bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/30 dark:to-indigo-800/30 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg group-hover:scale-105 transition-all duration-500 border border-blue-100/50 dark:border-blue-700/30">
                                     <svg class="w-10 h-10 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                                     </svg>
                                 </div>
                             </div>
