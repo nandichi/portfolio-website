@@ -117,7 +117,7 @@ include $includesPath;
         </p>
             <!-- Call-to-action knoppen met geavanceerde hover effecten -->
             <div class="flex flex-wrap justify-center md:justify-start gap-4 pt-2 animate-[fadeInUp_0.8s_ease-out_0.6s]">
-                <a href="<?php echo $assetsPath === 'assets' ? 'pages/contact.php' : 'contact.php'; ?>" 
+                <a href="<?php echo $assetsPath === 'assets' ? 'contact' : 'contact'; ?>" 
                    class="group relative px-8 py-3 bg-gradient-to-br from-blue-500 to-indigo-600 dark:from-blue-600 dark:to-indigo-700 text-white rounded-full font-medium overflow-hidden shadow-lg hover:shadow-indigo-500/30 dark:hover:shadow-indigo-500/20 transition-all duration-300">
                     <!-- Achtergrond animatie -->
                     <span class="absolute inset-0 w-full h-full bg-gradient-to-br from-indigo-500 to-purple-600 dark:from-indigo-600 dark:to-purple-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
@@ -131,7 +131,7 @@ include $includesPath;
                     </span>
                 </a>
                 
-                <a href="<?php echo $assetsPath === 'assets' ? 'pages/projects.php' : 'projects.php'; ?>" 
+                <a href="<?php echo $assetsPath === 'assets' ? 'projects' : 'projects'; ?>" 
                    class="group relative px-8 py-3 bg-white/10 dark:bg-white/5 backdrop-blur-sm text-gray-800 dark:text-white rounded-full font-medium border border-indigo-100 dark:border-indigo-900/30 overflow-hidden shadow-md hover:shadow-indigo-500/20 dark:hover:shadow-indigo-500/10 transition-all duration-300">
                     <!-- Achtergrond animatie -->
                     <span class="absolute inset-0 w-full h-full bg-white/80 dark:bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
