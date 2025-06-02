@@ -67,7 +67,7 @@ include $includesPath;
                             <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Technologieën</div>
                         </div>
                         <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">3+</div>
+                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">4+</div>
                             <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Jaar Ervaring</div>
                         </div>
                         <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
