@@ -9,183 +9,362 @@ $includesPath = file_exists('includes/header.php') ? 'includes/header.php' : '..
 include $includesPath;
 ?>
 
-<div class="min-h-screen bg-[#fafafa] dark:bg-gray-900 relative overflow-hidden">
-    <!-- Dynamische achtergrond animatie -->
-    <div class="absolute inset-0 opacity-20">
-        <div class="absolute w-[500px] h-[500px] bg-gradient-to-r from-blue-500 to-purple-500 rounded-full filter blur-3xl animate-blob"></div>
-        <div class="absolute right-0 w-[500px] h-[500px] bg-gradient-to-r from-purple-500 to-pink-500 rounded-full filter blur-3xl animate-blob animation-delay-2000"></div>
-        <div class="absolute bottom-0 left-1/2 w-[500px] h-[500px] bg-gradient-to-r from-pink-500 to-blue-500 rounded-full filter blur-3xl animate-blob animation-delay-4000"></div>
+<!-- Hoofd container met geavanceerde achtergrond -->
+<div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
+    
+    <!-- Geavanceerde achtergrond met meerdere lagen -->
+    <div class="absolute inset-0">
+        <!-- Basis gradient mesh -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(59,130,246,0.15)_1px,transparent_0)] [background-size:24px_24px]"></div>
+        
+        <!-- Zwevende geometrische vormen -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-blue-400/20 to-purple-500/20 rounded-full mix-blend-multiply filter blur-xl animate-slow-float"></div>
+        <div class="absolute top-40 right-10 w-72 h-72 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-full mix-blend-multiply filter blur-xl animate-slow-float-reverse"></div>
+        <div class="absolute bottom-20 left-1/3 w-80 h-80 bg-gradient-to-r from-cyan-400/20 to-blue-500/20 rounded-full mix-blend-multiply filter blur-xl animate-slow-float-delayed"></div>
+        
+        <!-- Subtiele lichteffecten -->
+        <div class="absolute top-0 left-1/4 w-px h-32 bg-gradient-to-b from-blue-500/50 to-transparent"></div>
+        <div class="absolute top-0 right-1/3 w-px h-40 bg-gradient-to-b from-purple-500/50 to-transparent"></div>
+        <div class="absolute top-0 left-3/4 w-px h-24 bg-gradient-to-b from-pink-500/50 to-transparent"></div>
     </div>
 
-    <div class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <!-- Header Sectie -->
+    <!-- Content Container -->
+    <div class="relative z-10 pt-24 pb-20 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            
+            <!-- Elegante Header Sectie -->
         <div class="text-center mb-20" data-aos="fade-down">
-            <div class="inline-flex items-center justify-center mb-4">
-                <span class="h-px w-8 bg-blue-500 mr-3"></span>
-                <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wider uppercase text-sm">Portfolio Projecten</span>
-                <span class="h-px w-8 bg-blue-500 ml-3"></span>
+                <!-- Subtiele badge -->
+                <div class="inline-flex items-center justify-center mb-6">
+                    <div class="flex items-center space-x-3 px-6 py-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-full border border-white/20 dark:border-gray-700/20 shadow-lg">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                        <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wide text-sm uppercase">Portfolio Showcase</span>
+                        <div class="w-2 h-2 bg-purple-500 rounded-full animate-pulse animation-delay-1000"></div>
+                    </div>
             </div>
-            <h1 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white">
-                <span class="text-blue-600 dark:text-blue-400">Innovatieve</span> Projecten
+
+                <!-- Hoofd titel met gradient effect -->
+                <h1 class="text-5xl sm:text-6xl md:text-7xl font-black mb-8 tracking-tight">
+                    <span class="block bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent leading-tight">
+                        Mijn Projecten
+                    </span>
+                    <span class="block text-3xl sm:text-4xl md:text-5xl font-light text-gray-600 dark:text-gray-300 mt-2">
+                        & Innovaties
+                    </span>
             </h1>
-            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
-                Een collectie van mijn meest impactvolle technische creaties en innovaties
-            </p>
+
+                <!-- Beschrijving met betere typografie -->
+                <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                        Een collectie van mijn meest impactvolle technische creaties, van webapplicaties tot complexe systemen.
+                        Elk project vertelt een verhaal van innovatie, problem-solving en technische excellentie.
+                    </p>
+                    
+                    <!-- Stats sectie -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">15+</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Projecten</div>
+                        </div>
+                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">8</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Technologieën</div>
+                        </div>
+                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                            <div class="text-3xl font-bold text-pink-600 dark:text-pink-400">2000+</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Commits</div>
+                        </div>
+                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                            <div class="text-3xl font-bold text-cyan-600 dark:text-cyan-400">3</div>
+                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Jaar Ervaring</div>
+                        </div>
+                    </div>
+                </div>
         </div>
 
+            <!-- Uitgelicht Project: PolitiekPraat -->
+            <div class="relative z-10 mb-20 overflow-hidden" data-aos="fade-up">
+                <div class="bg-gradient-to-br from-blue-600 via-purple-700 to-indigo-800 rounded-3xl shadow-2xl overflow-hidden relative">
 
-
-        <!-- Uitgelicht Project: PolitiekPraat -->
-        <div class="relative z-10 mb-16 overflow-hidden" data-aos="fade-up">
-            <div class="bg-gradient-to-br from-blue-600 via-purple-600 to-blue-600 rounded-3xl shadow-2xl overflow-hidden">
-                <div class="relative p-6 md:p-8 lg:p-12">
                     <!-- Decoratieve elementen -->
-                    <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl"></div>
-                    <div class="absolute bottom-0 left-0 w-48 h-48 bg-white opacity-10 rounded-full translate-y-1/2 -translate-x-1/2 blur-2xl"></div>
+                    <div class="absolute inset-0">
+                        <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-48 translate-x-48 blur-3xl"></div>
+                        <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/10 rounded-full translate-y-40 -translate-x-40 blur-3xl"></div>
+                        <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-full -translate-x-1/2 -translate-y-1/2 blur-2xl animate-pulse"></div>
+                    </div>
                     
-                    <div class="relative z-10 flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+                    <div class="relative z-10 p-8 lg:p-12">
+                        <div class="flex flex-col xl:flex-row gap-12 items-center">
+                            
                         <!-- Project Info -->
                         <div class="flex-1 w-full">
                             <div class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6">
-                                <span class="mr-2">⭐</span> Uitgelicht Project
+                                    <span class="mr-2 text-yellow-300">⭐</span> Uitgelicht Project
                             </div>
                             
-                            <h2 class="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-2 sm:mb-4">PolitiekPraat</h2>
-                            <p class="text-lg sm:text-xl text-white/80 mb-3 sm:mb-4 font-medium">Samen bouwen aan democratie</p>
-                            
-                            <p class="text-white/90 mb-6 sm:mb-8 text-base sm:text-lg leading-relaxed">
-                                PolitiekPraat is een belangrijk platform waar mensen open en respectvol praten over politiek in Nederland. We moedigen gesprekken aan waarin iedereen zijn mening kan geven en kritisch leert denken over actuele onderwerpen. Op ons platform vind je blogs, nieuwsberichten, een stemwijzer, live peilingen en een actief forum waar je zelf mee kunt discussiëren.
-                            </p>
+                                <h2 class="text-4xl sm:text-5xl xl:text-6xl font-black text-white mb-4">PolitiekPraat</h2>
+                                <p class="text-xl text-white/90 mb-4 font-medium">Samen bouwen aan democratie</p>
+                                
+                                <p class="text-white/80 mb-8 text-lg leading-relaxed">
+                                    PolitiekPraat is een belangrijk platform waar mensen open en respectvol praten over politiek in Nederland. 
+                                    We moedigen gesprekken aan waarin iedereen zijn mening kan geven en kritisch leert denken over actuele onderwerpen. 
+                                    Op ons platform vind je blogs, nieuwsberichten, een stemwijzer, live peilingen en een actief forum.
+                                </p>
+                                
                             <!-- Tech Stack -->
-                            <div class="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-8">
-                                <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg border border-white/20">
-                                    <i class="fab fa-php mr-2"></i> PHP
+                                <div class="flex flex-wrap gap-3 mb-8">
+                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-php mr-2 text-blue-200"></i> PHP
                                 </span>
-                                <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg border border-white/20">
-                                    <i class="fab fa-laravel mr-2"></i> Laravel
+                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-laravel mr-2 text-red-200"></i> Laravel
                                 </span>
-                                <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg border border-white/20">
-                                    <i class="fas fa-database mr-2"></i> MySQL
+                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fas fa-database mr-2 text-green-200"></i> MySQL
                                 </span>
-                                <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg border border-white/20">
-                                    <i class="fab fa-js mr-2"></i> JavaScript
+                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-js mr-2 text-yellow-200"></i> JavaScript
                                 </span>
                             </div>
                             
                             <!-- Project Stats -->
-                            <div class="grid grid-cols-3 gap-3 sm:gap-6 mb-6 sm:mb-8">
-                                <div class="text-center">
-                                    <div class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-300">
-                                        345+
+                                <div class="grid grid-cols-3 gap-6 mb-8">
+                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                                        <div class="text-3xl font-bold text-blue-300">345+</div>
+                                        <div class="text-sm text-blue-100/80">Commits</div>
                                     </div>
-                                    <div class="text-xs sm:text-sm text-blue-100/70">Commits</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-300">
-                                        128+
+                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                                        <div class="text-3xl font-bold text-purple-300">128+</div>
+                                        <div class="text-sm text-blue-100/80">Bestanden</div>
                                     </div>
-                                    <div class="text-xs sm:text-sm text-blue-100/70">Bestanden</div>
-                                </div>
-                                <div class="text-center">
-                                    <div class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-300">
-                                        15K+
-                                    </div>
-                                    <div class="text-xs sm:text-sm text-blue-100/70">Gebruikers</div>
+                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                                        <div class="text-3xl font-bold text-pink-300">15K+</div>
+                                        <div class="text-sm text-blue-100/80">Gebruikers</div>
                                 </div>
                             </div>
                             
-                            <!-- CTA Buttons -->
-                            <div class="flex flex-wrap gap-4">
-                                <a href="https://politiekpraat.nl" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center px-4 py-2 sm:px-6 sm:py-3 bg-white text-blue-600 hover:bg-opacity-90 rounded-xl transition-all duration-300 text-sm sm:text-base font-medium">
-                                    <i class="fas fa-external-link-alt mr-2"></i> Bekijk website
+                                <!-- CTA Button -->
+                                <a href="https://politiekpraat.nl" target="_blank" rel="noopener noreferrer" 
+                                   class="inline-flex items-center px-8 py-4 bg-white text-blue-600 hover:bg-blue-50 rounded-2xl transition-all duration-300 text-lg font-semibold transform hover:scale-105 shadow-lg">
+                                    <i class="fas fa-external-link-alt mr-3"></i> Bekijk Website
                                 </a>
                             </div>
+                            
+                            <!-- Project Features -->
+                            <div class="flex-1 w-full bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+                                <h3 class="text-2xl font-bold text-white mb-6">Belangrijkste Functies</h3>
+                                
+                                <div class="space-y-6">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
+                                            <i class="fas fa-newspaper text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                            <h4 class="font-semibold text-white text-lg">Nieuws & Blogs</h4>
+                                            <p class="text-white/80 text-sm">Actuele politieke artikelen en diepgaande analyses</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
+                                            <i class="fas fa-chart-line text-white text-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-white text-lg">Live Peilingen</h4>
+                                            <p class="text-white/80 text-sm">Real-time politieke peilingen en trendanalyses</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
+                                            <i class="fas fa-vote-yea text-white text-lg"></i>
+                                    </div>
+                                    <div>
+                                            <h4 class="font-semibold text-white text-lg">Stemwijzer</h4>
+                                            <p class="text-white/80 text-sm">Interactieve tool om politieke voorkeuren te ontdekken</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
+                                            <i class="fas fa-comments text-white text-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-white text-lg">Forum</h4>
+                                            <p class="text-white/80 text-sm">Levendige discussies over actuele politieke thema's</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Actuele Thema's -->
+                                <div class="mt-8 pt-6 border-t border-white/20">
+                                    <h4 class="text-lg font-bold text-white mb-4">Actuele Thema's</h4>
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-2xl mr-2">🌍</span>
+                                            <span class="text-white text-sm font-medium">Klimaatbeleid</span>
+                                        </div>
+                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-2xl mr-2">🏠</span>
+                                            <span class="text-white text-sm font-medium">Woningmarkt</span>
+                                        </div>
+                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-2xl mr-2">💶</span>
+                                            <span class="text-white text-sm font-medium">Economie</span>
+                                        </div>
+                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-2xl mr-2">🏥</span>
+                                            <span class="text-white text-sm font-medium">Zorg</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <span class="text-white/70 text-sm">Ontdek meer dan 30+ politieke thema's</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        
-                        <!-- Project Features -->
-                        <div class="flex-1 w-full bg-white/10 backdrop-blur-md rounded-2xl p-4 sm:p-6 border border-white/20">
-                            <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Belangrijkste Functies</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Uitgelicht Project: Elyse Iedema -->
+            <div class="relative z-10 mb-20 overflow-hidden" data-aos="fade-up">
+                <div class="bg-gradient-to-br from-pink-500 via-purple-600 to-indigo-700 rounded-3xl shadow-2xl overflow-hidden relative">
+                    
+                    <!-- Decoratieve elementen -->
+                    <div class="absolute inset-0">
+                        <div class="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -translate-y-48 translate-x-48 blur-3xl"></div>
+                        <div class="absolute bottom-0 left-0 w-80 h-80 bg-white/10 rounded-full translate-y-40 -translate-x-40 blur-3xl"></div>
+                        <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-cyan-500/20 to-pink-500/20 rounded-full -translate-x-1/2 -translate-y-1/2 blur-2xl animate-pulse"></div>
+                    </div>
+                    
+                    <div class="relative z-10 p-8 lg:p-12">
+                        <div class="flex flex-col xl:flex-row gap-12 items-center">
                             
-                            <ul class="space-y-3 sm:space-y-4">
-                                <li class="flex items-start">
-                                    <div class="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center bg-white/20 rounded-lg mr-2 sm:mr-3 mt-0.5">
-                                        <i class="fas fa-newspaper text-white text-xs sm:text-base"></i>
+                            <!-- Project Info -->
+                            <div class="flex-1 w-full">
+                                <div class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6">
+                                    <span class="mr-2 text-pink-300">📸</span> Fotografie Portfolio
+                                </div>
+                                
+                                <h2 class="text-4xl sm:text-5xl xl:text-6xl font-black text-white mb-4">Elyse Iedema</h2>
+                                <p class="text-xl text-white/90 mb-4 font-medium">Professioneel Fotografieplatform</p>
+                                
+                                <p class="text-white/80 mb-8 text-lg leading-relaxed">
+                                    Een elegante portfolio website voor professionele fotograaf Elyse Iedema. Het platform toont haar 
+                                    prachtige fotografie werk met een moderne, responsieve gallery en professioneel contactsysteem. 
+                                    Perfect geoptimaliseerd voor zowel desktop als mobiele weergave.
+                                </p>
+                                
+                                <!-- Tech Stack -->
+                                <div class="flex flex-wrap gap-3 mb-8">
+                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-php mr-2 text-blue-200"></i> PHP
+                                    </span>
+                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fas fa-database mr-2 text-green-200"></i> MySQL
+                                    </span>
+                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-js mr-2 text-yellow-200"></i> JavaScript
+                                    </span>
+                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-bootstrap mr-2 text-purple-200"></i> Bootstrap
+                                    </span>
+                                </div>
+                                
+                                <!-- Project Stats -->
+                                <div class="grid grid-cols-3 gap-6 mb-8">
+                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                                        <div class="text-3xl font-bold text-pink-300">167+</div>
+                                        <div class="text-sm text-white/80">Commits</div>
                                     </div>
-                                    <div>
-                                        <h4 class="font-medium text-white text-sm sm:text-base">Nieuws & Blogs</h4>
-                                        <p class="text-white/80 text-xs sm:text-sm">Actuele politieke artikelen en diepgaande analyses</p>
+                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                                        <div class="text-3xl font-bold text-purple-300">62+</div>
+                                        <div class="text-sm text-white/80">Bestanden</div>
                                     </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <div class="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center bg-white/20 rounded-lg mr-2 sm:mr-3 mt-0.5">
-                                        <i class="fas fa-chart-line text-white text-xs sm:text-base"></i>
+                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
+                                        <div class="text-3xl font-bold text-cyan-300">500+</div>
+                                        <div class="text-sm text-white/80">Foto's</div>
                                     </div>
-                                    <div>
-                                        <h4 class="font-medium text-white text-sm sm:text-base">Live Peilingen</h4>
-                                        <p class="text-white/80 text-xs sm:text-sm">Real-time politieke peilingen en trendanalyses</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <div class="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center bg-white/20 rounded-lg mr-2 sm:mr-3 mt-0.5">
-                                        <i class="fas fa-vote-yea text-white text-xs sm:text-base"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-medium text-white text-sm sm:text-base">Stemwijzer</h4>
-                                        <p class="text-white/80 text-xs sm:text-sm">Interactieve tool om jouw politieke voorkeuren te ontdekken</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <div class="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center bg-white/20 rounded-lg mr-2 sm:mr-3 mt-0.5">
-                                        <i class="fas fa-comments text-white text-xs sm:text-base"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-medium text-white text-sm sm:text-base">Forum</h4>
-                                        <p class="text-white/80 text-xs sm:text-sm">Levendige discussies over actuele politieke thema's</p>
-                                    </div>
-                                </li>
-                                <li class="flex items-start">
-                                    <div class="flex-shrink-0 w-6 h-6 sm:w-8 sm:h-8 flex items-center justify-center bg-white/20 rounded-lg mr-2 sm:mr-3 mt-0.5">
-                                        <i class="fas fa-user-shield text-white text-xs sm:text-base"></i>
-                                    </div>
-                                    <div>
-                                        <h4 class="font-medium text-white text-sm sm:text-base">Gebruikersbeheer</h4>
-                                        <p class="text-white/80 text-xs sm:text-sm">Geavanceerd profiel- en rechtensysteem</p>
-                                    </div>
-                                </li>
-                            </ul>
+                                </div>
+                                
+                                <!-- CTA Button -->
+                                <a href="https://elyseiedema.nl" target="_blank" rel="noopener noreferrer" 
+                                   class="inline-flex items-center px-8 py-4 bg-white text-pink-600 hover:bg-pink-50 rounded-2xl transition-all duration-300 text-lg font-semibold transform hover:scale-105 shadow-lg">
+                                    <i class="fas fa-external-link-alt mr-3"></i> Bekijk Portfolio
+                                </a>
+                            </div>
                             
-                            <!-- Interactieve Demo -->
-                            <div class="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-white/20">
-                                <h3 class="text-lg sm:text-xl font-bold text-white mb-3 sm:mb-4">Actuele Thema's</h3>
-                                <div class="grid grid-cols-2 gap-2 sm:gap-4">
-                                    <div class="bg-white/10 rounded-xl p-3 sm:p-4 hover:bg-white/15 transition-colors">
-                                        <div class="flex items-center">
-                                            <span class="text-xl sm:text-2xl mr-2">🌍</span>
-                                            <h4 class="font-medium text-white text-sm sm:text-base">Klimaatbeleid</h4>
+                            <!-- Project Features -->
+                            <div class="flex-1 w-full bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
+                                <h3 class="text-2xl font-bold text-white mb-6">Platform Features</h3>
+                                
+                                <div class="space-y-6">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
+                                            <i class="fas fa-images text-white text-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-white text-lg">Responsieve Gallery</h4>
+                                            <p class="text-white/80 text-sm">Moderne foto gallery met lightbox en mobile optimalisatie</p>
                                         </div>
                                     </div>
-                                    <div class="bg-white/10 rounded-xl p-3 sm:p-4 hover:bg-white/15 transition-colors">
-                                        <div class="flex items-center">
-                                            <span class="text-xl sm:text-2xl mr-2">🏠</span>
-                                            <h4 class="font-medium text-white text-sm sm:text-base">Woningmarkt</h4>
+                                    
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
+                                            <i class="fas fa-envelope text-white text-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-white text-lg">Contact Systeem</h4>
+                                            <p class="text-white/80 text-sm">Geïntegreerd contactformulier voor fotoshoot aanvragen</p>
                                         </div>
                                     </div>
-                                    <div class="bg-white/10 rounded-xl p-3 sm:p-4 hover:bg-white/15 transition-colors">
-                                        <div class="flex items-center">
-                                            <span class="text-xl sm:text-2xl mr-2">💶</span>
-                                            <h4 class="font-medium text-white text-sm sm:text-base">Economie</h4>
+                                    
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
+                                            <i class="fas fa-palette text-white text-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-white text-lg">Elegante Design</h4>
+                                            <p class="text-white/80 text-sm">Minimalistisch design dat de fotografie centraal stelt</p>
                                         </div>
                                     </div>
-                                    <div class="bg-white/10 rounded-xl p-3 sm:p-4 hover:bg-white/15 transition-colors">
-                                        <div class="flex items-center">
-                                            <span class="text-xl sm:text-2xl mr-2">🏥</span>
-                                            <h4 class="font-medium text-white text-sm sm:text-base">Zorg</h4>
+                                    
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
+                                            <i class="fas fa-tachometer-alt text-white text-lg"></i>
+                                        </div>
+                                        <div>
+                                            <h4 class="font-semibold text-white text-lg">Performance</h4>
+                                            <p class="text-white/80 text-sm">Geoptimaliseerd voor snelle laadtijden en SEO</p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="text-center mt-3 sm:mt-4">
-                                    <span class="text-white/70 text-xs sm:text-sm">Ontdek meer dan 30+ politieke thema's</span>
-                                </div>
+                                
+                                <!-- Fotografie Specialisaties -->
+                                <div class="mt-8 pt-6 border-t border-white/20">
+                                    <h4 class="text-lg font-bold text-white mb-4">Fotografie Specialisaties</h4>
+                                    <div class="grid grid-cols-2 gap-3">
+                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-2xl mr-2">💍</span>
+                                            <span class="text-white text-sm font-medium">Bruiloften</span>
+                                        </div>
+                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-2xl mr-2">👶</span>
+                                            <span class="text-white text-sm font-medium">Portretten</span>
+                                        </div>
+                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-2xl mr-2">🌸</span>
+                                            <span class="text-white text-sm font-medium">Evenementen</span>
+                                        </div>
+                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-2xl mr-2">🏢</span>
+                                            <span class="text-white text-sm font-medium">Zakelijk</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-center mt-4">
+                                        <span class="text-white/70 text-sm">Professionele fotografie voor alle gelegenheden</span>
+                                    </div>
                             </div>
                         </div>
                     </div>
@@ -193,27 +372,27 @@ include $includesPath;
             </div>
         </div>
 
-                <!-- Project Filter Systeem -->
-                <div class="relative z-10 flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
-                    <button class="filter-btn active px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-500/25" data-filter="all">
+            <!-- Filter Systeem -->
+            <div class="relative z-10 flex flex-wrap justify-center gap-4 mb-16" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">
                         <span class="flex items-center">
                             <i class="fas fa-th-large mr-2"></i>
                             Alle Projecten
                         </span>
                     </button>
-                    <button class="filter-btn px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white" data-filter="web">
+                <button class="filter-btn" data-filter="web">
                         <span class="flex items-center">
                             <i class="fas fa-globe mr-2"></i>
                             Web Development
                         </span>
                     </button>
-                    <button class="filter-btn px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white" data-filter="app">
+                <button class="filter-btn" data-filter="app">
                         <span class="flex items-center">
                             <i class="fas fa-mobile-alt mr-2"></i>
                             Applicaties
                         </span>
                     </button>
-                    <button class="filter-btn px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg text-gray-700 dark:text-gray-200 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white" data-filter="system">
+                <button class="filter-btn" data-filter="system">
                         <span class="flex items-center">
                             <i class="fas fa-server mr-2"></i>
                             Systemen
@@ -221,59 +400,8 @@ include $includesPath;
                     </button>
                 </div>
 
-                <style>
-                    .filter-btn.active {
-                        background: linear-gradient(to right, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 100%);
-                        color: white;
-                        transform: scale(1.05);
-                    }
-                    
-                    .filter-btn:not(.active):hover {
-                        background: linear-gradient(to right, var(--tw-gradient-from) 0%, var(--tw-gradient-to) 100%);
-                        color: white;
-                    }
-                </style>
-
-                <script>
-                document.addEventListener('DOMContentLoaded', function() {
-                    const filterButtons = document.querySelectorAll('.filter-btn');
-                    const projectCards = document.querySelectorAll('.project-card');
-
-                    filterButtons.forEach(btn => {
-                        btn.addEventListener('click', () => {
-                            // Verwijder active class van alle buttons
-                            filterButtons.forEach(b => b.classList.remove('active'));
-                            
-                            // Voeg active class toe aan geklikte button
-                            btn.classList.add('active');
-                            
-                            const filter = btn.dataset.filter;
-                            
-                            projectCards.forEach(card => {
-                                // Start fade out animatie
-                                card.style.opacity = '0';
-                                card.style.transform = 'scale(0.95)';
-                                
-                                setTimeout(() => {
-                                    if (filter === 'all' || card.dataset.category === filter) {
-                                        card.style.display = 'block';
-                                        // Start fade in animatie
-                                        setTimeout(() => {
-                                            card.style.opacity = '1';
-                                            card.style.transform = 'scale(1)';
-                                        }, 50);
-                                    } else {
-                                        card.style.display = 'none';
-                                    }
-                                }, 300);
-                            });
-                        });
-                    });
-                });
-                </script>
-
         <!-- Projecten Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10" data-aos="fade-up" data-aos-delay="200">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="200">
             <?php
             $projects = [
                 [
@@ -285,11 +413,7 @@ include $includesPath;
                     'color' => 'cyan',
                     'github' => 'elyseiedema',
                     'preview_url' => 'https://elyseiedema.nl',
-                    'stats' => [
-                        'commits' => '167',
-                        'files' => '62',
-                        'contributors' => '1'
-                    ]
+                        'stats' => ['commits' => '167', 'files' => '62', 'contributors' => '1']
                 ],
                 [
                     'name' => 'PAS',
@@ -300,11 +424,7 @@ include $includesPath;
                     'color' => 'blue',
                     'github' => 'PAS',
                     'preview_url' => '#',
-                    'stats' => [
-                        'commits' => '189',
-                        'files' => '67',
-                        'contributors' => '1'
-                    ]
+                        'stats' => ['commits' => '189', 'files' => '67', 'contributors' => '1']
                 ],
                 [
                     'name' => 'PMON',
@@ -315,11 +435,7 @@ include $includesPath;
                     'color' => 'orange',
                     'github' => 'pmon',
                     'preview_url' => '#',
-                    'stats' => [
-                        'commits' => '145',
-                        'files' => '52',
-                        'contributors' => '1'
-                    ]
+                        'stats' => ['commits' => '145', 'files' => '52', 'contributors' => '1']
                 ],
                 [
                     'name' => 'Poketrader',
@@ -330,11 +446,7 @@ include $includesPath;
                     'color' => 'red',
                     'github' => 'poketrader',
                     'preview_url' => '#',
-                    'stats' => [
-                        'commits' => '167',
-                        'files' => '45',
-                        'contributors' => '1'
-                    ]
+                        'stats' => ['commits' => '167', 'files' => '45', 'contributors' => '1']
                 ],
                 [
                     'name' => 'Divo',
@@ -345,11 +457,7 @@ include $includesPath;
                     'color' => 'green',
                     'github' => 'divo',
                     'preview_url' => '#',
-                    'stats' => [
-                        'commits' => '223',
-                        'files' => '78',
-                        'contributors' => '2'
-                    ]
+                        'stats' => ['commits' => '223', 'files' => '78', 'contributors' => '2']
                 ],
                 [
                     'name' => 'GamePC',
@@ -360,11 +468,7 @@ include $includesPath;
                     'color' => 'purple',
                     'github' => 'gamepc',
                     'preview_url' => '#',
-                    'stats' => [
-                        'commits' => '178',
-                        'files' => '56',
-                        'contributors' => '1'
-                    ]
+                        'stats' => ['commits' => '178', 'files' => '56', 'contributors' => '1']
                 ],
                 [
                     'name' => 'Bookonshelf',
@@ -375,11 +479,7 @@ include $includesPath;
                     'color' => 'yellow',
                     'github' => 'bookonshelf',
                     'preview_url' => '#',
-                    'stats' => [
-                        'commits' => '134',
-                        'files' => '42',
-                        'contributors' => '1'
-                    ]
+                        'stats' => ['commits' => '134', 'files' => '42', 'contributors' => '1']
                 ],
                 [
                     'name' => 'Gimpies',
@@ -390,11 +490,7 @@ include $includesPath;
                     'color' => 'indigo',
                     'github' => 'gimpies',
                     'preview_url' => '#',
-                    'stats' => [
-                        'commits' => '198',
-                        'files' => '64',
-                        'contributors' => '1'
-                    ]
+                        'stats' => ['commits' => '198', 'files' => '64', 'contributors' => '1']
                 ],
                 [
                     'name' => 'Geregeld.online',
@@ -405,11 +501,7 @@ include $includesPath;
                     'color' => 'emerald',
                     'github' => 'go-theme',
                     'preview_url' => 'https://geregeld.online',
-                    'stats' => [
-                        'commits' => '234',
-                        'files' => '89',
-                        'contributors' => '2'
-                    ]
+                        'stats' => ['commits' => '234', 'files' => '89', 'contributors' => '2']
                 ],
                 [
                     'name' => 'VoetbalVisie',
@@ -420,11 +512,7 @@ include $includesPath;
                     'color' => 'cyan',
                     'github' => 'VoetbalVisie',
                     'preview_url' => '#',
-                    'stats' => [
-                        'commits' => '167',
-                        'files' => '62',
-                        'contributors' => '1'
-                    ]
+                        'stats' => ['commits' => '167', 'files' => '62', 'contributors' => '1']
                 ],
                 [
                     'name' => 'Portfolio Website',
@@ -435,59 +523,67 @@ include $includesPath;
                     'color' => 'blue',
                     'github' => 'portfolio-website',
                     'preview_url' => '#',
-                    'stats' => [
-                        'commits' => '156',
-                        'files' => '48',
-                        'contributors' => '1'
-                    ]
+                        'stats' => ['commits' => '156', 'files' => '48', 'contributors' => '1']
                 ],
             ];
 
             foreach ($projects as $project): ?>
-                <div class="project-card" data-category="<?php echo $project['category']; ?>">
-                    <div class="relative overflow-hidden h-full rounded-2xl shadow-lg transform transition-all duration-500">
-                        <!-- Achtergrond met gradient -->
-                        <div class="absolute inset-0 bg-gradient-to-br from-<?php echo $project['color']; ?>-400 to-<?php echo $project['color']; ?>-700 opacity-90"></div>
+                    <div class="project-card group" data-category="<?php echo $project['category']; ?>">
+                        <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl hover:shadow-black/10">
+                            
+                            <!-- Gradient overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-br from-<?php echo $project['color']; ?>-500/10 via-transparent to-<?php echo $project['color']; ?>-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                         
                         <!-- Decoratieve elementen -->
-                        <div class="absolute top-0 right-0 w-64 h-64 bg-white opacity-10 rounded-full -translate-y-1/3 translate-x-1/3"></div>
-                        <div class="absolute bottom-0 left-0 w-64 h-64 bg-white opacity-10 rounded-full translate-y-1/3 -translate-x-1/3"></div>
+                            <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-<?php echo $project['color']; ?>-400/20 to-transparent rounded-full -translate-y-16 translate-x-16 group-hover:scale-150 transition-transform duration-700"></div>
+                            <div class="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-<?php echo $project['color']; ?>-500/15 to-transparent rounded-full translate-y-12 -translate-x-12 group-hover:scale-125 transition-transform duration-700"></div>
                         
-                        <!-- Content container -->
+                            <!-- Content -->
                         <div class="relative z-10 p-8 h-full flex flex-col">
+                                
                             <!-- Header -->
-                            <div class="flex items-start justify-between mb-5">
-                                <div class="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
+                                <div class="flex items-start justify-between mb-6">
+                                    <div class="relative">
+                                        <div class="w-16 h-16 bg-gradient-to-br from-<?php echo $project['color']; ?>-400 to-<?php echo $project['color']; ?>-600 rounded-2xl flex items-center justify-center shadow-lg">
                                     <i class="fas <?php echo $project['icon']; ?> text-2xl text-white"></i>
+                                        </div>
                                 </div>
                                 
-                                <div class="flex space-x-3">
-                                    <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-white/20 backdrop-blur-sm text-white">
+                                    <div class="flex flex-col items-end space-y-3">
+                                        <span class="px-3 py-1.5 rounded-full text-xs font-semibold bg-<?php echo $project['color']; ?>-100 dark:bg-<?php echo $project['color']; ?>-900/30 text-<?php echo $project['color']; ?>-700 dark:text-<?php echo $project['color']; ?>-300">
                                         <?php echo ucfirst($project['category']); ?>
                                     </span>
                                     
+                                        <div class="flex space-x-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                     <?php if (isset($project['github'])): ?>
-                                    <a href="https://github.com/nandichi/<?php echo $project['github']; ?>" class="w-8 h-8 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-sm text-white hover:bg-white/30" target="_blank" rel="noopener noreferrer">
-                                        <i class="fab fa-github"></i>
+                                            <a href="https://github.com/nandichi/<?php echo $project['github']; ?>" target="_blank" class="w-8 h-8 flex items-center justify-center rounded-lg bg-gray-900/80 dark:bg-white/80 text-white dark:text-gray-900 hover:scale-110 transition-transform">
+                                                <i class="fab fa-github text-sm"></i>
+                                            </a>
+                                            <?php endif; ?>
+                                            
+                                            <?php if (isset($project['preview_url']) && $project['preview_url'] !== '#'): ?>
+                                            <a href="<?php echo $project['preview_url']; ?>" target="_blank" class="w-8 h-8 flex items-center justify-center rounded-lg bg-<?php echo $project['color']; ?>-500 text-white hover:scale-110 transition-transform">
+                                                <i class="fas fa-external-link-alt text-sm"></i>
                                     </a>
                                     <?php endif; ?>
+                                        </div>
                                 </div>
                             </div>
                             
-                            <!-- Project Info -->
+                                <!-- Project info -->
                             <div class="flex-grow">
-                                <h3 class="text-2xl font-bold text-white mb-2">
+                                    <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-<?php echo $project['color']; ?>-600 dark:group-hover:text-<?php echo $project['color']; ?>-400 transition-colors">
                                     <?php echo $project['name']; ?>
                                 </h3>
                                 
-                                <p class="text-white/80 mb-6 text-sm">
+                                    <p class="text-gray-600 dark:text-gray-300 mb-6 text-sm leading-relaxed">
                                     <?php echo $project['description']; ?>
                                 </p>
                                 
-                                <!-- Tech Stack --> 
+                                    <!-- Tech stack -->
                                 <div class="flex flex-wrap gap-2 mb-6">
                                     <?php foreach ($project['tech'] as $tech): ?>
-                                    <span class="inline-flex items-center px-2.5 py-1 text-xs font-medium bg-white/20 backdrop-blur-sm text-white rounded-lg">
+                                        <span class="px-3 py-1.5 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-lg hover:bg-<?php echo $project['color']; ?>-100 dark:hover:bg-<?php echo $project['color']; ?>-900/30 hover:text-<?php echo $project['color']; ?>-700 dark:hover:text-<?php echo $project['color']; ?>-300 transition-all transform hover:scale-105">
                                         <?php echo $tech; ?>
                                     </span>
                                     <?php endforeach; ?>
@@ -495,242 +591,198 @@ include $includesPath;
                             </div>
                             
                             <!-- Footer -->
-                            <div class="mt-auto pt-4 border-t border-white/20">
-                                <?php if (isset($project['stats'])): ?>
+                                <div class="mt-auto pt-6 border-t border-gray-200 dark:border-gray-700">
                                 <div class="grid grid-cols-3 gap-4 mb-6">
                                     <div class="text-center">
-                                        <div class="text-xl font-bold text-white">
+                                            <div class="text-xl font-bold text-<?php echo $project['color']; ?>-600 dark:text-<?php echo $project['color']; ?>-400">
                                             <?php echo $project['stats']['commits']; ?>
-                                        </div>
-                                        <div class="text-xs text-white/70">Commits</div>
+                                            </div>
+                                            <div class="text-xs text-gray-500 dark:text-gray-400">Commits</div>
                                     </div>
                                     <div class="text-center">
-                                        <div class="text-xl font-bold text-white">
+                                            <div class="text-xl font-bold text-<?php echo $project['color']; ?>-600 dark:text-<?php echo $project['color']; ?>-400">
                                             <?php echo $project['stats']['files']; ?>
-                                        </div>
-                                        <div class="text-xs text-white/70">Bestanden</div>
+                                            </div>
+                                            <div class="text-xs text-gray-500 dark:text-gray-400">Bestanden</div>
                                     </div>
                                     <div class="text-center">
-                                        <div class="text-xl font-bold text-white">
+                                            <div class="text-xl font-bold text-<?php echo $project['color']; ?>-600 dark:text-<?php echo $project['color']; ?>-400">
                                             <?php echo $project['stats']['contributors']; ?>
+                                            </div>
+                                            <div class="text-xs text-gray-500 dark:text-gray-400">Bijdragers</div>
                                         </div>
-                                        <div class="text-xs text-white/70">Contributers</div>
                                     </div>
-                                </div>
-                                <?php endif; ?>
                                 
                                 <?php if (isset($project['preview_url']) && $project['preview_url'] !== '#'): ?>
-                                <a href="<?php echo $project['preview_url']; ?>" class="w-full inline-block text-center py-3 rounded-xl bg-white font-medium text-<?php echo $project['color']; ?>-600 transform transition-transform" target="_blank" rel="noopener noreferrer">
-                                    Bekijk Project
+                                    <a href="<?php echo $project['preview_url']; ?>" target="_blank" class="w-full inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-<?php echo $project['color']; ?>-500 to-<?php echo $project['color']; ?>-600 hover:from-<?php echo $project['color']; ?>-600 hover:to-<?php echo $project['color']; ?>-700 text-white font-semibold text-sm rounded-xl shadow-lg transform hover:scale-105 transition-all duration-300">
+                                        <span class="mr-2">Bekijk Project</span>
+                                        <i class="fas fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
                                 </a>
+                                    <?php else: ?>
+                                    <div class="w-full inline-flex items-center justify-center px-6 py-3 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-400 font-semibold text-sm rounded-xl cursor-not-allowed">
+                                        <i class="fas fa-lock mr-2"></i>
+                                        Privé Project
+                                    </div>
                                 <?php endif; ?>
+                                </div>
                             </div>
                         </div>
                     </div>
+                <?php endforeach; ?>
                 </div>
-            <?php endforeach; ?>
         </div>
     </div>
 </div>
 
+<!-- Aangepaste CSS -->
 <style>
-@keyframes blob {
-    0% { transform: translate(0, 0) scale(1); }
-    33% { transform: translate(30px, -50px) scale(1.1); }
-    66% { transform: translate(-20px, 20px) scale(0.9); }
-    100% { transform: translate(0, 0) scale(1); }
+/* Basis animaties */
+@keyframes slow-float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(30px, -30px) rotate(120deg); }
+    66% { transform: translate(-20px, 20px) rotate(240deg); }
 }
 
-.animate-blob {
-    animation: blob 7s infinite;
+@keyframes slow-float-reverse {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(-30px, -30px) rotate(-120deg); }
+    66% { transform: translate(20px, 20px) rotate(-240deg); }
 }
 
-.animation-delay-2000 {
-    animation-delay: 2s;
+@keyframes slow-float-delayed {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(20px, -40px) rotate(90deg); }
+    66% { transform: translate(-30px, 10px) rotate(180deg); }
 }
 
-.animation-delay-4000 {
-    animation-delay: 4s;
-}
+.animate-slow-float { animation: slow-float 20s ease-in-out infinite; }
+.animate-slow-float-reverse { animation: slow-float-reverse 25s ease-in-out infinite; }
+.animate-slow-float-delayed { animation: slow-float-delayed 30s ease-in-out infinite; }
+.animation-delay-1000 { animation-delay: 1s; }
 
+/* Filter buttons */
 .filter-btn {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(8px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: #4B5563;
-}
-
-.dark .filter-btn {
-    background: rgba(31, 41, 55, 0.8);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    color: #E5E7EB;
-}
-
-.filter-btn:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    @apply px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg text-gray-700 dark:text-gray-200 border border-white/20 dark:border-gray-700/20;
 }
 
 .filter-btn.active {
-    background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 50%, #ec4899 100%);
-    color: white;
-    border: none;
-    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.2);
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg transform scale-105;
 }
 
-.dark .filter-btn.active {
-    box-shadow: 0 8px 16px rgba(59, 130, 246, 0.4);
+.filter-btn:hover:not(.active) {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600 text-white;
 }
 
-/* Uitgelicht Project Stijlen */
-@keyframes pulse-glow {
-    0% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0.4); }
-    70% { box-shadow: 0 0 0 15px rgba(244, 63, 94, 0); }
-    100% { box-shadow: 0 0 0 0 rgba(244, 63, 94, 0); }
-}
-
-.bg-gradient-to-br.from-rose-500.to-purple-600 {
-    position: relative;
-    animation: pulse-glow 3s infinite;
-}
-
-.bg-gradient-to-br.from-rose-500.to-purple-600::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(244, 63, 94, 0.8) 0%, rgba(168, 85, 247, 0.8) 100%);
-    mask-image: radial-gradient(circle at center, transparent 0%, black 100%);
-    z-index: -1;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .bg-gradient-to-br.from-rose-500.to-purple-600 {
-        animation: none;
-    }
-}
-
+/* Project cards */
 .project-card {
-    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
     opacity: 1;
     transform: translateY(0);
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-}
-
 .project-card[style*="display: none"] {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(20px) scale(0.95);
 }
 
+/* Responsive verbeteringen */
+@media (max-width: 768px) {
+    .project-card .group { transform: none !important; }
+    .project-card .group:hover { transform: none !important; }
+    .animate-slow-float, .animate-slow-float-reverse, .animate-slow-float-delayed { animation: none; }
+}
+
+/* Toegankelijkheid */
 @media (prefers-reduced-motion: reduce) {
-    .project-card {
-        transition: opacity 0.1s ease-in-out;
-    }
-    .project-card:hover {
-        transform: none;
-    }
+    * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+    .project-card:hover { transform: none; }
 }
 
-.dark .project-card {
-    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.05);
+/* Focus states */
+.filter-btn:focus-visible, .project-card a:focus-visible {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
 }
 </style>
 
+<!-- JavaScript -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Uitgelicht project animatie
-    const featuredProject = document.querySelector('.bg-gradient-to-br.from-rose-500.to-purple-600');
-    if (featuredProject) {
-        // Verwijder de hover zoom-in effect
-        // featuredProject.addEventListener('mouseenter', function() {
-        //     this.style.transform = 'scale(1.02)';
-        //     this.style.transition = 'transform 0.3s ease-in-out';
-        // });
-        
-        // featuredProject.addEventListener('mouseleave', function() {
-        //     this.style.transform = 'scale(1)';
-        //     this.style.transition = 'transform 0.3s ease-in-out';
-        // });
-        
-        // Voeg een subtiele beweging toe aan de decoratieve elementen
-        const decorElements = featuredProject.querySelectorAll('.absolute.bg-white.opacity-10.rounded-full');
-        decorElements.forEach(elem => {
-            let startPos = { x: 0, y: 0 };
-            
-            document.addEventListener('mousemove', function(e) {
-                const mouseX = e.clientX / window.innerWidth;
-                const mouseY = e.clientY / window.innerHeight;
-                
-                const moveX = (mouseX - 0.5) * 20;
-                const moveY = (mouseY - 0.5) * 20;
-                
-                elem.style.transform = `translate(${startPos.x + moveX}px, ${startPos.y + moveY}px)`;
-                elem.style.transition = 'transform 0.3s ease-out';
-            });
-        });
-        
-        // Animeer de thema kaarten
-        const themeCards = featuredProject.querySelectorAll('.bg-white\\/10.rounded-xl');
-        themeCards.forEach((card, index) => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            
-            setTimeout(() => {
-                card.style.opacity = '1';
-                card.style.transform = 'translateY(0)';
-                card.style.transition = 'all 0.5s ease-out';
-            }, 100 * (index + 1));
-        });
-    }
-
     const filterButtons = document.querySelectorAll('.filter-btn');
     const projectCards = document.querySelectorAll('.project-card');
-
-    filterButtons.forEach(btn => {
-        btn.addEventListener('click', () => {
-            // Update active button met vloeiende overgang
-            filterButtons.forEach(b => {
-                b.classList.remove('active');
-                b.style.transform = 'scale(1)';
-            });
-            btn.classList.add('active');
-            btn.style.transform = 'scale(1.05)';
-
-            // Filter projecten met vloeiende animatie
-            const filter = btn.dataset.filter;
-            projectCards.forEach(card => {
-                card.style.transition = 'all 0.5s ease-in-out';
+    let activeFilter = 'all';
+    
+    function filterProjects(filter) {
+        if (filter === activeFilter) return;
+        activeFilter = filter;
+        
+        requestAnimationFrame(() => {
+            projectCards.forEach((card, index) => {
+                const category = card.dataset.category;
+                const shouldShow = filter === 'all' || category === filter;
                 
-                if (filter === 'all' || card.dataset.category === filter) {
-                    card.style.opacity = '0';
-                    card.style.transform = 'scale(0.95)';
+                if (shouldShow) {
                     card.style.display = 'block';
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px) scale(0.95)';
                     
                     setTimeout(() => {
                         card.style.opacity = '1';
-                        card.style.transform = 'scale(1)';
-                    }, 50);
+                        card.style.transform = 'translateY(0) scale(1)';
+                    }, index * 50);
                 } else {
                     card.style.opacity = '0';
-                    card.style.transform = 'scale(0.95)';
-                    
-                    setTimeout(() => {
-                        card.style.display = 'none';
-                    }, 500);
+                    card.style.transform = 'translateY(-20px) scale(0.95)';
+                    setTimeout(() => { card.style.display = 'none'; }, 300);
                 }
             });
         });
+    }
+    
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.preventDefault();
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            filterProjects(btn.dataset.filter);
+        });
+        
+        btn.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                btn.click();
+            }
+        });
+    });
+    
+    // Intersection Observer voor scroll animaties
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '50px 0px' });
+        
+        projectCards.forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(50px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+    }
+    
+    // Performance optimalisaties
+    projectCards.forEach(card => {
+        card.addEventListener('mouseenter', () => { card.style.willChange = 'transform'; });
+        card.addEventListener('mouseleave', () => { card.style.willChange = 'auto'; });
     });
 });
 </script>
 
 <?php 
-// Bepaal de correcte pad voor includes gebaseerd op uitvoeringscontext
 $includesFooterPath = file_exists('includes/footer.php') ? 'includes/footer.php' : '../includes/footer.php';
 include $includesFooterPath; 
 ?> 
