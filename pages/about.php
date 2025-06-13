@@ -632,10 +632,10 @@ html { scroll-behavior: smooth; }
                     
                     <!-- Short Term Goals -->
                     <div class="relative">
-                        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                        <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                             
                             <!-- Content (Left) -->
-                            <div class="slide-in-left lg:text-right">
+                            <div class="slide-in-left lg:text-right order-1">
                                 <div class="glass rounded-3xl p-8 md:p-10 relative overflow-hidden group">
                                     <!-- Background Pattern -->
                                     <div class="absolute inset-0 opacity-5">
@@ -684,7 +684,7 @@ html { scroll-behavior: smooth; }
                             </div>
                             
                             <!-- Visual (Right) -->
-                            <div class="mt-8 lg:mt-0 slide-in-right">
+                            <div class="mt-8 lg:mt-0 slide-in-right order-2">
                                 <div class="relative">
                                     <!-- Main Visual Card -->
                                     <div class="glass rounded-3xl p-8 relative overflow-hidden h-64">
@@ -721,10 +721,10 @@ html { scroll-behavior: smooth; }
                     
                     <!-- Tech Stack Expansion -->
                     <div class="relative">
-                        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                        <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                             
                             <!-- Visual (Left) -->
-                            <div class="slide-in-left">
+                            <div class="slide-in-left order-2 lg:order-1">
                                 <div class="relative">
                                     <!-- Main Visual Card -->
                                     <div class="glass rounded-3xl p-8 relative overflow-hidden h-64">
@@ -767,7 +767,7 @@ html { scroll-behavior: smooth; }
                             </div>
                             
                             <!-- Content (Right) -->
-                            <div class="mt-8 lg:mt-0 slide-in-right">
+                            <div class="mt-8 lg:mt-0 slide-in-right order-1 lg:order-2">
                                 <div class="glass rounded-3xl p-8 md:p-10 relative overflow-hidden group">
                                     <!-- Background Pattern -->
                                     <div class="absolute inset-0 opacity-5">
@@ -816,10 +816,10 @@ html { scroll-behavior: smooth; }
                     
                     <!-- Personal Development -->
                     <div class="relative">
-                        <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                        <div class="flex flex-col lg:grid lg:grid-cols-2 lg:gap-16 items-center">
                             
                             <!-- Content (Left) -->
-                            <div class="slide-in-left lg:text-right">
+                            <div class="slide-in-left lg:text-right order-1">
                                 <div class="glass rounded-3xl p-8 md:p-10 relative overflow-hidden group">
                                     <!-- Background Pattern -->
                                     <div class="absolute inset-0 opacity-5">
@@ -868,7 +868,7 @@ html { scroll-behavior: smooth; }
                             </div>
                             
                             <!-- Visual (Right) -->
-                            <div class="mt-8 lg:mt-0 slide-in-right">
+                            <div class="mt-8 lg:mt-0 slide-in-right order-2">
                                 <div class="relative">
                                     <!-- Main Visual Card -->
                                     <div class="glass rounded-3xl p-8 relative overflow-hidden h-64">

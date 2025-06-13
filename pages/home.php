@@ -44,7 +44,7 @@ include $includesPath;
             <div class="order-2 lg:order-1 text-center lg:text-left space-y-6 sm:space-y-8">
 
                 <!-- Hoofdtitel met moderne typografie -->
-                <div class="space-y-3 sm:space-y-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="space-y-3 sm:space-y-4">
                     <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight leading-tight">
                         <span class="block text-gray-900 dark:text-white">
                             Hallo, ik ben
@@ -70,7 +70,7 @@ include $includesPath;
                 </div>
 
                 <!-- Elegante beschrijving -->
-                <div class="max-w-2xl mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="200">
+                <div class="max-w-2xl mx-auto lg:mx-0">
                     <p class="text-base sm:text-lg md:text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                         Ik bouw digitale oplossingen die bedrijven vooruithelpen.
                         <span class="font-medium text-gray-700 dark:text-gray-200">
@@ -81,7 +81,7 @@ include $includesPath;
                 </div>
 
                 <!-- Professionele statistieken -->
-                <div class="grid grid-cols-3 gap-4 sm:gap-6 max-w-sm sm:max-w-lg mx-auto lg:mx-0" data-aos="fade-up" data-aos-delay="300">
+                <div class="grid grid-cols-3 gap-4 sm:gap-6 max-w-sm sm:max-w-lg mx-auto lg:mx-0">
                     <div class="text-center lg:text-left">
                         <div class="text-xl sm:text-2xl md:text-3xl font-bold text-blue-600 dark:text-blue-400">3+</div>
                         <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium">Jaar Ervaring</div>
@@ -97,7 +97,7 @@ include $includesPath;
                 </div>
 
                 <!-- Premium Call-to-Action Knoppen -->
-                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="400">
+                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start">
                     <!-- Primaire CTA -->
                     <a href="<?php echo $assetsPath === 'assets' ? 'contact' : 'contact'; ?>" 
                        class="group relative inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
@@ -125,7 +125,7 @@ include $includesPath;
                 </div>
 
                 <!-- Social Links met elegante styling -->
-                <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="500">
+                <div class="flex flex-col sm:flex-row items-center gap-4 sm:gap-6 justify-center lg:justify-start">
                     <span class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium">Volg mij op:</span>
                     <div class="flex items-center gap-3 sm:gap-4">
                         <a href="https://www.linkedin.com/in/naoufalandichi/" target="_blank" rel="noopener noreferrer" 
@@ -145,7 +145,7 @@ include $includesPath;
             </div>
 
             <!-- Stap 7: Rechter Kolom - Elegante Profiel Sectie -->
-            <div class="order-1 lg:order-2 flex justify-center lg:justify-end mb-6 lg:mb-0" data-aos="fade-left" data-aos-delay="200">
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end mb-6 lg:mb-0">
                 <div class="relative group">
                     <!-- Decoratieve achtergrond ringen -->
                     <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 dark:from-blue-500/10 dark:to-indigo-600/10 rounded-full blur-3xl transform group-hover:scale-110 transition-transform duration-700"></div>
@@ -268,7 +268,7 @@ include $includesPath;
         <!-- Stap 2: Verfijnde header sectie -->
         <div class="text-center mb-24">
             <!-- Decoratieve lijn met icoon -->
-            <div class="flex items-center justify-center mb-8" data-aos="fade-down">
+            <div class="flex items-center justify-center mb-8">
                 <div class="h-px w-16 bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
                 <div class="mx-6 p-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50">
                     <svg class="w-6 h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -279,7 +279,7 @@ include $includesPath;
             </div>
             
             <!-- Hoofdtitel met moderne typografie -->
-            <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="space-y-6">
                 <h2 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
                     <span class="block text-gray-900 dark:text-white mb-2">Professionele</span>
                     <span class="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -306,7 +306,7 @@ include $includesPath;
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             
             <!-- Card 1: Technische Expertise -->
-            <div class="group" data-aos="fade-up" data-aos-delay="200">
+            <div class="group">
                 <div class="relative h-full overflow-hidden bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/30 transform hover:-translate-y-3 hover:rotate-1">
                     
                     <!-- Decoratieve top accent -->
@@ -406,7 +406,7 @@ include $includesPath;
             </div>
 
             <!-- Card 2: Soft Skills -->
-            <div class="group" data-aos="fade-up" data-aos-delay="300">
+            <div class="group">
                 <div class="relative h-full overflow-hidden bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/30 transform hover:-translate-y-3 hover:-rotate-1">
                     
                     <!-- Decoratieve top accent -->
@@ -506,7 +506,7 @@ include $includesPath;
             </div>
 
             <!-- Card 3: Innovatieve Aanpak -->
-            <div class="group" data-aos="fade-up" data-aos-delay="400">
+            <div class="group">
                 <div class="relative h-full overflow-hidden bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/30 transform hover:-translate-y-3 hover:rotate-1">
                     
                     <!-- Decoratieve top accent -->
@@ -604,7 +604,7 @@ include $includesPath;
         </div>
 
         <!-- Stap 4: Elegante afsluiting met decoratieve elementen -->
-        <div class="mt-20 flex flex-col items-center space-y-8" data-aos="fade-up" data-aos-delay="500">
+        <div class="mt-20 flex flex-col items-center space-y-8">
             <!-- Decoratieve separator -->
             <div class="flex items-center justify-center gap-4 opacity-60">
                 <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
@@ -664,7 +664,7 @@ include $includesPath;
         <!-- Stap 2: Elegante header met verfijnde typografie -->
         <div class="text-center mb-24">
             <!-- Decoratieve lijn met LinkedIn icoon -->
-            <div class="flex items-center justify-center mb-8" data-aos="fade-down">
+            <div class="flex items-center justify-center mb-8">
                 <div class="h-px w-16 bg-gradient-to-r from-transparent via-[#0A66C2]/50 to-transparent"></div>
                 <div class="mx-6 p-3 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 group hover:scale-105 transition-transform duration-300">
                     <svg class="w-6 h-6 text-[#0A66C2] group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
@@ -675,7 +675,7 @@ include $includesPath;
             </div>
             
             <!-- Hoofdtitel met moderne typografie -->
-            <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="space-y-6">
                 <h2 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight">
                     <span class="block text-gray-900 dark:text-white mb-2">Mijn</span>
                     <span class="block bg-gradient-to-r from-[#0A66C2] via-blue-600 to-indigo-600 bg-clip-text text-transparent">
@@ -703,7 +703,7 @@ include $includesPath;
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             
             <!-- Post 1 - Premium design -->
-            <div class="group" data-aos="fade-up" data-aos-delay="200">
+            <div class="group">
                 <div class="relative h-full overflow-hidden bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-slate-700/40 transform hover:-translate-y-4 hover:rotate-1">
                     
                     <!-- LinkedIn accent top -->
@@ -796,7 +796,7 @@ include $includesPath;
             </div>
 
             <!-- Post 2 - Premium design -->
-            <div class="group" data-aos="fade-up" data-aos-delay="300">
+            <div class="group">
                 <div class="relative h-full overflow-hidden bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-slate-700/40 transform hover:-translate-y-4 hover:-rotate-1">
                     
                     <!-- LinkedIn accent top -->
@@ -890,7 +890,7 @@ include $includesPath;
             </div>
 
             <!-- Post 3 - Premium design -->
-            <div class="group" data-aos="fade-up" data-aos-delay="400">
+            <div class="group">
                 <div class="relative h-full overflow-hidden bg-white/80 dark:bg-slate-800/80 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-slate-700/40 transform hover:-translate-y-4 hover:rotate-1">
                     
                     <!-- LinkedIn accent top -->
@@ -980,7 +980,7 @@ include $includesPath;
         </div>
 
         <!-- Stap 4: Premium LinkedIn Profiel Link -->
-        <div class="mt-20 text-center" data-aos="fade-up" data-aos-delay="500">
+        <div class="mt-20 text-center">
             <div class="inline-block relative group">
                 <!-- Decoratieve achtergrond -->
                 <div class="absolute inset-0 bg-gradient-to-r from-[#0A66C2]/20 via-[#0A66C2]/10 to-[#0A66C2]/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
@@ -1070,7 +1070,7 @@ include $includesPath;
         <!-- Header sectie met moderne typografie -->
         <div class="text-center mb-28">
             <!-- Decoratieve lijn met icoon -->
-            <div class="flex items-center justify-center mb-10" data-aos="fade-down">
+            <div class="flex items-center justify-center mb-10">
                 <div class="h-px w-20 bg-gradient-to-r from-transparent via-blue-500/50 to-transparent"></div>
                 <div class="mx-8 p-4 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-3xl shadow-lg border border-gray-200/50 dark:border-gray-700/50">
                     <svg class="w-8 h-8 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1081,7 +1081,7 @@ include $includesPath;
             </div>
             
             <!-- Hoofdtitel met verfijnde typografie -->
-            <div class="space-y-8" data-aos="fade-up" data-aos-delay="100">
+            <div class="space-y-8">
                 <h2 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
                     <span class="block text-gray-900 dark:text-white mb-3">Professionele</span>
                     <span class="block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -1107,7 +1107,7 @@ include $includesPath;
         <!-- Experience Cards Container -->
         <div class="grid gap-8 relative">
             <!-- Current Role - Developing B.V. -->
-            <div class="group" data-aos="fade-up">
+            <div class="group">
                 <div class="relative overflow-hidden bg-white dark:bg-gray-800/80 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm">
                     <!-- Decorative accent -->
                     <div class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-blue-500 to-indigo-600"></div>
@@ -1221,7 +1221,7 @@ include $includesPath;
             </div>
 
             <!-- Pathé Role -->
-            <div class="group" data-aos="fade-up" data-aos-delay="100">
+            <div class="group">
                 <div class="relative overflow-hidden bg-white dark:bg-gray-800/80 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-500 border border-gray-100 dark:border-gray-700/50 backdrop-blur-sm">
                     <!-- Decorative accent -->
                     <div class="absolute top-0 left-0 w-2 h-full bg-gradient-to-b from-indigo-600 to-purple-600"></div>
@@ -1345,22 +1345,22 @@ include $includesPath;
 
     <div class="max-w-7xl mx-auto relative">
         <div class="text-center mb-16">
-            <div class="inline-flex items-center justify-center mb-4" data-aos="fade-down">
+            <div class="inline-flex items-center justify-center mb-4">
                 <span class="h-px w-8 bg-blue-500 mr-3"></span>
                 <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wider uppercase text-sm">Vaardigheden</span>
                 <span class="h-px w-8 bg-blue-500 ml-3"></span>
             </div>
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white" data-aos="fade-up">
+            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white">
                 Technische <span class="text-blue-600 dark:text-blue-400">Expertise</span>
             </h2>
-            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                 Ontdek mijn technische vaardigheden door een interactieve visualisatie
             </p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Development Stack -->
-            <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 group" data-aos="fade-right">
+            <div class="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-500 group">
                 <div class="grid grid-cols-2 gap-6">
                     <!-- Frontend -->
                     <div class="space-y-4">
@@ -1441,7 +1441,7 @@ include $includesPath;
             </div>
 
             <!-- Interactive Code Editor Preview -->
-            <div class="bg-gray-900 rounded-2xl p-6 shadow-xl group" data-aos="fade-left">
+            <div class="bg-gray-900 rounded-2xl p-6 shadow-xl group">
                 <div class="flex items-center justify-between mb-4">
                     <div class="flex items-center gap-2">
                         <div class="w-3 h-3 rounded-full bg-red-500"></div>
@@ -1574,7 +1574,7 @@ include $includesPath;
         <!-- Header met moderne typografie -->
         <div class="text-center mb-24">
             <!-- Elegant badge -->
-            <div class="inline-flex items-center justify-center mb-8" data-aos="fade-down">
+            <div class="inline-flex items-center justify-center mb-8">
                 <div class="relative">
                     <div class="absolute inset-0 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full blur-lg opacity-30"></div>
                     <div class="relative px-6 py-2 bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm border border-blue-200/50 dark:border-blue-700/50 rounded-full shadow-lg">
@@ -1584,14 +1584,14 @@ include $includesPath;
             </div>
             
             <!-- Hoofdtitel -->
-            <h2 class="text-5xl md:text-6xl lg:text-7xl font-black mb-8 tracking-tight" data-aos="fade-up">
+            <h2 class="text-5xl md:text-6xl lg:text-7xl font-black mb-8 tracking-tight">
                 <span class="text-gray-900 dark:text-white">Professionele</span>
                 <br>
                 <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Ontwikkeling</span>
             </h2>
             
             <!-- Ondertitel -->
-            <p class="max-w-3xl mx-auto text-xl text-gray-600 dark:text-gray-300 leading-relaxed" data-aos="fade-up" data-aos-delay="100">
+            <p class="max-w-3xl mx-auto text-xl text-gray-600 dark:text-gray-300 leading-relaxed">
                 Een overzicht van mijn professionele reis, van student tot software developer, 
                 met alle ervaringen die hebben bijgedragen aan mijn groei en expertise.
             </p>
@@ -1601,7 +1601,7 @@ include $includesPath;
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             
             <!-- Developing B.V. - Huidige Positie -->
-            <div class="group" data-aos="fade-up">
+            <div class="group">
                 <div class="relative h-full">
                     <!-- Card -->
                     <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/50 h-full flex flex-col group-hover:-translate-y-2">
@@ -1661,7 +1661,7 @@ include $includesPath;
             </div>
 
             <!-- Pathé -->
-            <div class="group" data-aos="fade-up" data-aos-delay="100">
+            <div class="group">
                 <div class="relative h-full">
                     <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/50 h-full flex flex-col group-hover:-translate-y-2">
                         
@@ -1717,7 +1717,7 @@ include $includesPath;
             </div>
 
             <!-- I@control Stage -->
-            <div class="group" data-aos="fade-up" data-aos-delay="200">
+            <div class="group">
                 <div class="relative h-full">
                     <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/50 h-full flex flex-col group-hover:-translate-y-2">
                         
@@ -1772,7 +1772,7 @@ include $includesPath;
             </div>
 
             <!-- Action -->
-            <div class="group" data-aos="fade-up" data-aos-delay="300">
+            <div class="group">
                 <div class="relative h-full">
                     <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/50 h-full flex flex-col group-hover:-translate-y-2">
                         
@@ -1830,17 +1830,17 @@ include $includesPath;
         <!-- Educatie Sectie -->
         <div class="mt-20">
             <div class="text-center mb-16">
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4" data-aos="fade-up">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
                     Mijn <span class="text-blue-600 dark:text-blue-400">Educatie</span>
                 </h3>
-                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
                     De educatieve basis die mij heeft gevormd tot de professional die ik vandaag ben.
                 </p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                 <!-- Rijn IJssel -->
-                <div class="group" data-aos="fade-up">
+                <div class="group">
                     <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/50 h-full flex flex-col group-hover:-translate-y-2">
                         
                         <div class="flex items-center justify-between mb-6">
@@ -1895,7 +1895,7 @@ include $includesPath;
                 </div>
 
                 <!-- Pallas Athene College -->
-                <div class="group" data-aos="fade-up" data-aos-delay="100">
+                <div class="group">
                     <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-lg rounded-3xl p-8 lg:p-10 shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/50 h-full flex flex-col group-hover:-translate-y-2">
                         
                         <div class="flex items-center justify-between mb-6">
@@ -1979,7 +1979,7 @@ include $includesPath;
         <!-- Header sectie met elegante typografie -->
         <div class="text-center mb-24">
             <!-- Badge indicator -->
-            <div class="inline-flex items-center justify-center mb-8" data-aos="fade-up" data-aos-duration="600">
+            <div class="inline-flex items-center justify-center mb-8">
                 <div class="flex items-center gap-3 px-6 py-3 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-full border border-slate-200/50 dark:border-slate-700/50 shadow-lg shadow-blue-500/10">
                     <div class="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse"></div>
                     <span class="text-slate-600 dark:text-slate-300 font-medium text-sm tracking-wide uppercase">Stage Ervaringen</span>
@@ -1988,19 +1988,19 @@ include $includesPath;
             </div>
 
             <!-- Hoofdtitel -->
-            <h2 class="text-5xl lg:text-7xl font-black mb-8 tracking-tight" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+            <h2 class="text-5xl lg:text-7xl font-black mb-8 tracking-tight">
                 <span class="text-slate-900 dark:text-white">Professionele</span>
                 <br class="hidden sm:block">
                 <span class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Aanbevelingen</span>
             </h2>
 
             <!-- Subtitel -->
-            <p class="text-xl lg:text-2xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed font-light" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+            <p class="text-xl lg:text-2xl text-slate-600 dark:text-slate-300 max-w-4xl mx-auto leading-relaxed font-light">
                 Ontdek wat mijn stagebegeleider en collega's bij <span class="font-semibold text-slate-800 dark:text-slate-200">Developing B.V.</span> te zeggen hebben over mijn prestaties, vaardigheden en professionele groei.
             </p>
 
             <!-- Decoratieve lijn -->
-            <div class="flex justify-center mt-12" data-aos="fade-up" data-aos-delay="600">
+            <div class="flex justify-center mt-12">
                 <div class="w-24 h-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 rounded-full"></div>
             </div>
         </div>
@@ -2009,7 +2009,7 @@ include $includesPath;
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 xl:gap-12">
             
             <!-- Testimonial 1 - Sven van der Berg -->
-            <div class="group" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+            <div class="group">
                 <div class="relative h-full">
                     <!-- Glow effect -->
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-purple-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
@@ -2075,7 +2075,7 @@ include $includesPath;
             </div>
 
             <!-- Testimonial 2 - Kristian Huisman -->
-            <div class="group" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+            <div class="group">
                 <div class="relative h-full">
                     <!-- Glow effect -->
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-green-500 to-teal-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
@@ -2141,7 +2141,7 @@ include $includesPath;
             </div>
 
             <!-- Testimonial 3 - Mark Timmers -->
-            <div class="group" data-aos="fade-up" data-aos-delay="600" data-aos-duration="800">
+            <div class="group">
                 <div class="relative h-full">
                     <!-- Glow effect -->
                     <div class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
@@ -2208,7 +2208,7 @@ include $includesPath;
         </div>
 
         <!-- Bottom CTA Section -->
-        <div class="mt-20 text-center" data-aos="fade-up" data-aos-delay="800">
+        <div class="mt-20 text-center">
             <div class="inline-flex items-center gap-4 px-8 py-4 bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-2xl border border-slate-200/50 dark:border-slate-700/50 shadow-lg">
                 <div class="flex -space-x-2">
                     <div class="w-10 h-10 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full border-2 border-white dark:border-slate-800 flex items-center justify-center">
@@ -2262,15 +2262,14 @@ include $includesPath;
 <!-- Call to Action Section -->
 <section class="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800 text-white dark:from-blue-800 dark:to-blue-600">
     <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6 text-white" data-aos="fade-up">
+        <h2 class="text-3xl font-bold mb-6 text-white">
             Klaar om samen te werken?
         </h2>
-        <p class="text-lg opacity-90 mb-8" data-aos="fade-up" data-aos-delay="100">
+        <p class="text-lg opacity-90 mb-8">
             Ik sta altijd open voor nieuwe uitdagingen en samenwerkingen
         </p>
         <a href="contact" 
-           class="group inline-flex items-center px-8 py-3 bg-white text-blue-600 rounded-full hover:bg-blue-50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/25 gap-2"
-           data-aos="fade-up" data-aos-delay="200">
+           class="group inline-flex items-center px-8 py-3 bg-white text-blue-600 rounded-full hover:bg-blue-50 transform hover:-translate-y-1 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl hover:shadow-blue-500/25 gap-2">
             <span>Neem contact op</span>
             <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H6"/>

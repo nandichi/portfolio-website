@@ -29,64 +29,62 @@ include $includesPath;
     </div>
 
     <!-- Content Container -->
-    <div class="relative z-10 pt-24 pb-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            
-            <!-- Elegante Header Sectie -->
-            <div class="text-center mb-20" data-aos="fade-down">
-                <!-- Subtiele badge -->
-                <div class="inline-flex items-center justify-center mb-6">
-                    <div class="flex items-center space-x-3 px-6 py-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-full border border-white/20 dark:border-gray-700/20 shadow-lg">
-                        <div class="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
-                        <span class="text-purple-600 dark:text-purple-400 font-medium tracking-wide text-sm uppercase">Expertise & Competenties</span>
-                        <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse animation-delay-1000"></div>
-                </div>
-                </div>
+    <div class="container mx-auto px-6 lg:px-8 relative z-10">
+        <!-- Header sectie met elegante typografie -->
+        <div class="text-center mb-20">
+            <div class="inline-flex items-center justify-center mb-8">
+                <div class="flex items-center space-x-3 px-6 py-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-full border border-white/20 dark:border-gray-700/20 shadow-lg">
+                    <div class="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
+                    <span class="text-purple-600 dark:text-purple-400 font-medium tracking-wide text-sm uppercase">Expertise & Competenties</span>
+                    <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse animation-delay-1000"></div>
+            </div>
+            </div>
 
-                <!-- Hoofd titel met gradient effect -->
-                <h1 class="text-5xl sm:text-6xl md:text-7xl font-black mb-8 tracking-tight">
-                    <span class="block bg-gradient-to-r from-gray-900 via-purple-800 to-blue-800 dark:from-white dark:via-purple-200 dark:to-blue-200 bg-clip-text text-transparent leading-tight">
-                        Mijn Vaardigheden
-                    </span>
-                    <span class="block text-3xl sm:text-4xl md:text-5xl font-light text-gray-600 dark:text-gray-300 mt-2">
-                        & Expertise
-                    </span>
-                </h1>
+            <!-- Hoofd titel met gradient effect -->
+            <h1 class="text-5xl sm:text-6xl md:text-7xl font-black mb-8 tracking-tight">
+                <span class="block bg-gradient-to-r from-gray-900 via-purple-800 to-blue-800 dark:from-white dark:via-purple-200 dark:to-blue-200 bg-clip-text text-transparent leading-tight">
+                    Mijn Vaardigheden
+                </span>
+                <span class="block text-3xl sm:text-4xl md:text-5xl font-light text-gray-600 dark:text-gray-300 mt-2">
+                    & Expertise
+                </span>
+            </h1>
 
-                <!-- Beschrijving met betere typografie -->
-                <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-                    <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                        Een showcase van mijn technische expertise en professionele competenties, opgebouwd door 
-                        jarenlange ervaring, continue ontwikkeling en een passie voor innovatie.
-                    </p>
-                    
-                    <!-- Stats sectie -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">8+</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Technologieën</div>
-                        </div>
-                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">4+</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Jaar Ervaring</div>
-                        </div>
-                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                            <div class="text-3xl font-bold text-green-600 dark:text-green-400">50+</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Competenties</div>
-                        </div>
-                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                            <div class="text-3xl font-bold text-pink-600 dark:text-pink-400">100+</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Uren Studie</div>
-                        </div>
+            <!-- Professionele introductie -->
+            <div class="max-w-3xl mx-auto">
+                <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                    Een showcase van mijn technische expertise en professionele competenties, opgebouwd door 
+                    jarenlange ervaring, continue ontwikkeling en een passie voor innovatie.
+                </p>
+                
+                <!-- Stats sectie -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
+                    <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                        <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">8+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Technologieën</div>
+                    </div>
+                    <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                        <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">4+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Jaar Ervaring</div>
+                    </div>
+                    <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                        <div class="text-3xl font-bold text-green-600 dark:text-green-400">50+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Competenties</div>
+                    </div>
+                    <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                        <div class="text-3xl font-bold text-pink-600 dark:text-pink-400">100+</div>
+                        <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Uren Studie</div>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Hoofdvaardigheden Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-                
+        <!-- Hoofdvaardigheden Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 mb-20">
+            <!-- Links: Frontend & Backend -->
+            <div class="group">
                 <!-- Frontend Skills Card -->
-                <div class="group" data-aos="fade-right">
+                <div class="group">
                     <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                         
                         <!-- Gradient overlay -->
@@ -188,7 +186,7 @@ include $includesPath;
                 </div>
 
                 <!-- Backend Skills Card -->
-                <div class="group" data-aos="fade-left">
+                <div class="group">
                     <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                         
                         <!-- Gradient overlay -->
@@ -294,7 +292,7 @@ include $includesPath;
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
                 
                 <!-- Development Tools Card -->
-                <div class="group" data-aos="fade-up" data-aos-delay="100">
+                <div class="group">
                     <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                         
                         <!-- Gradient overlay -->
@@ -344,7 +342,7 @@ include $includesPath;
                 </div>
 
                 <!-- Soft Skills Card -->
-                <div class="group" data-aos="fade-up" data-aos-delay="200">
+                <div class="group">
                     <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                         
                         <!-- Gradient overlay -->
@@ -394,7 +392,7 @@ include $includesPath;
                 </div>
 
                 <!-- Learning & Growth Card -->
-                <div class="group" data-aos="fade-up" data-aos-delay="300">
+                <div class="group">
                     <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                         
                         <!-- Gradient overlay -->
@@ -462,7 +460,7 @@ include $includesPath;
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <!-- PolitiekPraat Experience -->
-                    <a href="https://politiekpraat.nl" target="_blank" rel="noopener noreferrer" class="group" data-aos="fade-right">
+                    <a href="https://politiekpraat.nl" target="_blank" rel="noopener noreferrer" class="group">
                         <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                             
                             <!-- Gradient overlay -->
@@ -539,7 +537,7 @@ include $includesPath;
                     </a>
 
                     <!-- Elysee Iedema Website Project -->
-                    <a href="https://elyseiedema.nl" target="_blank" rel="noopener noreferrer" class="group" data-aos="fade-left">
+                    <a href="https://elyseiedema.nl" target="_blank" rel="noopener noreferrer" class="group">
                         <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                             
                             <!-- Gradient overlay -->
@@ -635,7 +633,7 @@ include $includesPath;
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                     <!-- ICT Software Development -->
-                    <div class="group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="group">
                         <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                             
                             <!-- Header -->
@@ -686,7 +684,7 @@ include $includesPath;
                     </div>
 
                     <!-- JavaScript Frameworks -->
-                    <div class="group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="group">
                         <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                             
                             <!-- Header -->
@@ -737,7 +735,7 @@ include $includesPath;
                     </div>
 
                     <!-- Laravel & PHP -->
-                    <div class="group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="group">
                         <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                             
                             <!-- Header -->
@@ -811,7 +809,7 @@ include $includesPath;
                     
                     <div class="space-y-12">
                         <!-- 2021 - Start -->
-                        <div class="relative flex items-center" data-aos="fade-right">
+                        <div class="relative flex items-center">
                             <div class="flex-1 text-right pr-8">
                                 <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-2xl p-6 border border-white/20 dark:border-gray-700/20 shadow-lg">
                                     <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Begin van de Reis</h3>
@@ -829,7 +827,7 @@ include $includesPath;
                                 </div>
 
                         <!-- 2022 - Laravel -->
-                        <div class="relative flex items-center" data-aos="fade-left">
+                        <div class="relative flex items-center">
                             <div class="flex-1 pr-8"></div>
                             <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-gradient-to-r from-red-500 to-pink-600 rounded-full border-4 border-white dark:border-gray-900 shadow-lg">
                                 <span class="text-white font-bold text-sm">2022</span>
@@ -848,7 +846,7 @@ include $includesPath;
                         </div>
 
                         <!-- 2023 - React & JavaScript -->
-                        <div class="relative flex items-center" data-aos="fade-right">
+                        <div class="relative flex items-center">
                             <div class="flex-1 text-right pr-8">
                                 <div class="bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-2xl p-6 border border-white/20 dark:border-gray-700/20 shadow-lg">
                                     <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">Frontend Verdieping</h3>
@@ -867,7 +865,7 @@ include $includesPath;
                         </div>
 
                         <!-- 2024 - Huidige Focus -->
-                        <div class="relative flex items-center" data-aos="fade-left">
+                        <div class="relative flex items-center">
                             <div class="flex-1 pr-8"></div>
                             <div class="relative z-10 flex items-center justify-center w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full border-4 border-white dark:border-gray-900 shadow-lg">
                                 <span class="text-white font-bold text-sm">2024</span>
@@ -906,7 +904,7 @@ include $includesPath;
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Nieuwe Technologieën -->
-                    <div class="group" data-aos="fade-up" data-aos-delay="100">
+                    <div class="group">
                         <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                             
                             <!-- Header -->
@@ -964,7 +962,7 @@ include $includesPath;
                     </div>
 
                     <!-- Specialisaties -->
-                    <div class="group" data-aos="fade-up" data-aos-delay="200">
+                    <div class="group">
                         <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                             
                             <!-- Header -->
@@ -1022,7 +1020,7 @@ include $includesPath;
                     </div>
 
                     <!-- Carrière Doelen -->
-                    <div class="group" data-aos="fade-up" data-aos-delay="300">
+                    <div class="group">
                         <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
                             
                             <!-- Header -->

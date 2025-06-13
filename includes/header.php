@@ -234,10 +234,6 @@
     <!-- Alpine.js voor interactiviteit -->
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     
-    <!-- AOS (Animate On Scroll) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <!-- Font Awesome Pro -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
@@ -681,18 +677,5 @@
 
     <!-- Body padding voor fixed header -->
     <div class="pt-20"></div>
-
-    <!-- AOS Initialisatie -->
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                easing: 'ease-out-cubic',
-                once: true,
-                offset: 50,
-                delay: 100,
-            });
-        });
-    </script>
 </body>
 </html> 

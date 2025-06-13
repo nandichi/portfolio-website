@@ -33,12 +33,12 @@
         <div class="relative max-w-7xl mx-auto px-6 sm:px-8 lg:px-12 pt-32 pb-20">
             
             <!-- Main Grid Layout -->
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-16" data-aos="fade-up" data-aos-duration="800">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 xl:gap-16">
                 
                 <!-- Personal Branding Section -->
                 <div class="lg:col-span-4 space-y-8">
                     <!-- Premium Logo & Identity -->
-                    <div class="group" data-aos="fade-right" data-aos-delay="100">
+                    <div class="group">
                         <div class="flex items-center space-x-5">
                             <!-- Enhanced Logo with Multiple Layers -->
                             <div class="relative">
@@ -77,7 +77,7 @@
                     </div>
                     
                     <!-- Premium Bio Section -->
-                    <div class="space-y-6" data-aos="fade-right" data-aos-delay="200">
+                    <div class="space-y-6">
                         <div class="relative group">
                             <!-- Glassmorphism Background -->
                             <div class="absolute inset-0 bg-gradient-to-br from-neutral-100/50 via-white/30 to-neutral-50/50 dark:from-neutral-800/30 dark:via-neutral-700/20 dark:to-neutral-800/30 rounded-2xl backdrop-blur-sm border border-neutral-200/50 dark:border-neutral-700/50"></div>
@@ -100,7 +100,7 @@
                     </div>
 
                     <!-- Premium Social Links -->
-                    <div class="space-y-4" data-aos="fade-right" data-aos-delay="300">
+                    <div class="space-y-4">
                         <h4 class="text-lg font-semibold text-neutral-800 dark:text-neutral-200 flex items-center space-x-3">
                             <svg class="w-5 h-5 text-accent-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/>
@@ -162,7 +162,7 @@
                 </div>
 
                 <!-- Professional Experience Section -->
-                <div class="lg:col-span-4 space-y-8" data-aos="fade-up" data-aos-delay="200">
+                <div class="lg:col-span-4 space-y-8">
                     <div class="relative group">
                         <!-- Premium Card Background -->
                         <div class="absolute inset-0 bg-gradient-to-br from-accent-500/5 via-primary-500/5 to-accent-600/5 rounded-2xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
@@ -222,7 +222,7 @@
                 </div>
 
                 <!-- Contact Information Section -->
-                <div class="lg:col-span-4 space-y-8" data-aos="fade-left" data-aos-delay="300">
+                <div class="lg:col-span-4 space-y-8">
                     <!-- Section Header -->
                     <div class="space-y-2">
                         <h3 class="text-xl font-bold text-neutral-800 dark:text-neutral-200 flex items-center space-x-3">
@@ -313,7 +313,7 @@
             </div>
 
             <!-- Premium Copyright Section -->
-            <div class="mt-20 pt-12 border-t border-neutral-200/70 dark:border-neutral-700/50" data-aos="fade-up" data-aos-delay="400">
+            <div class="mt-20 pt-12 border-t border-neutral-200/70 dark:border-neutral-700/50">
                 <div class="flex flex-col lg:flex-row justify-between items-center space-y-6 lg:space-y-0">
                     
                     <!-- Left Side - Copyright -->
@@ -390,20 +390,6 @@
 
     <!-- Premium JavaScript -->
     <script>
-        // Enhanced AOS initialization
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 1000,
-                easing: 'ease-out-cubic',
-                once: true,
-                offset: 100,
-                delay: 50,
-                useClassNames: true,
-                initClassName: false,
-                animatedClassName: 'aos-animate',
-            });
-        });
-
         // Enhanced Theme Toggle Functionality
         const themeToggle = document.querySelector('[x-data] button');
         if (themeToggle) {
@@ -508,49 +494,6 @@
                 
                 lastScroll = currentScroll;
             }, 10);
-        });
-
-        // Enhanced Intersection Observer for animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate-fade-in');
-                }
-            });
-        }, observerOptions);
-
-        // Observe all animatable elements
-        document.querySelectorAll('[data-aos]').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Enhanced performance optimizations
-        if ('requestIdleCallback' in window) {
-            requestIdleCallback(() => {
-                // Lazy load non-critical animations
-                document.querySelectorAll('.animate-pulse-slow, .animate-float, .animate-bounce-gentle').forEach(el => {
-                    el.style.animationPlayState = 'running';
-                });
-            });
-        }
-
-        // Add smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
         });
     </script>
 </body>
