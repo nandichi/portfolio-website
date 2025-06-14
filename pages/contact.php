@@ -9,136 +9,270 @@ $includesPath = file_exists('includes/header.php') ? 'includes/header.php' : '..
 include $includesPath;
 ?>
 
-<div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/50 to-purple-50/50 dark:from-gray-900 dark:via-blue-900/20 dark:to-purple-900/20 relative overflow-hidden">
-    <!-- Animated Background Elements -->
-    <div class="absolute inset-0 overflow-hidden pointer-events-none">
-        <div class="absolute w-[500px] h-[500px] bg-blue-500/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob"></div>
-        <div class="absolute w-[500px] h-[500px] bg-purple-500/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-2000 right-0"></div>
-        <div class="absolute w-[500px] h-[500px] bg-indigo-500/30 rounded-full mix-blend-multiply filter blur-3xl animate-blob animation-delay-4000 bottom-0"></div>
+<!-- Hoofd container met moderne achtergrond -->
+<div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
+    
+    <!-- Achtergrond decoratie -->
+    <div class="absolute inset-0">
+        <!-- Grid patroon -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(59,130,246,0.15)_1px,transparent_0)] [background-size:24px_24px]"></div>
+        
+        <!-- Bewegende gradient orbs -->
+        <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-purple-400/20 to-pink-500/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div class="absolute top-40 right-10 w-72 h-72 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div class="absolute bottom-20 left-1/2 transform -translate-x-1/2 w-64 h-64 bg-gradient-to-r from-indigo-400/15 to-purple-500/15 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
     </div>
 
-    <div class="relative pt-40 pb-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <!-- Header Section with Typing Effect -->
-            <div class="text-center mb-20" data-aos="fade-down">
-                <h1 class="text-6xl font-extrabold mb-6 relative inline-block">
-                    <span class="absolute -inset-1 blur-xl bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 opacity-30"></span>
-                    <span class="relative bg-clip-text text-transparent bg-gradient-to-r from-blue-600 via-purple-600 to-indigo-600 dark:from-blue-400 dark:via-purple-400 dark:to-indigo-400">
-                        Laten We Samenwerken
-                    </span>
-                </h1>
-                <p id="typing-text" class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed opacity-0">
-                    Klaar om iets geweldigs te bouwen? Neem contact met mij op!
-                </p>
+    <!-- Content Container -->
+    <div class="container mx-auto px-6 lg:px-8 relative z-10">
+        
+        <!-- Header sectie -->
+        <div class="text-center mb-16 pt-20">
+            <!-- Badge -->
+            <div class="inline-flex items-center justify-center mb-6">
+                <div class="flex items-center space-x-3 px-6 py-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-full border border-white/20 dark:border-gray-700/20 shadow-lg">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                    <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wide text-sm uppercase">Neem contact op</span>
+                    <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Enhanced Contact Form -->
-                <div class="group relative perspective-1000" data-aos="fade-right">
-                    <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-2xl opacity-0 group-hover:opacity-10 transition-all duration-500"></div>
-                    <div class="relative bg-white/90 dark:bg-gray-800/90 backdrop-blur-xl rounded-xl p-8 border border-gray-100/20 dark:border-gray-700/20 transform transition-all duration-500 group-hover:translate-z-10 hover:shadow-2xl">
-                        <form id="contactForm" class="space-y-6">
-                            <div class="form-group space-y-2">
-                                <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Naam</label>
+            <!-- Hoofd titel -->
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black mb-4 sm:mb-6 tracking-tight">
+                <span class="block bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent leading-tight">
+                    Laten We Samenwerken
+                </span>
+                <span class="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl font-light text-gray-600 dark:text-gray-300 mt-1 sm:mt-2">
+                    & Iets Moois Bouwen
+                </span>
+            </h1>
+
+            <!-- Introductie -->
+            <div class="max-w-3xl mx-auto mb-8 sm:mb-12">
+                <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+                    Heb je een idee? Een project? Of gewoon een vraag? Ik sta altijd open voor nieuwe mogelijkheden 
+                    en interessante gesprekken. Stuur me een bericht en laten we ontdekken wat we samen kunnen bereiken.
+                </p>
+            </div>
+        </div>
+
+        <!-- Contact sectie -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+            
+            <!-- Contact formulier -->
+            <div class="group">
+                <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
+                    
+                    <!-- Gradient overlay -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 via-transparent to-purple-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                    
+                    <!-- Decoratieve elementen -->
+                    <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-blue-400/20 to-transparent rounded-full -translate-y-32 translate-x-32 group-hover:scale-150 transition-transform duration-700"></div>
+                    
+                    <!-- Header -->
+                    <div class="relative z-10 bg-gradient-to-br from-blue-500 via-blue-600 to-purple-700 p-4 sm:p-6 lg:p-8">
+                        <div class="flex items-center gap-3 sm:gap-4 lg:gap-6">
+                            <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/20 backdrop-blur-sm rounded-xl sm:rounded-2xl flex items-center justify-center border border-white/30 group-hover:rotate-6 transition-transform duration-500">
+                                <i class="fas fa-paper-plane text-lg sm:text-xl lg:text-2xl text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-lg sm:text-xl lg:text-2xl font-black text-white mb-1 sm:mb-2">Stuur een Bericht</h3>
+                                <p class="text-sm sm:text-base text-blue-100 font-medium">Laat van je horen via het formulier</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Formulier content -->
+                    <div class="relative z-10 p-4 sm:p-6 lg:p-8">
+                        <form id="contactForm" class="space-y-4 sm:space-y-6">
+                            
+                            <!-- Naam veld -->
+                            <div class="group/field">
+                                <label for="name" class="block text-xs sm:text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 sm:mb-2">
+                                    <i class="fas fa-user text-blue-500 mr-1 sm:mr-2 text-xs sm:text-sm"></i>Naam
+                                </label>
                                 <div class="relative">
-                                    <input type="text" id="name" name="name" 
-                                           class="form-input w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-600/50 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
-                                           required>
-                                    <div class="input-focus-effect"></div>
+                                    <input type="text" id="name" name="name" required
+                                           class="w-full px-3 py-3 sm:px-4 sm:py-4 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-600/50 rounded-lg sm:rounded-xl text-sm sm:text-base text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 group-hover/field:border-blue-300 dark:group-hover/field:border-blue-400"
+                                           placeholder="Jouw volledige naam">
+                                    <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-focus-within/field:w-full"></div>
                                 </div>
                             </div>
 
-                            <div class="form-group space-y-2">
-                                <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+                            <!-- Email veld -->
+                            <div class="group/field">
+                                <label for="email" class="block text-xs sm:text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 sm:mb-2">
+                                    <i class="fas fa-envelope text-blue-500 mr-1 sm:mr-2 text-xs sm:text-sm"></i>Email
+                                </label>
                                 <div class="relative">
-                                    <input type="email" id="email" name="email" 
-                                           class="form-input w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-600/50 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
-                                           required>
-                                    <div class="input-focus-effect"></div>
+                                    <input type="email" id="email" name="email" required
+                                           class="w-full px-3 py-3 sm:px-4 sm:py-4 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-600/50 rounded-lg sm:rounded-xl text-sm sm:text-base text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 group-hover/field:border-blue-300 dark:group-hover/field:border-blue-400"
+                                           placeholder="jouw@email.com">
+                                    <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-focus-within/field:w-full"></div>
                                 </div>
                             </div>
 
-                            <div class="form-group space-y-2">
-                                <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Onderwerp</label>
+                            <!-- Onderwerp veld -->
+                            <div class="group/field">
+                                <label for="subject" class="block text-xs sm:text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 sm:mb-2">
+                                    <i class="fas fa-tag text-blue-500 mr-1 sm:mr-2 text-xs sm:text-sm"></i>Onderwerp
+                                </label>
                                 <div class="relative">
-                                    <input type="text" id="subject" name="subject" 
-                                           class="form-input w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-600/50 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300"
-                                           required>
-                                    <div class="input-focus-effect"></div>
+                                    <input type="text" id="subject" name="subject" required
+                                           class="w-full px-3 py-3 sm:px-4 sm:py-4 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-600/50 rounded-lg sm:rounded-xl text-sm sm:text-base text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 group-hover/field:border-blue-300 dark:group-hover/field:border-blue-400"
+                                           placeholder="Waar gaat je bericht over?">
+                                    <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-focus-within/field:w-full"></div>
                                 </div>
                             </div>
 
-                            <div class="form-group space-y-2">
-                                <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Bericht</label>
+                            <!-- Bericht veld -->
+                            <div class="group/field">
+                                <label for="message" class="block text-xs sm:text-sm font-semibold text-gray-700 dark:text-gray-300 mb-1 sm:mb-2">
+                                    <i class="fas fa-comment-dots text-blue-500 mr-1 sm:mr-2 text-xs sm:text-sm"></i>Bericht
+                                </label>
                                 <div class="relative">
-                                    <textarea id="message" name="message" rows="6" 
-                                              class="form-textarea w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-600/50 text-gray-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 resize-none"
-                                              required></textarea>
-                                    <div class="input-focus-effect"></div>
+                                    <textarea id="message" name="message" rows="5" required
+                                              class="w-full px-3 py-3 sm:px-4 sm:py-4 bg-white/50 dark:bg-gray-700/50 backdrop-blur-sm border border-gray-200/50 dark:border-gray-600/50 rounded-lg sm:rounded-xl text-sm sm:text-base text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all duration-300 group-hover/field:border-blue-300 dark:group-hover/field:border-blue-400 resize-none"
+                                              placeholder="Vertel me over je project, vraag of idee..."></textarea>
+                                    <div class="absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-focus-within/field:w-full"></div>
                                 </div>
                             </div>
 
+                            <!-- Submit button -->
                             <button type="submit" 
-                                    class="w-full relative group overflow-hidden px-6 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-600 text-white transform hover:-translate-y-0.5 transition-all duration-200">
-                                <span class="relative z-10">Verstuur Bericht</span>
-                                <div class="absolute inset-0 bg-gradient-to-r from-indigo-600 to-blue-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-200 origin-left"></div>
+                                    class="group/btn w-full relative overflow-hidden px-4 py-3 sm:px-6 sm:py-4 lg:px-8 bg-gradient-to-r from-blue-500 via-blue-600 to-purple-600 text-white font-bold rounded-lg sm:rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                                <span class="relative z-10 flex items-center justify-center gap-2 sm:gap-3">
+                                    <i class="fas fa-rocket text-sm sm:text-base"></i>
+                                    <span class="text-sm sm:text-base">Verstuur Bericht</span>
+                                    <i class="fas fa-arrow-right text-sm sm:text-base transform group-hover/btn:translate-x-1 transition-transform duration-300"></i>
+                                </span>
+                                <div class="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-500 transform scale-x-0 group-hover/btn:scale-x-100 transition-transform duration-300 origin-left"></div>
                             </button>
                         </form>
                     </div>
                 </div>
+            </div>
 
-                <!-- Contact Information -->
-                <div class="space-y-6" data-aos="fade-left">
-                    <!-- Contact Links -->
-                    <div class="bg-white/80 dark:bg-gray-800/90 rounded-xl p-8 shadow-lg">
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-8">Sociale Media</h3>
-                        <div class="space-y-6">
-                            <a href="mailto:naoufal.exe@gmail.com" class="flex items-center space-x-4 group">
-                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center transform transition-all duration-200 group-hover:scale-110">
-                                    <i class="fas fa-envelope text-xl text-white"></i>
+            <!-- Contact informatie -->
+            <div class="space-y-8">
+                
+                <!-- Sociale media card -->
+                <div class="group">
+                    <div class="relative bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">
+                        
+                        <!-- Gradient overlay -->
+                        <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 via-transparent to-pink-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        
+                        <!-- Header -->
+                        <div class="relative z-10 bg-gradient-to-br from-purple-500 via-purple-600 to-pink-600 p-4 sm:p-6 lg:p-8">
+                            <div class="flex items-center gap-3 sm:gap-4 lg:gap-6">
+                                <div class="w-12 h-12 sm:w-14 sm:h-14 lg:w-16 lg:h-16 bg-white/20 backdrop-blur-sm rounded-xl sm:rounded-2xl flex items-center justify-center border border-white/30 group-hover:rotate-6 transition-transform duration-500">
+                                    <i class="fas fa-share-alt text-lg sm:text-xl lg:text-2xl text-white"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg sm:text-xl lg:text-2xl font-black text-white mb-1 sm:mb-2">Sociale Media</h3>
+                                    <p class="text-sm sm:text-base text-purple-100 font-medium">Volg en connect met mij</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Social links -->
+                        <div class="relative z-10 p-4 sm:p-6 lg:p-8 space-y-4 sm:space-y-6">
+                            
+                            <!-- Email -->
+                            <a href="mailto:naoufal.exe@gmail.com" class="group/link flex items-center gap-4 p-4 rounded-2xl bg-white/40 dark:bg-gray-700/40 backdrop-blur-sm border border-white/20 dark:border-gray-600/20 hover:bg-white/60 dark:hover:bg-gray-700/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                                <div class="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-xl flex items-center justify-center shadow-lg group-hover/link:rotate-6 transition-transform duration-300">
+                                    <i class="fas fa-envelope text-white text-lg"></i>
                                 </div>
                                 <div class="flex-1">
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">Email</p>
-                                    <p class="text-gray-900 dark:text-white font-medium">naoufal.exe@gmail.com</p>
+                                    <h4 class="font-bold text-gray-900 dark:text-white">Email</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">naoufal.exe@gmail.com</p>
                                 </div>
-                                <i class="fas fa-arrow-right text-gray-400 transform transition-transform duration-200 group-hover:translate-x-1"></i>
+                                <i class="fas fa-arrow-right text-gray-400 dark:text-gray-500 transform group-hover/link:translate-x-1 transition-transform duration-300"></i>
                             </a>
 
-                            <a href="https://www.linkedin.com/in/naoufalandichi/" target="_blank" class="flex items-center space-x-4 group">
-                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center transform transition-all duration-200 group-hover:scale-110">
-                                    <i class="fab fa-linkedin-in text-xl text-white"></i>
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/naoufalandichi/" target="_blank" class="group/link flex items-center gap-4 p-4 rounded-2xl bg-white/40 dark:bg-gray-700/40 backdrop-blur-sm border border-white/20 dark:border-gray-600/20 hover:bg-white/60 dark:hover:bg-gray-700/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center shadow-lg group-hover/link:rotate-6 transition-transform duration-300">
+                                    <i class="fab fa-linkedin-in text-white text-lg"></i>
                                 </div>
                                 <div class="flex-1">
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">LinkedIn</p>
-                                    <p class="text-gray-900 dark:text-white font-medium">Naoufal Andichi</p>
+                                    <h4 class="font-bold text-gray-900 dark:text-white">LinkedIn</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">Naoufal Andichi</p>
                                 </div>
-                                <i class="fas fa-arrow-right text-gray-400 transform transition-transform duration-200 group-hover:translate-x-1"></i>
+                                <i class="fas fa-external-link-alt text-gray-400 dark:text-gray-500 transform group-hover/link:translate-x-1 transition-transform duration-300"></i>
                             </a>
 
-                            <a href="https://github.com/nandichi" target="_blank" class="flex items-center space-x-4 group">
-                                <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center transform transition-all duration-200 group-hover:scale-110">
-                                    <i class="fab fa-github text-xl text-white"></i>
+                            <!-- GitHub -->
+                            <a href="https://github.com/nandichi" target="_blank" class="group/link flex items-center gap-4 p-4 rounded-2xl bg-white/40 dark:bg-gray-700/40 backdrop-blur-sm border border-white/20 dark:border-gray-600/20 hover:bg-white/60 dark:hover:bg-gray-700/60 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                                <div class="w-12 h-12 bg-gradient-to-br from-gray-700 to-gray-900 dark:from-gray-600 dark:to-gray-800 rounded-xl flex items-center justify-center shadow-lg group-hover/link:rotate-6 transition-transform duration-300">
+                                    <i class="fab fa-github text-white text-lg"></i>
                                 </div>
                                 <div class="flex-1">
-                                    <p class="text-sm text-gray-500 dark:text-gray-400">GitHub</p>
-                                    <p class="text-gray-900 dark:text-white font-medium">nandichi</p>
+                                    <h4 class="font-bold text-gray-900 dark:text-white">GitHub</h4>
+                                    <p class="text-gray-600 dark:text-gray-300 text-sm">nandichi</p>
                                 </div>
-                                <i class="fas fa-arrow-right text-gray-400 transform transition-transform duration-200 group-hover:translate-x-1"></i>
+                                <i class="fas fa-external-link-alt text-gray-400 dark:text-gray-500 transform group-hover/link:translate-x-1 transition-transform duration-300"></i>
                             </a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <!-- Location -->
-                    <div class="bg-white/80 dark:bg-gray-800/90 rounded-xl p-8 shadow-lg">
-                        <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Locatie</h3>
-                        <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-                                <i class="fas fa-map-marker-alt text-xl text-white"></i>
+
+        <!-- FAQ sectie -->
+        <div class="mb-12 sm:mb-16 lg:mb-20">
+            <div class="text-center mb-8 sm:mb-12">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-3 sm:mb-4">
+                    Veelgestelde <span class="text-blue-600 dark:text-blue-400">Vragen</span>
+                </h2>
+                <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Snel antwoord op de meest gestelde vragen
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto space-y-4 sm:space-y-6">
+                <!-- FAQ Item 1 -->
+                <div class="group bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-xl sm:rounded-2xl border border-white/20 dark:border-gray-700/20 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="p-4 sm:p-6">
+                        <div class="flex items-start sm:items-center gap-3 sm:gap-4">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-white text-sm sm:text-base"></i>
                             </div>
-                            <div>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">Adres</p>
-                                <p class="text-gray-900 dark:text-white font-medium">Ede, Gelderland</p>
-                                <p class="text-gray-600 dark:text-gray-300">Nederland</p>
+                            <div class="flex-1">
+                                <h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1 sm:mb-2">Hoe snel reageer je op berichten?</h3>
+                                <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300">Ik probeer binnen 24 uur te reageren op alle berichten. Voor urgente zaken kun je me het beste via LinkedIn contacteren.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="group bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-xl sm:rounded-2xl border border-white/20 dark:border-gray-700/20 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="p-4 sm:p-6">
+                        <div class="flex items-start sm:items-center gap-3 sm:gap-4">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-handshake text-white text-sm sm:text-base"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1 sm:mb-2">Ben je beschikbaar voor nieuwe projecten?</h3>
+                                <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300">Ja! Ik sta altijd open voor interessante projecten en samenwerkingen. Laat me weten waar je aan denkt.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="group bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-xl sm:rounded-2xl border border-white/20 dark:border-gray-700/20 shadow-lg hover:shadow-xl transition-all duration-300">
+                    <div class="p-4 sm:p-6">
+                        <div class="flex items-start sm:items-center gap-3 sm:gap-4">
+                            <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg sm:rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-code text-white text-sm sm:text-base"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-base sm:text-lg font-bold text-gray-900 dark:text-white mb-1 sm:mb-2">Welke technologieën gebruik je?</h3>
+                                <p class="text-sm sm:text-base text-gray-600 dark:text-gray-300">Hoofdzakelijk PHP, MySQL, JavaScript, React en TailwindCSS. Bekijk mijn vaardigheden pagina voor een volledig overzicht.</p>
                             </div>
                         </div>
                     </div>
@@ -152,266 +286,44 @@ include $includesPath;
 <div id="successModal" class="fixed inset-0 z-50 hidden">
     <div class="absolute inset-0 bg-black/30 backdrop-blur-sm"></div>
     <div class="min-h-screen flex items-center justify-center p-4">
-        <div id="modalContent" class="relative bg-gradient-to-br from-white/90 to-white/80 dark:from-gray-900/90 dark:to-gray-800/80 rounded-3xl p-8 max-w-md w-full transform transition-all duration-500 scale-0 opacity-0 shadow-[0_0_50px_0_rgba(0,0,0,0.1)] dark:shadow-[0_0_50px_0_rgba(255,255,255,0.1)]">
-            <!-- Decorative Elements -->
-            <div class="absolute -top-20 left-1/2 -translate-x-1/2">
-                <div class="relative">
-                    <div class="absolute inset-0 animate-pulse">
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-blue-500/30 rounded-full blur-2xl"></div>
-                        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-32 h-32 bg-purple-500/30 rounded-full blur-2xl"></div>
-                    </div>
-                    <div class="relative w-40 h-40 flex items-center justify-center">
-                        <svg class="w-full h-full text-blue-500 success-animation" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle class="success-circle" cx="12" cy="12" r="11" stroke="currentColor" stroke-width="2"/>
-                            <path class="success-check" d="M7 13l3 3 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </div>
+        <div id="modalContent" class="relative bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl rounded-3xl p-12 max-w-md w-full transform transition-all duration-500 scale-0 opacity-0 shadow-2xl border border-white/20 dark:border-gray-700/20">
+            
+            <!-- Success Icon -->
+            <div class="text-center mb-8">
+                <div class="w-24 h-24 bg-gradient-to-br from-green-400 to-green-600 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+                    <i class="fas fa-check text-3xl text-white"></i>
                 </div>
-            </div>
-
-            <div class="text-center mt-16">
-                <h3 class="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 mb-4">
-                    Geweldig!
+                <h3 class="text-3xl font-bold bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent mb-4">
+                    Bericht Verzonden!
                 </h3>
-                <p class="text-gray-600 dark:text-gray-300 mb-8">Je bericht is succesvol verzonden. Ik neem zo snel mogelijk contact met je op!</p>
-
+                <p class="text-gray-600 dark:text-gray-300 mb-8">
+                    Bedankt voor je bericht! Ik neem zo snel mogelijk contact met je op.
+                </p>
+                
                 <button onclick="closeModal()" 
-                        class="group relative px-8 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-xl overflow-hidden transition-all duration-300 hover:scale-105">
-                    <div class="absolute inset-0 bg-white mix-blend-overlay opacity-0 group-hover:opacity-20 transition-opacity"></div>
-                    <span class="relative">Terug naar het formulier</span>
+                        class="w-full px-8 py-4 bg-gradient-to-r from-green-500 to-emerald-600 text-white font-bold rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300">
+                    <i class="fas fa-thumbs-up mr-2"></i>
+                    Perfect!
                 </button>
             </div>
         </div>
     </div>
 </div>
 
-<style>
-@keyframes blob {
-    0% { transform: translate(0px, 0px) scale(1); }
-    33% { transform: translate(30px, -50px) scale(1.1); }
-    66% { transform: translate(-20px, 20px) scale(0.9); }
-    100% { transform: translate(0px, 0px) scale(1); }
-}
-
-.animate-blob {
-    animation: blob 7s infinite;
-}
-
-.animation-delay-2000 {
-    animation-delay: 2s;
-}
-
-.animation-delay-4000 {
-    animation-delay: 4s;
-}
-
-.perspective-1000 {
-    perspective: 1000px;
-}
-
-.translate-z-10 {
-    transform: translateZ(10px);
-}
-
-.input-focus-effect {
-    @apply absolute bottom-0 left-0 h-0.5 w-0 bg-gradient-to-r from-blue-500 to-indigo-600 transition-all duration-300;
-}
-
-.form-input:focus + .input-focus-effect,
-.form-textarea:focus + .input-focus-effect {
-    @apply w-full;
-}
-
-/* Success Checkmark Animation */
-.success-checkmark {
-    width: 80px;
-    height: 80px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.check-icon {
-    width: 80px;
-    height: 80px;
-    position: relative;
-    border-radius: 50%;
-    box-sizing: content-box;
-    border: 4px solid #4CAF50;
-}
-
-.check-icon::before {
-    top: 3px;
-    left: -2px;
-    width: 30px;
-    transform-origin: 100% 50%;
-    border-radius: 100px 0 0 100px;
-}
-
-.check-icon::after {
-    top: 0;
-    left: 30px;
-    width: 60px;
-    transform-origin: 0 50%;
-    border-radius: 0 100px 100px 0;
-    animation: rotate-circle 4.25s ease-in;
-}
-
-.icon-line {
-    height: 5px;
-    background-color: #4CAF50;
-    display: block;
-    border-radius: 2px;
-    position: absolute;
-    z-index: 10;
-}
-
-.icon-line.line-tip {
-    top: 46px;
-    left: 14px;
-    width: 25px;
-    transform: rotate(45deg);
-    animation: icon-line-tip 0.75s;
-}
-
-.icon-line.line-long {
-    top: 38px;
-    right: 8px;
-    width: 47px;
-    transform: rotate(-45deg);
-    animation: icon-line-long 0.75s;
-}
-
-.icon-circle {
-    top: -4px;
-    left: -4px;
-    z-index: 10;
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    position: absolute;
-    box-sizing: content-box;
-    border: 4px solid rgba(76, 175, 80, 0.5);
-}
-
-.icon-fix {
-    top: 8px;
-    width: 5px;
-    left: 26px;
-    z-index: 1;
-    height: 85px;
-    position: absolute;
-    transform: rotate(-45deg);
-    background-color: #FFFFFF;
-}
-
-@keyframes rotate-circle {
-    0% { transform: rotate(-45deg); }
-    5% { transform: rotate(-45deg); }
-    12% { transform: rotate(-405deg); }
-    100% { transform: rotate(-405deg); }
-}
-
-@keyframes icon-line-tip {
-    0% { width: 0; left: 1px; top: 19px; }
-    54% { width: 0; left: 1px; top: 19px; }
-    70% { width: 50px; left: -8px; top: 37px; }
-    84% { width: 17px; left: 21px; top: 48px; }
-    100% { width: 25px; left: 14px; top: 45px; }
-}
-
-@keyframes icon-line-long {
-    0% { width: 0; right: 46px; top: 54px; }
-    65% { width: 0; right: 46px; top: 54px; }
-    84% { width: 55px; right: 0px; top: 35px; }
-    100% { width: 47px; right: 8px; top: 38px; }
-}
-
-/* Success Modal Animations */
-@keyframes success-circle {
-    from {
-        stroke-dasharray: 0 100;
-    }
-    to {
-        stroke-dasharray: 100 100;
-    }
-}
-
-@keyframes success-check {
-    from {
-        stroke-dasharray: 0 100;
-        stroke-dashoffset: 100;
-    }
-    to {
-        stroke-dasharray: 100 100;
-        stroke-dashoffset: 0;
-    }
-}
-
-.success-animation circle {
-    stroke-dasharray: 0 100;
-    animation: success-circle 1s ease-out forwards;
-}
-
-.success-animation path {
-    stroke-dasharray: 0 100;
-    stroke-dashoffset: 100;
-    animation: success-check 0.6s 0.4s ease-out forwards;
-}
-
-.modal-enter {
-    animation: modal-enter 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
-}
-
-@keyframes modal-enter {
-    from {
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    to {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-</style>
-
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize AOS animations
-    AOS.init({
-        duration: 1000,
-        once: true,
-        offset: 50,
-        easing: 'ease-out-cubic'
-    });
-
-    // Typing effect for intro text
-    const typingText = document.getElementById('typing-text');
-    const text = typingText.textContent.trim();
-    typingText.textContent = '';
-    typingText.classList.remove('opacity-0');
-    
-    let charIndex = 0;
-    function typeText() {
-        if (charIndex < text.length) {
-            typingText.textContent += text.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeText, 50);
-        }
-    }
-    setTimeout(typeText, 500);
-
-    // Form validation and submission
+    // Form validation en submission
     const form = document.getElementById('contactForm');
     const inputs = form.querySelectorAll('input, textarea');
 
     inputs.forEach(input => {
         input.addEventListener('invalid', function(e) {
             e.preventDefault();
-            this.classList.add('border-red-500');
+            this.classList.add('border-red-500', 'ring-red-500');
         });
 
         input.addEventListener('input', function() {
-            this.classList.remove('border-red-500');
+            this.classList.remove('border-red-500', 'ring-red-500');
         });
     });
 
@@ -420,9 +332,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
         const formData = new FormData(this);
         const submitButton = this.querySelector('button[type="submit"]');
-        submitButton.disabled = true;
+        const originalHTML = submitButton.innerHTML;
         
-        // Simulate loading state
+        submitButton.disabled = true;
         submitButton.innerHTML = '<span class="flex items-center justify-center"><svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg>Versturen...</span>';
         
         fetch('src/pages/process_contact.php', {
@@ -444,7 +356,7 @@ document.addEventListener('DOMContentLoaded', function() {
         })
         .finally(() => {
             submitButton.disabled = false;
-            submitButton.innerHTML = 'Verstuur Bericht';
+            submitButton.innerHTML = originalHTML;
         });
     });
 });
@@ -455,7 +367,7 @@ function showSuccessModal() {
     
     modal.classList.remove('hidden');
     setTimeout(() => {
-        modalContent.classList.add('scale-100', 'opacity-100', 'modal-enter');
+        modalContent.classList.add('scale-100', 'opacity-100');
     }, 10);
 }
 
@@ -463,7 +375,7 @@ function closeModal() {
     const modal = document.getElementById('successModal');
     const modalContent = document.getElementById('modalContent');
     
-    modalContent.classList.remove('scale-100', 'opacity-100', 'modal-enter');
+    modalContent.classList.remove('scale-100', 'opacity-100');
     setTimeout(() => {
         modal.classList.add('hidden');
     }, 300);

@@ -44,39 +44,39 @@ include $includesPath;
             </div>
 
                 <!-- Hoofd titel met gradient effect -->
-                <h1 class="text-5xl sm:text-6xl md:text-7xl font-black mb-8 tracking-tight">
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-black mb-4 sm:mb-6 lg:mb-8 tracking-tight">
                     <span class="block bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent leading-tight">
                         Mijn Projecten
                     </span>
-                    <span class="block text-3xl sm:text-4xl md:text-5xl font-light text-gray-600 dark:text-gray-300 mt-2">
+                    <span class="block text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-light text-gray-600 dark:text-gray-300 mt-1 sm:mt-2">
                         & Innovaties
                     </span>
             </h1>
 
                 <!-- Beschrijving met betere typografie -->
                 <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
-                    <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+                    <p class="text-base sm:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-6 sm:mb-8">
                         Een collectie van mijn meest impactvolle technische creaties, van webapplicaties tot complexe systemen.
                         Elk project vertelt een verhaal van innovatie, problem-solving en technische excellentie.
                     </p>
                     
                     <!-- Stats sectie -->
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                            <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">15+</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Projecten</div>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 mt-8 sm:mt-10 lg:mt-12">
+                        <div class="text-center p-3 sm:p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 dark:border-gray-700/20">
+                            <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-600 dark:text-blue-400">15+</div>
+                            <div class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium">Projecten</div>
                         </div>
-                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                            <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">8</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Technologieën</div>
+                        <div class="text-center p-3 sm:p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 dark:border-gray-700/20">
+                            <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-purple-600 dark:text-purple-400">8</div>
+                            <div class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium">Technologieën</div>
                         </div>
-                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                            <div class="text-3xl font-bold text-pink-600 dark:text-pink-400">2000+</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Commits</div>
+                        <div class="text-center p-3 sm:p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 dark:border-gray-700/20">
+                            <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-pink-600 dark:text-pink-400">2000+</div>
+                            <div class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium">Commits</div>
                         </div>
-                        <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                            <div class="text-3xl font-bold text-cyan-600 dark:text-cyan-400">4+</div>
-                            <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Jaar Ervaring</div>
+                        <div class="text-center p-3 sm:p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20 dark:border-gray-700/20">
+                            <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-cyan-600 dark:text-cyan-400">4+</div>
+                            <div class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium">Jaar Ervaring</div>
                         </div>
                     </div>
                 </div>
@@ -93,60 +93,60 @@ include $includesPath;
                         <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-pink-500/20 to-purple-500/20 rounded-full -translate-x-1/2 -translate-y-1/2 blur-2xl animate-pulse"></div>
                     </div>
                     
-                    <div class="relative z-10 p-8 lg:p-12">
-                        <div class="flex flex-col xl:flex-row gap-12 items-center">
+                    <div class="relative z-10 p-4 sm:p-6 lg:p-8 xl:p-12">
+                        <div class="flex flex-col xl:flex-row gap-6 sm:gap-8 lg:gap-12 items-center">
                             
                         <!-- Project Info -->
                         <div class="flex-1 w-full">
-                            <div class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6">
-                                    <span class="mr-2 text-yellow-300">⭐</span> Uitgelicht Project
+                            <div class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+                                    <span class="mr-1 sm:mr-2 text-yellow-300">⭐</span> Uitgelicht Project
                             </div>
                             
-                                <h2 class="text-4xl sm:text-5xl xl:text-6xl font-black text-white mb-4">PolitiekPraat</h2>
-                                <p class="text-xl text-white/90 mb-4 font-medium">Samen bouwen aan democratie</p>
+                                <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-2 sm:mb-4">PolitiekPraat</h2>
+                                <p class="text-base sm:text-lg lg:text-xl text-white/90 mb-3 sm:mb-4 font-medium">Samen bouwen aan democratie</p>
                                 
-                                <p class="text-white/80 mb-8 text-lg leading-relaxed">
+                                <p class="text-white/80 mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed">
                                     PolitiekPraat is een belangrijk platform waar mensen open en respectvol praten over politiek in Nederland. 
                                     We moedigen gesprekken aan waarin iedereen zijn mening kan geven en kritisch leert denken over actuele onderwerpen. 
                                     Op ons platform vind je blogs, nieuwsberichten, een stemwijzer, live peilingen en een actief forum.
                                 </p>
                                 
                             <!-- Tech Stack -->
-                                <div class="flex flex-wrap gap-3 mb-8">
-                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
-                                        <i class="fab fa-php mr-2 text-blue-200"></i> PHP
+                                <div class="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-8">
+                                    <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg sm:rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-php mr-1 sm:mr-2 text-blue-200 text-xs sm:text-sm"></i> PHP
                                 </span>
-                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
-                                        <i class="fab fa-laravel mr-2 text-red-200"></i> Laravel
+                                    <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg sm:rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-laravel mr-1 sm:mr-2 text-red-200 text-xs sm:text-sm"></i> Laravel
                                 </span>
-                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
-                                        <i class="fas fa-database mr-2 text-green-200"></i> MySQL
+                                    <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg sm:rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fas fa-database mr-1 sm:mr-2 text-green-200 text-xs sm:text-sm"></i> MySQL
                                 </span>
-                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
-                                        <i class="fab fa-js mr-2 text-yellow-200"></i> JavaScript
+                                    <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg sm:rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-js mr-1 sm:mr-2 text-yellow-200 text-xs sm:text-sm"></i> JavaScript
                                 </span>
                             </div>
                             
                             <!-- Project Stats -->
-                                <div class="grid grid-cols-3 gap-6 mb-8">
-                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                                        <div class="text-3xl font-bold text-blue-300">345+</div>
-                                        <div class="text-sm text-blue-100/80">Commits</div>
+                                <div class="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-6 mb-6 sm:mb-8">
+                                    <div class="text-center p-3 sm:p-4 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20">
+                                        <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-blue-300">345+</div>
+                                        <div class="text-xs sm:text-sm text-blue-100/80">Commits</div>
                                     </div>
-                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                                        <div class="text-3xl font-bold text-purple-300">128+</div>
-                                        <div class="text-sm text-blue-100/80">Bestanden</div>
+                                    <div class="text-center p-3 sm:p-4 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20">
+                                        <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-purple-300">128+</div>
+                                        <div class="text-xs sm:text-sm text-blue-100/80">Bestanden</div>
                                     </div>
-                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                                        <div class="text-3xl font-bold text-pink-300">15K+</div>
-                                        <div class="text-sm text-blue-100/80">Gebruikers</div>
+                                    <div class="text-center p-3 sm:p-4 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20">
+                                        <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-pink-300">15K+</div>
+                                        <div class="text-xs sm:text-sm text-blue-100/80">Gebruikers</div>
                                 </div>
                             </div>
                             
                                 <!-- CTA Button -->
                                 <a href="https://politiekpraat.nl" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-flex items-center px-8 py-4 bg-white text-blue-600 hover:bg-blue-50 rounded-2xl transition-all duration-300 text-lg font-semibold transform hover:scale-105 shadow-lg">
-                                    <i class="fas fa-external-link-alt mr-3"></i> Bekijk Website
+                                   class="inline-flex items-center px-4 py-3 sm:px-6 sm:py-4 lg:px-8 bg-white text-blue-600 hover:bg-blue-50 rounded-xl sm:rounded-2xl transition-all duration-300 text-sm sm:text-base lg:text-lg font-semibold transform hover:scale-105 shadow-lg">
+                                    <i class="fas fa-external-link-alt mr-2 sm:mr-3 text-sm sm:text-base"></i> Bekijk Website
                                 </a>
                             </div>
                             
@@ -238,132 +238,132 @@ include $includesPath;
                         <div class="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-cyan-500/20 to-pink-500/20 rounded-full -translate-x-1/2 -translate-y-1/2 blur-2xl animate-pulse"></div>
                     </div>
                     
-                    <div class="relative z-10 p-8 lg:p-12">
-                        <div class="flex flex-col xl:flex-row gap-12 items-center">
+                    <div class="relative z-10 p-4 sm:p-6 lg:p-8 xl:p-12">
+                        <div class="flex flex-col xl:flex-row gap-6 sm:gap-8 lg:gap-12 items-center">
                             
                             <!-- Project Info -->
                             <div class="flex-1 w-full">
-                                <div class="inline-flex items-center px-4 py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-sm font-medium mb-6">
-                                    <span class="mr-2 text-pink-300">📸</span> Fotografie Portfolio
+                                <div class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs sm:text-sm font-medium mb-4 sm:mb-6">
+                                    <span class="mr-1 sm:mr-2 text-pink-300">📸</span> Fotografie Portfolio
                                 </div>
                                 
-                                <h2 class="text-4xl sm:text-5xl xl:text-6xl font-black text-white mb-4">Elyse Iedema</h2>
-                                <p class="text-xl text-white/90 mb-4 font-medium">Professioneel Fotografieplatform</p>
+                                <h2 class="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-black text-white mb-2 sm:mb-4">Elyse Iedema</h2>
+                                <p class="text-base sm:text-lg lg:text-xl text-white/90 mb-3 sm:mb-4 font-medium">Professioneel Fotografieplatform</p>
                                 
-                                <p class="text-white/80 mb-8 text-lg leading-relaxed">
+                                <p class="text-white/80 mb-6 sm:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed">
                                     Een elegante portfolio website voor professionele fotograaf Elyse Iedema. Het platform toont haar 
                                     prachtige fotografie werk met een moderne, responsieve gallery en professioneel contactsysteem. 
                                     Perfect geoptimaliseerd voor zowel desktop als mobiele weergave.
                                 </p>
                                 
                                 <!-- Tech Stack -->
-                                <div class="flex flex-wrap gap-3 mb-8">
-                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
-                                        <i class="fab fa-php mr-2 text-blue-200"></i> PHP
+                                <div class="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-8">
+                                    <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg sm:rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-php mr-1 sm:mr-2 text-blue-200 text-xs sm:text-sm"></i> PHP
                                     </span>
-                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
-                                        <i class="fas fa-database mr-2 text-green-200"></i> MySQL
+                                    <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg sm:rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fas fa-database mr-1 sm:mr-2 text-green-200 text-xs sm:text-sm"></i> MySQL
                                     </span>
-                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
-                                        <i class="fab fa-js mr-2 text-yellow-200"></i> JavaScript
+                                    <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg sm:rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-js mr-1 sm:mr-2 text-yellow-200 text-xs sm:text-sm"></i> JavaScript
                                     </span>
-                                    <span class="inline-flex items-center px-4 py-2 bg-white/10 backdrop-blur-sm text-white text-sm rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
-                                        <i class="fab fa-bootstrap mr-2 text-purple-200"></i> Bootstrap
+                                    <span class="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 bg-white/10 backdrop-blur-sm text-white text-xs sm:text-sm rounded-lg sm:rounded-xl border border-white/20 hover:bg-white/20 transition-colors">
+                                        <i class="fab fa-bootstrap mr-1 sm:mr-2 text-purple-200 text-xs sm:text-sm"></i> Bootstrap
                                     </span>
                                 </div>
                                 
                                 <!-- Project Stats -->
-                                <div class="grid grid-cols-3 gap-6 mb-8">
-                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                                        <div class="text-3xl font-bold text-pink-300">167+</div>
-                                        <div class="text-sm text-white/80">Commits</div>
+                                <div class="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-6 mb-6 sm:mb-8">
+                                    <div class="text-center p-3 sm:p-4 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20">
+                                        <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-pink-300">167+</div>
+                                        <div class="text-xs sm:text-sm text-white/80">Commits</div>
                                     </div>
-                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                                        <div class="text-3xl font-bold text-purple-300">62+</div>
-                                        <div class="text-sm text-white/80">Bestanden</div>
+                                    <div class="text-center p-3 sm:p-4 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20">
+                                        <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-purple-300">62+</div>
+                                        <div class="text-xs sm:text-sm text-white/80">Bestanden</div>
                                     </div>
-                                    <div class="text-center p-4 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/20">
-                                        <div class="text-3xl font-bold text-cyan-300">500+</div>
-                                        <div class="text-sm text-white/80">Foto's</div>
+                                    <div class="text-center p-3 sm:p-4 bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl border border-white/20">
+                                        <div class="text-xl sm:text-2xl lg:text-3xl font-bold text-cyan-300">500+</div>
+                                        <div class="text-xs sm:text-sm text-white/80">Foto's</div>
                                     </div>
                                 </div>
                                 
                                 <!-- CTA Button -->
                                 <a href="https://elyseiedema.nl" target="_blank" rel="noopener noreferrer" 
-                                   class="inline-flex items-center px-8 py-4 bg-white text-pink-600 hover:bg-pink-50 rounded-2xl transition-all duration-300 text-lg font-semibold transform hover:scale-105 shadow-lg">
-                                    <i class="fas fa-external-link-alt mr-3"></i> Bekijk Portfolio
+                                   class="inline-flex items-center px-4 py-3 sm:px-6 sm:py-4 lg:px-8 bg-white text-pink-600 hover:bg-pink-50 rounded-xl sm:rounded-2xl transition-all duration-300 text-sm sm:text-base lg:text-lg font-semibold transform hover:scale-105 shadow-lg">
+                                    <i class="fas fa-external-link-alt mr-2 sm:mr-3 text-sm sm:text-base"></i> Bekijk Portfolio
                                 </a>
                             </div>
                             
                             <!-- Project Features -->
-                            <div class="flex-1 w-full bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20">
-                                <h3 class="text-2xl font-bold text-white mb-6">Platform Features</h3>
+                            <div class="flex-1 w-full bg-white/10 backdrop-blur-md rounded-2xl sm:rounded-3xl p-4 sm:p-6 lg:p-8 border border-white/20">
+                                <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-white mb-4 sm:mb-6">Platform Features</h3>
                                 
-                                <div class="space-y-6">
+                                <div class="space-y-4 sm:space-y-6">
                                     <div class="flex items-start">
-                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
-                                            <i class="fas fa-images text-white text-lg"></i>
+                                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-white/20 rounded-lg sm:rounded-xl mr-3 sm:mr-4">
+                                            <i class="fas fa-images text-white text-sm sm:text-lg"></i>
                                         </div>
                                         <div>
-                                            <h4 class="font-semibold text-white text-lg">Responsieve Gallery</h4>
-                                            <p class="text-white/80 text-sm">Moderne foto gallery met lightbox en mobile optimalisatie</p>
+                                            <h4 class="font-semibold text-white text-base sm:text-lg">Responsieve Gallery</h4>
+                                            <p class="text-white/80 text-xs sm:text-sm">Moderne foto gallery met lightbox en mobile optimalisatie</p>
                                         </div>
                                     </div>
                                     
                                     <div class="flex items-start">
-                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
-                                            <i class="fas fa-envelope text-white text-lg"></i>
+                                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-white/20 rounded-lg sm:rounded-xl mr-3 sm:mr-4">
+                                            <i class="fas fa-envelope text-white text-sm sm:text-lg"></i>
                                         </div>
                                         <div>
-                                            <h4 class="font-semibold text-white text-lg">Contact Systeem</h4>
-                                            <p class="text-white/80 text-sm">Geïntegreerd contactformulier voor fotoshoot aanvragen</p>
+                                            <h4 class="font-semibold text-white text-base sm:text-lg">Contact Systeem</h4>
+                                            <p class="text-white/80 text-xs sm:text-sm">Geïntegreerd contactformulier voor fotoshoot aanvragen</p>
                                         </div>
                                     </div>
                                     
                                     <div class="flex items-start">
-                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
-                                            <i class="fas fa-palette text-white text-lg"></i>
+                                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-white/20 rounded-lg sm:rounded-xl mr-3 sm:mr-4">
+                                            <i class="fas fa-palette text-white text-sm sm:text-lg"></i>
                                         </div>
                                         <div>
-                                            <h4 class="font-semibold text-white text-lg">Elegante Design</h4>
-                                            <p class="text-white/80 text-sm">Minimalistisch design dat de fotografie centraal stelt</p>
+                                            <h4 class="font-semibold text-white text-base sm:text-lg">Elegante Design</h4>
+                                            <p class="text-white/80 text-xs sm:text-sm">Minimalistisch design dat de fotografie centraal stelt</p>
                                         </div>
                                     </div>
                                     
                                     <div class="flex items-start">
-                                        <div class="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-white/20 rounded-xl mr-4">
-                                            <i class="fas fa-tachometer-alt text-white text-lg"></i>
+                                        <div class="flex-shrink-0 w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center bg-white/20 rounded-lg sm:rounded-xl mr-3 sm:mr-4">
+                                            <i class="fas fa-tachometer-alt text-white text-sm sm:text-lg"></i>
                                         </div>
                                         <div>
-                                            <h4 class="font-semibold text-white text-lg">Performance</h4>
-                                            <p class="text-white/80 text-sm">Geoptimaliseerd voor snelle laadtijden en SEO</p>
+                                            <h4 class="font-semibold text-white text-base sm:text-lg">Performance</h4>
+                                            <p class="text-white/80 text-xs sm:text-sm">Geoptimaliseerd voor snelle laadtijden en SEO</p>
                                         </div>
                                     </div>
                                 </div>
                                 
                                 <!-- Fotografie Specialisaties -->
-                                <div class="mt-8 pt-6 border-t border-white/20">
-                                    <h4 class="text-lg font-bold text-white mb-4">Fotografie Specialisaties</h4>
-                                    <div class="grid grid-cols-2 gap-3">
-                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
-                                            <span class="text-2xl mr-2">💍</span>
-                                            <span class="text-white text-sm font-medium">Bruiloften</span>
+                                <div class="mt-6 sm:mt-8 pt-4 sm:pt-6 border-t border-white/20">
+                                    <h4 class="text-base sm:text-lg font-bold text-white mb-3 sm:mb-4">Fotografie Specialisaties</h4>
+                                    <div class="grid grid-cols-2 gap-2 sm:gap-3">
+                                        <div class="bg-white/10 rounded-lg sm:rounded-xl p-2 sm:p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-lg sm:text-2xl mr-1 sm:mr-2">💍</span>
+                                            <span class="text-white text-xs sm:text-sm font-medium">Bruiloften</span>
                                         </div>
-                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
-                                            <span class="text-2xl mr-2">👶</span>
-                                            <span class="text-white text-sm font-medium">Portretten</span>
+                                        <div class="bg-white/10 rounded-lg sm:rounded-xl p-2 sm:p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-lg sm:text-2xl mr-1 sm:mr-2">👶</span>
+                                            <span class="text-white text-xs sm:text-sm font-medium">Portretten</span>
                                         </div>
-                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
-                                            <span class="text-2xl mr-2">🌸</span>
-                                            <span class="text-white text-sm font-medium">Evenementen</span>
+                                        <div class="bg-white/10 rounded-lg sm:rounded-xl p-2 sm:p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-lg sm:text-2xl mr-1 sm:mr-2">🌸</span>
+                                            <span class="text-white text-xs sm:text-sm font-medium">Evenementen</span>
                                         </div>
-                                        <div class="bg-white/10 rounded-xl p-3 hover:bg-white/15 transition-colors cursor-pointer">
-                                            <span class="text-2xl mr-2">🏢</span>
-                                            <span class="text-white text-sm font-medium">Zakelijk</span>
+                                        <div class="bg-white/10 rounded-lg sm:rounded-xl p-2 sm:p-3 hover:bg-white/15 transition-colors cursor-pointer">
+                                            <span class="text-lg sm:text-2xl mr-1 sm:mr-2">🏢</span>
+                                            <span class="text-white text-xs sm:text-sm font-medium">Zakelijk</span>
                                         </div>
                                     </div>
-                                    <div class="text-center mt-4">
-                                        <span class="text-white/70 text-sm">Professionele fotografie voor alle gelegenheden</span>
+                                    <div class="text-center mt-3 sm:mt-4">
+                                        <span class="text-white/70 text-xs sm:text-sm">Professionele fotografie voor alle gelegenheden</span>
                                     </div>
                             </div>
                         </div>
@@ -373,29 +373,29 @@ include $includesPath;
         </div>
 
             <!-- Filter Systeem -->
-            <div class="relative z-10 flex flex-wrap justify-center gap-4 mb-16" data-aos="fade-up">
+            <div class="relative z-10 flex flex-wrap justify-center gap-2 sm:gap-3 lg:gap-4 mb-12 sm:mb-16" data-aos="fade-up">
                 <button class="filter-btn active" data-filter="all">
                         <span class="flex items-center">
-                            <i class="fas fa-th-large mr-2"></i>
-                            Alle Projecten
+                            <i class="fas fa-th-large mr-1 sm:mr-2 text-xs sm:text-sm"></i>
+                            <span class="text-xs sm:text-sm">Alle Projecten</span>
                         </span>
                     </button>
                 <button class="filter-btn" data-filter="web">
                         <span class="flex items-center">
-                            <i class="fas fa-globe mr-2"></i>
-                            Web Development
+                            <i class="fas fa-globe mr-1 sm:mr-2 text-xs sm:text-sm"></i>
+                            <span class="text-xs sm:text-sm">Web Development</span>
                         </span>
                     </button>
                 <button class="filter-btn" data-filter="app">
                         <span class="flex items-center">
-                            <i class="fas fa-mobile-alt mr-2"></i>
-                            Applicaties
+                            <i class="fas fa-mobile-alt mr-1 sm:mr-2 text-xs sm:text-sm"></i>
+                            <span class="text-xs sm:text-sm">Applicaties</span>
                         </span>
                     </button>
                 <button class="filter-btn" data-filter="system">
                         <span class="flex items-center">
-                            <i class="fas fa-server mr-2"></i>
-                            Systemen
+                            <i class="fas fa-server mr-1 sm:mr-2 text-xs sm:text-sm"></i>
+                            <span class="text-xs sm:text-sm">Systemen</span>
                         </span>
                     </button>
                 </div>
@@ -662,7 +662,7 @@ include $includesPath;
 
 /* Filter buttons */
 .filter-btn {
-    @apply px-6 py-3 rounded-xl text-sm font-medium transition-all duration-300 hover:scale-105 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg text-gray-700 dark:text-gray-200 border border-white/20 dark:border-gray-700/20;
+    @apply px-3 py-2 sm:px-4 sm:py-2.5 lg:px-6 lg:py-3 rounded-lg sm:rounded-xl font-medium transition-all duration-300 hover:scale-105 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg text-gray-700 dark:text-gray-200 border border-white/20 dark:border-gray-700/20;
 }
 
 .filter-btn.active {

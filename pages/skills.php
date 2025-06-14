@@ -9,80 +9,81 @@ $includesPath = file_exists('includes/header.php') ? 'includes/header.php' : '..
 include $includesPath;
 ?>
 
-<!-- Hoofd container met geavanceerde achtergrond -->
+<!-- Hoofd container -->
 <div class="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
     
-    <!-- Geavanceerde achtergrond met meerdere lagen -->
+    <!-- Achtergrond decoratie -->
     <div class="absolute inset-0">
-        <!-- Basis gradient mesh -->
         <div class="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(59,130,246,0.15)_1px,transparent_0)] [background-size:24px_24px]"></div>
-        
-        <!-- Zwevende geometrische vormen -->
-        <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-purple-400/20 to-pink-500/20 rounded-full mix-blend-multiply filter blur-xl animate-slow-float"></div>
-        <div class="absolute top-40 right-10 w-72 h-72 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full mix-blend-multiply filter blur-xl animate-slow-float-reverse"></div>
-        <div class="absolute bottom-20 left-1/3 w-80 h-80 bg-gradient-to-r from-green-400/20 to-blue-500/20 rounded-full mix-blend-multiply filter blur-xl animate-slow-float-delayed"></div>
-        
-        <!-- Subtiele lichteffecten -->
-        <div class="absolute top-0 left-1/4 w-px h-32 bg-gradient-to-b from-purple-500/50 to-transparent"></div>
-        <div class="absolute top-0 right-1/3 w-px h-40 bg-gradient-to-b from-blue-500/50 to-transparent"></div>
-        <div class="absolute top-0 left-3/4 w-px h-24 bg-gradient-to-b from-green-500/50 to-transparent"></div>
+        <div class="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-purple-400/20 to-pink-500/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div class="absolute top-40 right-10 w-72 h-72 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
     </div>
 
     <!-- Content Container -->
     <div class="container mx-auto px-6 lg:px-8 relative z-10">
-        <!-- Header sectie met elegante typografie -->
-        <div class="text-center mb-20">
-            <div class="inline-flex items-center justify-center mb-8">
+        <!-- Header sectie -->
+        <div class="text-center mb-16 pt-20">
+            <div class="inline-flex items-center justify-center mb-6">
                 <div class="flex items-center space-x-3 px-6 py-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-full border border-white/20 dark:border-gray-700/20 shadow-lg">
                     <div class="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></div>
                     <span class="text-purple-600 dark:text-purple-400 font-medium tracking-wide text-sm uppercase">Expertise & Competenties</span>
-                    <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse animation-delay-1000"></div>
-            </div>
+                    <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
+                </div>
             </div>
 
-            <!-- Hoofd titel met gradient effect -->
-            <h1 class="text-5xl sm:text-6xl md:text-7xl font-black mb-8 tracking-tight">
+            <!-- Hoofd titel -->
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black mb-6 tracking-tight">
                 <span class="block bg-gradient-to-r from-gray-900 via-purple-800 to-blue-800 dark:from-white dark:via-purple-200 dark:to-blue-200 bg-clip-text text-transparent leading-tight">
                     Mijn Vaardigheden
                 </span>
-                <span class="block text-3xl sm:text-4xl md:text-5xl font-light text-gray-600 dark:text-gray-300 mt-2">
+                <span class="block text-2xl sm:text-3xl md:text-4xl font-light text-gray-600 dark:text-gray-300 mt-2">
                     & Expertise
                 </span>
             </h1>
 
-            <!-- Professionele introductie -->
-            <div class="max-w-3xl mx-auto">
-                <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
+            <!-- Introductie -->
+            <div class="max-w-3xl mx-auto mb-12">
+                <p class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
                     Een showcase van mijn technische expertise en professionele competenties, opgebouwd door 
                     jarenlange ervaring, continue ontwikkeling en een passie voor innovatie.
                 </p>
+            </div>
                 
-                <!-- Stats sectie -->
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-                    <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                        <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">8+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Technologieën</div>
-                    </div>
-                    <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                        <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">4+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Jaar Ervaring</div>
-                    </div>
-                    <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                        <div class="text-3xl font-bold text-green-600 dark:text-green-400">50+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Competenties</div>
-                    </div>
-                    <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                        <div class="text-3xl font-bold text-pink-600 dark:text-pink-400">100+</div>
-                        <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Uren Studie</div>
-                    </div>
+            <!-- Stats sectie -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="text-center p-6 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                    <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">8+</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Technologieën</div>
+                </div>
+                <div class="text-center p-6 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                    <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">4+</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Jaar Ervaring</div>
+                </div>
+                <div class="text-center p-6 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                    <div class="text-3xl font-bold text-green-600 dark:text-green-400">50+</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Competenties</div>
+                </div>
+                <div class="text-center p-6 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
+                    <div class="text-3xl font-bold text-pink-600 dark:text-pink-400">100+</div>
+                    <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Uren Studie</div>
                 </div>
             </div>
         </div>
 
-        <!-- Hoofdvaardigheden Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 xl:gap-16 mb-20">
-            <!-- Links: Frontend & Backend -->
-            <div class="group">
+        <!-- Hoofdvaardigheden Sectie -->
+        <div class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+                    Technische <span class="text-purple-600 dark:text-purple-400">Vaardigheden</span>
+                </h2>
+                <p class="text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+                    Mijn expertise in frontend en backend ontwikkeling
+                </p>
+            </div>
+
+            <!-- Frontend & Backend Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <!-- Frontend Card -->
                 <!-- Frontend Skills Card -->
                 <div class="group">
                     <div class="relative h-full bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl border border-white/20 dark:border-gray-700/20 shadow-xl shadow-black/5 dark:shadow-black/20 overflow-hidden transform transition-all duration-700 hover:scale-[1.02] hover:shadow-2xl">

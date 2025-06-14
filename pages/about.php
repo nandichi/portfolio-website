@@ -130,64 +130,7 @@ html { scroll-behavior: smooth; }
         <?php endfor; ?>
     </div>
 
-    <!-- Hero Section -->
-    <section class="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            
-            <!-- Hero Content -->
-            <div class="text-center mb-16">
-                <!-- Subtiele badge -->
-                <div class="inline-flex items-center justify-center mb-6">
-                    <div class="flex items-center space-x-3 px-6 py-3 bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-full border border-white/20 dark:border-gray-700/20 shadow-lg">
-                        <div class="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                        <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wide text-sm uppercase">Persoonlijke Introductie</span>
-                        <div class="w-2 h-2 bg-purple-500 rounded-full animate-pulse animation-delay-1000"></div>
-                    </div>
-                </div>
 
-                <div class="fade-in-scale">
-                    <!-- Hoofd titel met gradient effect -->
-                    <h1 class="text-5xl sm:text-6xl md:text-7xl font-black mb-8 tracking-tight">
-                        <span class="block bg-gradient-to-r from-gray-900 via-blue-800 to-purple-800 dark:from-white dark:via-blue-200 dark:to-purple-200 bg-clip-text text-transparent leading-tight">
-                            Over Mij
-                        </span>
-                        <span class="block text-3xl sm:text-4xl md:text-5xl font-light text-gray-600 dark:text-gray-300 mt-2">
-                            & Mijn Verhaal
-                        </span>
-                    </h1>
-                    
-                    <!-- Beschrijving met betere typografie -->
-                    <div class="max-w-3xl mx-auto">
-                        <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                            Een passie voor <span class="font-semibold text-blue-600 dark:text-blue-400">innovatie</span>, 
-                            gedreven door <span class="font-semibold text-purple-600 dark:text-purple-400">creativiteit</span>, 
-                            en toegewijd aan <span class="font-semibold text-indigo-600 dark:text-indigo-400">excellentie</span>
-                        </p>
-                        
-                        <!-- Stats sectie -->
-                        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-                            <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                                <div class="text-3xl font-bold text-blue-600 dark:text-blue-400">4+</div>
-                                <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Jaar Ervaring</div>
-                            </div>
-                            <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                                <div class="text-3xl font-bold text-purple-600 dark:text-purple-400">15K+</div>
-                                <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Gebruikers Bereikt</div>
-                            </div>
-                            <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                                <div class="text-3xl font-bold text-green-600 dark:text-green-400">50+</div>
-                                <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Projecten</div>
-                            </div>
-                            <div class="text-center p-4 bg-white/60 dark:bg-gray-800/60 backdrop-blur-sm rounded-2xl border border-white/20 dark:border-gray-700/20">
-                                <div class="text-3xl font-bold text-pink-600 dark:text-pink-400">100%</div>
-                                <div class="text-sm text-gray-600 dark:text-gray-400 font-medium">Passie</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Profile Section -->
     <section class="relative py-20 px-4 sm:px-6 lg:px-8">
