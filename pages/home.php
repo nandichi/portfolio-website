@@ -13,6 +13,83 @@ $assetsPath = file_exists('assets/images/profile.jpg') ? 'assets' : '../assets';
 include $includesPath;
 ?>
 
+<style>
+/* Custom Animations - Same as about.php */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(100%); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInScale {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.4; }
+    50% { opacity: 1; }
+}
+
+@keyframes morphing {
+    0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+    50% { border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%; }
+}
+
+.float-animation { animation: float 6s ease-in-out infinite; }
+.slide-in-left { animation: slideInLeft 0.8s ease-out forwards; }
+.slide-in-right { animation: slideInRight 0.8s ease-out forwards; }
+.slide-in-up { animation: slideInUp 0.8s ease-out forwards; }
+.fade-in-scale { animation: fadeInScale 0.8s ease-out forwards; }
+.gradient-shift { 
+    background: linear-gradient(-45deg, #667eea, #764ba2, #f093fb, #f5576c);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
+}
+.pulse-custom { animation: pulse 3s infinite; }
+.morphing-shape { animation: morphing 8s ease-in-out infinite; }
+
+/* Animation delays */
+.animation-delay-500 { animation-delay: 0.5s; }
+.animation-delay-1000 { animation-delay: 1s; }
+.animation-delay-1500 { animation-delay: 1.5s; }
+
+/* Glassmorphism Effect */
+.glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Smooth scroll behavior */
+html { scroll-behavior: smooth; }
+</style>
+
 <!-- Stap 1: Basis Hero Structuur met Moderne Layout -->
 <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20 sm:pt-16 lg:pt-0">
     <!-- Stap 2: Geavanceerde Achtergrond Lagen -->
@@ -27,13 +104,13 @@ include $includesPath;
     <!-- Stap 4: Bewegende Gradient Orbs voor Diepte -->
     <div class="absolute inset-0 overflow-hidden">
         <!-- Primaire orb -->
-        <div class="absolute -top-1/4 -right-1/4 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 dark:from-blue-500/10 dark:to-indigo-600/10 rounded-full blur-3xl animate-pulse"></div>
+        <div class="absolute -top-1/4 -right-1/4 w-96 h-96 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 dark:from-blue-500/10 dark:to-indigo-600/10 rounded-full blur-3xl morphing-shape"></div>
         
         <!-- Secundaire orb -->
-        <div class="absolute -bottom-1/4 -left-1/4 w-96 h-96 bg-gradient-to-tr from-indigo-400/20 to-purple-500/20 dark:from-indigo-500/10 dark:to-purple-600/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="absolute -bottom-1/4 -left-1/4 w-96 h-96 bg-gradient-to-tr from-indigo-400/20 to-purple-500/20 dark:from-indigo-500/10 dark:to-purple-600/10 rounded-full blur-3xl morphing-shape" style="animation-delay: -2s;"></div>
         
         <!-- Tertiaire orb voor balans -->
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-blue-300/15 to-indigo-400/15 dark:from-blue-600/8 dark:to-indigo-700/8 rounded-full blur-2xl animate-pulse" style="animation-delay: 4s;"></div>
+        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-gradient-to-r from-blue-300/15 to-indigo-400/15 dark:from-blue-600/8 dark:to-indigo-700/8 rounded-full blur-2xl morphing-shape" style="animation-delay: -4s;"></div>
     </div>
 
     <!-- Stap 5: Professionele Content Container -->
@@ -41,7 +118,7 @@ include $includesPath;
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             
             <!-- Stap 6: Linker Kolom - Professionele Tekstinhoud -->
-            <div class="order-2 lg:order-1 text-center lg:text-left space-y-6 sm:space-y-8">
+            <div class="order-2 lg:order-1 text-center lg:text-left space-y-6 sm:space-y-8 slide-in-left">
 
                 <!-- Hoofdtitel met moderne typografie -->
                 <div class="space-y-3 sm:space-y-4">
@@ -160,10 +237,10 @@ include $includesPath;
             </div>
 
             <!-- Stap 7: Rechter Kolom - Elegante Profiel Sectie -->
-            <div class="order-1 lg:order-2 flex justify-center lg:justify-end mb-6 lg:mb-0">
+            <div class="order-1 lg:order-2 flex justify-center lg:justify-end mb-6 lg:mb-0 slide-in-right">
                 <div class="relative group">
                     <!-- Decoratieve achtergrond ringen -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 dark:from-blue-500/10 dark:to-indigo-600/10 rounded-full blur-3xl transform group-hover:scale-110 transition-transform duration-700"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-400/20 to-indigo-500/20 dark:from-blue-500/10 dark:to-indigo-600/10 rounded-full blur-3xl transform group-hover:scale-110 transition-transform duration-700 float-animation"></div>
                     
                     <!-- Profiel foto container -->
                     <div class="relative w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 xl:w-80 xl:h-80 2xl:w-96 2xl:h-96">
@@ -186,9 +263,9 @@ include $includesPath;
                         </div>
                         
                         <!-- Floating elements -->
-                        <div class="absolute -top-1 sm:-top-2 md:-top-4 -right-1 sm:-right-2 md:-right-4 w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full shadow-lg animate-bounce" style="animation-delay: 0s;"></div>
-                        <div class="absolute -bottom-1 sm:-bottom-2 md:-bottom-4 -left-1 sm:-left-2 md:-left-4 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full shadow-lg animate-bounce" style="animation-delay: 1s;"></div>
-                        <div class="absolute top-4 sm:top-6 md:top-8 -left-2 sm:-left-4 md:-left-8 w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full shadow-lg animate-bounce" style="animation-delay: 2s;"></div>
+                        <div class="absolute -top-1 sm:-top-2 md:-top-4 -right-1 sm:-right-2 md:-right-4 w-4 h-4 sm:w-6 sm:h-6 md:w-8 md:h-8 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full shadow-lg float-animation"></div>
+                        <div class="absolute -bottom-1 sm:-bottom-2 md:-bottom-4 -left-1 sm:-left-2 md:-left-4 w-3 h-3 sm:w-4 sm:h-4 md:w-6 md:h-6 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-full shadow-lg float-animation animation-delay-500"></div>
+                        <div class="absolute top-4 sm:top-6 md:top-8 -left-2 sm:-left-4 md:-left-8 w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 bg-gradient-to-br from-purple-400 to-purple-600 rounded-full shadow-lg float-animation animation-delay-1000"></div>
                     </div>
                 </div>
             </div>
@@ -197,12 +274,12 @@ include $includesPath;
 </section>
 
 <!-- Quick Projects & Skills Overview -->
-<section class="py-16 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-t border-gray-100 dark:border-gray-800">
+<section class="py-16 bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-t border-gray-100 dark:border-gray-800 slide-in-up">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
             
             <!-- Recent Projects -->
-            <div class="space-y-4 sm:space-y-6">
+            <div class="space-y-4 sm:space-y-6 slide-in-left">
                 <div class="flex items-center gap-2 sm:gap-3">
                     <svg class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
@@ -262,7 +339,7 @@ include $includesPath;
             </div>
             
             <!-- Core Skills -->
-            <div class="space-y-4 sm:space-y-6">
+            <div class="space-y-4 sm:space-y-6 slide-in-right">
                 <div class="flex items-center gap-2 sm:gap-3">
                     <svg class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
@@ -404,7 +481,7 @@ include $includesPath;
 </style>
 
 <!-- Expertise & Vaardigheden sectie -->
-<section class="relative py-32 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/30 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95">
+<section class="relative py-32 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/30 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900/95 slide-in-up">
     <!-- Stap 1: Geavanceerde achtergrond lagen -->
     <div class="absolute inset-0 overflow-hidden">
         <!-- Primaire gradient mesh -->
@@ -471,7 +548,7 @@ include $includesPath;
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-12">
             
             <!-- Card 1: Technische Expertise -->
-            <div class="group">
+            <div class="group slide-in-left">
                 <div class="relative h-full overflow-hidden bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/30 transform hover:-translate-y-3 hover:rotate-1">
                     
                     <!-- Decoratieve top accent -->
@@ -571,7 +648,7 @@ include $includesPath;
             </div>
 
             <!-- Card 2: Soft Skills -->
-            <div class="group">
+            <div class="group slide-in-up">
                 <div class="relative h-full overflow-hidden bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/30 transform hover:-translate-y-3 hover:-rotate-1">
                     
                     <!-- Decoratieve top accent -->
@@ -671,7 +748,7 @@ include $includesPath;
             </div>
 
             <!-- Card 3: Innovatieve Aanpak -->
-            <div class="group">
+            <div class="group slide-in-right">
                 <div class="relative h-full overflow-hidden bg-white/70 dark:bg-gray-800/70 backdrop-blur-xl rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-700 border border-gray-200/50 dark:border-gray-700/30 transform hover:-translate-y-3 hover:rotate-1">
                     
                     <!-- Decoratieve top accent -->
@@ -791,7 +868,7 @@ include $includesPath;
 </section>
 
 <!-- LinkedIn Integratie Sectie -->
-<section class="relative py-32 overflow-hidden bg-gradient-to-br from-white via-slate-50/40 to-blue-50/20 dark:from-gray-900 dark:via-slate-900/60 dark:to-gray-900/95">
+<section class="relative py-32 overflow-hidden bg-gradient-to-br from-white via-slate-50/40 to-blue-50/20 dark:from-gray-900 dark:via-slate-900/60 dark:to-gray-900/95 fade-in-scale">
     <!-- Stap 1: Verfijnde LinkedIn-geïnspireerde achtergrond -->
     <div class="absolute inset-0 overflow-hidden">
         <!-- Primaire LinkedIn kleur overlay -->
@@ -1225,7 +1302,7 @@ include $includesPath;
 </section>
 
 <!-- Werkervaring & Bijbanen sectie -->
-<section class="py-24 px-4 bg-gradient-to-b from-white via-blue-50/30 to-white dark:from-gray-900 dark:via-gray-800/50 dark:to-gray-900 relative overflow-hidden">
+<section class="py-24 px-4 bg-gradient-to-b from-white via-blue-50/30 to-white dark:from-gray-900 dark:via-gray-800/50 dark:to-gray-900 relative overflow-hidden slide-in-up">
     <!-- Subtiele geometrische patronen -->
     <div class="absolute inset-0">
         <div class="absolute top-0 left-0 w-full h-full opacity-10 dark:opacity-5" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%234F46E5\' fill-opacity=\'0.4\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
@@ -1499,7 +1576,7 @@ include $includesPath;
 </section>
 
 <!-- Skills Overview Section -->
-<section class="py-20 px-4 bg-gradient-to-b from-blue-50/80 via-indigo-50/90 to-purple-50/90 dark:from-gray-800 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden">
+<section class="py-20 px-4 bg-gradient-to-b from-blue-50/80 via-indigo-50/90 to-purple-50/90 dark:from-gray-800 dark:via-gray-800 dark:to-gray-900 relative overflow-hidden slide-in-left">
     <!-- Animated background patterns -->
     <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
     <div class="absolute inset-0">
@@ -1715,7 +1792,7 @@ include $includesPath;
 
 
 <!-- Professionele Ontwikkeling Sectie - Moderne Redesign -->
-<section class="py-32 relative overflow-hidden bg-gradient-to-b from-slate-50 to-white dark:from-gray-900 dark:to-gray-800">
+<section class="py-32 relative overflow-hidden bg-gradient-to-b from-slate-50 to-white dark:from-gray-900 dark:to-gray-800 slide-in-right">
     <!-- Subtiele achtergrond elementen -->
     <div class="absolute inset-0 overflow-hidden">
         <!-- Gradient orbs -->
@@ -2119,7 +2196,7 @@ include $includesPath;
 
 
 <!-- Stage Ervaringen Sectie - Professioneel & Elegant -->
-<section class="relative py-32 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-blue-900/20">
+<section class="relative py-32 overflow-hidden bg-gradient-to-br from-slate-50 via-white to-blue-50/30 dark:from-slate-900 dark:via-slate-800 dark:to-blue-900/20 fade-in-scale">
     <!-- Decoratieve achtergrond elementen -->
     <div class="absolute inset-0">
         <!-- Subtiele gradient overlay -->
@@ -2449,36 +2526,79 @@ $includesFooterPath = file_exists('includes/footer.php') ? 'includes/footer.php'
 include $includesFooterPath; 
 ?>
 
-<!-- Voeg lazy loading script toe aan het einde van de body -->
+<!-- Advanced JavaScript for Enhanced Interactivity -->
 <script>
-// Intersection Observer voor lazy loading van secties
 document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('section');
+    // Enhanced Intersection Observer for smooth animations
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+    };
     
-    const sectionObserver = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('section-visible');
-                observer.unobserve(entry.target);
+                entry.target.classList.add('animate-in');
+                
+                // Trigger any additional effects
+                if (entry.target.classList.contains('group/skill')) {
+                    const progressBar = entry.target.querySelector('[style*="width"]');
+                    if (progressBar) {
+                        progressBar.style.transform = 'scaleX(' + progressBar.style.width.replace('%', '') / 100 + ')';
+                    }
+                }
             }
         });
-    }, {
-        threshold: 0.1
+    }, observerOptions);
+    
+    // Observe all animated elements
+    document.querySelectorAll('.slide-in-left, .slide-in-right, .slide-in-up, .fade-in-scale').forEach(el => {
+        observer.observe(el);
     });
-
-    sections.forEach(section => {
-        section.classList.add('opacity-0', 'transform', 'translate-y-10', 'transition-all', 'duration-700');
-        sectionObserver.observe(section);
+    
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
     });
-});
-
-// CSS voor fade-in animatie
-const style = document.createElement('style');
-style.textContent = `
-    .section-visible {
-        opacity: 1 !important;
-        transform: translateY(0) !important;
+    
+    // Enhanced card hover effects
+    document.querySelectorAll('.group').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+            this.style.transition = 'all 0.3s ease';
+            this.style.transform = 'translateY(-5px)';
+            this.style.boxShadow = '0 20px 40px rgba(0,0,0,0.1)';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0px)';
+            this.style.boxShadow = 'none';
+        });
+    });
+    
+    // Accessibility: Respect prefers-reduced-motion
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    
+    if (prefersReducedMotion.matches) {
+        // Disable animations for users who prefer reduced motion
+        document.querySelectorAll('[class*="animate-"]').forEach(el => {
+            el.style.animation = 'none';
+        });
+        
+        document.querySelectorAll('[class*="transition-"]').forEach(el => {
+            el.style.transition = 'none';
+        });
     }
-`;
-document.head.appendChild(style);
+    
+    console.log('🚀 Home page animations initialized successfully!');
+});
 </script>
