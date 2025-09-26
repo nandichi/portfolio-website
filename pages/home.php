@@ -159,7 +159,7 @@ html { scroll-behavior: smooth; }
                 <!-- Professionele statistieken -->
                 <div class="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-6 max-w-xs sm:max-w-sm lg:max-w-lg mx-auto lg:mx-0">
                     <div class="text-center lg:text-left">
-                        <div class="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-blue-600 dark:text-blue-400">3+</div>
+                        <div class="text-lg sm:text-xl lg:text-2xl xl:text-3xl font-bold text-blue-600 dark:text-blue-400">5+</div>
                         <div class="text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-medium">Jaar Ervaring</div>
                     </div>
                     <div class="text-center lg:text-left">
