@@ -190,7 +190,7 @@ html { scroll-behavior: smooth; }
                                     <div class="hidden sm:block w-1 h-1 bg-gray-400 rounded-full"></div>
                                     <div class="flex items-center gap-2">
                                         <i class="fas fa-graduation-cap text-blue-500"></i>
-                                        <span>RijnIJssel Student</span>
+                                        <span>Afgestudeerd bij RijnIJssel</span>
                                     </div>
                                 </div>
                             </div>
@@ -229,22 +229,22 @@ html { scroll-behavior: smooth; }
                             <!-- Story Content -->
                             <div class="space-y-6 text-gray-700 dark:text-gray-300 leading-relaxed">
                                 <p class="text-lg">
-                                    Als <span class="font-semibold text-blue-600 dark:text-blue-400">passioneerder software developer</span> 
-                                    in opleiding bij het RijnIJssel in Arnhem, werk ik dagelijks aan het verwezenlijken van 
-                                    <span class="font-semibold text-purple-600 dark:text-purple-400">innovatieve digitale oplossingen</span>.
+                                    Als <span class="font-semibold text-blue-600 dark:text-blue-400">gepassioneerde software developer</span> 
+                                    afgestudeerd bij het RijnIJssel in Arnhem, werk ik elke dag aan het maken van 
+                                    <span class="font-semibold text-purple-600 dark:text-purple-400">mooie websites en apps</span>.
                                 </p>
                                 
                                 <p class="text-lg">
-                                    Mijn reis begon met nieuwsgierigheid naar hoe technologie werkt, en is uitgegroeid tot een 
-                                    <span class="font-semibold text-indigo-600 dark:text-indigo-400">diepe passie voor ontwikkeling</span>. 
-                                    Ik geloof in de kracht van clean code, gebruiksvriendelijk design en continue learning.
+                                    Het begon allemaal met nieuwsgierigheid naar hoe computers werken, en nu is het uitgegroeid tot 
+                                    <span class="font-semibold text-indigo-600 dark:text-indigo-400">mijn grootste hobby en werk</span>. 
+                                    Ik vind het belangrijk om nette code te schrijven, websites te maken die fijn werken en altijd nieuwe dingen te leren.
                                 </p>
                                 
                                 <p class="text-lg">
-                                    Momenteel werk ik bij <span class="font-semibold text-green-600 dark:text-green-400">Developing B.V.</span>, 
-                                    waar ik mijn vaardigheden in de praktijk breng en voortdurend nieuwe technieken leer. 
-                                    Van WordPress tot Laravel, van vanilla JavaScript tot moderne frameworks - 
-                                    ik sta altijd open voor nieuwe uitdagingen.
+                                    Op dit moment werk ik bij <span class="font-semibold text-green-600 dark:text-green-400">Developing B.V.</span>, 
+                                    waar ik elke dag mijn kennis in de praktijk breng en nieuwe technieken leer. 
+                                    Of het nu WordPress is, Laravel, JavaScript of andere tools, 
+                                    ga ik graag nieuwe uitdagingen aan.
                                 </p>
                             </div>
                             
@@ -308,18 +308,18 @@ html { scroll-behavior: smooth; }
                                 Software Developer
                             </p>
                             <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                                Student bij het RijnIJssel in Arnhem. Specialisatie in moderne webontwikkeling 
-                                met focus op innovatieve technologieën en praktijkgerichte projecten.
+                                Afgestudeerd bij het RijnIJssel in Arnhem met een specialisatie in moderne webontwikkeling. 
+                                Focus lag op het leren van nieuwe technologieën en het werken aan praktische projecten.
                             </p>
                             
                             <!-- Progress Bar -->
                             <div class="space-y-2">
                                 <div class="flex justify-between text-sm">
-                                    <span class="text-gray-600 dark:text-gray-400">Voortgang</span>
-                                    <span class="text-blue-600 dark:text-blue-400 font-semibold">85%</span>
+                                    <span class="text-gray-600 dark:text-gray-400">Status</span>
+                                    <span class="text-green-600 dark:text-green-400 font-semibold">Afgestudeerd</span>
                                 </div>
                                 <div class="w-full h-2 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                                    <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full transform origin-left scale-x-0 group-hover:scale-x-[0.85] transition-transform duration-1000 ease-out" style="transform: scaleX(0.85);"></div>
+                                    <div class="h-full bg-gradient-to-r from-green-500 to-emerald-600 rounded-full transform origin-left transition-transform duration-1000 ease-out" style="transform: scaleX(1);"></div>
                                 </div>
                             </div>
                         </div>
@@ -354,8 +354,8 @@ html { scroll-behavior: smooth; }
                                 Developing B.V.
                             </p>
                             <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                                Praktijkervaring met moderne tools: WordPress, PHP/Laravel, Tailwind CSS. 
-                                Ontwikkeling van diverse professionele projecten in een dynamische omgeving.
+                                Praktijkervaring opgedaan met WordPress, PHP/Laravel en Tailwind CSS. 
+                                Verschillende professionele projecten ontwikkeld in een dynamische werkomgeving.
                             </p>
                             
                             <!-- Tech Stack Tags -->
@@ -396,8 +396,8 @@ html { scroll-behavior: smooth; }
                                 Persoonlijke Ontwikkeling
                             </p>
                             <p class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                                Continue learning, innovatieve projecten ontwikkelen, en bijdragen aan de 
-                                tech community. Focus op modern development en emerging technologies.
+                                Blijven leren, innovatieve projecten ontwikkelen en bijdragen aan de 
+                                tech community. Focus op moderne ontwikkeling en nieuwe technologieën.
                             </p>
                             
                             <!-- Skills Icons -->
@@ -436,7 +436,7 @@ html { scroll-behavior: smooth; }
                                 Technische Vaardigheden
                             </h3>
                             <p class="text-xl text-gray-600 dark:text-gray-300">
-                                Mijn expertise in moderne webtechnologieën
+                                Mijn kennis en ervaring met moderne webtechnologieën
                             </p>
                         </div>
                         
@@ -599,7 +599,7 @@ html { scroll-behavior: smooth; }
                                         
                                         <div class="space-y-4">
                                             <div class="flex items-center gap-3 lg:justify-end">
-                                                <span class="lg:order-2 text-gray-700 dark:text-gray-300">Afstuderen als Software Developer</span>
+                                                <span class="lg:order-2 text-gray-700 dark:text-gray-300">Afgestudeerd als Software Developer</span>
                                                 <div class="lg:order-1 w-6 h-6 rounded-full bg-green-500 flex items-center justify-center flex-shrink-0">
                                                     <i class="fas fa-check text-white text-xs"></i>
                                                 </div>
@@ -734,10 +734,10 @@ html { scroll-behavior: smooth; }
                                                 <i class="fab fa-react text-blue-500 text-xl"></i>
                                                 <span class="text-gray-700 dark:text-gray-300">React & Next.js beheersen</span>
                                             </div>
-                                            <div class="flex items-center gap-3">
-                                                <i class="fab fa-vuejs text-green-500 text-xl"></i>
-                                                <span class="text-gray-700 dark:text-gray-300">Vue.js specialist worden</span>
-                                            </div>
+                                <div class="flex items-center gap-3">
+                                    <i class="fab fa-vuejs text-green-500 text-xl"></i>
+                                    <span class="text-gray-700 dark:text-gray-300">Vue.js beter leren</span>
+                                </div>
                                             <div class="flex items-center gap-3">
                                                 <i class="fab fa-node-js text-yellow-500 text-xl"></i>
                                                 <span class="text-gray-700 dark:text-gray-300">Node.js backend masteren</span>

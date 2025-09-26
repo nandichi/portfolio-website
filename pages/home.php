@@ -156,22 +156,6 @@ html { scroll-behavior: smooth; }
                         bouw ik robuuste backend-systemen, moderne frontends en intuïtieve gebruikerservaringen die echte problemen oplossen.
                     </p>
                 </div>
-
-                <!-- Persoonlijke Quote -->
-                <div class="relative p-4 sm:p-6 bg-gradient-to-r from-blue-50/50 via-indigo-50/30 to-purple-50/50 dark:from-blue-900/10 dark:via-indigo-900/10 dark:to-purple-900/10 rounded-2xl border border-blue-100/50 dark:border-blue-700/20 max-w-2xl mx-auto lg:mx-0 mb-8">
-                    <svg class="absolute top-3 left-3 sm:top-4 sm:left-4 w-4 h-4 sm:w-6 sm:h-6 text-blue-500/30 dark:text-blue-400/30" fill="currentColor" viewBox="0 0 32 32">
-                        <path d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z"/>
-                    </svg>
-                    <div class="pl-6 sm:pl-8">
-                        <p class="text-gray-700 dark:text-gray-300 font-medium italic text-sm sm:text-base lg:text-lg leading-relaxed mb-2">
-                            "Code is poetry in motion - elke regel vertelt een verhaal, elke functie heeft een doel."
-                        </p>
-                        <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-400">
-                            Waarom ik voor software development koos: De combinatie van logisch denken en creatieve probleemoplossing fascineert mij elke dag opnieuw.
-                        </p>
-                    </div>
-                </div>
-
                 <!-- Professionele statistieken -->
                 <div class="grid grid-cols-3 gap-3 sm:gap-4 lg:gap-6 max-w-xs sm:max-w-sm lg:max-w-lg mx-auto lg:mx-0">
                     <div class="text-center lg:text-left">
@@ -803,7 +787,7 @@ html { scroll-behavior: smooth; }
                         <!-- Header -->
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#0A66C2]/20 shadow-sm">
-                                <img src="https://media.licdn.com/dms/image/v2/D4E03AQEdSLhdnJNFrw/profile-displayphoto-shrink_800_800/B4EZdts0VTHcAc-/0/1749892155295?e=1756944000&v=beta&t=gM6tz6UZrBH6X33hSI0gElZ7iu-IqNGUm8GdAF6tZCY" 
+                                <img src="https://media.licdn.com/dms/image/v2/D4E03AQEdSLhdnJNFrw/profile-displayphoto-shrink_800_800/B4EZdts0VTHcAc-/0/1749892155295?e=1761782400&v=beta&t=tIPsAiX2UWU7j0c9bE6wWsneCw6ofqjJRUy7N3txKJw" 
                                      alt="Naoufal Andichi" 
                                      class="w-full h-full object-cover">
                             </div>
@@ -867,7 +851,7 @@ html { scroll-behavior: smooth; }
                         <!-- Header -->
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#0A66C2]/20 shadow-sm">
-                                <img src="https://media.licdn.com/dms/image/v2/D4E03AQEdSLhdnJNFrw/profile-displayphoto-shrink_800_800/B4EZdts0VTHcAc-/0/1749892155295?e=1756944000&v=beta&t=gM6tz6UZrBH6X33hSI0gElZ7iu-IqNGUm8GdAF6tZCY" 
+                                <img src="https://media.licdn.com/dms/image/v2/D4E03AQEdSLhdnJNFrw/profile-displayphoto-shrink_800_800/B4EZdts0VTHcAc-/0/1749892155295?e=1761782400&v=beta&t=tIPsAiX2UWU7j0c9bE6wWsneCw6ofqjJRUy7N3txKJw" 
                                      alt="Naoufal Andichi" 
                                      class="w-full h-full object-cover">
                             </div>
@@ -918,7 +902,7 @@ html { scroll-behavior: smooth; }
                 </div>
             </article>
 
-            <!-- Post 3 - Portfolio Website -->
+            <!-- Post 3 - D66 Kandidatuur -->
             <article class="group">
                 <div class="relative h-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-200/50 dark:border-slate-700/50 transform hover:-translate-y-2 overflow-hidden">
                     
@@ -931,24 +915,24 @@ html { scroll-behavior: smooth; }
                         <!-- Header -->
                         <div class="flex items-center gap-3 mb-6">
                             <div class="w-12 h-12 rounded-full overflow-hidden border-2 border-[#0A66C2]/20 shadow-sm">
-                                <img src="https://media.licdn.com/dms/image/v2/D4E03AQEdSLhdnJNFrw/profile-displayphoto-shrink_800_800/B4EZdts0VTHcAc-/0/1749892155295?e=1756944000&v=beta&t=gM6tz6UZrBH6X33hSI0gElZ7iu-IqNGUm8GdAF6tZCY" 
+                                <img src="https://media.licdn.com/dms/image/v2/D4E03AQEdSLhdnJNFrw/profile-displayphoto-shrink_800_800/B4EZdts0VTHcAc-/0/1749892155295?e=1761782400&v=beta&t=tIPsAiX2UWU7j0c9bE6wWsneCw6ofqjJRUy7N3txKJw" 
                                      alt="Naoufal Andichi" 
                                      class="w-full h-full object-cover">
                             </div>
                             <div class="flex-1">
                                 <h3 class="font-bold text-gray-900 dark:text-white">Naoufal Andichi</h3>
-                                <p class="text-sm text-gray-500 dark:text-gray-400">Software Developer • 2 maanden geleden</p>
+                                <p class="text-sm text-gray-500 dark:text-gray-400">Software Developer • 5 dagen geleden</p>
                             </div>
                         </div>
 
                         <!-- Post content -->
                         <div class="flex-1 space-y-4">
                             <h4 class="text-lg font-bold text-gray-900 dark:text-white group-hover:text-[#0A66C2] transition-colors duration-300">
-                                🚀 Trots om mijn nieuwe portfolio website te delen!
+                                Officieel nieuws: ik ben kandidaat voor de gemeenteraadsverkiezingen in Ede namens D66!
                             </h4>
                             
                             <p class="text-gray-600 dark:text-gray-300 text-sm leading-relaxed">
-                                Als student Software Developer bij het RijnIJssel heb ik een moderne, volledig responsive portfolio website ontwikkeld die mijn technische vaardigheden en expertise showcased...
+                                Met veel enthousiasme deel ik dat mijn kandidaatstelling voor de lijst van D66 Ede officieel is goedgekeurd. Dat betekent dat ik mij mag inzetten voor een toekomstbestendig, duurzaam en inclusief Ede tijdens de gemeenteraadsverkiezingen op 18 maart 2026...
                             </p>
                         </div>
                         
@@ -959,17 +943,17 @@ html { scroll-behavior: smooth; }
                                     <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
                                     </svg>
-                                    56
+                                    9
                                 </span>
                                 <span class="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400">
                                     <svg class="w-4 h-4 text-[#0A66C2]" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M21.99 4c0-1.1-.89-2-1.99-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4-.01-18z"/>
                                     </svg>
-                                    18
+                                    4
                                 </span>
                             </div>
                             
-                            <a href="https://www.linkedin.com/posts/naoufalandichi_home-naoufal-andichi-activity-7285188980046770176-HMK_?utm_source=share&utm_medium=member_desktop&rcm=ACoAADugN0IBSlrEfqwmiuI8q8mCluqNgb16Wa0" 
+                            <a href="https://www.linkedin.com/posts/naoufalandichi_d66-ede-gemeenteraadsverkiezingen-activity-7375138117890048000-d5Xs?utm_source=share&utm_medium=member_desktop&rcm=ACoAADugN0IBSlrEfqwmiuI8q8mCluqNgb16Wa0" 
                                target="_blank" rel="noopener noreferrer" 
                                class="inline-flex items-center gap-1 text-sm font-medium text-[#0A66C2] hover:text-blue-700 transition-colors">
                                 Bekijk post
@@ -1001,6 +985,222 @@ html { scroll-behavior: smooth; }
                     <svg class="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
                     </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Politieke Ambities Section -->
+<section class="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-emerald-50 via-white to-green-50/30 dark:from-gray-900 dark:via-slate-900 dark:to-emerald-900/20">
+    <!-- Moderne achtergrond elementen -->
+    <div class="absolute inset-0 overflow-hidden">
+        <!-- Subtiele gradient overlays -->
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,_var(--tw-gradient-stops))] from-emerald-500/5 via-transparent to-transparent"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,_var(--tw-gradient-stops))] from-green-500/5 via-transparent to-transparent"></div>
+        
+        <!-- Floating decoratieve elementen -->
+        <div class="absolute top-20 left-10 w-2 h-2 bg-emerald-500/20 rounded-full animate-pulse"></div>
+        <div class="absolute top-40 right-20 w-1 h-1 bg-green-500/30 rounded-full animate-pulse" style="animation-delay: 2s;"></div>
+        <div class="absolute bottom-40 left-20 w-1.5 h-1.5 bg-emerald-500/25 rounded-full animate-pulse" style="animation-delay: 4s;"></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Moderne header sectie -->
+        <div class="text-center mb-16 lg:mb-24">
+            <!-- Politiek icoon met decoratieve elementen -->
+            <div class="flex items-center justify-center mb-8">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-emerald-500/10 blur-xl rounded-full transform scale-150"></div>
+                    <div class="relative p-4 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 dark:border-slate-700/50 group hover:scale-105 transition-all duration-300">
+                        <svg class="w-8 h-8 text-emerald-600 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0h3m-3 0h-3m15 0v-5.586a1 1 0 00-.293-.707l-1.414-1.414M13 21h2.586a1 1 0 00.707-.293l1.414-1.414"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Hoofdtitel -->
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+                Politieke <span class="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">Ambities</span>
+            </h2>
+            
+            <!-- Subtitle -->
+            <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto leading-relaxed">
+                Van tech tot democratie - mijn missie om politiek toegankelijker te maken
+            </p>
+        </div>
+
+        <!-- Content grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 mb-16">
+            
+            <!-- D66 Kandidatuur -->
+            <article class="group">
+                <div class="relative h-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-200/50 dark:border-slate-700/50 transform hover:-translate-y-2 overflow-hidden">
+                    
+                    <!-- D66 accent -->
+                    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-emerald-600 to-green-600"></div>
+                    
+                    <!-- Content -->
+                    <div class="p-8 h-full flex flex-col">
+                        
+                        <!-- Header met D66 logo stijl -->
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-16 h-16 bg-gradient-to-br from-emerald-500 to-green-600 rounded-2xl flex items-center justify-center shadow-lg transform transition-transform duration-300 group-hover:scale-110">
+                                <span class="text-white font-bold text-xl">D66</span>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">Gemeenteraadskandidaat</h3>
+                                <p class="text-emerald-600 dark:text-emerald-400 font-medium">D66 Ede • Verkiezingen 18 maart 2026</p>
+                            </div>
+                        </div>
+
+                        <!-- Quote -->
+                        <div class="relative mb-8">
+                            <svg class="absolute -top-2 -left-2 w-8 h-8 text-emerald-500/20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                            </svg>
+                            <blockquote class="text-gray-700 dark:text-gray-300 text-lg italic pl-6 leading-relaxed">
+                                "Ik kijk ernaar uit om samen met andere betrokken leden en inwoners van Ede te werken aan een sterke en progressieve visie voor onze gemeente."
+                            </blockquote>
+                        </div>
+
+                        <!-- Kernpunten -->
+                        <div class="space-y-4 mb-8">
+                            <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Wat mij drijft:</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
+                                    <span class="text-gray-600 dark:text-gray-300">Een toekomstbestendig, duurzaam en inclusief Ede</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
+                                    <span class="text-gray-600 dark:text-gray-300">Vrijheid, eigen verantwoordelijkheid en onderwijs voorop</span>
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <div class="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></div>
+                                    <span class="text-gray-600 dark:text-gray-300">Politiek toegankelijk maken voor iedereen</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Badge -->
+                        <div class="mt-auto">
+                            <span class="inline-flex items-center gap-2 px-4 py-2 bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-300 rounded-xl text-sm font-medium">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                                Kandidatuur goedgekeurd
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PolitiekPraat Project -->
+            <article class="group">
+                <div class="relative h-full bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-xl transition-all duration-500 border border-gray-200/50 dark:border-slate-700/50 transform hover:-translate-y-2 overflow-hidden">
+                    
+                    <!-- Project accent -->
+                    <div class="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-blue-600 to-indigo-600"></div>
+                    
+                    <!-- Content -->
+                    <div class="p-8 h-full flex flex-col">
+                        
+                        <!-- Header -->
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center shadow-lg transform transition-transform duration-300 group-hover:scale-110">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-2xl font-bold text-gray-900 dark:text-white mb-2">PolitiekPraat</h3>
+                                <p class="text-blue-600 dark:text-blue-400 font-medium">Politiek Platform • politiekpraat.nl</p>
+                            </div>
+                        </div>
+
+                        <!-- Mission -->
+                        <div class="space-y-6 mb-8">
+                            <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                                Een platform dat ik in mijn vrije tijd heb ontwikkeld omdat ik politiek toegankelijker wil maken voor iedereen. Geen ingewikkelde taal, gewoon helder en eerlijk.
+                            </p>
+                            
+                            <div class="space-y-4">
+                                <h4 class="text-lg font-semibold text-gray-800 dark:text-gray-200">Platform features:</h4>
+                                <div class="grid grid-cols-2 gap-3">
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                        </svg>
+                                        <span class="text-sm text-gray-600 dark:text-gray-300">PartijMeter</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                        </svg>
+                                        <span class="text-sm text-gray-600 dark:text-gray-300">Stemwijzer</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                        </svg>
+                                        <span class="text-sm text-gray-600 dark:text-gray-300">Politieke Blogs</span>
+                                    </div>
+                                    <div class="flex items-center gap-2">
+                                        <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                                        </svg>
+                                        <span class="text-sm text-gray-600 dark:text-gray-300">Partij Analyses</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Statistics -->
+                        <div class="mt-auto grid grid-cols-2 gap-4 pt-6 border-t border-gray-200/50 dark:border-slate-700/50">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">150+</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400">Artikelen</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">50k+</div>
+                                <div class="text-xs text-gray-500 dark:text-gray-400">Lezers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Visie Statement -->
+        <div class="text-center bg-white/60 dark:bg-slate-800/60 backdrop-blur-sm rounded-2xl p-8 lg:p-12 border border-gray-200/50 dark:border-slate-700/50 shadow-lg">
+            <h3 class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-6">
+                Mijn Politieke Visie
+            </h3>
+            <p class="text-lg text-gray-600 dark:text-gray-300 max-w-4xl mx-auto leading-relaxed mb-8">
+                <strong class="text-gray-800 dark:text-gray-200">Ik ben liberaal omdat vrijheid pas betekenis heeft als iedereen gelijke kansen krijgt om te groeien.</strong> Daarom kies ik voor D66: we investeren massaal in onderwijs en innovatie, versnellen de woningbouw voor jonge gezinnen, beschermen ons klimaat voor toekomstige generaties en bouwen aan een overheid die écht dienstbaar is. 
+                <br><br>
+                <em>Ik geloof in de kracht van verandering door verbinding.</em> Politiek is voor mij niet alleen besturen, maar bruggen bouwen tussen generaties, tussen ideeën, tussen dromen en realiteit. D66 spreekt mij aan omdat we durven te innoveren, omdat we geloven in de moed om vooruit te kijken en omdat we weten dat echte vooruitgang ontstaat wanneer iedereen mee kan doen.
+                <br><br>
+                <strong class="text-emerald-600 dark:text-emerald-400">Mijn missie is helder:</strong> een toekomstbestendig, duurzaam en inclusief Ede waar innovatie en vrijheid hand in hand gaan. Stap voor stap, resultaatgericht en altijd met de inwoner centraal.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://www.linkedin.com/posts/naoufalandichi_d66-ede-gemeenteraadsverkiezingen-activity-7375138117890048000-d5Xs" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                    Lees mijn aankondiging
+                </a>
+                <a href="https://politiekpraat.nl" 
+                   target="_blank" rel="noopener noreferrer"
+                   class="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
+                    </svg>
+                    Bezoek PolitiekPraat
                 </a>
             </div>
         </div>
@@ -1441,7 +1641,7 @@ html { scroll-behavior: smooth; }
             
             <!-- Verbeterde ondertitel -->
             <p class="max-w-4xl mx-auto text-xl md:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed mb-8">
-                Een overzicht van mijn professionele reis, van student tot software developer, 
+                Een overzicht van mijn professionele reis, van afgestudeerd software developer, 
                 met alle ervaringen die hebben bijgedragen aan mijn groei en expertise.
             </p>
             
