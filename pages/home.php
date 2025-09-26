@@ -268,7 +268,7 @@ html { scroll-behavior: smooth; }
                     <svg class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                     </svg>
-                    <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">Recente Projecten</h3>
+                    <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">Recente Projecten</h3>
                 </div>
                 
                 <div class="space-y-3 sm:space-y-4">
@@ -328,7 +328,7 @@ html { scroll-behavior: smooth; }
                     <svg class="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-indigo-600 dark:text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                     </svg>
-                    <h3 class="text-lg sm:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white">Kernvaardigheden</h3>
+                    <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">Kernvaardigheden</h3>
                 </div>
                 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
@@ -492,7 +492,7 @@ html { scroll-behavior: smooth; }
             </div>
             
             <!-- Titel -->
-            <h2 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
+            <h2 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                 <span class="text-gray-900 dark:text-white">Professionele</span>
                 <br>
                 <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Kwaliteiten</span>
@@ -588,7 +588,7 @@ html { scroll-behavior: smooth; }
                             
                             <!-- Titel -->
                             <div class="flex-grow">
-                                <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors duration-300 mb-2">
+                                <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                                     Soft Skills
                                 </h3>
                                 <div class="w-12 h-0.5 bg-gradient-to-r from-purple-500 to-transparent group-hover:w-16 transition-all duration-300"></div>
@@ -647,7 +647,7 @@ html { scroll-behavior: smooth; }
                             
                             <!-- Titel -->
                             <div class="flex-grow">
-                                <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-300 mb-2">
+                                <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                                     Innovatieve Aanpak
                                 </h3>
                                 <div class="w-12 h-0.5 bg-gradient-to-r from-emerald-500 to-transparent group-hover:w-16 transition-all duration-300"></div>
@@ -746,22 +746,22 @@ html { scroll-behavior: smooth; }
     </div>
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Moderne header sectie -->
-        <div class="text-center mb-16 lg:mb-24">
-            <!-- LinkedIn icoon met decoratieve elementen -->
-            <div class="flex items-center justify-center mb-8">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-[#0A66C2]/10 blur-xl rounded-full transform scale-150"></div>
-                    <div class="relative p-4 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 dark:border-slate-700/50 group hover:scale-105 transition-all duration-300">
-                        <svg class="w-8 h-8 text-[#0A66C2] group-hover:scale-110 transition-transform duration-300" fill="currentColor" viewBox="0 0 24 24">
+        <!-- Header sectie -->
+        <div class="text-center mb-12 lg:mb-16">
+            <!-- Badge -->
+            <div class="inline-flex items-center justify-center mb-6">
+                <div class="px-6 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-full shadow-lg">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                         </svg>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium text-sm">LinkedIn Activiteiten</span>
                     </div>
                 </div>
             </div>
             
             <!-- Hoofdtitel -->
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                 Mijn <span class="bg-gradient-to-r from-[#0A66C2] to-blue-600 bg-clip-text text-transparent">LinkedIn</span>
             </h2>
             
@@ -1007,21 +1007,21 @@ html { scroll-behavior: smooth; }
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Moderne header sectie -->
-        <div class="text-center mb-16 lg:mb-24">
-            <!-- Politiek icoon met decoratieve elementen -->
-            <div class="flex items-center justify-center mb-8">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-emerald-500/10 blur-xl rounded-full transform scale-150"></div>
-                    <div class="relative p-4 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 dark:border-slate-700/50 group hover:scale-105 transition-all duration-300">
-                        <svg class="w-8 h-8 text-emerald-600 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="text-center mb-12 lg:mb-16">
+            <!-- Badge -->
+            <div class="inline-flex items-center justify-center mb-6">
+                <div class="px-6 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-full shadow-lg">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0h3m-3 0h-3m15 0v-5.586a1 1 0 00-.293-.707l-1.414-1.414M13 21h2.586a1 1 0 00.707-.293l1.414-1.414"/>
                         </svg>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium text-sm">Politieke Ambities</span>
                     </div>
                 </div>
             </div>
             
             <!-- Hoofdtitel -->
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                 Politieke <span class="bg-gradient-to-r from-emerald-600 to-green-600 bg-clip-text text-transparent">Ambities</span>
             </h2>
             
@@ -1222,22 +1222,22 @@ html { scroll-behavior: smooth; }
     </div>
 
     <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <!-- Moderne header sectie -->
-        <div class="text-center mb-16 lg:mb-24">
-            <!-- Werk icoon met decoratieve elementen -->
-            <div class="flex items-center justify-center mb-8">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-blue-500/10 blur-xl rounded-full transform scale-150"></div>
-                    <div class="relative p-4 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-2xl shadow-lg border border-white/50 dark:border-slate-700/50 group hover:scale-105 transition-all duration-300">
-                        <svg class="w-8 h-8 text-blue-600 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <!-- Header sectie -->
+        <div class="text-center mb-12 lg:mb-16">
+            <!-- Badge -->
+            <div class="inline-flex items-center justify-center mb-6">
+                <div class="px-6 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-full shadow-lg">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium text-sm">Werkervaring</span>
                     </div>
                 </div>
             </div>
             
             <!-- Hoofdtitel -->
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+            <h2 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                 Mijn <span class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Werkervaring</span>
             </h2>
             
@@ -1383,13 +1383,19 @@ html { scroll-behavior: smooth; }
     </div>
 
     <div class="max-w-7xl mx-auto relative">
-        <div class="text-center mb-16">
-            <div class="inline-flex items-center justify-center mb-4">
-                <span class="h-px w-8 bg-blue-500 mr-3"></span>
-                <span class="text-blue-600 dark:text-blue-400 font-medium tracking-wider uppercase text-sm">Vaardigheden</span>
-                <span class="h-px w-8 bg-blue-500 ml-3"></span>
+        <div class="text-center mb-12 lg:mb-16">
+            <!-- Badge -->
+            <div class="inline-flex items-center justify-center mb-6">
+                <div class="px-6 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-full shadow-lg">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                        </svg>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium text-sm">Technische Vaardigheden</span>
+                    </div>
+                </div>
             </div>
-            <h2 class="text-4xl md:text-5xl font-extrabold mb-6 tracking-tight text-gray-900 dark:text-white">
+            <h2 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                 Technische <span class="text-blue-600 dark:text-blue-400">Expertise</span>
             </h2>
             <p class="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -1617,26 +1623,24 @@ html { scroll-behavior: smooth; }
 
     <div class="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
         <!-- Premium Header -->
-        <div class="text-center mb-28">
-            <!-- Geavanceerde badge -->
-            <div class="inline-flex items-center justify-center mb-10">
-                <div class="relative group">
-                    <div class="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity"></div>
-                    <div class="relative px-8 py-3 bg-white/95 dark:bg-gray-800/95 backdrop-blur-md border border-blue-200/60 dark:border-blue-700/60 rounded-full shadow-2xl transform group-hover:scale-105 transition-transform">
-                        <div class="flex items-center gap-3">
-                            <div class="w-2 h-2 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full animate-pulse"></div>
-                            <span class="text-blue-600 dark:text-blue-400 font-bold tracking-wide uppercase text-sm">Mijn Professionele Reis</span>
-                            <div class="w-2 h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full animate-pulse delay-500"></div>
-                        </div>
+        <div class="text-center mb-12 lg:mb-16">
+            <!-- Badge -->
+            <div class="inline-flex items-center justify-center mb-6">
+                <div class="px-6 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-full shadow-lg">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium text-sm">Professionele Ontwikkeling</span>
                     </div>
                 </div>
             </div>
             
             <!-- Premium hoofdtitel -->
-            <h2 class="text-5xl md:text-6xl lg:text-8xl font-black mb-10 tracking-tight">
-                <span class="text-gray-900 dark:text-white drop-shadow-sm">Professionele</span>
+            <h2 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
+                <span class="text-gray-900 dark:text-white">Professionele</span>
                 <br>
-                <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent drop-shadow-sm">Ontwikkeling</span>
+                <span class="bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">Ontwikkeling</span>
             </h2>
             
             <!-- Verbeterde ondertitel -->
@@ -1685,7 +1689,7 @@ html { scroll-behavior: smooth; }
                         
                         <!-- Premium Bedrijfsinformatie -->
                         <div class="mb-8">
-                            <h3 class="text-3xl lg:text-4xl font-black text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                            <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                                 Developing B.V.
                             </h3>
                             <div class="flex items-center gap-3 text-blue-600 dark:text-blue-400 font-bold text-lg">
@@ -1751,7 +1755,7 @@ html { scroll-behavior: smooth; }
                         
                         <!-- Premium Bedrijfsinformatie -->
                         <div class="mb-8">
-                            <h3 class="text-3xl lg:text-4xl font-black text-gray-900 dark:text-white mb-3 group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors">
+                            <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                                 Pathé
                             </h3>
                             <div class="flex items-center gap-3 text-indigo-600 dark:text-indigo-400 font-bold text-lg">
@@ -1817,7 +1821,7 @@ html { scroll-behavior: smooth; }
                         
                         <!-- Premium Bedrijfsinformatie -->
                         <div class="mb-8">
-                            <h3 class="text-3xl lg:text-4xl font-black text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                            <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                                 I@control
                             </h3>
                             <div class="flex items-center gap-3 text-blue-600 dark:text-blue-400 font-bold text-lg">
@@ -1883,7 +1887,7 @@ html { scroll-behavior: smooth; }
                         
                         <!-- Premium Bedrijfsinformatie -->
                         <div class="mb-8">
-                            <h3 class="text-3xl lg:text-4xl font-black text-gray-900 dark:text-white mb-3 group-hover:text-purple-600 dark:group-hover:text-purple-400 transition-colors">
+                            <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                                 Action
                             </h3>
                             <div class="flex items-center gap-3 text-purple-600 dark:text-purple-400 font-bold text-lg">
@@ -1923,23 +1927,21 @@ html { scroll-behavior: smooth; }
 
         <!-- Premium Educatie Sectie -->
         <div class="mt-32">
-            <div class="text-center mb-20">
-                <!-- Premium educatie badge -->
-                <div class="inline-flex items-center justify-center mb-8">
-                    <div class="relative group">
-                        <div class="absolute inset-0 bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 rounded-full blur-xl opacity-40 group-hover:opacity-60 transition-opacity"></div>
-                        <div class="relative px-8 py-3 bg-white/95 dark:bg-gray-800/95 backdrop-blur-md border border-emerald-200/60 dark:border-emerald-700/60 rounded-full shadow-2xl">
-                            <div class="flex items-center gap-3">
-                                <div class="w-2 h-2 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-full animate-pulse"></div>
-                                <span class="text-emerald-600 dark:text-emerald-400 font-bold tracking-wide uppercase text-sm">Educatie</span>
-                                <div class="w-2 h-2 bg-gradient-to-r from-teal-500 to-green-500 rounded-full animate-pulse delay-500"></div>
-                            </div>
+            <div class="text-center mb-12 lg:mb-16">
+                <!-- Badge -->
+                <div class="inline-flex items-center justify-center mb-6">
+                    <div class="px-6 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-full shadow-lg">
+                        <div class="flex items-center gap-3">
+                            <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                            </svg>
+                            <span class="text-gray-700 dark:text-gray-300 font-medium text-sm">Educatie</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Premium titel -->
-                <h3 class="text-4xl md:text-5xl lg:text-6xl font-black text-gray-900 dark:text-white mb-6 tracking-tight">
+                <h3 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                     Mijn <span class="bg-gradient-to-r from-emerald-600 via-green-600 to-teal-600 bg-clip-text text-transparent">Educatie</span>
                 </h3>
                 
@@ -1987,7 +1989,7 @@ html { scroll-behavior: smooth; }
                             
                             <!-- Premium School Info -->
                             <div class="mb-8">
-                                <h4 class="text-3xl lg:text-4xl font-black text-gray-900 dark:text-white mb-3 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors">
+                                <h4 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                                     Rijn IJssel
                                 </h4>
                                 <div class="flex items-center gap-3 text-emerald-600 dark:text-emerald-400 font-bold text-lg mb-2">
@@ -2054,7 +2056,7 @@ html { scroll-behavior: smooth; }
                             
                             <!-- Premium School Info -->
                             <div class="mb-8">
-                                <h4 class="text-3xl lg:text-4xl font-black text-gray-900 dark:text-white mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
+                                <h4 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                                     Pallas Athene College
                                 </h4>
                                 <div class="flex items-center gap-3 text-blue-600 dark:text-blue-400 font-bold text-lg mb-2">
@@ -2120,19 +2122,22 @@ html { scroll-behavior: smooth; }
     </div>
 
     <div class="container mx-auto px-6 lg:px-8 relative z-10">
-        <!-- Header sectie met elegante typografie -->
-        <div class="text-center mb-24">
-            <!-- Badge indicator -->
-            <div class="inline-flex items-center justify-center mb-8">
-                <div class="flex items-center gap-3 px-6 py-3 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-full border border-slate-200/50 dark:border-slate-700/50 shadow-lg shadow-blue-500/10">
-                    <div class="w-2 h-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-pulse"></div>
-                    <span class="text-slate-600 dark:text-slate-300 font-medium text-sm tracking-wide uppercase">Stage Ervaringen</span>
-                    <div class="w-2 h-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full animate-pulse delay-300"></div>
+        <!-- Header sectie -->
+        <div class="text-center mb-12 lg:mb-16">
+            <!-- Badge -->
+            <div class="inline-flex items-center justify-center mb-6">
+                <div class="px-6 py-2 bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 rounded-full shadow-lg">
+                    <div class="flex items-center gap-3">
+                        <svg class="w-4 h-4 text-blue-600 dark:text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C20.832 18.477 19.246 18 17.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                        </svg>
+                        <span class="text-gray-700 dark:text-gray-300 font-medium text-sm">Professionele Aanbevelingen</span>
+                    </div>
                 </div>
             </div>
 
             <!-- Hoofdtitel -->
-            <h2 class="text-5xl lg:text-7xl font-black mb-8 tracking-tight">
+            <h2 class="text-xl lg:text-2xl font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
                 <span class="text-slate-900 dark:text-white">Professionele</span>
                 <br class="hidden sm:block">
                 <span class="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">Aanbevelingen</span>
@@ -2406,7 +2411,7 @@ html { scroll-behavior: smooth; }
 <!-- Call to Action Section -->
 <section class="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800 text-white dark:from-blue-800 dark:to-blue-600">
     <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl font-bold mb-6 text-white">
+        <h2 class="text-xl lg:text-2xl font-bold text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors duration-300 mb-2">
             Klaar om samen te werken?
         </h2>
         <p class="text-lg opacity-90 mb-8">
